@@ -26,6 +26,17 @@ export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
   }
 }
 
+export function byAlphabetical(): SortFn {
+  return (f1, f2) => {
+    const f1Title = f1.frontmatter?.title ?? ""
+    const f2Title = f2.frontmatter?.title ?? ""
+    return f1Title.localeCompare(f2Title, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
+  }
+}
+
 export function byDateAndAlphabeticalFolderFirst(cfg: GlobalConfiguration): SortFn {
   return (f1, f2) => {
     // Sort folders first

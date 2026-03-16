@@ -1,3 +1,16 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Refined RTL support for mixed Arabic/English content
+// This automatically aligns text based on the script (LTR or RTL)
+// without shifting the global layout or UI elements.
+.page article, .popover, .backlinks, .recent-notes {
+  p, li, h1, h2, h3, h4, h5, h6, blockquote, span, div {
+    unicode-bidi: plaintext;
+    text-align: start;
+  }
+}
+
+// Fix for list bullets and other markers
+li {
+  list-style-position: inside;
+}
