@@ -72,12 +72,14 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   perf.addEvent("glob")
   const allFiles = await glob("**/*.*", argv.directory, cfg.configuration.ignorePatterns)
-  const markdownPaths = allFiles.filter((fp) => fp.endsWith(".md")).sort()
+  const fpsToParse = allFiles.filter(
+    (fp) => (fp.endsWith(".md") || fp.endsWith(".pdf")) && !fp.split("/").includes("Media")
+  ).sort()
   console.log(
-    `Found ${markdownPaths.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
+    `Found ${fpsToParse.length} input files from \`${argv.directory}\` in ${perf.timeSince("glob")}`,
   )
 
-  const filePaths = markdownPaths.map((fp) => joinSegments(argv.directory, fp) as FilePath)
+  const filePaths = fpsToParse.map((fp) => joinSegments(argv.directory, fp) as FilePath)
   ctx.allFiles = allFiles
   ctx.allSlugs = allFiles.map((fp) => slugifyFilePath(fp as FilePath))
 
@@ -86,7 +88,7 @@ async function buildQuartz(argv: Argv, mut: Mutex, clientRefresh: () => void) {
 
   await emitContent(ctx, filteredContent)
   console.log(
-    styleText("green", `Done processing ${markdownPaths.length} files in ${perf.timeSince()}`),
+    styleText("green", `Done processing ${fpsToParse.length} files in ${perf.timeSince()}`),
   )
   release()
 
@@ -203,7 +205,8 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   const staticResources = getStaticResourcesFromPlugins(ctx)
   const pathsToParse: FilePath[] = []
   for (const [fp, type] of Object.entries(changesSinceLastBuild)) {
-    if (type === "delete" || path.extname(fp) !== ".md") continue
+    const isMedia = fp.split("/").includes("Media")
+    if (type === "delete" || (!fp.endsWith(".md") && !fp.endsWith(".pdf")) || isMedia) continue
     const fullPath = joinSegments(argv.directory, toPosixPath(fp)) as FilePath
     pathsToParse.push(fullPath)
   }
@@ -227,7 +230,8 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
 
     // manually track non-markdown files as processed files only
     // contains markdown files
-    if (change === "add" && path.extname(file) !== ".md") {
+    const isMedia = file.split("/").includes("Media")
+    if (change === "add" && !file.endsWith(".md") && !file.endsWith(".pdf") && !isMedia) {
       contentMap.set(file as FilePath, {
         type: "other",
       })

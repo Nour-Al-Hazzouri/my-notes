@@ -91,6 +91,32 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         const perf = new PerfTimer()
         const file = await read(fp)
 
+        if (fp.endsWith(".pdf")) {
+          file.data.filePath = file.path as FilePath
+          file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
+          // Slug without extension so the page lives at /foo/bar (not /foo/bar.pdf)
+          file.data.slug = slugifyFilePath(file.data.relativePath, true)
+          const pdfBasename = path.basename(file.data.relativePath) // e.g. "android.pdf"
+          file.data.frontmatter = {
+            title: path.basename(file.data.relativePath, ".pdf"),
+            tags: [],
+          }
+
+          // Relative URL from the page to the PDF asset: always just "./filename.pdf"
+          const pdfAssetUrl = `./${pdfBasename}`
+          const ast: MDRoot = {
+            type: "root",
+            children: [
+              {
+                type: "html",
+                value: `<div class="pdf-viewer" data-pdf-src="${pdfAssetUrl}"><p>Loading PDF\u2026 <a href="${pdfAssetUrl}">Download PDF</a></p></div>`,
+              } as any,
+            ],
+          }
+          res.push([ast, file])
+          continue
+        }
+
         // strip leading and trailing whitespace
         file.value = file.value.toString().trim()
 
