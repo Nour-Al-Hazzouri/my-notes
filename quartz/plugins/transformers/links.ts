@@ -139,42 +139,24 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
 
               // transform all other resources that may use links
               if (
-                ["img", "video", "audio", "iframe", "div"].includes(node.tagName) &&
-                node.properties
+                ["img", "video", "audio", "iframe"].includes(node.tagName) &&
+                node.properties &&
+                typeof node.properties.src === "string"
               ) {
-                if (
-                  ["img", "video", "audio", "iframe"].includes(node.tagName) &&
-                  typeof node.properties.src === "string"
-                ) {
-                  if (opts.lazyLoad) {
-                    node.properties.loading = "lazy"
-                  }
+                if (opts.lazyLoad) {
+                  node.properties.loading = "lazy"
+                }
 
-                  if (!isAbsoluteUrl(node.properties.src, { httpOnly: false })) {
-                    let dest = node.properties.src as RelativeURL
-                    dest = node.properties.src = transformLink(
-                      file.data.slug!,
-                      dest,
-                      transformOptions,
-                    )
-                    node.properties.src = dest
-                  }
-                } else if (
-                  node.tagName === "div" &&
-                  typeof node.properties["data-pdf-src"] === "string"
-                ) {
-                  if (!isAbsoluteUrl(node.properties["data-pdf-src"], { httpOnly: false })) {
-                    let dest = node.properties["data-pdf-src"] as RelativeURL
-                    dest = node.properties["data-pdf-src"] = transformLink(
-                      file.data.slug!,
-                      dest,
-                      transformOptions,
-                    )
-                    node.properties["data-pdf-src"] = dest
-                  }
+                if (!isAbsoluteUrl(node.properties.src, { httpOnly: false })) {
+                  let dest = node.properties.src as RelativeURL
+                  dest = node.properties.src = transformLink(
+                    file.data.slug!,
+                    dest,
+                    transformOptions,
+                  )
+                  node.properties.src = dest
                 }
               }
-
             })
 
             file.data.links = [...outgoing]
