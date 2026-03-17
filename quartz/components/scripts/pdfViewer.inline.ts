@@ -25,8 +25,9 @@ function setupPdfViewers() {
   }
 
   function initViewer(container: HTMLElement) {
-    const pdfUrl = container.dataset.pdfSrc
-    if (!pdfUrl) return
+    const link = container.querySelector("a")
+    if (!link) return
+    const pdfUrl = link.href
 
     const pdfjsLib = (window as any).pdfjsLib
     if (!pdfjsLib) return

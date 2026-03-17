@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "Nour-Al-Hazzouri.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian", "Personal", "**/Media"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Personal"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
