@@ -91,6 +91,29 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         const perf = new PerfTimer()
         const file = await read(fp)
 
+        if (fp.endsWith(".pdf")) {
+          file.data.filePath = file.path as FilePath
+          file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
+          file.data.slug = slugifyFilePath(file.data.relativePath)
+          file.data.frontmatter = {
+            title: path.basename(file.data.relativePath, ".pdf"),
+            tags: [],
+          }
+
+          const url = slugifyFilePath(file.data.relativePath)
+          const ast: MDRoot = {
+            type: "root",
+            children: [
+              {
+                type: "html",
+                value: `<iframe src="${url}" class="pdf"></iframe>`,
+              } as any,
+            ],
+          }
+          res.push([ast, file])
+          continue
+        }
+
         // strip leading and trailing whitespace
         file.value = file.value.toString().trim()
 
