@@ -1,0 +1,32 @@
+- Events are the process by which JavaScript interacts with HTML and can occur when the user or the browser manipulates a page.
+- In react, events are handled using JSX event attributes
+- Event Groups:
+	- Clipboard events 
+	- Composition events 
+	- Keyboard events
+	- Mouse events
+	- Selection events
+	- Touch events
+	- Wheel events
+	- Animation events
+	- ...and more!
+- Each group holds multiple events
+	- Mouse Events:
+		- onClick
+		- onContextMenu
+		- onDoubleClick
+		- onDrag
+		- onDrop
+		- onMouseDown
+		- onMouseUp
+		- onMouseEnter
+		- onMouseLeave
+		- onMouseOver
+		- ...and more!
+	- Clipboard Events:
+		- onCopy
+		- onCut
+		- onPaste
+
+---
+**Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/2- Eventful Issues|2- Eventful Issues]]

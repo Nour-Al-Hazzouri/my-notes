@@ -1,0 +1,25 @@
+- JS testing framework
+- Used for testing code like react
+- Maintained by meta
+- Allows for testing framework:
+    - Babel
+    - TypeScript
+    - Node
+    - Angular
+    - Vue
+- Code coverage
+    - Jest supports code coverage
+    - Percentage of how much code is covered by tests
+    - 100% coverage only means each line of code has been tested for some expectations
+    - The higher the code coverage, the lower the chance of unidentified bugs
+- Mocking:
+    - Separating code from related dependencies during testing
+    - Can be used to make sure unit testing is stand-alone
+    - Can be used to avoid bottlenecks when jobs are completed from one side of the team
+    - Jest has built-in mocking functions
+    - Facilitates asynchronous code
+    - Snapshot testing:
+        - Used by web developers to verify that there no regressions in the DOM
+
+---
+**Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/3- Types of Testing|3- Types of Testing]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/5- TDD|5- TDD]]

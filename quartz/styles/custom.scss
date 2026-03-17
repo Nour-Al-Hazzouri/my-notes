@@ -1,0 +1,25 @@
+@use "./base.scss";
+
+// RTL support for Arabic (and other RTL languages) using unicode-bidi: plaintext.
+// This tells the browser to detect the paragraph direction from the content itself.
+// When the first strong character is Arabic, the block becomes RTL automatically,
+// which also causes list markers (bullets) to move to the right side.
+// NOTE: Do NOT set direction: ltr or direction: rtl here — let the browser detect it.
+
+.markdown-body,
+article {
+
+  p,
+  li,
+  blockquote,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  td,
+  th {
+    unicode-bidi: plaintext;
+  }
+}
