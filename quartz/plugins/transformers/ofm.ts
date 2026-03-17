@@ -21,6 +21,8 @@ import calloutScript from "../../components/scripts/callout.inline"
 import checkboxScript from "../../components/scripts/checkbox.inline"
 // @ts-ignore
 import mermaidScript from "../../components/scripts/mermaid.inline"
+// @ts-ignore
+import pdfViewerScript from "../../components/scripts/pdfViewer.inline"
 import mermaidStyle from "../../components/styles/mermaid.inline.scss"
 import { FilePath, pathToRoot, slugTag, slugifyFilePath } from "../../util/path"
 import { toHast } from "mdast-util-to-hast"
@@ -261,9 +263,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
                   } else if ([".pdf"].includes(ext)) {
                     return {
                       type: "html",
-                      value: `<iframe src="${url}" class="pdf">
-                        <p>It looks like your browser doesn't support inline PDFs. You can <a href="${url}">download the PDF file</a> instead.</p>
-                      </iframe>`,
+                      value: `<div class="pdf-viewer" data-pdf-src="${url}"><p>Loading PDF… <a href="${url}">Download PDF</a></p></div>`,
                     }
                   } else {
                     const block = anchor
@@ -780,6 +780,14 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           inline: true,
         })
       }
+
+      // PDF.js viewer script — always included so standalone PDF pages also work
+      js.push({
+        script: pdfViewerScript,
+        loadTime: "afterDOMReady",
+        contentType: "inline",
+        moduleType: "module",
+      })
 
       return { js, css }
     },

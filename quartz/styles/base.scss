@@ -621,14 +621,66 @@ ol.overflow {
   overflow-y: hidden;
 }
 
-.external-embed.youtube,
-iframe.pdf {
+.external-embed.youtube {
   aspect-ratio: 16 / 9;
   height: 100%;
   width: 100%;
   border-radius: 5px;
-  border: none;
-  min-height: 80vh;
+}
+
+.pdf-viewer {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid var(--lightgray);
+  overflow: hidden;
+
+  .pdf-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--lightgray);
+    border-bottom: 1px solid var(--gray);
+    flex-wrap: wrap;
+
+    button {
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--gray);
+      border-radius: 4px;
+      background: var(--light);
+      color: var(--darkgray);
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-family: var(--bodyFont);
+
+      &:hover {
+        background: var(--highlight);
+      }
+    }
+
+    .pdf-page-info {
+      font-size: 0.85rem;
+      color: var(--darkgray);
+    }
+
+    .pdf-download {
+      margin-left: auto;
+      font-size: 0.85rem;
+      font-weight: normal;
+    }
+  }
+
+  .pdf-canvas-container {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--lightgray);
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
 }
 
 .navigation-progress {

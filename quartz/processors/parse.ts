@@ -109,9 +109,7 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
             children: [
               {
                 type: "html",
-                value: `<iframe src="${pdfAssetUrl}" class="pdf">
-                  <p>Your browser cannot display this PDF. <a href="${pdfAssetUrl}">Download it here</a>.</p>
-                </iframe>`,
+                value: `<div class="pdf-viewer" data-pdf-src="${pdfAssetUrl}"><p>Loading PDF\u2026 <a href="${pdfAssetUrl}">Download PDF</a></p></div>`,
               } as any,
             ],
           }
