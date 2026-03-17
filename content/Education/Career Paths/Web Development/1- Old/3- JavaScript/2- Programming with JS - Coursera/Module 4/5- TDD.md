@@ -1,0 +1,28 @@
+- Streamlined process of writing codes that will satisfy some requirements
+- Traditional development:
+    - Receive requirements
+    - Write code
+    - Test
+- Test-driven development:
+    - Receive requirements
+    - Write failing test
+    - Write code to make test pass
+    - Code passes test
+    - Improve workable code
+- Implementation:
+    - You get a requirement
+    - Before writing any code, you test this requirement
+    - the test fails
+    - you write the code for this requirement
+    - if no errors are present, the test passes
+    - Code should be written as short as possible
+- Benefits:
+    - Allows automated testing
+    - Passing tests signal that your current and previous app requirements are successful
+- Advantages:
+    - Minimizes regressions
+    - Proves new implementation is working
+    - Automated tests
+
+---
+**Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/4- Introduction to Jest|4- Introduction to Jest]]
