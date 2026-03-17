@@ -94,19 +94,24 @@ export function createFileParser(ctx: BuildCtx, fps: FilePath[]) {
         if (fp.endsWith(".pdf")) {
           file.data.filePath = file.path as FilePath
           file.data.relativePath = path.posix.relative(argv.directory, file.path) as FilePath
-          file.data.slug = slugifyFilePath(file.data.relativePath)
+          // Slug without extension so the page lives at /foo/bar (not /foo/bar.pdf)
+          file.data.slug = slugifyFilePath(file.data.relativePath, true)
+          const pdfBasename = path.basename(file.data.relativePath) // e.g. "android.pdf"
           file.data.frontmatter = {
             title: path.basename(file.data.relativePath, ".pdf"),
             tags: [],
           }
 
-          const url = slugifyFilePath(file.data.relativePath)
+          // Relative URL from the page to the PDF asset: always just "./filename.pdf"
+          const pdfAssetUrl = `./${pdfBasename}`
           const ast: MDRoot = {
             type: "root",
             children: [
               {
                 type: "html",
-                value: `<iframe src="${url}" class="pdf"></iframe>`,
+                value: `<iframe src="${pdfAssetUrl}" class="pdf">
+                  <p>Your browser cannot display this PDF. <a href="${pdfAssetUrl}">Download it here</a>.</p>
+                </iframe>`,
               } as any,
             ],
           }
