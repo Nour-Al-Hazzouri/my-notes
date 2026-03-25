@@ -1,4 +1,4 @@
-# SOURCES.md - System Architecture Research
+# SOURCES
 
 ## [GPU Resources]
 
