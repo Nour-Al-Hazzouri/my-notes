@@ -79,5 +79,7 @@ admin1.sayName(); // Inherited method works!
 ```
 
 ---
+# Summary PDF
+![[Objects and Constructors.pdf]]
 
 **Previous:** [[Education/Career Paths/Web Development/2- New/2- The Odin Project/2- FullStack JavaScript Path/2- JavaScript Course/1- Organizing Code with Objects|1- Organizing Code with Objects]]  | **Next:** [[3- Closures, Factory Functions and the Module Pattern]]
