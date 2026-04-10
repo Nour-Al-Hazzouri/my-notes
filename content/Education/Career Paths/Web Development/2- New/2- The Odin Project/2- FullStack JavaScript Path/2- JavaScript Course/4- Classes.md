@@ -71,3 +71,5 @@ setTimeout(myLamp.toggle, 1000); // 8. Correctly maintains 'this'
 ---
 ## Summary PDF:
 ![[4- JS_Class_Architecture.pdf]]
+---
+**Previous:** [[3- Closures, Factory Functions and the Module Pattern]] | **Next:** [[5- Imports & Exports]]

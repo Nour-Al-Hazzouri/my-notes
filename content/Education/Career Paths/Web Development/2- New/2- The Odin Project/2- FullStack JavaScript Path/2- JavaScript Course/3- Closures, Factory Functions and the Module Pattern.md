@@ -99,12 +99,8 @@ console.log(Calculator.total()); // 5
 ```
 
 ---
-
-**Previous:** [[Education/Career Paths/Web Development/2- New/2- The Odin Project/2- FullStack JavaScript Path/2- JavaScript Course/2- Object Constructors|2- Object Constructors]]
-
----
 ### Summary PDF
 
 ![[The_Lexical_Backpack.pdf]]
 --- 
-**Previous:** [[2- Object Constructors]]
+**Previous:** [[2- Object Constructors]] | **Next:** [[4- Classes]]
