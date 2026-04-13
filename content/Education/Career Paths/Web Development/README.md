@@ -41,7 +41,7 @@ Nope. Never have, probably never will.
 
 What I currently do is _know_ when to take notes. In most cases, it's when I need these notes to be reminded of something very specific that Google's answer won't satisfy. Such as notes for my vocational education, or religious studies (which I will not trust Google for), or lately when I find an interesting article that I might come back to but just need the point of it, not to re-read it (as I did with some of TOP's lessons).
 
-**Update:** I've been using Google's NotebookLM to understand concepts theoretically, which makes creating summaries and even Summary PDFs a piece of cake that takes literally no time. Which's why, you might notice that the notes I add are more frequent, even after all my talk about not needing to take notes most of the time XD
+**Update:** I've been using Google's NotebookLM to understand concepts theoretically, which makes creating summaries and even Summary PDFs a piece of cake that takes literally no time. Which's why you might notice that the notes I add are more frequent, even after all my talk about not needing to take notes most of the time XD
 # Conclusion
 
 While I doubt most of you have read anything beyond the summary, I just wanted to say I would be filled with joy if I helped even just one person. I created these notes mainly for my own use, but since I had no one to rely on and learned my lesson the hard way, being there for someone will mean a lot to me.

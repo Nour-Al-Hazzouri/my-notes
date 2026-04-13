@@ -29,3 +29,9 @@ Initial Release- Quartz V4 Setup
 	- [[6- Webpack]] (Added a Notes PDF)
 2. Modified:
 	- [[Education/Career Paths/Web Development/README]]
+
+# V1.5- 14/4/2026
+1. Added:
+	- [[7- npm Scripts]]
+	- [[8- webpack-mege]]
+	
