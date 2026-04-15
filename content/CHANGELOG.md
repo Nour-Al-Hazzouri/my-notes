@@ -33,5 +33,10 @@ Initial Release- Quartz V4 Setup
 # V1.5- 14/4/2026
 1. Added:
 	- [[7- npm Scripts]]
-	- [[8- webpack-mege]]
-	
+	- [[8- webpack-merge]]
+
+# V1.6- 15/4/2026
+1. Added:
+	- [[9- JSON]]
+2. Modified:
+	- [[8- webpack-merge]]: (Fixed typo in title)

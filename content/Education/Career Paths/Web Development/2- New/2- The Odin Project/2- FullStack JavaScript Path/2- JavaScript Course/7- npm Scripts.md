@@ -129,4 +129,4 @@
 As seen in the **Production | webpack** source, these npm scripts are often used to bridge different configurations. For example, you might have a `"build"` script that points to a production-specific file: `"build": "webpack --config webpack.prod.js"`, and a `"start"` script for development: `"start": "webpack serve --config webpack.dev.js"`. This allows you to maintain optimized assets for production while keeping helpful debugging tools for development.**[]()**
 
 ---
-**Previous:** [[6- Webpack]] | **Next:** [[8- webpack-mege]]
+**Previous:** [[6- Webpack]] | **Next:** [[8- webpack-merge]]
