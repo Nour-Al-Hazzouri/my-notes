@@ -40,3 +40,8 @@ Initial Release- Quartz V4 Setup
 	- [[9- JSON]]
 2. Modified:
 	- [[8- webpack-merge]]: (Fixed typo in title)
+
+# 1.7- 25/4/2026
+1. Added:
+	- [[10- SOLID Principle]]
+	- [[The AI Shift — From Static Models to Dynamic Agents]]
