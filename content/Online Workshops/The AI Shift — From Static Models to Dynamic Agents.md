@@ -281,3 +281,6 @@ from `agent.py`.
 - **Join the Community** — Explore the latest agentic research and connect with other builders in the field.
 
 > 🚀 **GO BUILD THE FUTURE OF AUTOMATION**
+
+## PDF Guide
+![[Workshop_Guide_Build_Your_First_AI_Agent_in_30_Minutes.pdf]]

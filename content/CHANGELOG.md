@@ -41,7 +41,12 @@ Initial Release- Quartz V4 Setup
 2. Modified:
 	- [[8- webpack-merge]]: (Fixed typo in title)
 
-# 1.7- 25/4/2026
+# V1.7- 25/4/2026
 1. Added:
 	- [[10- SOLID Principle]]
 	- [[The AI Shift — From Static Models to Dynamic Agents]]
+# V1.8- 26/4/2026
+1. Added:
+	- Online Workshops/Media/Workshop_Guide_Build_Your_First_AI_Agent_in_30_Minutes.pdf
+2. Modified:
+	- [[The AI Shift — From Static Models to Dynamic Agents]] (Added a PDF Reference from the same online session)
