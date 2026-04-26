@@ -46,7 +46,5 @@ Initial Release- Quartz V4 Setup
 	- [[10- SOLID Principle]]
 	- [[The AI Shift — From Static Models to Dynamic Agents]]
 # V1.8- 26/4/2026
-1. Added:
-	- Online Workshops/Media/Workshop_Guide_Build_Your_First_AI_Agent_in_30_Minutes.pdf
-2. Modified:
+1. Modified:
 	- [[The AI Shift — From Static Models to Dynamic Agents]] (Added a PDF Reference from the same online session)
