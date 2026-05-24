@@ -30,3 +30,8 @@ I, for example, whenever I come across free learning resources, my eyes sparkle.
 Beats me. These notes are pretty much random topics that I took an interest in. Currently writing notes on what seems relevant to me; later I'll do more and give it value... Hopefully? Feel free to check every now and then for new material updates! :D
 
 **I will include a [[CHANGELOG]] to be updated after the addition of new notes.**
+
+# Hit Me Up
+Have questions or recommendations, or want to share resources with me?
+
+Hit me up @ nour.alhazzouri@tripoli.dev!

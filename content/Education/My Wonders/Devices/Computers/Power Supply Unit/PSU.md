@@ -2,14 +2,14 @@
 
 ## I. Glossary & Key Concepts
 
-| Term | Definition | Practical Example | Comparison Value |
-| :--- | :--- | :--- | :--- |
-| **Voltage Rail** | A dedicated DC output circuit delivering specific voltage (+12V, +5V, +3.3V). | The **+12V rail** powering the GPU and CPU. | Modern "Single Rail" designs prevent shutdown by allowing all wattage to flow through one path. |
-| **Ripple & Noise** | Small AC fluctuations remaining in the DC output after conversion. | A high-quality PSU has <30mV ripple on the +12V rail. | High ripple degrades component lifespan and causes system instability. |
-| **Hold-up Time** | The duration a PSU can maintain output within spec after losing AC input. | A "17ms" gold standard ensures the PC doesn't reboot during a momentary power flick. | Required by ATX spec to allow UPS units time to switch to battery. |
-| **LLC Resonant Converter** | A switching topology that uses "Zero Voltage Switching" to reduce energy loss. | Used in 80 PLUS Platinum/Titanium units like the Seasonic Prime. | Higher efficiency and significantly less electromagnetic interference (EMI). |
-| **Transient Response** | The ability of a PSU to handle sudden, large spikes in power demand (Power Excursions). | An RTX 4090 spiking to 900W for 100 microseconds. | ATX 3.1 units must handle 200% load excursions without tripping OCP. |
-| **PFC (Power Factor Correction)** | A circuit that aligns the current and voltage phases to improve electrical efficiency for the grid. | "Active PFC" is mandatory in modern high-end PSUs. | Reduces harmonic distortion and "wasted" electricity drawn from the wall. |
+| Term                              | Definition                                                                                          | Practical Example                                                                    | Comparison Value                                                                                |
+| :-------------------------------- | :-------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| **Voltage Rail**                  | A dedicated DC output circuit delivering specific voltage (+12V, +5V, +3.3V).                       | The **+12V rail** powering the GPU and CPU.                                          | Modern "Single Rail" designs prevent shutdown by allowing all wattage to flow through one path. |
+| **Ripple & Noise**                | Small AC fluctuations remaining in the DC output after conversion.                                  | A high-quality PSU has <30mV ripple on the +12V rail.                                | High ripple degrades component lifespan and causes system instability.                          |
+| **Hold-up Time**                  | The duration a PSU can maintain output within spec after losing AC input.                           | A "17ms" gold standard ensures the PC doesn't reboot during a momentary power flick. | Required by ATX spec to allow UPS units time to switch to battery.                              |
+| **LLC Resonant Converter**        | A switching topology that uses "Zero Voltage Switching" to reduce energy loss.                      | Used in 80 PLUS Platinum/Titanium units like the Seasonic Prime.                     | Higher efficiency and significantly less electromagnetic interference (EMI).                    |
+| **Transient Response**            | The ability of a PSU to handle sudden, large spikes in power demand (Power Excursions).             | An RTX 4090 spiking to 900W for 100 microseconds.                                    | ATX 3.1 units must handle 200% load excursions without tripping OCP.                            |
+| **PFC (Power Factor Correction)** | A circuit that aligns the current and voltage phases to improve electrical efficiency for the grid. | "Active PFC" is mandatory in modern high-end PSUs.                                   | Reduces harmonic distortion and "wasted" electricity drawn from the wall.                       |
 
 ---
 

@@ -45,6 +45,12 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **CD (Compact Disc) Era:** Originally designed for audio, the CD-ROM adapted the 780nm infrared laser to store ~700MB of data, revolutionizing software distribution by replacing floppy disks.
+*   **DVD (Digital Versatile Disc) Era:** A shift to a 650nm red laser allowed for smaller pits and lands, bumping capacity to 4.7GB (Single Layer). This enabled the distribution of full-length standard-definition movies and massive PC games.
+*   **Blu-ray Era:** A massive architectural shift to a 405nm blue-violet laser, which has a much tighter wavelength. Combined with a higher numerical aperture (0.85), it drastically shrunk the track pitch, allowing 25GB to 50GB capacities for 1080p HD video.
+*   **UHD / BDXL Era:** Retained the blue-violet laser but optimized the optical pickup and error correction to squeeze 3 or 4 physical data layers onto a single disc, reaching 100GB-128GB for 4K HDR media and archival storage.
+
 ### Optical Pickup Unit (OPU) Logic
 The OPU contains the laser diode, a series of lenses, and a photodiode. 
 1.  **Beam Generation**: The laser diode emits light.

@@ -17,18 +17,18 @@
 
 ## II. Core Technical Specifications
 
-| Specification | Intel Z890 (Flagship Example) | AMD X870E (Flagship Example) |
-| :--- | :--- | :--- |
-| **CPU Socket** | LGA 1851 (Arrow Lake-S) | AM5 (Ryzen 7000/9000) |
-| **Chipset Link** | DMI 4.0 x8 (128 Gbps) | Dual-Chipset PCIe 4.0 x4 (GMI) |
-| **Memory Support** | DDR5 (Up to 8000+ MT/s) | DDR5 (Up to 8000+ MT/s) |
-| **Max Memory Capacity** | 192 GB (4 Slots) / 256 GB | 192 GB (4 Slots) / 256 GB |
-| **CPU-Direct PCIe 5.0** | 20 Lanes (16x GPU, 4x NVMe) | 24 Lanes (16x GPU, 8x NVMe) |
-| **PCH PCIe Lanes** | 24x PCIe 4.0 | 20x PCIe 4.0 + 12x PCIe 3.0 |
-| **Integrated USB4 / TB4** | TB4/5 (via discrete controller) | Dual USB4 (40Gbps) Mandatory |
-| **Networking** | 2.5G / 5G / 10G Ethernet + Wi-Fi 7 | 2.5G / 5G / 10G Ethernet + Wi-Fi 7 |
-| **VRM Phases (Typical High-End)** | 20+1+2+1 Direct Phases | 18+2+2 Teamed/Direct Phases |
-| **PCB Layers** | 8 - 10 Layers (High Density) | 8 - 10 Layers (High Density) |
+| Specification                     | Intel Z890 (Flagship Example)      | AMD X870E (Flagship Example)       |
+| :-------------------------------- | :--------------------------------- | :--------------------------------- |
+| **CPU Socket**                    | LGA 1851 (Arrow Lake-S)            | AM5 (Ryzen 7000/9000)              |
+| **Chipset Link**                  | DMI 4.0 x8 (128 Gbps)              | Dual-Chipset PCIe 4.0 x4 (GMI)     |
+| **Memory Support**                | DDR5 (Up to 8000+ MT/s)            | DDR5 (Up to 8000+ MT/s)            |
+| **Max Memory Capacity**           | 192 GB (4 Slots) / 256 GB          | 192 GB (4 Slots) / 256 GB          |
+| **CPU-Direct PCIe 5.0**           | 20 Lanes (16x GPU, 4x NVMe)        | 24 Lanes (16x GPU, 8x NVMe)        |
+| **PCH PCIe Lanes**                | 24x PCIe 4.0                       | 20x PCIe 4.0 + 12x PCIe 3.0        |
+| **Integrated USB4 / TB4**         | TB4/5 (via discrete controller)    | Dual USB4 (40Gbps) Mandatory       |
+| **Networking**                    | 2.5G / 5G / 10G Ethernet + Wi-Fi 7 | 2.5G / 5G / 10G Ethernet + Wi-Fi 7 |
+| **VRM Phases (Typical High-End)** | 20+1+2+1 Direct Phases             | 18+2+2 Teamed/Direct Phases        |
+| **PCB Layers**                    | 8 - 10 Layers (High Density)       | 8 - 10 Layers (High Density)       |
 
 ---
 
@@ -48,6 +48,10 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **The Northbridge / Southbridge Era:** Historically, the motherboard was the true central hub of the PC. The **Northbridge** (fast) handled direct communication between the CPU, RAM, and AGP/PCIe graphics, while the **Southbridge** (slow) handled USB, SATA, and audio. The speed of a PC was heavily reliant on the motherboard's Front Side Bus (FSB).
+*   **The Integration Shift (PCH Era):** Starting roughly with Intel's Sandy Bridge (and earlier AMD K8 memory integration), the functions of the Northbridge (Memory Controller, primary PCIe lanes) were moved directly onto the CPU die to eliminate latency. The Southbridge evolved into the modern **PCH (Platform Controller Hub)** or Chipset, connecting to the CPU via a high-speed link (DMI / Infinity Fabric).
+
 ### Chipset vs. CPU Logic
 Modern motherboards split resources between the CPU and the Chipset (PCH):
 *   **CPU-Direct Links:** Time-sensitive components (Primary GPU, Top M.2 SSD) connect directly to the CPU to minimize latency and maximize PCIe 5.0 bandwidth.
@@ -58,6 +62,12 @@ The VRM is essentially a DC-to-DC converter.
 *   **Control Logic:** The PWM controller sends signals to the MOSFETs to shut on and off thousands of times per second.
 *   **DrMOS/Power Stages:** Integrated chips that handle the high-current switching.
 *   **Filtering:** Large chokes and capacitors (often Japanese 10K/12K rated) smooth out the "rippling" electricity into a flat line of pure power for the CPU cores.
+
+### Board Manufacturer Implementations & Proprietary Tech
+While Intel and AMD design the chipsets, the physical motherboards are engineered by third-party OEMs (ASUS, MSI, Gigabyte, ASRock), leading to massive divergence in build quality and proprietary features:
+*   **ASUS (ROG/TUF):** Pioneered **Q-Release** (a physical button to eject the GPU) and **Q-Latch** (toolless M.2 installation). High-end boards often use **Teamed Power Stages** in the VRM instead of traditional phase doublers, improving transient response times under heavy CPU loads.
+*   **MSI (MEG/MPG):** Known for robust memory trace layouts improving RAM overclocking margins. High-end MEG boards feature the **M.Vision Dashboard** (an integrated OLED screen for hardware monitoring and debug codes).
+*   **Gigabyte (AORUS):** Employs **EZ-Latch Plus** mechanisms and often uses massive "Fins-Array" heatsinks to keep heavy PCIe 5.0 and VRM thermal loads under control without active fans.
 
 ---
 

@@ -45,6 +45,12 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **SDRAM & DDR1:** Synchronous Dynamic RAM synchronized memory speed with the CPU bus. DDR (Double Data Rate) revolutionized this by transferring data on both the rising and falling edges of the clock signal, instantly doubling bandwidth.
+*   **DDR2 & DDR3:** Focused on massive frequency scaling and voltage reduction (from 2.5V down to 1.5V). They achieved higher speeds at the cost of looser CAS latencies.
+*   **DDR4:** Brought massive density increases (allowing for 16GB and 32GB individual sticks) and introduced "Bank Groups" to allow faster consecutive data reads.
+*   **DDR5 (The Radical Shift):** Completely overhauled the architecture by splitting a single 64-bit channel into two independent 32-bit sub-channels per stick, moving power management (PMIC) off the motherboard and onto the RAM module itself, and mandating On-Die ECC for stability at extreme frequencies.
+
 ### Sub-Channel Architecture (DDR5)
 Unlike DDR4's single 64-bit bus, DDR5 splits each module into **two independent 32-bit sub-channels**. This allows the memory controller to perform two smaller, more efficient data transfers simultaneously rather than one large one, significantly reducing "waiting" time (latency).
 
@@ -54,6 +60,14 @@ DDR5 modules now feature a **PMIC (Power Management Integrated Circuit)** direct
 ### Integrated Sub-systems: On-Die ECC vs. Side-band ECC
 *   **On-Die ECC (Standard):** Corrects bit-flips inside the DRAM chips themselves. As memory density increases, cells become smaller and more prone to "random" errors. This is mandatory for DDR5 stability.
 *   **Side-band ECC (Server/Pro):** Requires an extra 8-bits of data (an extra chip on the module) and a CPU/Chipset that supports it. This corrects errors *during transmission* from the RAM to the CPU.
+
+### Silicon Foundries vs. Module Vendors
+The RAM market is fundamentally split between the **Foundries** (who physically fabricate the memory silicon) and the **Module Vendors** (who solder that silicon onto a PCB, add a PMIC, RGB, and a heatsink).
+*   **The Foundries (The "Big 3"):** 
+    *   **SK Hynix:** Currently the undisputed leader in DDR5 performance. Their **A-Die** and **M-Die** silicon are required to achieve extreme overclocks (>7200 MT/s) and tight timings.
+    *   **Samsung:** The legendary king of DDR4 (with their "B-Die"), but their DDR5 silicon currently struggles to clock as high as SK Hynix.
+    *   **Micron:** Often found in reliable, baseline JEDEC or lower-tier enthusiast kits.
+*   **The Module Vendors (Corsair, G.Skill, Kingston):** These companies buy ICs from the Foundries. A high-end G.Skill Trident Z5 kit running at 8000 MT/s is virtually guaranteed to be using SK Hynix A-Die silicon beneath the heatspreader, binned (sorted) for the highest quality.
 
 ---
 

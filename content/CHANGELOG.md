@@ -48,3 +48,10 @@ Initial Release- Quartz V4 Setup
 # V1.8- 26/4/2026
 1. Modified:
 	- [[The AI Shift — From Static Models to Dynamic Agents]] (Added a PDF Reference from the same online session)
+# 1.9- 24/5/2026
+1. Modified:
+	- Education/My Wonders: Made modifications to all Devices notes, and added my questions for some of them
+	- Added a 'Hit Me Up' section in [[index]]
+2. Added:
+	- Education/Courses/PDFs/Google Project Management: summary notes shared with me!
+	- [[Kernel_Architecture_Research]]

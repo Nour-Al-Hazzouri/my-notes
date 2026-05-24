@@ -64,6 +64,19 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **NVIDIA Evolution:**
+    *   **Tesla to Fermi:** Tesla introduced the unified shader architecture, abandoning separate pixel and vertex pipelines. Fermi drastically expanded parallel computing capabilities.
+    *   **Kepler & Maxwell:** Focused heavily on power efficiency and performance-per-watt, establishing NVIDIA's dominance in laptop and desktop efficiency.
+    *   **Pascal (GTX 10 Series):** Achieved a massive leap in raw rasterization performance and clock speeds thanks to the 16nm node jump, remaining one of the most legendary generations in GPU history.
+    *   **Turing & Ampere:** Turing introduced dedicated hardware for Ray Tracing (RT Cores) and AI upscaling (Tensor Cores / DLSS). Ampere refined these and massively increased core counts.
+    *   **Ada Lovelace (RTX 40):** Pushed extreme clock speeds and introduced AI Frame Generation via the Optical Flow Accelerator.
+*   **AMD Evolution:**
+    *   **TeraScale:** AMD's early unified shader architecture that powered the HD 4000 to HD 6000 series, focusing on high stream processor counts.
+    *   **GCN (Graphics Core Next):** A compute-heavy architecture that aged incredibly well over time but struggled with power efficiency compared to NVIDIA's Maxwell/Pascal.
+    *   **RDNA 1 & 2:** A ground-up redesign focusing purely on gaming performance and efficiency. RDNA 2 introduced hardware ray tracing and Infinity Cache to close the performance gap.
+    *   **RDNA 3:** Pioneered the use of chiplet technology in consumer GPUs to bypass the skyrocketing costs of large monolithic silicon dies.
+
 ### NVIDIA Ada Lovelace (RTX 40 Series) Architecture
 *   **Monolithic Silicon:** Built on the custom TSMC 4N process, delivering extreme transistor density and aggressive clocks nearing 3.0 GHz.
 *   **3rd Generation RT Cores:** Features new Opacity Micromap (OMM) and Displaced Micro-Mesh (DMM) engines, doubling ray-primitive intersection rates. Shader Execution Reordering (SER) dynamically organizes shading workloads to optimize pipeline efficiency in ray-traced scenes.

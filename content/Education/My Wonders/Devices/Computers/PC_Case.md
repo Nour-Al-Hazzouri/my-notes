@@ -50,6 +50,12 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **The Beige Box Era:** Early cases prioritized function over form, heavily focused on 5.25" and 3.5" drive bays for optical drives and floppy disks. Airflow was largely passive, with cables forming massive nests that choked internal temperatures.
+*   **The Enthusiast Window & Shroud Era:** As PC gaming grew, cases shifted to black interiors with acrylic side windows. The defining structural change was the **PSU Shroud**, which compartmentalized the power supply and its cables, drastically improving airflow over the motherboard.
+*   **The Tempered Glass & RGB Era:** Acrylic scratched easily, leading to the adoption of Tempered Glass. However, early TG cases often choked airflow by placing solid glass panels directly in front of intake fans.
+*   **The Airflow & Dual-Chamber Era:** Modern cases (like the Lian Li O11 or Corsair 4000D) pivoted back to thermal performance. Front panels became fully meshed. The "Dual-Chamber" architecture emerged, physically separating the heat-generating CPU/GPU from the PSU and cables into two side-by-side compartments.
+
 ### Airflow Dynamics
 Modern cases follow one of three dominant thermal architectures:
 1.  **Traditional Front-to-Back**: Cool air enters from the front mesh, passes over the GPU and CPU, and exits via the rear and top exhaust fans. This is the most common and effective layout (e.g., Corsair 5000D Airflow).

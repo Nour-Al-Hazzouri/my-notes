@@ -46,6 +46,13 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **The HDD Platter Era:** Relied entirely on mechanical spinning magnetic platters and actuator arms. Speeds were bound by rotational latency (RPM) and data density.
+*   **The SATA SSD Era (AHCI):** Flash memory revolutionized random read/write speeds, but drives were severely bottlenecked by the SATA III interface (600 MB/s limit) and the legacy AHCI protocol, which was originally designed for mechanical drives.
+*   **The NVMe PCIe Era:** NVMe (Non-Volatile Memory express) was built from the ground up for flash storage. By connecting directly to the CPU's PCIe lanes, storage bypassed the chipset bottleneck entirely. 
+    *   **Gen 3 to Gen 4:** Doubled bandwidth, reaching up to ~7.5 GB/s.
+    *   **Gen 5:** Reached up to ~14 GB/s but exposed extreme thermal challenges, forcing consumer drives to adopt active cooling (fans on SSDs) for the first time.
+
 ### Flash Storage Architecture (SSD)
 1.  **NAND Controller**: The "brain" that manages data placement, wear leveling, and error correction (ECC). Flagship controllers (like Samsung Pascal or Phison E26) have multi-core ARM chips.
 2.  **Flash Translation Layer (FTL)**: A software layer in the controller that maps logical addresses from the OS to physical NAND cells. 
@@ -57,6 +64,14 @@ Desktop HDDs utilize **CMR (Conventional Magnetic Recording)** or **SMR (Shingle
 
 ### Integrated Sub-systems: Storage Management
 Modern SSDs integrated into the desktop ecosystem rely on **Host Memory Buffer (HMB)** in DRAM-less drives to "borrow" system RAM for the L2P table, though flagship drives always include dedicated on-board DRAM for maximum stability.
+
+### The Controller & NAND Ecosystem
+SSD performance is dictated by a combination of the Controller (the brain) and the NAND Flash (the storage cells).
+*   **Controller Manufacturers:**
+    *   **Phison:** A dominant third-party controller manufacturer. Their **E26** controller powers nearly all first-generation PCIe Gen 5 SSDs (Crucial, Corsair, Gigabyte). It is exceptionally fast but runs notoriously hot, mandating extreme cooling.
+    *   **Samsung & Western Digital:** Vertically integrated giants. They design their own proprietary controllers (e.g., Samsung Pascal) perfectly optimized for their own NAND, often resulting in industry-leading power efficiency and sustained write performance.
+    *   **Silicon Motion (SMI) & Innogrit:** Popular controllers often found in mid-tier or budget drives offering excellent value-to-performance ratios.
+*   **NAND Foundries:** The physical flash memory is produced by a handful of fabs: **Micron/Intel** (now Solidigm), **Samsung**, **Kioxia/WD**, and **SK Hynix**. The layer count (e.g., 232-layer TLC) directly impacts the drive's density and raw speed.
 
 ---
 

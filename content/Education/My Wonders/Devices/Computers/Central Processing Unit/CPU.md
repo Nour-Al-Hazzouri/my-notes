@@ -2,15 +2,15 @@
 
 ## I. Glossary & Key Concepts
 
-| Term | Definition | Practical Example | Comparison Value |
-| :--- | :--- | :--- | :--- |
-| **P-core (Performance Core)** | Large, high-frequency cores designed for heavy single-threaded tasks and low-latency workloads. | Running a complex gaming engine (e.g., Unreal Engine 5). | Defines peak single-core performance; usually higher IPC than Efficient cores. |
-| **E-core (Efficiency Core)** | Smaller, area-optimized cores designed for multi-threaded throughput and background task offloading. | Handling OS background services, browser tabs, or video encoding. | Optimizes power-to-performance ratio; allows for high core counts in limited thermal envelopes. |
-| **ISA (Instruction Set Architecture)** | The abstract model of a computer that defines the set of instructions it can execute (e.g., x86). | Intel and AMD both use the x86_64 instruction set for desktop CPUs. | Determines software compatibility; x86 leads in legacy desktop support. |
-| **IPC (Instructions Per Clock)** | The average number of instructions a processor executes in a single clock cycle. | AMD Zen 5 achieves a ~16% IPC uplift over Zen 4. | A better metric of architectural efficiency than raw GHz. |
-| **Clock Cycle / Frequency** | The time between two pulses of the processor's oscillator, measured in Hertz (GHz). | A CPU running at 5.0 GHz performs 5 billion cycles per second. | Higher frequency increases speed but often increases power/heat exponentially. |
-| **iGPU (Integrated Graphics)** | A graphics processor built directly into the same silicon die or package as the CPU. | Intel UHD 770 in desktop i9-14900K or AMD Radeon Graphics in Ryzen 9000. | Eliminates the need for a separate graphics card for standard tasks/light gaming; shares system RAM. |
-| **TDP / PBP (Thermal Design Power)** | The maximum amount of heat a cooling system must dissipate under a sustained workload. | An Intel i9-14900K has a 125W PBP but can spike to 253W (PL2). | Critical for cooler and PSU selection. Desktop CPUs vary widely (65W-300W+). |
+| Term                                   | Definition                                                                                           | Practical Example                                                        | Comparison Value                                                                                     |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| **P-core (Performance Core)**          | Large, high-frequency cores designed for heavy single-threaded tasks and low-latency workloads.      | Running a complex gaming engine (e.g., Unreal Engine 5).                 | Defines peak single-core performance; usually higher IPC than Efficient cores.                       |
+| **E-core (Efficiency Core)**           | Smaller, area-optimized cores designed for multi-threaded throughput and background task offloading. | Handling OS background services, browser tabs, or video encoding.        | Optimizes power-to-performance ratio; allows for high core counts in limited thermal envelopes.      |
+| **ISA (Instruction Set Architecture)** | The abstract model of a computer that defines the set of instructions it can execute (e.g., x86).    | Intel and AMD both use the x86_64 instruction set for desktop CPUs.      | Determines software compatibility; x86 leads in legacy desktop support.                              |
+| **IPC (Instructions Per Clock)**       | The average number of instructions a processor executes in a single clock cycle.                     | AMD Zen 5 achieves a ~16% IPC uplift over Zen 4.                         | A better metric of architectural efficiency than raw GHz.                                            |
+| **Clock Cycle / Frequency**            | The time between two pulses of the processor's oscillator, measured in Hertz (GHz).                  | A CPU running at 5.0 GHz performs 5 billion cycles per second.           | Higher frequency increases speed but often increases power/heat exponentially.                       |
+| **iGPU (Integrated Graphics)**         | A graphics processor built directly into the same silicon die or package as the CPU.                 | Intel UHD 770 in desktop i9-14900K or AMD Radeon Graphics in Ryzen 9000. | Eliminates the need for a separate graphics card for standard tasks/light gaming; shares system RAM. |
+| **TDP / PBP (Thermal Design Power)**   | The maximum amount of heat a cooling system must dissipate under a sustained workload.               | An Intel i9-14900K has a 125W PBP but can spike to 253W (PL2).           | Critical for cooler and PSU selection. Desktop CPUs vary widely (65W-300W+).                         |
 
 ---
 
@@ -49,6 +49,17 @@
 ---
 
 ## IV. Architecture & System Integration
+
+### Historical Architecture Overview
+*   **Intel Evolution:**
+    *   **8086 & Pentium:** The 8086 established the foundational x86 instruction set. The Pentium (P5) introduced superscalar architecture, allowing multiple instructions to execute per clock cycle.
+    *   **Core 2 Duo:** A radical departure from the power-hungry NetBurst architecture (Pentium 4). It prioritized IPC (Instructions Per Clock) and efficiency over raw frequency, cementing the multi-core era.
+    *   **Sandy Bridge (2nd Gen):** A paradigm shift that fully integrated the memory controller and iGPU onto the same silicon die, utilizing a high-speed "Ring Bus" interconnect for extremely low core-to-cache latency.
+    *   **Alder Lake (12th Gen):** Introduced the hybrid x86 architecture to desktop, combining P-Cores and E-Cores to balance peak single-thread performance with massive multi-threaded throughput.
+*   **AMD Evolution:**
+    *   **Athlon 64 (K8):** Pioneered the 64-bit extension to x86 (AMD64) and revolutionized latency by integrating the memory controller directly into the CPU, bypassing the slow motherboard Northbridge.
+    *   **Zen 1 (Ryzen):** AMD's massive comeback. It introduced the Core Complex (CCX) and Infinity Fabric, proving that "gluing" smaller, high-yield silicon chiplets together was a viable alternative to massive monolithic dies.
+    *   **Zen 4 & 5:** The maturation of the chiplet ecosystem on 5nm/4nm nodes, transitioning exclusively to DDR5, and achieving high IPC gains through wider execution engines and advanced branch prediction.
 
 ### Intel (Desktop — Raptor Lake / Arrow Lake)
 *   **Hybrid Architecture:** Combines **Raptor Cove** P-cores (high clock, high IPC) and **Gracemont** E-cores (throughput, efficiency) on a monolithic die. Arrow Lake transitions to a tile-based design with **Lion Cove** P-cores and **Skymont** E-cores.

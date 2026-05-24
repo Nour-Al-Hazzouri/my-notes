@@ -43,6 +43,12 @@
 
 ## IV. Architecture & System Integration
 
+### Historical Architecture Overview
+*   **The Passive & Early Active Era:** Early CPUs (like the 8086) required no heatsink at all. As TDPs rose in the 90s, small extruded aluminum blocks with tiny, high-RPM fans became standard.
+*   **The Heatpipe Revolution:** As thermal densities exploded (Pentium 4 era), solid aluminum couldn't move heat fast enough. Copper heatpipes (using internal phase-change liquids) became the industry standard, allowing heat to be moved quickly from the baseplate to massive dual-tower fin stacks.
+*   **The AIO (All-In-One) Liquid Era:** Initially niche, closed-loop liquid coolers (pioneered largely by Asetek) became mainstream. They moved the bulky heatsink off the CPU socket and onto the case chassis, allowing for massive 360mm+ radiator surfaces that air coolers could never physically match due to motherboard clearance.
+*   **Smart & LCD Cooling:** Modern flagships integrate embedded microcontrollers, LCD screens, and daisy-chained magnetic fans (e.g., Corsair iCUE Link), shifting focus from pure thermal dissipation to ecosystem aesthetics and cable management.
+
 ### Heatpipe Physics (Air Cooling)
 Heatpipes are filled with a liquid (usually water) under a partial vacuum. When the CPU heats the copper base, the liquid evaporates or "boils" at a very low temperature. The vapor travels to the cool end (the fins), releases the heat, condenses back into liquid, and is pulled back to the heat source by a "wicking" internal structure (sintered or grooved copper).
 
