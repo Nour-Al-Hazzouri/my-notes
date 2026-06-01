@@ -55,3 +55,9 @@ Initial Release- Quartz V4 Setup
 2. Added:
 	- Education/Courses/PDFs/Google Project Management: summary notes shared with me!
 	- [[Kernel_Architecture_Research]]
+
+# V2.0- 1/6/2026
+1. Modified:
+	- [[10- SOLID Principle]]: To include next file
+2. Added: 
+	- [[10.1- Odin_todo-list Notes]]: My notes of what I learned working my Odin_todo-list webapp
