@@ -544,4 +544,4 @@ const store = new Store(new StripePaymentProcessor('John'));
 store.purchaseBike(2);
 ```
 ---
-**Previous:** [[9- JSON]]
+**Next:** [[10.1- Odin_todo-list Notes]] | **Previous:** [[9- JSON]]
