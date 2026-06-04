@@ -61,3 +61,10 @@ Initial Release- Quartz V4 Setup
 	- [[10- SOLID Principle]]: To include next file
 2. Added: 
 	- [[10.1- Odin_todo-list Notes]]: My notes of what I learned working my Odin_todo-list webapp
+
+# V2.1- 4/6/2026
+1. Added:
+	- [[11- ESlint & Prettier]]
+	- [[12- Form Validation]]
+2. Modified:
+	- [[10.1- Odin_todo-list Notes]]: Added link to next file
