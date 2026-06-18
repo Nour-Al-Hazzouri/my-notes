@@ -70,6 +70,6 @@ setTimeout(myLamp.toggle, 1000); // 8. Correctly maintains 'this'
 - **Compatibility**: Getters and setters allow you to replace a "regular" property with a function later in development without breaking existing code that expects a simple data property.
 ---
 ## Summary PDF:
-![[4- JS_Class_Architecture.pdf]]
+![[JS_Class_Architecture.pdf]]
 ---
 **Previous:** [[3- Closures, Factory Functions and the Module Pattern]] | **Next:** [[5- Imports & Exports]]
