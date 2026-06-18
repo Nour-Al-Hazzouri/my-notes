@@ -68,3 +68,12 @@ Initial Release- Quartz V4 Setup
 	- [[12- Form Validation]]
 2. Modified:
 	- [[10.1- Odin_todo-list Notes]]: Added link to next file
+# V2.2- 18/6/2026
+1. Added:
+	- [[13- Async JS]]
+	- [[13.1- Event Loop]]
+	- [[13.2- Promise]]
+	- [[13.3- Async JS Summary]]
+	- [[14- async - await]]
+2. Modified:
+	- [[12- Form Validation]]: Added link to next file
