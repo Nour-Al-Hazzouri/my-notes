@@ -30,10 +30,30 @@ const defaultOptions: Options = {
     return node
   },
   sortFn: (a, b) => {
-    // Sort order: folders first, then files. Sort folders and files alphabeticall
+    // Sort order: folders first, then files. Sort folders and files by naming convention.
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
-      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
+      // Extract leading numeric prefix from names like "1- Title", "7.1- Title"
+      const prefixRe = /^(\d+(?:\.\d+)*)\s*-/
+      const aMatch = prefixRe.exec(a.displayName)
+      const bMatch = prefixRe.exec(b.displayName)
+
+      if (aMatch && bMatch) {
+        // Both have numeric prefix — compare numerically segment by segment
+        const aParts = aMatch[1].split(".").map(Number)
+        const bParts = bMatch[1].split(".").map(Number)
+        const len = Math.max(aParts.length, bParts.length)
+        for (let i = 0; i < len; i++) {
+          const diff = (aParts[i] ?? 0) - (bParts[i] ?? 0)
+          if (diff !== 0) return diff
+        }
+        return 0
+      }
+
+      // Prefixed names come before unprefixed ones
+      if (aMatch && !bMatch) return -1
+      if (!aMatch && bMatch) return 1
+
+      // Neither has a prefix — sort lexicographically
       return a.displayName.localeCompare(b.displayName, undefined, {
         numeric: true,
         sensitivity: "base",
