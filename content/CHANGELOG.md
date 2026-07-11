@@ -85,7 +85,8 @@ Initial Release- Quartz V4 Setup
 2. Modified:
 	- [[14- async - await]]: Added link to next file
 
-# V2.4- 28/6/2026
-1. Fixed:
-	- `quartz/components/Explorer.tsx`: Replaced `localeCompare` with a proper numeric prefix sort that correctly handles `N-` and `N.M-` naming conventions in the sidebar explorer.
-	- `quartz/components/PageList.tsx`: Replaced date-first sorting with pure name-based natural sort using the same prefix logic; folders still appear before files.
+# V2.4- 11/7/2026
+1. Added:
+	- [[16- Mock Testing]]
+	- [[17- Recursion]] (Added a notes PDF)
+	- [[What's Next After Graduation? by Farah Kerbaj]] (New online workshop)
