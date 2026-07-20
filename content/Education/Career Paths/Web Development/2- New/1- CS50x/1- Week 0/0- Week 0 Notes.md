@@ -1,6 +1,6 @@
 # Lecture 0 - CS50x 2025
 
-📄 [[../Media/Lecture 0 - CS50x 2025.pdf|Lecture 0 PDF]]
+📄 [[Lecture 0 - CS50x 2025.pdf]]
 
 ## Welcome!
 

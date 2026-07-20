@@ -1,6 +1,6 @@
 # Lecture 5
 
-📄 [[../Media/Lecture 5 - CS50x 2025.pdf|Lecture 5 PDF]]
+📄 [[Lecture 5 - CS50x 2025.pdf]]
 
 *   [Welcome!](#welcome)
 *   [Data Structures](#data-structures)

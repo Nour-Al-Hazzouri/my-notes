@@ -1,6 +1,6 @@
 # Lecture 1 - CS50x 2025
 
-📄 [[../Media/Lecture 1 - CS50x 2025.pdf|Lecture 1 PDF]]
+📄 [[Lecture 1 - CS50x 2025.pdf]]
 
 ## Table of Contents
 

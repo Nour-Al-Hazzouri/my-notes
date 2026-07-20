@@ -1,6 +1,6 @@
 # CS50 Week 9 Lecture - Flask Web Development
 
-📄 [[../Media/Lecture 9 - CS50x 2025.pdf|Lecture 9 PDF]]
+📄 [[Lecture 9 - CS50x 2025.pdf]]
 
 ## Welcome!
 

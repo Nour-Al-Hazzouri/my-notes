@@ -1,6 +1,6 @@
 # Lecture 3 - CS50x 2025
 
-📄 [[../Media/Lecture 3 - CS50x 2025.pdf|Lecture 3 PDF]]
+📄 [[Lecture 3 - CS50x 2025.pdf]]
 
 - [Welcome!](#welcome)
 - [Linear Search](#linear-search)

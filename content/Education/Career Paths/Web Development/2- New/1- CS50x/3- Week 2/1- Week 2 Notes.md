@@ -1,6 +1,6 @@
 # CS50x Week 2: Arrays
 
-📄 [[../Media/Lecture 2 - CS50x 2025.pdf|Lecture 2 PDF]]
+📄 [[Lecture 2 - CS50x 2025.pdf]]
 
 ## Compiling
 

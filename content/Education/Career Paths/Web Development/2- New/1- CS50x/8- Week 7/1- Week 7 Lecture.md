@@ -1,6 +1,6 @@
 # Lecture 7 - CS50x 2025
 
-📄 [[../Media/Lecture 7 - CS50x 2025.pdf|Lecture 7 PDF]]
+📄 [[Lecture 7 - CS50x 2025.pdf]]
 
 ## Welcome!
 

@@ -1,6 +1,6 @@
 # Lecture 4
 
-📄 [[../Media/Lecture 4 - CS50x 2025.pdf|Lecture 4 PDF]]
+📄 [[Lecture 4 - CS50x 2025.pdf]]
 
 ## Welcome!
 

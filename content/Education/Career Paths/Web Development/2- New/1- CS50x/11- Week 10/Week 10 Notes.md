@@ -1,6 +1,6 @@
 # The End
 
-📄 [[../Media/The End - CS50x 2025.pdf|The End PDF]]
+📄 [[The End - CS50x 2025.pdf]]
 
 - Recap
 - Looking Ahead

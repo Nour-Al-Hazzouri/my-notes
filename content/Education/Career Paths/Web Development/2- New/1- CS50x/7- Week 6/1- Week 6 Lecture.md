@@ -1,6 +1,6 @@
 # Lecture 6 - Python
 
-📄 [[../Media/Lecture 6 - CS50x 2025.pdf|Lecture 6 PDF]]
+📄 [[Lecture 6 - CS50x 2025.pdf]]
 
 ## Table of Contents
 

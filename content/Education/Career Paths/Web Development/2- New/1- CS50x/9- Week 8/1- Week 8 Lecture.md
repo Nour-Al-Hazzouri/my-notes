@@ -1,6 +1,6 @@
 # Lecture 8 - HTML, CSS, and JavaScript
 
-📄 [[../Media/Lecture 8 - CS50x 2025.pdf|Lecture 8 PDF]]
+📄 [[Lecture 8 - CS50x 2025.pdf]]
 
 ## Welcome!
 
