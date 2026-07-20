@@ -22,4 +22,5 @@
         - Used by web developers to verify that there no regressions in the DOM
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/3- Types of Testing|3- Types of Testing]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/5- TDD|5- TDD]]

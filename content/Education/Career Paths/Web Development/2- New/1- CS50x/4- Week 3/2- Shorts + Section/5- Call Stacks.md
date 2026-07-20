@@ -107,4 +107,5 @@ Call stacks are crucial for:
 *   **Supporting Recursion:** The LIFO nature of the stack allows recursive functions to work by pausing previous calls and resuming them in reverse order as each nested call completes.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/4- Selection Sort|Selection Sort]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/6- Merge Sort|Merge Sort]]

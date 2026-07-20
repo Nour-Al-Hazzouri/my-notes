@@ -15,13 +15,15 @@ Object-Oriented Programming helps developers model relationships between objects
 Objects in OOP exist in a hierarchical structure, with the Object class serving as the base or super class for everything. There are two primary methods for creating objects from classes:
 
 ### Using Object.create()
+
 ```javascript
 class Animal { /* ...class code here... */ }
 var myDog = Object.create(Animal)
 console.log(Animal)
 ```
 
-### Using the new Keyword (More Common)
+### Using the New Keyword (More Common)
+
 ```javascript
 class Animal { /* ...class code here... */ }
 var myDog = new Animal()
@@ -39,6 +41,7 @@ Inheritance allows classes to inherit properties and methods from other classes,
 - **Sub-sub-classes** can further inherit from sub-classes
 
 Example hierarchy:
+
 ```
 Animal (base class)
    ↓
@@ -48,6 +51,7 @@ Eagle (sub-sub-class)
 ```
 
 JavaScript implementation:
+
 ```javascript
 class Animal { /* ...class code here... */ }
 class Bird extends Animal { /* ...class code here... */ }
@@ -63,6 +67,7 @@ Encapsulation involves hiding implementation details while exposing only necessa
 - Implementation can change without affecting code that uses it
 
 Example:
+
 ```javascript
 "abc".toUpperCase(); // Users don't need to know how this works internally
 ```
@@ -82,6 +87,7 @@ While related to encapsulation, abstraction is about the conceptual model rather
 Polymorphism ("many forms") allows methods to behave differently based on the context or object they're used with:
 
 #### Example 1: Different Objects with Same Method Name
+
 ```javascript
 const bicycle = {
     bell: function() {
@@ -104,6 +110,7 @@ ringTheBell(door); // "Ring, ring! Come here, please!"
 ```
 
 #### Example 2: Method Overriding in Class Inheritance
+
 ```javascript
 class Bird {
     useWings() {
@@ -131,6 +138,7 @@ kingPenguin.useWings(); // "Diving!"
 ```
 
 In this example:
+
 - The `Eagle` class extends the `useWings()` method while still using the parent implementation
 - The `Penguin` class completely overrides the `useWings()` method with its own implementation
 - Both classes inherit from `Bird` but implement the same method differently
@@ -138,4 +146,5 @@ In this example:
 Polymorphism allows for consistent method names across different objects while enabling context-specific behavior.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/10- Designing an OO Program|Designing an Object-Oriented Program in JavaScript]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/12- For of loops and objects|For of Loops and Objects in JavaScript]]

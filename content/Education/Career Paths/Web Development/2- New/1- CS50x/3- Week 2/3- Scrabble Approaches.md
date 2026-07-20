@@ -165,6 +165,7 @@ This approach eliminates the need for multiple arrays and nested loops, making t
 ## Example Calculation
 
 For the word "Hello":
+
 1. 'H': uppercase, so 'H' - 'A' = 72 - 65 = 7, POINTS[7] = 4
 2. 'e': lowercase, so 'e' - 'a' = 101 - 97 = 4, POINTS[4] = 1
 3. 'l': lowercase, so 'l' - 'a' = 108 - 97 = 11, POINTS[11] = 1

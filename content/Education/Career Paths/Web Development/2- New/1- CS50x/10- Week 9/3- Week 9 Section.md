@@ -9,6 +9,7 @@ The session is led by Yuliia Zhukovets, a preceptor at Harvard, and centers arou
 ## Course Agenda
 
 The section covers six main components:
+
 - **Routes** - URL routing and navigation
 - **Request Methods** - GET and POST requests
 - **Forms** - HTML form creation and handling
@@ -23,18 +24,21 @@ The section covers six main components:
 The section introduces the fundamental MVC architecture pattern that underlies modern web applications:
 
 #### View Component
+
 - **Definition**: The visual aspect that users see and interact with
 - **Implementation**: HTML files, CSS stylesheets, and visual presentation
 - **In the Project**: `index.html` and `styles.css` files
 - **Purpose**: Provides the user interface and visual experience
 
-#### Controller Component  
+#### Controller Component
+
 - **Definition**: The intermediary that connects user interactions with data processing
 - **Implementation**: Flask application logic in Python
 - **In the Project**: `app.py` file containing routes, form handling, and database queries
 - **Purpose**: Processes user input, coordinates between view and model, handles business logic
 
 #### Model Component
+
 - **Definition**: Backend data storage and management that users don't directly access
 - **Implementation**: Database systems and data structures
 - **In the Project**: `birthdays.db` SQLite database
@@ -55,6 +59,7 @@ birthdays/
 ```
 
 This structure separates concerns effectively:
+
 - **Static folder**: Contains unchanging assets like stylesheets and images
 - **Templates folder**: Stores HTML files that can be dynamically rendered
 - **App.py**: Central controller managing all application logic
@@ -77,6 +82,7 @@ def index():
 ```
 
 **Components explained**:
+
 - `@app.route("/")`: Defines the URL path (slash represents the main/home page)
 - `def index()`: Function name (commonly "index" for main pages)
 - `return render_template()`: Returns the HTML template to display
@@ -97,19 +103,21 @@ def add():
 
 The route decorator creates the connection between URL paths and Python functions, enabling organized navigation throughout the web application.
 
-## Request Methods: GET vs POST
+## Request Methods: GET Vs POST
 
 ### Understanding HTTP Methods
 
 Web applications use different HTTP methods for different types of interactions:
 
 #### GET Requests
+
 - **Purpose**: Retrieving and displaying information
 - **When used**: Loading web pages, viewing content
 - **Default behavior**: Flask routes default to GET when no method specified
 - **Security**: Data visible in URL parameters (less secure)
 
-#### POST Requests  
+#### POST Requests
+
 - **Purpose**: Submitting and sending data to the server
 - **When used**: Form submissions, data entry, user login
 - **Security**: Data hidden in request body (more secure)
@@ -135,7 +143,7 @@ def index():
 
 1. **User lands on login page**: `GET` - Just viewing the page
 2. **User submits login credentials**: `POST` - Sending sensitive data
-3. **User submits birthday information**: `POST` - Submitting form data  
+3. **User submits birthday information**: `POST` - Submitting form data
 4. **User navigates to main page**: `GET` - Viewing content
 
 The key principle: if users are **submitting** data, use POST. If they're just **viewing** content, use GET.
@@ -153,6 +161,7 @@ HTML forms collect user input and send it to the server:
 ```
 
 **Form attributes**:
+
 - `action="/"`: Specifies which route receives the form data
 - `method="post"`: Defines HTTP method (POST for data submission)
 
@@ -168,6 +177,7 @@ Forms contain various input types for different data:
 ```
 
 **Input attributes explained**:
+
 - `name`: Identifier for accessing data in backend code
 - `type`: Specifies input format (text, number, email, etc.)
 - `placeholder`: Gray hint text shown before user input
@@ -177,6 +187,7 @@ Forms contain various input types for different data:
 ### Form Validation Features
 
 HTML5 provides built-in validation:
+
 - **Type validation**: `type="number"` only accepts numeric input
 - **Range validation**: `min="1" max="12"` enforces valid month ranges
 - **Required fields**: Browser prevents submission of empty required fields
@@ -217,6 +228,7 @@ The parameter name must match the `name` attribute in the HTML input element.
 ### Database Structure
 
 The birthdays database contains a table with the following structure:
+
 - **id**: Primary key (auto-generated)
 - **name**: Friend's name (text)
 - **month**: Birth month (integer)
@@ -233,6 +245,7 @@ db.execute("INSERT INTO birthdays (name, month, day) VALUES (?, ?, ?)",
 ```
 
 **Query components**:
+
 - SQL INSERT statement with table and column specification
 - Question marks (`?`) as placeholders for dynamic values
 - Variables passed as parameters after the query string
@@ -302,6 +315,7 @@ return render_template("index.html", birthdays=birthdays)
 Jinja uses specific syntax for different operations:
 
 #### Variables (Display Data)
+
 ```html
 {{ variable_name }}
 {{ birthday.name }}
@@ -309,6 +323,7 @@ Jinja uses specific syntax for different operations:
 ```
 
 #### Control Structures (Loops, Conditionals)
+
 ```html
 {% for birthday in birthdays %}
     <p>{{ birthday.name }}</p>
@@ -316,6 +331,7 @@ Jinja uses specific syntax for different operations:
 ```
 
 **Key differences**:
+
 - **Double curly braces** `{{ }}`: Display variables and values
 - **Curly braces with percent** `{% %}`: Control flow (for loops, if statements)
 
@@ -389,13 +405,15 @@ def index():
 ### GET Request Handling
 
 When users simply visit the page (GET):
+
 1. Query database for existing birthdays
 2. Pass data to template for display
 3. Render page with current birthday list
 
-### POST Request Handling  
+### POST Request Handling
 
 When users submit the form (POST):
+
 1. Extract form data using `request.form.get()`
 2. Validate input data for completeness
 3. Insert validated data into database
@@ -406,6 +424,7 @@ When users submit the form (POST):
 ### Client-Side Validation
 
 HTML5 provides immediate feedback:
+
 - **Type restrictions**: `type="number"` prevents letter input
 - **Range validation**: `min="1" max="12"` shows warnings for invalid ranges
 - **Required fields**: Browser blocks submission of empty fields
@@ -427,6 +446,7 @@ if not day:
 ### Enhanced Validation Possibilities
 
 Additional validation could include:
+
 - **Month-specific day limits**: February has maximum 28/29 days
 - **Leap year calculations**: February 29th only valid in leap years
 - **Name format validation**: Check for appropriate characters
@@ -447,6 +467,7 @@ Additional validation could include:
 ### Testing and Debugging
 
 The section demonstrates testing various scenarios:
+
 - **Valid input**: Normal name, month, and day values
 - **Invalid ranges**: Month > 12, day > 31, negative numbers
 - **Missing data**: Empty fields trigger validation and redirection
@@ -464,6 +485,7 @@ The section demonstrates testing various scenarios:
 ### Key Concepts for Finance Problem Set
 
 The section prepares students for the Finance problem set, which applies similar concepts:
+
 - **User authentication**: Login/logout functionality using sessions
 - **Form handling**: Buy/sell stock transactions
 - **Database operations**: Portfolio management and transaction history
@@ -473,7 +495,8 @@ The section prepares students for the Finance problem set, which applies similar
 ### Advanced Features to Implement
 
 Potential enhancements for both birthdays and finance applications:
-- **User sessions**: Maintaining login state across requests  
+
+- **User sessions**: Maintaining login state across requests
 - **Error messaging**: User-friendly feedback for validation failures
 - **Data formatting**: Currency display, date formatting
 - **Search functionality**: Finding specific records
@@ -486,16 +509,23 @@ Potential enhancements for both birthdays and finance applications:
 This summary comprehensively covers all transcript content:
 
 ✅ **Complete transcript coverage**: All spoken content and explanations included
+
 ✅ **Code examples**: All demonstrated code snippets extracted and explained
+
 ✅ **Practical implementation**: Step-by-step walkthrough documented
+
 ✅ **Conceptual understanding**: MVC architecture thoroughly explained
+
 ✅ **Technical details**: Flask, Jinja, and SQL integration covered
+
 ✅ **Best practices**: Validation, security, and user experience addressed
+
 ✅ **Problem-solving approach**: Debugging and testing strategies included
 
 ### Learning Outcomes Achieved
 
 Students completing this section should understand:
+
 - **Web application architecture**: MVC pattern and component separation
 - **Flask framework basics**: Routes, request handling, and template rendering
 - **Database integration**: SQL queries within web applications
@@ -507,4 +537,5 @@ Students completing this section should understand:
 This section successfully bridges static web development from Week 8 with dynamic, database-driven applications, preparing students for advanced web development projects and the Finance problem set.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/2. Shorts/2- AJAX|AJAX - CS50 Short Summary]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/11- Week 10/Week 10 Notes|[The End](https://cs50.harvard.edu/x/notes/10/#the-end)]]

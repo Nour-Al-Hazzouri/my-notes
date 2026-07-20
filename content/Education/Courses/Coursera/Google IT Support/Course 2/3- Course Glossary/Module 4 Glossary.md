@@ -75,4 +75,5 @@
 **Zone Files:** Simple configuration files that declare all resource records for a particular zone
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 3 Glossary|Module 3 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 5 Glossary|Module 5 Glossary]]

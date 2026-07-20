@@ -5,6 +5,7 @@ This document explains how to iterate over JavaScript objects using for of loops
 ## For of Loops with Objects
 
 ### Key Limitation
+
 For of loops cannot work directly on objects because **objects are not iterable**:
 
 ```javascript
@@ -19,7 +20,8 @@ for(prop of car) {
 // Uncaught TypeError: car is not iterable
 ```
 
-### Arrays vs Objects
+### Arrays Vs Objects
+
 Unlike objects, arrays are inherently iterable:
 
 ```javascript
@@ -38,6 +40,7 @@ for (var color of colors) {
 To iterate over objects, JavaScript provides three powerful built-in methods:
 
 ### Object.keys()
+
 Returns an array of the object's property names:
 
 ```javascript
@@ -49,6 +52,7 @@ console.log(Object.keys(car2)); // ['speed','color']
 ```
 
 ### Object.values()
+
 Returns an array of the object's property values:
 
 ```javascript
@@ -60,6 +64,7 @@ console.log(Object.values(car3)); // [300, 'yellow']
 ```
 
 ### Object.entries()
+
 Returns an array of arrays, each containing a key-value pair:
 
 ```javascript
@@ -118,6 +123,7 @@ testBracketsDynamicAccess();
 ```
 
 This dynamic access is particularly useful when:
+
 1. Property names are determined at runtime
 2. Property names are stored in variables
 3. You're iterating through object properties programmatically
@@ -133,4 +139,5 @@ To iterate over an object using for of loops:
 Each approach converts the non-iterable object into an iterable array, allowing the for of loop to work effectively.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/11- OOP Benefits|Object-Oriented Programming Benefits and Principles]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/13- Template Literal|Template Literals in JavaScript]]

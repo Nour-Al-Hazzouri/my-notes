@@ -1,11 +1,13 @@
 # Unit 6: Add and Subtract through 1,000,000
 
 ## Overview
+
 This unit builds upon students' understanding of place value to develop proficiency in adding and subtracting multi-digit numbers up to 1,000,000. These operations are fundamental to arithmetic and are used extensively in everyday life and more advanced mathematics. The unit focuses on various strategies for addition and subtraction, emphasizing the importance of place value understanding and the standard algorithms.
 
 ## Key Concepts
 
 ### Concept 1: Addition with Place Value Blocks
+
 **Definition**: Addition with place value blocks involves combining blocks of the same place value and regrouping when necessary to find the sum of multi-digit numbers.
 
 **Clarification**: Place value blocks provide a concrete representation of the addition process, helping students visualize what happens when digits are combined and when regrouping (carrying) occurs. This hands-on approach reinforces the connection between the physical model and the written algorithm.
@@ -75,6 +77,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 2: Addition of Multi-digit Numbers
+
 **Definition**: Addition of multi-digit numbers involves combining values at each place value position, starting from the ones place and moving left, regrouping when necessary.
 
 **Clarification**: The standard algorithm for addition aligns digits by place value and processes them systematically. Understanding this process requires recognizing that when the sum in any place value column equals or exceeds 10, regrouping is necessary. This concept builds directly on place value understanding.
@@ -108,6 +111,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 3: Subtraction with Place Value Blocks
+
 **Definition**: Subtraction with place value blocks involves removing blocks of the same place value and regrouping when necessary to find the difference between multi-digit numbers.
 
 **Clarification**: Place value blocks help students visualize the subtraction process, particularly when regrouping (borrowing) is required. This concrete representation helps students understand why and how regrouping works in the standard algorithm.
@@ -180,6 +184,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 4: Subtraction of Multi-digit Numbers
+
 **Definition**: Subtraction of multi-digit numbers involves finding the difference between values at each place value position, starting from the ones place and moving left, regrouping when necessary.
 
 **Clarification**: The standard algorithm for subtraction aligns digits by place value and processes them systematically. When the digit in the minuend (top number) is smaller than the corresponding digit in the subtrahend (bottom number), regrouping from the next higher place value is necessary. This concept reinforces place value understanding and the relationship between adjacent place values.
@@ -218,6 +223,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 5: Addition and Subtraction with Zeros
+
 **Definition**: Addition and subtraction involving zeros require careful attention to place value, especially when regrouping is necessary.
 
 **Clarification**: Zeros in numbers can create additional complexity in addition and subtraction, particularly when regrouping is required. Understanding how to handle zeros reinforces place value concepts and helps students avoid common errors.
@@ -266,6 +272,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 6: Mental Math Strategies
+
 **Definition**: Mental math strategies for addition and subtraction involve using number properties and relationships to perform calculations efficiently without written algorithms.
 
 **Clarification**: Mental math strategies include breaking numbers apart by place value, using landmark numbers (like multiples of 10 or 100), and applying the commutative and associative properties. These strategies promote number sense and computational fluency.
@@ -304,6 +311,7 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ### Concept 7: Estimation in Addition and Subtraction
+
 **Definition**: Estimation involves finding approximate sums or differences, often by rounding numbers to convenient values.
 
 **Clarification**: Estimation helps students check the reasonableness of their answers and develop number sense. It involves rounding numbers to a specified place value and then performing the operation with the rounded values.
@@ -339,10 +347,13 @@ This unit builds upon students' understanding of place value to develop proficie
 ```
 
 ## Summary
+
 Unit 6 develops students' proficiency in adding and subtracting multi-digit numbers up to 1,000,000. Students learn to use place value blocks to visualize addition and subtraction, apply the standard algorithms with proper regrouping, handle special cases involving zeros, use mental math strategies for efficient calculation, and estimate sums and differences. These skills are essential for mathematical fluency and provide the foundation for more advanced arithmetic operations.
 
 ## Connection to Next Unit
+
 The addition and subtraction skills developed in Unit 6 provide a foundation for Unit 7, which focuses on multiplying 1- and 2-digit numbers. Many multiplication strategies, such as the distributive property and area models, build on addition concepts. Additionally, the regrouping skills learned in addition and subtraction will be applied in multiplication when products in one place value column need to be regrouped to the next higher place value. The estimation strategies will also be extended to help check the reasonableness of multiplication results.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_05_Place_Value_through_1000000|Unit 5: Place Value through 1,000,000]] | **Next**: [[Education/Math/Arithmetic/Unit_07_Multiply_1_and_2_digit_Numbers|Unit 7: Multiply 1- and 2-digit Numbers]]

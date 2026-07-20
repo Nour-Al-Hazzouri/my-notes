@@ -11,12 +11,14 @@ The **Transport Layer** allows network traffic to be directed to specific applic
 **Multiplexing** is the ability of network nodes to direct traffic toward different receiving services. **Demultiplexing** is the same concept on the receiving end—taking traffic aimed at a node and delivering it to the proper service.
 
 This process works through **ports**:
+
 - Ports are 16-bit numbers (0-65535) that direct traffic to specific services
 - Network services listen on specific ports for incoming requests
 - Ports are written after the IP address with a colon (e.g., 10.1.1.100:80)
 - This notation is called a **socket number** or **socket port**
 
 Examples of common ports:
+
 - HTTP (web browsing): Port 80
 - FTP (file transfer): Port 21
 
@@ -53,6 +55,7 @@ TCP uses six control flags to manage connections:
 #### Three-Way Handshake
 
 TCP connections are established through a **three-way handshake**:
+
 1. Client sends SYN flag ("I want to establish a connection")
 2. Server responds with SYN/ACK flags ("I acknowledge and agree to connect")
 3. Client sends ACK flag ("I acknowledge your acknowledgement")
@@ -62,6 +65,7 @@ This establishes a **full-duplex** connection where data can flow in both direct
 #### Four-Way Handshake
 
 TCP connections are terminated through a **four-way handshake**:
+
 1. Device ready to close sends FIN flag
 2. Other device sends ACK flag
 3. Other device sends FIN flag when ready to close
@@ -82,12 +86,14 @@ A **socket** is the instantiation of an endpoint in a potential TCP connection. 
 ### Connection-Oriented vs. Connectionless Protocols
 
 #### TCP (Transmission Control Protocol)
+
 - **Connection-oriented** protocol
 - Establishes a connection before data transmission
 - Uses acknowledgments to ensure all data is properly transmitted
 - Higher overhead but more reliable
 
 #### UDP (User Datagram Protocol)
+
 - **Connectionless** protocol
 - No connection establishment or acknowledgments
 - Lower overhead but less reliable
@@ -112,6 +118,7 @@ The Internet Assigned Numbers Authority (IANA) divides ports into three categori
 ### Firewalls
 
 **Firewalls** are devices that block traffic meeting certain criteria. Transport layer firewalls are configured to:
+
 - Block traffic on specific ports
 - Allow traffic on other ports
 - Protect network services from unauthorized access
@@ -139,4 +146,5 @@ While the TCP/IP model combines session, presentation, and application functiona
    - Interfaces directly with end-user applications
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 2|Week 2: The Network Layer]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 4|Week 4: Network Services]]

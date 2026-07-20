@@ -37,6 +37,7 @@
 ### Cables
 
 **Copper Cables**:
+
 - Made of multiple pairs of copper wires inside plastic insulation
 - Transmit binary data through voltage changes
 - Common types: **Cat5**, **Cat5e**, and **Cat6**
@@ -44,6 +45,7 @@
 - **Crosstalk**: when an electrical pulse on one wire is accidentally detected on another wire
 
 **Fiber Optic Cables**:
+
 - Contain individual optical fibers (tiny glass tubes)
 - Use pulses of light instead of electrical voltage
 - Ideal for environments with electromagnetic interference
@@ -52,6 +54,7 @@
 ### Hubs and Switches
 
 **Hub**:
+
 - Physical layer (Layer 1) device
 - Allows connections from many computers simultaneously
 - Creates a **collision domain** where only one device can communicate at a time
@@ -59,6 +62,7 @@
 - Less efficient due to network noise and collisions
 
 **Switch** (Switching Hub):
+
 - Data Link layer (Layer 2) device
 - Inspects Ethernet protocol data
 - Forwards data only to the intended recipient
@@ -147,6 +151,7 @@ The physical layer consists of devices and means of transmitting bits across com
 A **data packet** is any set of binary data sent across a network link. At the Ethernet level, these are called **Ethernet Frames**.
 
 Components of an Ethernet Frame:
+
 1. **Preamble** (8 bytes):
    - First 7 bytes: alternating 1s and 0s for synchronization
    - Last byte: **SFD** (Start Frame Delimiter)
@@ -169,4 +174,5 @@ Components of an Ethernet Frame:
    - Receiving device performs CRC check and discards corrupted data
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 2|Week 2: The Network Layer]]

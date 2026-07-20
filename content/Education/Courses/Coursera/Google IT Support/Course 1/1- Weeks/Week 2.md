@@ -3,6 +3,7 @@
 ## The Modern Computer
 
 ### Introduction to Computer Hardware
+
 - **Ports**: Connection points for extending computer functionality through external devices
 - **CPU (Central Processing Unit)**: The computer's brain that performs calculations and data processing
 - **RAM (Random Access Memory)**: Short-term memory for temporary data storage
@@ -11,6 +12,7 @@
 - **Power Supply**: Converts wall outlet electricity to usable format for computer components
 
 ### Programs and Hardware
+
 - **Programs**: Instructions telling the computer what to do
 - **External Data Bus (EDB)**: Interconnecting wires that transfer data using binary (voltage = 1, no voltage = 0)
 - **CPU Registers**: Internal storage components for data being processed
@@ -23,6 +25,7 @@
 ## Computer Components
 
 ### CPU
+
 - **Socket Compatibility**: CPUs must match motherboard socket type
 - **Socket Types**:
   - Land Grid Array (LGA): Pins on motherboard
@@ -31,6 +34,7 @@
 - **Architecture**: 32-bit or 64-bit determines data handling capacity
 
 ### RAM
+
 - **DRAM (Dynamic Random-Access Memory)**: Common type using microscopic capacitors to store binary data
 - **DIMM (Dual Inline Memory Module)**: Modern memory stick format
 - **SDRAM (Synchronous DRAM)**: Synchronized to system clock speed
@@ -39,6 +43,7 @@
 - **Compatibility**: RAM must match motherboard pin configuration
 
 ### Motherboard
+
 - **Chipset**: Controls component communication
   - Northbridge: Connects RAM and video cards
   - Southbridge: Manages I/O controllers (hard drives, USB)
@@ -48,6 +53,7 @@
   - ITX (Information Technology eXtended): Smaller form factor
 
 ### Storage
+
 - **Data Size Units**: Bit → Byte (8 bits) → Kilobyte (1024 bytes) → etc. → Terabyte (1024 GB)
 - **Storage Types**:
   - HDD (Hard Disk Drive): Mechanical with spinning platters; speed measured in RPM
@@ -57,6 +63,7 @@
   - NVMe: Faster interface using motherboard expansion slot
 
 ### Power Supply
+
 - **Electricity Types**:
   - AC (Alternating Current): From wall outlets
   - DC (Direct Current): Used by computer components
@@ -64,6 +71,7 @@
 - **Wattage**: Measure of power requirements (500W sufficient for basic desktops)
 
 ## Mobile Devices
+
 - **Characteristics**: Portable, battery-powered, general or special-purpose
 - **Integration**: Components often soldered to motherboard
 - **SoC (System on a Chip)**: Integrates CPU, RAM, sometimes storage on single chip
@@ -71,6 +79,7 @@
 - **Power Efficiency**: Specialized OS and software to maximize performance with limited power
 
 ## Peripherals
+
 - **Definition**: External devices adding functionality
 - **USB Versions**:
   - USB 2.0: 480 Mb/s (black ports)
@@ -82,6 +91,7 @@
 ## System Startup
 
 ### BIOS/UEFI
+
 - **Drivers**: Programs enabling CPU to understand external devices
 - **BIOS (Basic Input Output Services)**: Software initializing hardware and starting OS
 - **ROM (Read-Only Memory)**: Non-volatile memory storing BIOS
@@ -89,6 +99,7 @@
 - **POST (Power On Self Test)**: Boot-time hardware check; issues indicated by beep codes
 
 ## Assembly Best Practices
+
 - **Static Discharge Prevention**: Touch grounded device or wear anti-static wristband
 - **Component Protection**: Keep parts in anti-static bags until installation
 - **Thermal Paste**: Apply evenly on CPU
@@ -96,4 +107,5 @@
 - **Mobile Device Repair**: Protect against static, use proper tools, organize parts, follow documentation, test after repair
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/1- Weeks/Week 1|Week 1: Introduction to IT]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/1- Weeks/Week 3|Week 3: Operating System]]

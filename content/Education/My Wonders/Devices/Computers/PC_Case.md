@@ -51,23 +51,28 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **The Beige Box Era:** Early cases prioritized function over form, heavily focused on 5.25" and 3.5" drive bays for optical drives and floppy disks. Airflow was largely passive, with cables forming massive nests that choked internal temperatures.
 *   **The Enthusiast Window & Shroud Era:** As PC gaming grew, cases shifted to black interiors with acrylic side windows. The defining structural change was the **PSU Shroud**, which compartmentalized the power supply and its cables, drastically improving airflow over the motherboard.
 *   **The Tempered Glass & RGB Era:** Acrylic scratched easily, leading to the adoption of Tempered Glass. However, early TG cases often choked airflow by placing solid glass panels directly in front of intake fans.
 *   **The Airflow & Dual-Chamber Era:** Modern cases (like the Lian Li O11 or Corsair 4000D) pivoted back to thermal performance. Front panels became fully meshed. The "Dual-Chamber" architecture emerged, physically separating the heat-generating CPU/GPU from the PSU and cables into two side-by-side compartments.
 
 ### Airflow Dynamics
+
 Modern cases follow one of three dominant thermal architectures:
+
 1.  **Traditional Front-to-Back**: Cool air enters from the front mesh, passes over the GPU and CPU, and exits via the rear and top exhaust fans. This is the most common and effective layout (e.g., Corsair 5000D Airflow).
 2.  **Bottom-to-Top (Chimney)**: Cool air enters from the bottom, rises naturally (convection-assisted) past the GPU and CPU, and exits through the top. Used in SFF cases like the NR200P.
 3.  **Side Intake (Dual-Chamber)**: Cool air enters from the side panel (or a dedicated intake column) and passes directly over the GPU/CPU. Used by the Lian Li O11 series, which relies on side-mounted radiators.
 
 ### Internal Sub-systems
+
 *   **Front I/O Module**: Contains the power button, USB ports (typically 1x USB-C 3.2 Gen 2 + 2x USB-A 3.0), and an audio jack. This connects to the motherboard via internal headers (USB 3.0 19-pin, USB-C 20-pin Key-A).
 *   **Fan/RGB Hub**: Many cases include a built-in hub (e.g., Corsair iCUE Commander) that consolidates PWM fan control and ARGB lighting into a single SATA-powered module, reducing cable clutter.
 *   **PSU Shroud**: A structural panel that physically hides the PSU and its cables from the main viewable chamber, improving aesthetics and creating a thermal barrier.
 
 ### Vendor-Specific Technologies
+
 *   **Corsair RapidRoute**: A velcro-lined cable routing channel along the right side of the motherboard tray that allows for clean cable management in under 10 minutes without cable ties.
 *   **Fractal Design Nexus+ Fan Hub**: A 9-port PWM/ARGB hub integrated into the case, controlled via a USB 2.0 header.
 *   **Lian Li UNI Fan Infinity**: Fans designed to daisy-chain magnetically, reducing the cable count from 12+ wires (3 fans) to a single cable set.
@@ -78,6 +83,7 @@ Modern cases follow one of three dominant thermal architectures:
 ## V. Compatibility & Ecosystem Integration
 
 ### Motherboard Form Factor Matrix
+
 | Case Size | E-ATX (305x330mm) | ATX (305x244mm) | mATX (244x244mm) | Mini-ITX (170x170mm) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Full Tower** | ✅ | ✅ | ✅ | ✅ |
@@ -85,6 +91,7 @@ Modern cases follow one of three dominant thermal architectures:
 | **SFF** | ❌ | ❌ | ❌ | ✅ |
 
 ### Critical Clearance Dependencies
+
 *   **GPU Length vs. Front Fans**: A 400mm+ GPU (e.g., RTX 4090) will collide with front-mounted fans or a front-mounted 360mm radiator in many mid-towers. Always check "GPU clearance with front radiator installed."
 *   **CPU Cooler Height vs. Side Panel**: Tower coolers like the NH-D15 G2 (168mm tall) require at least 170mm of clearance. Cases that claim 165mm will physically prevent panel closure.
 *   **PSU Length vs. HDD Cage**: In mid-towers, a PSU longer than 180mm may collide with a bottom-mounted 3.5" HDD cage. Many cases have removable cages to resolve this.
@@ -102,22 +109,27 @@ Modern cases follow one of three dominant thermal architectures:
 
 ## VII. Troubleshooting & Field Diagnostics
 
-### Symptom: High Temps despite multiple fans
+### Symptom: High Temps despite Multiple Fans
+
 *   **Cause**: **Negative Air Pressure** — more exhaust fans than intake creates a vacuum that pulls unfiltered hot air through every gap.
 *   **Field Protocol**: Count intake vs. exhaust fans. Reconfigure to positive pressure (more intake than exhaust). Verify that dust filters aren't clogged.
 
-### Symptom: Front USB-C port not working
+### Symptom: Front USB-C Port Not Working
+
 *   **Cause**: The internal **USB 3.2 Gen 2 Type-E (20-pin Key-A)** header cable is not connected to the motherboard, or the motherboard lacks this header entirely.
 *   **Field Protocol**: Check the motherboard specifications for a "USB 3.2 Gen 2 Header." If absent, a PCIe adapter card with an internal Type-E header can be used.
 
-### Symptom: Buzzing / Vibration noise from the case
+### Symptom: Buzzing / Vibration Noise from the Case
+
 *   **Cause**: A fan or HDD is resonating with the case panel at a specific RPM frequency.
 *   **Field Protocol**: Apply gentle pressure to each panel while the PC is running to identify the resonating panel. Use rubber anti-vibration pads behind fans or between the HDD and its mount. Tighten all thumbscrews.
 
-### Symptom: GPU sag (the card bends downward over time)
+### Symptom: GPU Sag (The cArd bEnds downward over tIme)
+
 *   **Cause**: Heavy GPUs (1.5-2.5 kg) hanging from the PCIe slot and two case screws without additional support.
 *   **Field Protocol**: Install a **GPU support bracket** (anti-sag bracket). Some cases include a built-in adjustable bracket (e.g., be quiet!, Fractal Design). A 3D-printed support or a simple adjustable prop can also work.
 
-### Symptom: Tempered Glass panel shattered spontaneously
+### Symptom: Tempered Glass Panel Shattered Spontaneously
+
 *   **Cause**: Nickel sulfide (NiS) inclusion defect from manufacturing or a microscopic point impact (ceramic tile floor, a screw head). TG is highly susceptible to point-contact stress.
 *   **Field Protocol**: **This is irreversible.** Contact the manufacturer for a warranty replacement panel. Always place TG panels on a **cloth or cardboard surface**, never directly on tile or stone.

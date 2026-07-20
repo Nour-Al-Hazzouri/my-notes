@@ -12,4 +12,5 @@
 	- When creating a component, it consists only of a JS file, and the name must be capitalized because react treast lowercase names as HTML elements
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/3- React.js overview|3- React.js overview]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/5- Transpiling JSX|5- Transpiling JSX]]

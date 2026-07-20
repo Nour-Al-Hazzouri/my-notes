@@ -34,7 +34,7 @@ escape special characters before processing.
 - GitHub will warn at 50 and truncate at 72
 - If you struggle to summarize, you may be committing too many changes at once
 
-**Good:** `Add user profile page`  
+**Good:** `Add user profile page`
 **Bad:** `Add a new user profile page with avatar upload functionality and bio section`
 
 ### 3. Capitalize the Subject Line
@@ -42,7 +42,7 @@ escape special characters before processing.
 - Always start with a capital letter
 - Simple but makes commit history look professional
 
-**Good:** `Refactor authentication module`  
+**Good:** `Refactor authentication module`
 **Bad:** `refactor authentication module`
 
 ### 4. Do Not End the Subject Line with a Period
@@ -50,7 +50,7 @@ escape special characters before processing.
 - Trailing punctuation is unnecessary
 - Space is precious when keeping commits to 50 characters
 
-**Good:** `Update README with installation steps`  
+**Good:** `Update README with installation steps`
 **Bad:** `Update README with installation steps.`
 
 ### 5. Use the Imperative Mood in the Subject Line
@@ -226,29 +226,29 @@ logo in link to homepage.
 ## Practical Tips
 
 1. **Use VSCode** (or another proper text editor)
-    
+
     - Don't use `git commit -m` for complex commits
     - Just type `git commit` to open your editor
     - Easier to write multi-line messages and check character counts
 2. **Use active voice**
-    
+
     - "Fix card generator" not "Card generator fixed"
 3. **Be specific**
-    
+
     - Instead of "Update tests", write "Add unit tests for user authentication"
 4. **Reference issues** (in footer)
-    
+
     ```
     Resolves: #123
     See also: #456, #789
     ```
-    
+
 5. **Use spell check**
-    
+
     - Install extensions in your editor
     - Typos in commits look unprofessional
 6. **Learn the command line**
-    
+
     - More powerful than IDE Git integration
     - Better for viewing and managing commit history
 
@@ -284,4 +284,5 @@ Ask yourself: **"Will my future self (or teammates) understand what I did and wh
 If no, add more context!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/2- The Odin Project/1- Foundations/1- Motivation and Mindset|Diagram Showcasing the best way for learning]] | **Next**: [[Education/Career Paths/Web Development/2- New/2- The Odin Project/1- Foundations/6- Problem Solving|6- Problem Solving]]

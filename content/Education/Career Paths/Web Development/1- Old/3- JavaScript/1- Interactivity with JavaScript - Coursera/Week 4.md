@@ -1,6 +1,7 @@
 # Week 4: Loops and Lightbox
 
 ## Table of Contents
+
 - [Writing Loops in JS](#writing-loops-in-js)
 - [Code with me: Using Lightbox](#code-with-me-using-lightbox)
 
@@ -25,9 +26,10 @@ for (let i = 0; i < my_images.length; i++) {
 
 ---
 
-## Code with me: Using Lightbox
+## Code with Me: Using Lightbox
 
 - Lightbox is a code ready for you to use and you just need to link it
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/1- Interactivity with JavaScript - Coursera/Week 3|Week 3: Tabindex, Attributes, and Arrays]]

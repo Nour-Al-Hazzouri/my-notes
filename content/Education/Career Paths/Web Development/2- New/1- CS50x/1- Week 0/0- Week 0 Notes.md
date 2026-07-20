@@ -18,7 +18,7 @@
 ## Computer Science and Problem Solving
 
 * Essentially, computer programming is about taking some input and creating some output - thus solving a problem. What happens in between the input and output, what we could call _a black box,_ is the focus of this course.
-    
+
 * For example, we may need to take attendance for a class. We could use a system called _unary_ (also called _base-1_) to count one finger at a time.
 * Computers today count using a system called _binary_. It's from the term _binary digit_ that we get a familiar term called _bit_. A _bit_ is a zero or one: on or off.
 * Computers only speak in terms of zeros and ones. Zeros represent _off._ Ones represent _on._ Computers are millions, and perhaps billions, of transistors that are being turned on and off.
@@ -26,31 +26,31 @@
 * However, if you were to have three light bulbs, there are more options open to you!
 * Inside your iPhone, there are millions of light bulbs called _transistors_ that enable the activities this device one may take for granted each day.
 * As a heuristic, we could imagine that the following values represent each possible place in our _binary digit_:
-    
+
 * Using three light bulbs, the following could represent zero:
-    
+
 * Similarly, the following would represent one:
-    
+
 * By this logic, we could propose that the following equals two:
-    
+
 * Extending this logic further, the following represents three:
-    
+
 * Four would appear as:
-    
+
 * We could, in fact, using only three light bulbs count as high as seven!
-    
+
 * Computers use base-2 to count. This can be pictured as follows:
-    
+
 ```
 2^2  2^1  2^0
 4    2    1
 ```
-    
+
 * Therefore, you could say that it would require three bits (the four's place, the two's place, and the one's place) to represent a number as high as seven.
 * Similarly, to count a number as high as eight, values would be represented as follows:
-    
+
 * Computers generally use eight bits (also known as a _byte_) to represent a number. For example, `00000101` is the number 5 in _binary_. `11111111` represents the number 255. You can imagine zero as follows:
-    
+
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -60,16 +60,16 @@
 * Just as numbers are binary patterns of ones and zeros, letters are represented using ones and zeros, too!
 * Since there is an overlap between the ones and zeros that represent numbers and letters, the _ASCII_ standard was created to map specific letters to specific numbers.
 * For example, the letter `A` was decided to map to the number 65. `01000001` represents the number 65 in binary. You can visualize this as follows:
-    
+
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
-    
+
 * If you received a text message, the binary under that message might represent the numbers 72, 73, and 33. Mapping these out to ASCII, your message would look as follows:
-    
+
 * Thank goodness for standards like ASCII that allow us to agree upon these values!
 * Here is an expanded map of ASCII values:
-    
+
 | 0 | NUL | 16 | DLE | 32 | SP | 48 | 0 | 64 | @ | 80 | P | 96 | \` | 112 | p |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | SOH | 17 | DC1 | 33 | ! | 49 | 1 | 65 | A | 81 | Q | 97 | a | 113 | q |   |
@@ -409,4 +409,5 @@ In this lesson, you learned how this course sits in the wide world of computer s
 This was CS50! Welcome aboard! See you next time!
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/1- Week 1 Notes|Lecture 1 - CS50x 2025]]

@@ -13,7 +13,7 @@ Linked lists are a series of connected 'nodes' forming a chain. Unlike arrays wh
 *   **Phrase/Data**: The actual data stored in the node (e.g., a string).
 *   **Next Pointer**: A pointer to the next node in the sequence. This pointer stores the memory address of the subsequent node.
 
-### 2.1. Defining a Node (from `list.c` and PDF slides)
+### 2.1. Defining a Node (From `list.c` and PDF sLides)
 
 Nodes are custom data structures defined using `typedef struct` in C. The structure typically looks like this:
 
@@ -94,16 +94,15 @@ bool unload(node *list)
 }
 ```
 
-*Note: The `unload` function in the provided `list.c` has a slight logical error in the original `while` loop condition and pointer assignments. The corrected logic should ensure `ptr` is updated to `list->next` before `list` is freed, and `list` is then updated to `ptr` for the next iteration. The above code snippet reflects a common corrected approach for freeing a linked list.* 
+*Note: The `unload` function in the provided `list.c` has a slight logical error in the original `while` loop condition and pointer assignments. The corrected logic should ensure `ptr` is updated to `list->next` before `list` is freed, and `list` is then updated to `ptr` for the next iteration. The above code snippet reflects a common corrected approach for freeing a linked list.*
 
 ## 3. Hash Tables
 
-Hash tables combine arrays and linked lists. They consist of an array (often called buckets) where each element can point to a linked list. This structure allows for efficient data retrieval by using a **hash function** to determine which 
-
+Hash tables combine arrays and linked lists. They consist of an array (often called buckets) where each element can point to a linked list. This structure allows for efficient data retrieval by using a **hash function** to determine which
 
 bucket a piece of data belongs to. If multiple data items hash to the same bucket, they are stored in a linked list at that bucket.
 
-### 3.1. Hash Function (from `table.c`)
+### 3.1. Hash Function (From `table.c`)
 
 A hash function takes an input (e.g., a string) and returns an integer, which corresponds to an index in the hash table array. A good hash function should:
 
@@ -130,17 +129,13 @@ Tries are another data structure mentioned, similar to linked lists but optimize
 
 ## 5. Inheritance Problem
 
-The section also touches upon the 
-
+The section also touches upon the
 
 Inheritance Problem, which is one of the problems in the problem set. While the specifics of the problem are not detailed in the provided materials, it is implied to be a practical application of the data structures and concepts discussed in the section.
 
 ## Conclusion
 
 CS50 Week 5 provides a foundational understanding of data structures, specifically linked lists and hash tables, emphasizing their structure, creation, insertion, and deletion operations. It highlights the importance of pointers in managing these dynamic data structures and introduces the concept of hash functions for efficient data organization and retrieval. The section aims to equip students with the knowledge to implement and utilize these essential data structures in their programming endeavors.
-
-
-
 
 ## Appendix: Complete Source Code Examples
 
@@ -273,4 +268,5 @@ int hash(string phrase)
 These complete implementations demonstrate the practical application of the data structures concepts covered in CS50 Week 5, showing how linked lists and hash tables are implemented in C with proper memory management and visualization functions.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/8- Data Structures|Data Structures]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/Section - Data Structures, Linked Lists, Hash Tables, and Inheritance|CS50x Section 5: Data Structures, Linked Lists, Hash Tables, and Inheritance]]

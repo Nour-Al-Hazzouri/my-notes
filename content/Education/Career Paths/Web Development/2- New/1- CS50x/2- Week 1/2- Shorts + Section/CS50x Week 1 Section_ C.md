@@ -180,4 +180,5 @@ for (initialization; condition; update)
 The Mario problem involves building a pyramid of bricks using characters, similar to the pyramids in the Super Mario game. This problem set helps reinforce concepts of loops and conditional statements.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/6- Magic Numbers|Magic Numbers]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/1- Week 2 Notes|CS50x Week 2: Arrays]]

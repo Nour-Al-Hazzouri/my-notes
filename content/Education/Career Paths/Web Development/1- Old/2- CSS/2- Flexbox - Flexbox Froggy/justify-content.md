@@ -15,4 +15,5 @@ justify-content: flex-end;
 [![](https://code.org/api/hour/begin_flexbox_froggy.png)](https://code.org/api/hour/begin_flexbox_froggy.png)
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/flex-wrap|flex-wrap]] | **Next**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/order|order]]

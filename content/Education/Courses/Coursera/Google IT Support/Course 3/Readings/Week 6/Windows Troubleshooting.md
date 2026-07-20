@@ -27,16 +27,19 @@ When troubleshooting IT issues, follow this structured approach:
 The Event Viewer provides access to system and application logs that can help identify the cause of issues:
 
 ### Accessing Event Viewer
+
 - Launch through Windows start menu
 - Type `eventvwr.msc` in the run box
 
 ### Creating Custom Views
+
 1. Filter events by time period (around when issues occur)
 2. Select event types (error, critical)
 3. Choose specific logs to examine (system, application)
 4. Name and save the view for future reference
 
 ### Analyzing Log Data
+
 - Look for errors occurring around the time of the issue
 - Search for specific application names
 - Check timestamps to correlate with reported problems

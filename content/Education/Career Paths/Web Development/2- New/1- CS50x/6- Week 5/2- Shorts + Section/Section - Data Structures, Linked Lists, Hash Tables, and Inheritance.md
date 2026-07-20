@@ -83,9 +83,11 @@ The section includes an exercise to implement `add` and `unload` functions for a
 *   **`unload`:** Frees all nodes in the linked list, returning `true` on success.
 
 ### Full Code
+
 ```c
 
 ```
+
 ## Hash Tables
 
 Hash tables are data structures that implement an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
@@ -109,4 +111,5 @@ While primarily a concept in object-oriented programming, inheritance is briefly
 Section 5 provides a deeper dive into dynamic data structures like linked lists and hash tables, highlighting their importance in managing flexible and searchable data collections. It also touches upon the concept of inheritance, setting the stage for more advanced programming paradigms. The practical exercises reinforce the theoretical understanding, preparing students to implement these structures in real-world scenarios.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/CS50 Week 5_ Data Structures - Comprehensive Summary|CS50 Week 5: Data Structures - Comprehensive Summary]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/7- Week 6/1- Week 6 Lecture|Lecture 6 - Python]]

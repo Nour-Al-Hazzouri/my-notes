@@ -779,4 +779,5 @@ In this lesson, you learned about using pointers to build new data structures. S
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/Section- Week 4 Memory|Section- Week 4 Memory]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/1- Structures|CS50x Short: Structures]]

@@ -77,4 +77,5 @@ Module 3 Glossary
 **Windows update client service:** System that runs in the background on your computer to download and install updates and patches for your operating system
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 2 Glossary|Module 2 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 4 Glossary|Module 4 Glossary]]

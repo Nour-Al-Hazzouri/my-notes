@@ -12,15 +12,18 @@ A **Personal Package Archive (PPA)** is a specialized repository system that ena
 ## Technical Specifications
 
 **Resource Allocation:**
+
 - 2 GiB disk space per PPA (additional space available upon request)
 - No strict data transfer limits (though unusually high transfer is monitored)
 
 **Architecture Support:**
+
 - Default: x86 and AMD64
 - Optional (can be enabled): arm64, armhf, ppc64el, and s390x
 - Built using OpenStack clouds for secure, isolated build environments
 
 **Compatibility:**
+
 - Supports specific Ubuntu series listed on the Launchpad PPA page
 - Series must be specified in the changelog file
 - Packages remain available until removed, superseded, or the Ubuntu version becomes obsolete
@@ -28,12 +31,14 @@ A **Personal Package Archive (PPA)** is a specialized repository system that ena
 ## Management and Security
 
 **Activation and Setup:**
+
 - Must be activated on your Launchpad profile or team overview page
 - Launchpad generates a unique cryptographic key for each PPA
 - Key generation begins after first package upload (takes up to two hours)
 - Key and installation instructions are displayed on the PPA's overview page
 
 **Important Restrictions:**
+
 - Pre-built binary packages cannot be uploaded (source packages only)
 - Changing architecture settings only affects new uploads
 - Deleted PPAs cannot be recreated with the same name for up to an hour

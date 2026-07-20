@@ -10,10 +10,10 @@ The core idea behind Bubble Sort is to move higher-valued elements towards the r
 
 1.  Set a `swap_counter` to a non-zero value (e.g., -1) to ensure the loop runs at least once.
 2.  **Repeat** until the `swap_counter` is 0 (meaning no swaps occurred in a full pass):
-    a.  Reset `swap_counter` to 0.
-    b.  Iterate through the array, looking at each **adjacent pair** of elements.
-    c.  If two adjacent elements are **not in order** (e.g., the left element is greater than the right element for ascending sort), **swap them**.
-    d.  After a swap, add 1 to the `swap_counter`.
+    a. Reset `swap_counter` to 0.
+    b. Iterate through the array, looking at each **adjacent pair** of elements.
+    c. If two adjacent elements are **not in order** (e.g., the left element is greater than the right element for ascending sort), **swap them**.
+    d. After a swap, add 1 to the `swap_counter`.
 
 ## Example Walkthrough
 
@@ -28,7 +28,7 @@ Let's consider an unsorted array: `[5, 2, 1, 3, 6, 4]`
 *   Compare (5, 6): In order. No swap. Array: `[2, 1, 3, 5, 6, 4]`. `swap_counter` = 3.
 *   Compare (6, 4): Out of order. Swap. Array: `[2, 1, 3, 5, 4, 6]`. `swap_counter` = 4.
 
-At the end of Pass 1, the largest element (`6`) has 
+At the end of Pass 1, the largest element (`6`) has
 
 bubbled to its correct position at the end of the array. The `swap_counter` is 4, so another pass is needed.
 
@@ -67,4 +67,5 @@ At the end of Pass 3, the `swap_counter` is 0, indicating that no swaps were mad
 -   Time Complexity: **O(n^2)** (Big O of n squared) - quadratic time.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/2- Binary Search|Binary Search]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/4- Selection Sort|Selection Sort]]

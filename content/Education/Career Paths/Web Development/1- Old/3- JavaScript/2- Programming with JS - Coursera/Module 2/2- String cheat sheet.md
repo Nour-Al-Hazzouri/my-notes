@@ -66,4 +66,5 @@ Here's a list of all the methods covered in this cheat sheet:
 - **toLowerCase()**
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/1- Math object cheat sheet|1- Math object cheat sheet]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/3- Bugs and Errors|3- Bugs and Errors]]

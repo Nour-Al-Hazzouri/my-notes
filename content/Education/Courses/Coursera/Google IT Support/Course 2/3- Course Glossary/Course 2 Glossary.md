@@ -1,4 +1,4 @@
-### **Terms and definitions from Course 2**
+### **Terms And Definitions from Course 2**
 
 A
 
@@ -535,4 +535,5 @@ Z
 **Zone Files:** Simple configuration files that declare all resource records for a particular zone
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 1 Glossary|Module 1 Glossary]]

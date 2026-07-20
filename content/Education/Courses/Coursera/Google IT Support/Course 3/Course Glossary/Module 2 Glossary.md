@@ -43,4 +43,5 @@
 **Write permission:** A permission that allows you to make changes to a file
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 1 Glossary|Module 1 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 3 Glossary|Module 3 Glossary]]

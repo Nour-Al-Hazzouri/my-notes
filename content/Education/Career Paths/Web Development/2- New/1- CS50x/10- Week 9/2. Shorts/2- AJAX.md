@@ -36,17 +36,19 @@ var xhttp = new XMLHttpRequest();
 
 In this case, we're calling it `xhttp` and assigning it to a random local variable in JavaScript.
 
-## Defining onreadystatechange Behavior
+## Defining Onreadystatechange Behavior
 
 Once you have the object, the first thing you have to do is define an **onreadystatechange** behavior.
 
 Onreadystatechange is really just a wordy way to describe the steps that are happening when you visit a page. For example:
+
 1. You're on a page and refresh it
 2. It sort of all goes blank for a second
 3. Some of the data starts to populate
 4. It stops refreshing and you're ready to go
 
 That's going through a series of different states, where it goes from:
+
 - The request hasn't been initiated
 - You're sending the request
 - The request is received
@@ -62,14 +64,17 @@ Typically, we define something that is supposed to happen when the state changes
 XMLHttpRequests have two additional properties that are used to detect when the page finishes loading:
 
 ### readyState Property
+
 There are five different states, going from 0 to 4:
+
 - **0**: Request has not yet been initialized
 - **1**: Server connection established
 - **2**: Request received
 - **3**: Processing request
 - **4**: Request finished, response ready (the ultimate goal)
 
-### status Property
+### Status Property
+
 We also care about the status that we get back. Hopefully, the status will be **200**, which is the HTTP code for "OK". That's the one we fortunately never see - you don't go to a website and get a 200 displayed like you get a 404, for example.
 
 So we want, ultimately, for the **readyState to be 4** and the **status to be 200**. When that's the case, we can then update our site.
@@ -77,6 +82,7 @@ So we want, ultimately, for the **readyState to be 4** and the **status to be 20
 ## Opening and Sending Requests
 
 Once we have defined our onreadystatechange behavior, we just need to:
+
 1. **Open the request** using the `open()` method to define the request
 2. **Send the request** using the `send()` method to actually send it
 
@@ -100,6 +106,7 @@ function ajax_request(argument)
 ```
 
 Let's break this down:
+
 1. First, we create a new XMLHttpRequest and assign it to a variable called `aj` (for AJAX)
 2. We define a function that will execute on the readyState changing
 3. This function will execute every time the state changes, but it's only going to do something meaningful once the readyState is 4 and the status is 200
@@ -109,6 +116,7 @@ Let's break this down:
 ## Practical Example: CS50 Info Page
 
 Let's look at a concrete example from the video. We have an HTML page with:
+
 - A dropdown menu with options for different CS50 staff members
 - A div with ID "infodiv" that initially says "Information Goes Here"
 
@@ -130,7 +138,7 @@ Let's look at a concrete example from the video. We have an HTML page with:
 </form>
 ```
 
-Notice the `onchange` event handler. When the value changes (when we select a different option from the list), we call the function `cs50info` and pass in `this.value`. 
+Notice the `onchange` event handler. When the value changes (when we select a different option from the list), we call the function `cs50info` and pass in `this.value`.
 
 `this` is a way to self-refer to the event that triggered the JavaScript function being called. So if we choose "Rob Bowden" from the list, we're passing "bowden" to the CS50info function.
 
@@ -165,6 +173,7 @@ function cs50info(name)
 ```
 
 This function:
+
 1. Checks if a valid option was selected (returns if not)
 2. Creates an XMLHttpRequest object
 3. Defines a function that waits for readyState to be 4 and status to be 200
@@ -188,6 +197,7 @@ It's not a complete HTML document - just a snippet of HTML that will be inserted
 ### The Result
 
 When you select a different person from the dropdown:
+
 1. The content of the div gets deleted very quickly
 2. New content gets loaded in
 3. The page doesn't refresh - only that specific section updates
@@ -196,7 +206,7 @@ You might see the content briefly disappear and reappear - that's the asynchrono
 
 ## jQuery and AJAX
 
-There is a slightly different way to do this syntactically using jQuery. In fact, you will very commonly see nowadays AJAX requests made using jQuery. 
+There is a slightly different way to do this syntactically using jQuery. In fact, you will very commonly see nowadays AJAX requests made using jQuery.
 
 The pure JavaScript version is shown here so you can see how it works fundamentally, but as you become more comfortable using jQuery for client-side scripting (for DOM manipulation or AJAX requests), you'll probably see this syntax differently.
 
@@ -204,9 +214,10 @@ More commonly, you'll see AJAX requests written using jQuery instead of "raw" Ja
 
 ## Beyond Local Servers
 
-We can not only change things locally on our machine (simple things like colors), but we can also now send outbound requests to servers. They don't even have to be servers that are running locally. 
+We can not only change things locally on our machine (simple things like colors), but we can also now send outbound requests to servers. They don't even have to be servers that are running locally.
 
 For example, you could:
+
 - Source information from Yahoo Finance if you want to pull financial data asynchronously
 - Load that into your page and have it constantly update
 - Display the data in your own custom way
@@ -228,4 +239,5 @@ For example, you could:
 It's an interesting new strategy that we have at our disposal. We can send requests locally, we can send requests outbound to other servers, and really take advantage of creating a better user experience using AJAX.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/2. Shorts/1- Flask|Flask - CS50 Short Summary]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/3- Week 9 Section|CS50x Week 9 Section Summary]]

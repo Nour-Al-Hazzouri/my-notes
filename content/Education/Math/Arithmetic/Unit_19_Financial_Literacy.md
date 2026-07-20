@@ -1,16 +1,19 @@
 # Unit 19: Financial Literacy
 
 ## Overview
+
 This unit focuses on financial literacy, which involves understanding and effectively using various financial skills, including personal financial management, budgeting, and investing. Financial literacy is essential for making informed economic decisions and achieving financial well-being. By developing these skills, students learn to manage money responsibly, plan for the future, and understand the economic factors that affect their daily lives.
 
 ## Key Concepts
 
 ### Concept 1: Money and Currency
+
 **Definition**: Money is a medium of exchange, unit of account, and store of value, while currency refers to the specific form of money used in a particular country or region.
 
 **Clarification**: Understanding the purpose and function of money is fundamental to financial literacy. This includes recognizing different denominations of bills and coins, understanding the value of money, and being able to make change. This concept builds on students' knowledge of decimals and operations with decimals.
 
-**Example**: 
+**Example**:
+
 - In the United States, currency includes pennies (1¢), nickels (5¢), dimes (10¢), quarters (25¢), and bills in denominations of $1, $5, $10, $20, $50, and $100.
 - To make change for a purchase of $3.67 from $5.00, you would return $1.33, which could be one dollar bill, one quarter, one nickel, and three pennies.
 
@@ -90,11 +93,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 2: Income and Earnings
+
 **Definition**: Income refers to money received, especially on a regular basis, for work or through investments, while earnings specifically relate to money earned from employment or self-employment.
 
 **Clarification**: Understanding different sources of income and how earnings are calculated helps students make informed career and financial decisions. This includes concepts such as hourly wages, salary, commission, and benefits. This concept applies multiplication and division skills to real-world financial situations.
 
-**Example**: 
+**Example**:
+
 - If someone works 40 hours per week at $15 per hour, their weekly earnings would be 40 × $15 = $600.
 - If a sales representative earns a 5% commission on sales of $20,000, their commission would be 0.05 × $20,000 = $1,000.
 
@@ -168,11 +173,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 3: Budgeting and Financial Planning
+
 **Definition**: Budgeting is the process of creating a plan to spend money, while financial planning involves setting financial goals and developing strategies to achieve them.
 
 **Clarification**: Budgeting and financial planning help individuals manage their money effectively, avoid debt, and save for future needs and wants. This involves tracking income and expenses, categorizing spending, and making adjustments as needed. These skills apply addition, subtraction, and percentage calculations in practical contexts.
 
-**Example**: 
+**Example**:
+
 - A monthly budget might allocate $1,200 for rent, $400 for groceries, $200 for utilities, $150 for transportation, $100 for entertainment, and $300 for savings.
 - A financial plan might include saving $5,000 for a vacation in two years, which would require setting aside about $208 per month.
 
@@ -280,11 +287,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 4: Saving and Banking
+
 **Definition**: Saving involves setting aside money for future use, while banking refers to the services provided by financial institutions for managing money.
 
 **Clarification**: Understanding saving strategies and banking services helps students develop good financial habits and make informed choices about where to keep their money. This includes concepts such as interest, different types of accounts, and the benefits of saving. These concepts apply compound interest calculations and reinforce decimal operations.
 
-**Example**: 
+**Example**:
+
 - If $1,000 is deposited in a savings account with an annual interest rate of 2%, after one year the balance would be $1,000 + ($1,000 × 0.02) = $1,020.
 - Different types of bank accounts include checking accounts (for everyday transactions), savings accounts (for setting aside money with some interest), and certificates of deposit (for higher interest rates with less accessibility).
 
@@ -370,11 +379,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 5: Credit and Debt
+
 **Definition**: Credit is the ability to borrow money or access goods or services with the understanding that payment will be made later, while debt is money owed by one party to another.
 
 **Clarification**: Understanding credit and debt helps students make responsible borrowing decisions and avoid financial pitfalls. This includes concepts such as interest rates, loans, credit cards, and the importance of maintaining good credit. These concepts apply percentage calculations and reinforce the understanding of how interest accumulates over time.
 
-**Example**: 
+**Example**:
+
 - If someone borrows $5,000 at an annual interest rate of 6% for 3 years, they will pay back more than $5,000 due to interest.
 - Credit cards allow users to make purchases on credit, but if the balance isn't paid in full each month, interest (often at high rates) is charged on the remaining balance.
 
@@ -472,11 +483,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 6: Taxes and Government Finance
+
 **Definition**: Taxes are mandatory contributions to state revenue, levied by the government on workers' income and business profits, or added to the cost of some goods, services, and transactions.
 
 **Clarification**: Understanding taxes helps students become informed citizens and prepare for adult financial responsibilities. This includes concepts such as income tax, sales tax, property tax, and how tax money is used by the government. These concepts apply percentage calculations and reinforce decimal operations.
 
-**Example**: 
+**Example**:
+
 - If an item costs $20 and the sales tax rate is 8%, the tax amount would be $20 × 0.08 = $1.60, making the total cost $21.60.
 - Income tax is often calculated using tax brackets, where different portions of income are taxed at different rates.
 
@@ -561,11 +574,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ### Concept 7: Consumer Skills and Economic Decision-Making
+
 **Definition**: Consumer skills involve making informed choices when purchasing goods and services, while economic decision-making refers to the process of choosing how to use limited resources to satisfy unlimited wants.
 
 **Clarification**: Developing consumer skills and economic decision-making abilities helps students become savvy consumers and make choices that align with their values and goals. This includes concepts such as comparison shopping, understanding value, recognizing marketing tactics, and evaluating trade-offs. These skills apply various mathematical operations in real-world contexts.
 
-**Example**: 
+**Example**:
+
 - When comparing two similar products, one priced at $45 for 30 ounces and another at $35 for 20 ounces, calculating the unit price ($1.50 per ounce vs. $1.75 per ounce) reveals that the first option is more economical.
 - When deciding whether to buy a new phone now or save for a better model later, considering factors such as current needs, future value, and opportunity cost helps make a more informed decision.
 
@@ -643,10 +658,13 @@ This unit focuses on financial literacy, which involves understanding and effect
 ```
 
 ## Summary
+
 Unit 19 develops students' financial literacy, focusing on the knowledge and skills needed to make informed economic decisions. Students learn about money and currency, income and earnings, budgeting and financial planning, saving and banking, credit and debt, taxes and government finance, and consumer skills and economic decision-making. These concepts provide a foundation for personal financial management and responsible economic citizenship, applying mathematical skills to real-world financial situations.
 
 ## Connection to Previous Units
+
 The financial literacy concepts in Unit 19 integrate and apply many of the mathematical skills developed throughout the arithmetic course. Decimal operations from Units 11-14 are essential for working with money and calculating interest. Percentage calculations, related to fractions and decimals from Units 4, 9, and 10, are used in budgeting, taxes, and interest calculations. Problem-solving strategies from Unit 17 (Algebraic Thinking) help with financial planning and decision-making. Statistical concepts from Unit 18 support analyzing financial data and understanding economic trends. This final unit demonstrates the practical relevance of arithmetic skills in everyday financial contexts, reinforcing the importance of mathematical literacy for life success.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_18_Probability_and_Statistics|Unit 18: Probability and Statistics]]

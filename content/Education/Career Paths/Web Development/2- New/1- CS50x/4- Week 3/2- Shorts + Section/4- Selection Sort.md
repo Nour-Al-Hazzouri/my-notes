@@ -5,12 +5,14 @@ Selection Sort is a sorting algorithm that works by repeatedly finding the minim
 ## Basic Idea
 
 The core idea of Selection Sort is to:
+
 1.  Find the smallest unsorted element.
 2.  Add it to the end of the sorted list (which means swapping it with the first element of the unsorted part).
 
 ## Algorithm in Pseudocode
 
 **Repeat** until no unsorted elements remain:
+
 1.  Search through the **unsorted part** of the data to find the **smallest value**.
 2.  **Swap** the smallest found value with the **first element** of the unsorted part.
 
@@ -87,4 +89,5 @@ Selection Sort has the same time complexity for both best-case and worst-case sc
 In both cases, for an array of `n` elements, the algorithm performs approximately `n` passes. In the first pass, it makes `n-1` comparisons, in the second `n-2`, and so on. This results in a total of `(n-1) + (n-2) + ... + 1` comparisons, which is roughly `n^2 / 2`.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/3- Bubble Sort|Bubble Sort]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/5- Call Stacks|Call Stacks]]

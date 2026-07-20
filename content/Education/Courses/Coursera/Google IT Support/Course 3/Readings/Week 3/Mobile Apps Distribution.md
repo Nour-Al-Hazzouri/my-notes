@@ -7,6 +7,7 @@ Mobile applications can be distributed through both public and private channels.
 ## Apple App Distribution
 
 ### Public Distribution via App Store
+
 - **App Store Connect** serves as the central platform for distributing apps to millions of Apple devices
 - Developers must register through the **Apple Developer Program** to access distribution tools
 - All apps undergo a rigorous review process to meet Apple's quality standards
@@ -14,6 +15,7 @@ Mobile applications can be distributed through both public and private channels.
 - Xcode IDE is the recommended development environment
 
 ### Private Enterprise Distribution
+
 - **Custom Apps** can be created for specific organizational needs (employees, clients, partners)
 - Distribution options include:
   - **Apple School Manager**: For educational institutions to distribute proprietary apps and purchase volume licenses
@@ -25,6 +27,7 @@ Mobile applications can be distributed through both public and private channels.
 ## Android App Distribution
 
 ### Public Distribution via Google Play
+
 - **Google Play Store** reaches billions of users across 24,000+ device models
 - Hosts approximately 2 million apps with 140+ billion annual downloads
 - Developers use **Android Studio** (official IDE) to create apps
@@ -35,6 +38,7 @@ Mobile applications can be distributed through both public and private channels.
   3. Following a guided publishing process including testing and review
 
 ### Private Enterprise Distribution
+
 - **Managed Google Play** allows organizations to operate their own app store
 - **Google Play Custom App Publishing API** enables creation and publication of permanently private apps
 - Enterprise deployment options:
@@ -43,7 +47,9 @@ Mobile applications can be distributed through both public and private channels.
 - Streamlined verification process (as little as 5 minutes)
 
 ### Alternative Android Distribution
+
 Unlike Apple, Google allows competing app stores, including:
+
 - APKMirror, Aurora Store, Aptoide, Amazon Appstore
 - F-Droid, Uptodown, SlideMe, APKPure
 - Galaxy Store, Yalp Store

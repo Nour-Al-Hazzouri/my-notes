@@ -4,7 +4,7 @@ By the end of this reading, you'll be able to:
 
 - Outline the built-in properties and methods of the Math object
 
-## Number constants
+## Number Constants
 
 Here are some of the built-in number constants that exist on the Math object:
 
@@ -12,7 +12,7 @@ Here are some of the built-in number constants that exist on the Math object:
 - The Euler's constant: **Math.E** which is approximately 2.718
 - The natural logarithm of 2: **Math.LN2** which is approximately 0.693
 
-## Rounding methods
+## Rounding Methods
 
 These include:
 
@@ -21,7 +21,7 @@ These include:
 - **Math.round()** - rounds up to the closest integer if the decimal is **.5** or above; otherwise, rounds down to the closest integer
 - **Math.trunc()** - trims the decimal, leaving only the integer
 
-## Arithmetic and calculus methods
+## Arithmetic and Calculus Methods
 
 Here is a non-conclusive list of some common arithmetic and calculus methods that exist on the **Math** object:
 
@@ -34,4 +34,5 @@ Here is a non-conclusive list of some common arithmetic and calculus methods tha
 - Trigonometric methods: **Math.sin()**, **Math.cos()**, **Math.tan()**, etc.
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/2- String cheat sheet|2- String cheat sheet]]

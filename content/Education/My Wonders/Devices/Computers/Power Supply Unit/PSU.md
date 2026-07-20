@@ -43,12 +43,14 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **The AT Era:** Early PC power supplies used a physical "hard" switch routed to the front of the case carrying live 120V/240V AC. The PC could not turn itself off via software.
 *   **The ATX & +12V Shift:** ATX introduced the soft-power switch (PS-ON), allowing the OS to shut down the PC. As CPUs and GPUs grew hungrier, power delivery fundamentally shifted from relying on the +5V rail to drawing almost exclusively from the **+12V rail**.
 *   **The Efficiency Era (80 PLUS):** As wattages climbed, PSUs began wasting massive amounts of heat. The industry adopted active PFC and LLC resonant topologies to push efficiency from ~70% up to 90%+ (Gold/Titanium standards).
 *   **The ATX 3.0 / 3.1 Era:** Driven entirely by the extreme transient power spikes of modern GPUs (e.g., RTX 4090). It mandated that PSUs must handle 200% power excursions for 100 microseconds, and introduced the 12VHPWR (later revised to 12V-2x6) connector to deliver up to 600W over a single cable.
 
 ### Technical Power Chain
+
 1.  **Input Filtering (EMI Filter):** Removes noise from the AC wall outlet.
 2.  **Bridge Rectifier:** Converts AC (Sine wave) to messy DC (Pulsing).
 3.  **Active PFC:** Cleans the wave to ensure the PSU draws power efficiently from the grid.
@@ -61,6 +63,7 @@
 ## V. Compatibility & Ecosystem Integration
 
 ### Connector Standards
+
 *   **24-pin ATX Main Power:** The primary motherboard connector, unchanged since ATX12V 2.0 (2003).
 *   **12V-2x6 (ATX 3.1):** The current flagship GPU connector. It features **shortened sense pins (S1-S4)** by 1.5mm. This prevents the GPU from drawing high power unless the cable is fully seated, virtually eliminating the melting issues of the older 12VHPWR standard.
 *   **EPS 8-pin (4+4):** Dedicated CPU power connector(s). High-end boards use two EPS connectors for overclocked CPUs.
@@ -80,14 +83,17 @@
 
 ## VII. Troubleshooting & Field Diagnostics
 
-### Symptom: "Coil Whine" (High-pitched squealing)
+### Symptom: "Coil Whine" (High-pitched sQuealing)
+
 *   **Cause**: Physical vibration of the copper coils in the chokes due to high-frequency current. It is rarely a sign of failure but can be annoying.
 *   **Isolation**: Change the FPS cap in games (less load variance) or trial a different wall outlet (cleaner AC input).
 
-### Symptom: System reboots only during heavy gaming
+### Symptom: System Reboots Only during Heavy Gaming
+
 *   **Cause**: Transient power spike tripping the **OPP (Over Power Protection)** or **OCP (Over Current Protection)** because the PSU cannot handle the 100µs excursion.
 *   **Isolation**: Upgrade to an ATX 3.0/3.1 rated unit or increase PSU wattage overhead.
 
-### Symptom: PSU Fan doesn't spin at idle
+### Symptom: PSU Fan Doesn't Spin at Idle
+
 *   **Cause**: Normal behavior – "Zero-RPM" or "Eco Mode" is active. The fan only starts when internal temperatures reach a specific threshold (usually >30% load).
 *   **Verification**: Check if the "Eco Mode" switch on the rear is toggled ON.

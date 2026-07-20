@@ -119,4 +119,5 @@
 **VLAN header:** A piece of data that indicates what the frame itself is. In a data packet it is followed by the EtherType
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Course 2 Glossary|Course 2 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 2 Glossary|Module 2 Glossary]]

@@ -40,4 +40,5 @@ function Bowl(props) {
 Unidirectional data flow through props keeps React apps simple and easy to optimize. It ensures clear data logic and prevents confusion that can arise from bidirectional or random data flow.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/5- Parent-child Data Flow|5- Parent-child Data Flow]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/7- Children and Data|7- Children and Data]]

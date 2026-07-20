@@ -1,4 +1,3 @@
-
 # CS50x Short: Tries
 
 ## Introduction to Tries
@@ -35,8 +34,7 @@ To insert a word into a trie, you start at the root node and traverse the trie c
 3.  Move to the child node and repeat the process for the next character.
 4.  Once all characters of the word have been processed, set the `is_word` flag of the final node to `true`.
 
-Example: Inserting 
-
+Example: Inserting
 
 Example: Inserting "CAT"
 
@@ -92,4 +90,5 @@ Tries are used in a variety of applications, including:
 Tries are a specialized and highly efficient data structure for handling string-based data, particularly when prefix-based operations are frequently required. While they may consume more memory than other data structures, their performance benefits in specific applications make them an invaluable tool for developers. Understanding the unique characteristics of tries and their operational mechanics is crucial for optimizing solutions in areas like text processing and search algorithms.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/6- Hash Tables|CS50x Short: Hash Tables]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/8- Data Structures|Data Structures]]

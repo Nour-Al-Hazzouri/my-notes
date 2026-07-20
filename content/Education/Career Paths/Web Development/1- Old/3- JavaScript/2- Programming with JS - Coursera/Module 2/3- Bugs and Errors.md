@@ -8,7 +8,7 @@
 - Try catch blocks:
     - The act of trying to catch an error is usually referred to as error handling
     - The try block can be used to wrap an error, and the catch can be used to catch the error
-        
+
 ```JavaScript
 try {
 console.log(c+d)
@@ -16,7 +16,7 @@ console.log(c+d)
 // do something here...
 }
 ```
-        
+
     - The throw keyword can be used to throw an error from the try block to the catch block
         
 ```JavaScript
@@ -27,7 +27,7 @@ try {
 }
 console.log('this line now works')
 ```
-        
+
     - Working with errors in JS:
         - You can throw errors on purpose using the throw keyword
             
@@ -36,4 +36,5 @@ throw new ReferenceError();
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/2- String cheat sheet|2- String cheat sheet]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/4- Syntax, logical and runtime errors|4- Syntax, logical and runtime errors]]

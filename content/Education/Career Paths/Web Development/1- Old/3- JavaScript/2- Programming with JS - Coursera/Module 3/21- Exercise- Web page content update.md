@@ -13,11 +13,13 @@ let answer = prompt('What is your name?');
 ```
 
 This method:
+
 - Creates a dialog box with the specified message
 - Captures the user's input as a string
 - Returns the input for further processing
 
 Example of displaying prompt input as an HTML element:
+
 ```javascript
 let answer = prompt('What is your name?');
 if (typeof(answer) === 'string') {
@@ -53,6 +55,7 @@ input.addEventListener('change', function() {
 ```
 
 The `change` event fires after:
+
 - Text is entered into the input field
 - The ENTER key is pressed
 
@@ -77,6 +80,7 @@ input.addEventListener('change', function() {
 ```
 
 This implementation:
+
 1. Creates an h1 element with default text
 2. Creates a text input field
 3. Clears the document body
@@ -91,4 +95,5 @@ This implementation:
 - This approach can be tested directly in the browser console on any website
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/20- Event Handling|20- Event Handling]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/22- Moving data around|JSON: Moving Data Around]]

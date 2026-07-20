@@ -1,16 +1,19 @@
 # Unit 17: Algebraic Thinking
 
 ## Overview
+
 This unit introduces students to algebraic thinking, which involves recognizing patterns, representing relationships symbolically, and generalizing mathematical ideas. Algebraic thinking is a fundamental aspect of mathematics that bridges arithmetic and more advanced mathematical concepts. By developing algebraic reasoning, students enhance their problem-solving abilities and prepare for formal algebra in later grades.
 
 ## Key Concepts
 
 ### Concept 1: Patterns and Sequences
+
 **Definition**: Patterns are regularities or repeated arrangements, while sequences are ordered lists of numbers or objects that follow a pattern.
 
 **Clarification**: Recognizing, describing, and extending patterns is a foundational skill for algebraic thinking. Patterns can be numeric, geometric, or a combination of both. Understanding patterns helps students make predictions and generalizations about mathematical relationships.
 
-**Example**: 
+**Example**:
+
 - Arithmetic sequence: 3, 7, 11, 15, 19, ... (add 4 each time)
 - Geometric sequence: 2, 6, 18, 54, ... (multiply by 3 each time)
 - Pattern with shapes: circle, square, triangle, circle, square, triangle, ... (repeating pattern)
@@ -76,11 +79,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 2: Variables and Expressions
+
 **Definition**: Variables are symbols (usually letters) that represent unknown or changing quantities, while expressions are combinations of variables, numbers, and operations.
 
 **Clarification**: Variables allow us to represent general relationships and solve problems with unknown values. Algebraic expressions provide a concise way to represent calculations and relationships. Understanding variables and expressions helps students transition from concrete arithmetic to abstract algebraic thinking.
 
-**Example**: 
+**Example**:
+
 - If x represents the number of books, then 3x represents three times that number of books.
 - The expression 2x + 5 represents "twice a number plus 5."
 - If a rectangle has length l and width w, its perimeter can be expressed as 2l + 2w.
@@ -141,11 +146,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 3: Equations and Inequalities
+
 **Definition**: Equations state that two expressions are equal, while inequalities state that one expression is greater than, less than, or not equal to another.
 
 **Clarification**: Equations and inequalities are used to represent relationships and constraints in mathematical situations. Solving equations and inequalities involves finding values that make the statement true. This skill is essential for modeling real-world problems and making predictions.
 
-**Example**: 
+**Example**:
+
 - The equation 3x + 2 = 14 can be solved to find that x = 4.
 - The inequality x + 5 > 12 is satisfied by any value of x greater than 7.
 - If a rectangle has a perimeter of 20 units and a length of 6 units, we can write the equation 2(6) + 2w = 20 to find the width w = 4 units.
@@ -219,11 +226,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 4: Functions and Relationships
+
 **Definition**: Functions are special relationships where each input has exactly one output, while relationships more generally describe how quantities are connected.
 
 **Clarification**: Functions and relationships can be represented in various ways, including tables, graphs, equations, and verbal descriptions. Understanding these representations and the connections between them helps students analyze and interpret mathematical situations. This concept builds on patterns and introduces the idea of dependence between variables.
 
-**Example**: 
+**Example**:
+
 - The function y = 2x + 3 can be represented in a table showing input-output pairs, graphed as a line, or described verbally as "the output is 3 more than twice the input."
 - The relationship between the side length of a square and its area can be expressed as A = s², where A is the area and s is the side length.
 
@@ -315,11 +324,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 5: Proportional Relationships
+
 **Definition**: Proportional relationships are special relationships where the ratio of two quantities remains constant as the quantities change.
 
 **Clarification**: Proportional relationships are fundamental to many real-world situations and scientific concepts. They can be represented as y = kx, where k is the constant of proportionality. Understanding proportional relationships helps students reason about rates, scales, and similar figures.
 
-**Example**: 
+**Example**:
+
 - If a car travels 60 miles in 2 hours at a constant speed, it will travel 150 miles in 5 hours because distance is proportional to time (d = rt, where r is the constant rate).
 - If 3 apples cost $1.50, then 7 apples will cost $3.50 because the cost is proportional to the number of apples (c = 0.50n, where 0.50 is the cost per apple).
 
@@ -402,11 +413,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 6: Problem-Solving with Algebra
+
 **Definition**: Problem-solving with algebra involves translating real-world situations into mathematical representations, solving the mathematical problem, and interpreting the solution in the original context.
 
 **Clarification**: This process often follows these steps: understand the problem, define variables, write equations or inequalities, solve the mathematical problem, and interpret the solution. Algebraic problem-solving provides a powerful approach to a wide range of situations and develops logical reasoning skills.
 
-**Example**: 
+**Example**:
+
 - Problem: A theater charges $8 for adults and $5 for children. If 200 tickets were sold for a total of $1,450, how many adults and how many children attended?
 - Solution: Let a = number of adults and c = number of children.
   We know a + c = 200 (total people) and 8a + 5c = 1,450 (total revenue).
@@ -472,11 +485,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ### Concept 7: Algebraic Properties and Operations
+
 **Definition**: Algebraic properties are fundamental rules that govern operations with numbers and variables, while algebraic operations involve manipulating expressions and equations.
 
 **Clarification**: Key properties include the commutative, associative, and distributive properties. Operations include simplifying expressions, combining like terms, and solving equations. Understanding these properties and operations provides the foundation for more advanced algebraic manipulation.
 
-**Example**: 
+**Example**:
+
 - Commutative property: a + b = b + a and a × b = b × a
 - Associative property: (a + b) + c = a + (b + c) and (a × b) × c = a × (b × c)
 - Distributive property: a × (b + c) = a × b + a × c
@@ -573,10 +588,13 @@ This unit introduces students to algebraic thinking, which involves recognizing 
 ```
 
 ## Summary
+
 Unit 17 introduces students to algebraic thinking, focusing on recognizing patterns, representing relationships symbolically, and generalizing mathematical ideas. Students learn about patterns and sequences, variables and expressions, equations and inequalities, functions and relationships, proportional relationships, problem-solving with algebra, and algebraic properties and operations. These concepts provide a foundation for formal algebra and develop students' ability to reason abstractly and solve complex problems.
 
 ## Connection to Next Unit
+
 The algebraic thinking skills developed in Unit 17 provide a foundation for Unit 18, which focuses on probability and statistics. Algebraic concepts are often applied in statistical analysis, such as when using formulas to calculate measures of central tendency or when expressing relationships between variables. Additionally, the logical reasoning and problem-solving strategies developed through algebraic thinking support the analytical approach needed for understanding probability and making statistical inferences. The ability to represent relationships symbolically will also be useful for interpreting and creating statistical models and for analyzing data patterns.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_16_Geometry|Unit 16: Geometry]] | **Next**: [[Education/Math/Arithmetic/Unit_18_Probability_and_Statistics|Unit 18: Probability and Statistics]]

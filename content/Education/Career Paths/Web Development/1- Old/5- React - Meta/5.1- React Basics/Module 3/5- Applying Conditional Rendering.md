@@ -1,6 +1,7 @@
 # Conditional Rendering in React
 
 ## Core Concept
+
 * State determines component rendering
 * Uses standard JavaScript conditional logic
 * Multiple approaches to implement conditional rendering
@@ -8,6 +9,7 @@
 ## Rendering Approaches
 
 ### 1. Basic Conditional Rendering
+
 ```jsx
 function CurrentMessage() {
   const day = new Date().getDay();
@@ -19,6 +21,7 @@ function CurrentMessage() {
 ```
 
 ### 2. Props-Based Conditional Rendering
+
 ```jsx
 function CurrentMessage(props) {
   if (props.day >= 1 && props.day <= 5) {
@@ -29,6 +32,7 @@ function CurrentMessage(props) {
 ```
 
 ### 3. Element Variables Method
+
 ```jsx
 function CurrentMessage({day}) {
   const weekday = (day >= 1 && day <= 5);
@@ -48,6 +52,7 @@ function CurrentMessage({day}) {
 ```
 
 ### 4. Logical AND Operator Rendering
+
 ```jsx
 function LogicalAndExample() {
   const val = prompt('Anything but a 0');
@@ -61,22 +66,26 @@ function LogicalAndExample() {
 ```
 
 ## Key Principles
+
 * Conditional logic determines component display
 * Multiple techniques available
 * Leverage JavaScript's existing conditional operators
 * Keep rendering logic clean and readable
 
 ## Rendering Scenarios
+
 * Time-based content display
 * User interaction-driven rendering
 * State-dependent component selection
 * Error handling and fallback components
 
 ## Best Practices
+
 * Use appropriate conditional rendering technique
 * Keep components focused
 * Maintain code readability
 * Handle all potential state scenarios
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 3/4- Conditional Rendering|Conditional Rendering in React]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 3/6- Conditional Components|Conditional Rendering in React: Login/Logout Example]]

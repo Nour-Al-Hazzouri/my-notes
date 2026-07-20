@@ -11,11 +11,11 @@ Linux package management involves handling software archives that contain all ne
 - **Repositories**: Remote servers hosting thousands of packages that must be added to your system
 - **Stand-alone Packages**: Self-contained packages requiring no external dependencies
 
-## The dpkg Command: Core Debian Package Management
+## The Dpkg Command: Core Debian Package Management
 
 The `dpkg` command is the fundamental tool for managing Debian packages (.deb files). While powerful, it does not automatically resolve dependencies, requiring manual installation of prerequisite packages.
 
-### Common dpkg Commands
+### Common Dpkg Commands
 
 | Action | Command Syntax | Purpose |
 |--------|---------------|---------|
@@ -28,6 +28,7 @@ The `dpkg` command is the fundamental tool for managing Debian packages (.deb fi
 | View contents | `dpkg -c package.deb` | List contents of a new package |
 
 Behind the scenes, `dpkg` uses two backend tools:
+
 - **dpkg-deb**: Manipulates .deb files, providing information and handling packing/unpacking
 - **dpkg-query**: Queries .deb files for information
 

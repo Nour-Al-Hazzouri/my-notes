@@ -1,6 +1,7 @@
 # Module 1: Responsive Design Fundamentals
 
 ## Table of Contents
+
 - [What is Responsive Design?](#what-is-responsive-design)
 - [Testing Sites](#testing-sites)
 - [Benefits of Responsive Design](#benefits-of-responsive-design)
@@ -58,4 +59,5 @@
 - vh: viewport's height, 1/100th of the height of the viewport.
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 2|Module 2: Media Queries and Responsive Design]]

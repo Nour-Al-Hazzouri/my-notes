@@ -91,4 +91,5 @@ understand to those that are more traditional twisted pair copper networks can u
 **Wireless networking:** Networks you connect to through radios and antennas
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 4 Glossary|Module 4 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 6 Glossary|Module 6 Glossary]]

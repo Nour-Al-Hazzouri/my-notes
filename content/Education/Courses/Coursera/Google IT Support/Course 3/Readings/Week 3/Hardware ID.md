@@ -15,18 +15,21 @@ This identification system enables Windows to support a vast ecosystem of hardwa
 Windows uses two primary types of device identifiers:
 
 ### Hardware IDs
+
 - Highly specific identifiers that precisely match a device
 - Include detailed manufacturer, model, and revision information
 - Formatted with a bus-specific prefix followed by vendor-specific details
 - Example: `USB\VID_1234&PID_5678&REV_0001`
 
 ### Compatible IDs
+
 - More generic identifiers representing device types
 - May omit specific manufacturer or model information
 - Represent the general class of device
 - Used when no exact hardware ID match is found
 
 The format of these identifiers varies by bus type but typically follows the pattern:
+
 `[BUS_PREFIX]\[VENDOR_ID]&[PRODUCT_ID]&[REVISION]`
 
 ## Driver Selection Process

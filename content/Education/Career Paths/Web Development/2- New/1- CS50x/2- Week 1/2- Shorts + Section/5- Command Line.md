@@ -8,14 +8,14 @@ These commands are applicable to any Unix-based operating system, including Linu
 
 ## Essential Linux Commands
 
-### `ls` (list)
+### `ls` (List)
 
 - **Purpose**: Lists the files and folders in your current directory.
 - **Usage**: `ls`
 - **Output**: Displays the names of files and directories. In the CS50 IDE, directories are typically colored blue, executable files green, and other files (like text or source code) black.
 - **Example**: If your directory contains `hello`, `hello.c`, `hello.txt`, `pset0/`, and `pset1/`, typing `ls` will show these items.
 
-### `cd` (change directory)
+### `cd` (Change dIrectory)
 
 - **Purpose**: Allows you to navigate between directories.
 - **Usage**: `cd [directory_name]`
@@ -24,25 +24,25 @@ These commands are applicable to any Unix-based operating system, including Linu
     - `..` (dot dot): Refers to the parent directory (one level up).
 - **Example**: To enter the `pset1` directory, you would type `cd pset1`.
 
-### `pwd` (present working directory)
+### `pwd` (Present wOrking dIrectory)
 
 - **Purpose**: Displays the absolute path of your current working directory.
 - **Usage**: `pwd`
 - **Example**: If you are in `/home/ubuntu/pset1`, `pwd` will output `/home/ubuntu/pset1`.
 
-### `mkdir` (make directory)
+### `mkdir` (Make dIrectory)
 
 - **Purpose**: Creates a new directory.
 - **Usage**: `mkdir [directory_name]`
 - **Example**: `mkdir my_new_folder` will create a directory named `my_new_folder` in your current location.
 
-### `rmdir` (remove directory)
+### `rmdir` (Remove dIrectory)
 
 - **Purpose**: Removes an empty directory.
 - **Usage**: `rmdir [directory_name]`
 - **Note**: This command only works for empty directories. To remove non-empty directories, you would typically use `rm -r`.
 
-### `rm` (remove)
+### `rm` (Remove)
 
 - **Purpose**: Removes files.
 - **Usage**: `rm [file_name]`
@@ -51,7 +51,7 @@ These commands are applicable to any Unix-based operating system, including Linu
     - `-f` (force): Removes files without prompting for confirmation.
     - `-r` (recursive): Removes directories and their contents recursively. Use with caution!
 
-### `mv` (move)
+### `mv` (Move)
 
 - **Purpose**: Moves or renames files and directories.
 - **Usage**: `mv [source] [destination]`
@@ -59,7 +59,7 @@ These commands are applicable to any Unix-based operating system, including Linu
     - `mv old_name.txt new_name.txt` (renames a file)
     - `mv file.txt /path/to/new_location/` (moves a file)
 
-### `cp` (copy)
+### `cp` (Copy)
 
 - **Purpose**: Copies files and directories.
 - **Usage**: `cp [source] [destination]`
@@ -67,7 +67,7 @@ These commands are applicable to any Unix-based operating system, including Linu
 - **Options**:
     - `-r` (recursive): Copies directories and their contents recursively.
 
-### `cat` (concatenate)
+### `cat` (Concatenate)
 
 - **Purpose**: Displays the content of a file to the terminal.
 - **Usage**: `cat [file_name]`
@@ -79,7 +79,7 @@ These commands are applicable to any Unix-based operating system, including Linu
 - **Usage**: `less [file_name]`
 - **Navigation**: Use arrow keys to scroll, `q` to quit.
 
-### `man` (manual)
+### `man` (Manual)
 
 - **Purpose**: Displays the manual page for a command, providing detailed information about its usage and options.
 - **Usage**: `man [command_name]`
@@ -98,4 +98,5 @@ These commands are applicable to any Unix-based operating system, including Linu
 Understanding and using the command line is crucial for programmers as it provides a powerful and efficient way to interact with the operating system, manage files, compile code, and run programs. It offers a level of control and automation not always available through graphical interfaces. The skills learned here are transferable across many different development environments and operating systems.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/4- Loops|Loops]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/6- Magic Numbers|Magic Numbers]]

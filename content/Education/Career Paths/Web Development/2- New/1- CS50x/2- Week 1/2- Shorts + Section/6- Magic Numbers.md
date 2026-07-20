@@ -1,6 +1,6 @@
 # Magic Numbers
 
-## What are Magic Numbers?
+## What Are Magic Numbers?
 
 "Magic numbers" refer to hardcoded numerical constants directly embedded in code without any clear explanation or symbolic meaning. While seemingly harmless, they can make code difficult to understand, maintain, and debug. For example, in the Mario problem set, the pyramid height was capped at 23. Without context, this number seems arbitrary. The reason for 23 is that the standard terminal window height is 24 lines, and a pyramid taller than 23 lines would cause display issues.
 
@@ -25,7 +25,7 @@ The number `52` is a magic number here. While intuitively we know a standard dec
 
 ## Solutions to Magic Numbers
 
-### 1. Using Variables (with caution)
+### 1. Using Variables (With cAution)
 
 One initial thought might be to assign the magic number to a variable:
 
@@ -70,6 +70,7 @@ float circumference = 2 * PI * radius;
 ```
 
 Using `#define` for constants makes your code:
+
 - **More Readable**: The name explains the purpose of the value.
 - **More Maintainable**: Changes only need to be made in one place.
 - **Safer**: Prevents accidental modification of constant values during program execution.
@@ -79,4 +80,5 @@ Using `#define` for constants makes your code:
 Avoiding magic numbers by using symbolic constants (preferably with `#define`) is a crucial best practice in programming. It leads to cleaner, more understandable, and more robust code, making it easier for you and others to work with in the long run.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/5- Command Line|Command Line]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/CS50x Week 1 Section_ C|CS50x Week 1 Section: C]]

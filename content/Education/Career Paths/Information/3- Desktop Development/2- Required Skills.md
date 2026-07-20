@@ -3,6 +3,7 @@
 ## 1. Native Windows Development
 
 ### Key Skills:
+
 - **Programming Languages:**
   - **C#**: Proficiency in C# is crucial for developing Windows applications using frameworks like Windows Presentation Foundation (WPF) or Windows Forms.
   - **C++**: Knowledge of C++ is beneficial, especially when working with the Windows Runtime (WinRT) for performance-critical applications. [Learn More](https://en.wikipedia.org/wiki/Windows_Runtime)
@@ -22,6 +23,7 @@
 ## 2. Cross-Platform Development with React Native
 
 ### Key Skills:
+
 - **JavaScript and React:**
   - Strong proficiency in JavaScript and the React framework, as React Native builds upon these technologies.
 
@@ -39,6 +41,7 @@
 ## 3. Cross-Platform Development with Electron
 
 ### Key Skills:
+
 - **Web Technologies:**
   - Proficiency in HTML, CSS, and JavaScript, as Electron leverages these technologies to build desktop applications.
 
@@ -75,7 +78,9 @@
 Acquiring these skills will equip you to develop robust desktop applications tailored to your chosen platform and development approach.
 
 ### Additional Resources
+
 - [How to Create a Cross-Platform Desktop App with React and Electron](https://www.youtube.com/watch?v=pnsaQs45Kj8)
 
 ---
+
 **Previous**: [[Education/Career Paths/Information/3- Desktop Development/1- Introduction|1- Introduction]] | **Next**: [[Education/Career Paths/Information/3- Desktop Development/3.1- Native Windows Developer Detailed Roadmap|3.1- Native Windows Developer Detailed Roadmap]]

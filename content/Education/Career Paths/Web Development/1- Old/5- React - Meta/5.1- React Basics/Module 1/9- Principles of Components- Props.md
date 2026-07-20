@@ -41,4 +41,5 @@ export default Greeting;
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/8- Importing Components|8- Importing Components]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/10- Dissecting Props|10- Dissecting Props]]

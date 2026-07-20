@@ -2,7 +2,7 @@
 
 ### 1. Ternary Operator as an Alternative to `if...else`
 
-- The ternary operator provides a shorthand way to write `if...else` statements.  
+- The ternary operator provides a shorthand way to write `if...else` statements.
     Syntax:
 
 ```js
@@ -101,4 +101,5 @@ const getRandomNum = function() {
 - JSX allows seamless integration of JavaScript expressions, making it versatile for React development.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/15- Embedded JSX expressions|15- Embedded JSX expressions]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/17- Expressions as props|17- Expressions as props]]

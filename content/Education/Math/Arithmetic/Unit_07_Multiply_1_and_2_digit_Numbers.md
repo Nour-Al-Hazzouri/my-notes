@@ -1,11 +1,13 @@
 # Unit 7: Multiply 1- and 2-digit Numbers
 
 ## Overview
+
 This unit builds upon students' understanding of basic multiplication concepts and focuses on developing strategies for multiplying 1- and 2-digit numbers efficiently. Multiplication of multi-digit numbers is a critical skill in arithmetic that enables students to solve more complex problems and lays the groundwork for advanced mathematical concepts. This unit introduces various methods and properties that help students understand the multiplication process conceptually and procedurally.
 
 ## Key Concepts
 
 ### Concept 1: Multiplying by Multiples of 10, 100, and 1,000
+
 **Definition**: When multiplying a number by 10, 100, or 1,000, the digits shift to the left by 1, 2, or 3 places respectively, and zeros are added as placeholders.
 
 **Clarification**: This pattern is a direct result of our base-10 number system and understanding it helps students develop mental math strategies. Recognizing that multiplying by a power of 10 simply shifts the digits to the left provides an efficient shortcut for these calculations.
@@ -37,6 +39,7 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 2: Area Models for Multiplication
+
 **Definition**: Area models represent multiplication as the area of a rectangle, where the factors are the lengths of the sides and the product is the total area.
 
 **Clarification**: Area models provide a visual representation of multiplication that helps students understand the distributive property and the process of multiplying multi-digit numbers. By breaking numbers into place value components, students can see how partial products contribute to the final result.
@@ -63,11 +66,13 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 3: Distributive Property of Multiplication
+
 **Definition**: The distributive property states that multiplying a sum by a number gives the same result as multiplying each addend by that number and then adding the products.
 
 **Clarification**: Mathematically, this is expressed as a × (b + c) = (a × b) + (a × c). This property allows students to break down complex multiplication problems into simpler ones, making mental calculation easier and providing a conceptual foundation for the standard algorithm.
 
 **Example**: To find 7 × 23, we can use the distributive property:
+
 7 × 23 = 7 × (20 + 3) = (7 × 20) + (7 × 3) = 140 + 21 = 161
 
 ```
@@ -93,6 +98,7 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 4: Multiplying 2-digits by 1-digit with Regrouping
+
 **Definition**: When multiplying a 2-digit number by a 1-digit number, regrouping occurs when the product of the ones exceeds 9, requiring tens to be "carried" to the next place value.
 
 **Clarification**: Regrouping in multiplication follows the same principle as in addition but applies to products rather than sums. Understanding this process is essential for developing procedural fluency with the standard algorithm.
@@ -121,11 +127,13 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 5: Multiplying 2-digit Numbers
+
 **Definition**: Multiplying two 2-digit numbers involves finding the products of each digit in one factor with each digit in the other factor, considering place values, and adding the partial products.
 
 **Clarification**: This process can be visualized using an area model or executed using the standard algorithm. Both approaches rely on the distributive property and place value understanding. The standard algorithm provides an efficient procedure once the conceptual understanding is established.
 
 **Example**: To multiply 34 × 27 using the standard algorithm:
+
 1. Multiply 7 × 4 = 28, write 8 and regroup 2
 2. Multiply 7 × 3 = 21, add the regrouped 2 to get 23, write 23
 3. Multiply 2 × 4 = 8 tens, write 8 in the tens place of the second row
@@ -184,11 +192,13 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 6: Partial Products Method
+
 **Definition**: The partial products method breaks down multiplication into smaller, manageable parts based on place value, calculating each part separately before adding them together.
 
 **Clarification**: This method makes the multiplication process more transparent by explicitly showing all partial products. It helps students understand how the standard algorithm works and provides a bridge between conceptual understanding and procedural fluency.
 
 **Example**: To multiply 36 × 24 using partial products:
+
 1. 6 × 4 = 24 (ones × ones)
 2. 6 × 20 = 120 (ones × tens)
 3. 30 × 4 = 120 (tens × ones)
@@ -223,6 +233,7 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ### Concept 7: Estimation in Multiplication
+
 **Definition**: Estimation in multiplication involves rounding factors to convenient numbers to find an approximate product quickly.
 
 **Clarification**: Estimation helps students check the reasonableness of their answers and develop number sense. It involves rounding numbers to a specified place value and then performing the multiplication with the rounded values.
@@ -260,10 +271,13 @@ This unit builds upon students' understanding of basic multiplication concepts a
 ```
 
 ## Summary
+
 Unit 7 develops students' ability to multiply 1- and 2-digit numbers efficiently and with understanding. Students learn to multiply by multiples of 10, 100, and 1,000, use area models to visualize multiplication, apply the distributive property to break down complex problems, handle regrouping in multiplication, multiply 2-digit numbers using the standard algorithm and partial products method, and estimate products to check reasonableness. These skills are essential for mathematical fluency and provide the foundation for multiplication with larger numbers.
 
 ## Connection to Next Unit
+
 The multiplication skills developed in Unit 7 directly support Unit 8, which focuses on division with remainders. Since division is the inverse operation of multiplication, the fluency with multiplication facts and understanding of the relationship between factors and products will help students perform division efficiently. Additionally, the concept of breaking numbers into smaller parts (as in the distributive property and partial products) will be applied in division strategies, particularly when working with multi-digit dividends and divisors.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_06_Add_and_Subtract_through_1000000|Unit 6: Add and Subtract through 1,000,000]] | **Next**: [[Education/Math/Arithmetic/Unit_08_Divide_with_Remainders|Unit 8: Divide with Remainders]]

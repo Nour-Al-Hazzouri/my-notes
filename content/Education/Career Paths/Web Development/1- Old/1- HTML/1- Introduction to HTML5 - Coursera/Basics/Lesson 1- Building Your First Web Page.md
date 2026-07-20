@@ -1,6 +1,7 @@
 # Lesson 1: Building Your First Web Page
 
 ## Table of Contents
+
 - [Introduction to HTML and CSS](#introduction-to-html-and-css)
 - [HTML Fundamentals](#html-fundamentals)
   - [Elements](#elements)
@@ -34,6 +35,7 @@ The three common HTML terms you should begin with are **elements**, **tags**, an
 Elements are designators that define the structure and content of objects within a page.
 
 Some of the more frequently used elements include:
+
 - Multiple levels of headings (identified as `<h1>` through `<h6>` elements)
 - Paragraphs (identified as the `<p>` element)
 - Other common elements: `<a>`, `<div>`, `<span>`, `<strong>`, and `<em>`
@@ -55,6 +57,7 @@ Attributes are properties used to provide additional information about an elemen
 Attributes are defined within the opening tag, after an element's name. Generally attributes include a name and a value. The format consists of the attribute name followed by an equals sign and then a quoted attribute value.
 
 Example:
+
 ```HTML
 <a href="http://shayhowe.com/">Shay Howe</a>
 ```
@@ -100,6 +103,7 @@ A breakdown of a typical HTML document structure looks like this:
 Some elements simply receive their content or behavior from attributes within a single tag. The `<meta>` element is one of these elements.
 
 Other common self-closing elements include:
+
 - `<br>`
 - `<embed>`
 - `<hr>`
@@ -160,6 +164,7 @@ Let's build a simple web page step by step:
 ## Summary
 
 In this lesson, we've covered:
+
 - The difference between HTML and CSS
 - Getting acquainted with HTML elements, tags, and attributes
 - Setting up the structure of your first web page
@@ -175,4 +180,5 @@ Here's an example of linking a CSS file to your HTML document:
 ```
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/1- HTML/1- Introduction to HTML5 - Coursera/Basics/Lesson 2- Getting to Know HTML|Lesson 2: Getting to Know HTML]]

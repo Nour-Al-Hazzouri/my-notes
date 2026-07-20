@@ -69,8 +69,11 @@ const noVarRule = {
 ```
 
 To summarize the core ideas: **ESLint** uses **Espree** to turn code into a map (**AST**), then uses **Estraverse** to walk that map and trigger **Rules** (functions) that subscribe to specific node types. This **Pluggable** system allows for fast, custom analysis of any JavaScript codebase.
+
 # Prettier
+
 Prettier also uses AST to re-format the whole code consistently
 
 ---
+
 **Previous:** [[10.1- Odin_todo-list Notes]] | **Next:** [[12- Form Validation]]

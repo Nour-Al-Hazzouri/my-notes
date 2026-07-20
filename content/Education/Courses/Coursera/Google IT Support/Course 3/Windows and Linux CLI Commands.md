@@ -440,4 +440,5 @@
   ```
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course 3 Summarize|Course 3 Summary - Part 1 (Weeks 1-2)]]

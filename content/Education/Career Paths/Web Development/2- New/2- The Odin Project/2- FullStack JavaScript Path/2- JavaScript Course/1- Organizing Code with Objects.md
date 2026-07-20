@@ -35,6 +35,7 @@ console.log(user.sayHello()); // "Hello, my name is John Doe"
 ### The `this` Keyword
 
 `this` represents the object that executes the current function.
+
 - In an object method, `this` refers to the **object** itself.
 - Without `this`, JavaScript would look for a global variable rather than the property inside the object.
 
@@ -51,6 +52,7 @@ const player = {
 ---
 
 ### Organizing with Objects (Modules Pattern Concept)
+
 Instead of floating variables, encase mechanics inside an object literal to namespace them.
 
 ```javascript

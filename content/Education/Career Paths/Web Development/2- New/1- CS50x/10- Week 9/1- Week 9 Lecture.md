@@ -536,7 +536,7 @@ Notice that a `failure` option is provided, such that a failure message will be 
 
 You can imagine how we might want to see the various registration options using radio buttons. We can improve `index.html` as follows:
 
-#### templates/index.html (with radio buttons)
+#### templates/index.html (With rAdio bUttons)
 
 ```html
 {% extends "layout.html" %}
@@ -1052,7 +1052,7 @@ def search():
 
 Notice how the `search` route allows for a way by which to search for a `show`. This search looks for titles `LIKE` the one provided by the user.
 
-#### index.html (with JavaScript)
+#### index.html (With JavaScript)
 
 ```html
 <!DOCTYPE html>
@@ -1135,7 +1135,7 @@ def search():
 {% endfor %}
 ```
 
-#### index.html (AJAX version)
+#### index.html (AJAX vErsion)
 
 ```html
 <!DOCTYPE html>
@@ -1181,7 +1181,7 @@ JSON is a very useful way of getting back data from the server.
 
 You can see this in action in the `index.html` we examined together:
 
-#### index.html (JSON version)
+#### index.html (JSON vErsion)
 
 ```html
 <!DOCTYPE html>
@@ -1285,4 +1285,5 @@ In this lesson, you learned how to utilize Python, SQL, and Flask to create web 
 See you next time for our final lecture for this term at [Sanders Theatre](https://websites.harvard.edu/memhall/home-2/buildings/sanders-theatre/)!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/9- Week 8/3- Week 8 Section|Week 8 Section: Web Development with HTML, CSS, and JavaScript]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/2. Shorts/1- Flask|Flask - CS50 Short Summary]]

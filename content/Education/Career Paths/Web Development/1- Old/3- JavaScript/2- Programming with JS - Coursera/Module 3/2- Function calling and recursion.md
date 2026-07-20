@@ -13,4 +13,5 @@ function repeat(){
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/1- Introduction to functional programming-|1- Introduction to functional programming-]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/3- The functional programming paradigm|3- The functional programming paradigm]]

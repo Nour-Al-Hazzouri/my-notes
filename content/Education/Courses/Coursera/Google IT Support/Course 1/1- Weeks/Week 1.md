@@ -1,10 +1,12 @@
 # Week 1: Introduction to IT
 
 ## Introduction to IT Support
+
 - **Information Technology**: The use of digital technology, like computers and the internet, to store and process data into useful information.
 - **IT Specialist Responsibilities**: Managing, installing, maintaining, troubleshooting, and configuring office and computing equipment. Scope varies based on company size.
 
 ## History of Computing
+
 - **Computer Definition**: A device that stores and processes data by performing calculations.
 - **Early Computing**:
   - Punch cards were the first binary system
@@ -16,6 +18,7 @@
   - Software types: Commercial (paid) vs. open-source (freely distributed, modified, shared)
 
 ## Digital Logic
+
 - **Binary System**: Base-2 numeral system (1s and 0s) used for computer communication
 - **Bits and Bytes**:
   - Bit: A binary digit (0 or 1)
@@ -36,6 +39,7 @@
   - ASCII example: Letter 'h' = 104 in decimal = 01101000 in binary (64+32+8)
 
 ## Computer Architecture Layers
+
 - **Abstraction**: Simplifying complex systems by providing common interfaces
 - **Four Main Layers**:
   1. Hardware: Physical components
@@ -44,4 +48,5 @@
   4. Users: Operate, maintain, and program the computer
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/1- Weeks/Week 2|Week 2: Hardware]]

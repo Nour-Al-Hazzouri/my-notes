@@ -69,7 +69,10 @@ setTimeout(myLamp.toggle, 1000); // 8. Correctly maintains 'this'
 - **Static vs. Instance**: Static members belong to the class constructor and are useful for utility functions or fixed configurations that shouldn't be replicated for every object.
 - **Compatibility**: Getters and setters allow you to replace a "regular" property with a function later in development without breaking existing code that expects a simple data property.
 ---
+
 ## Summary PDF:
+
 ![[JS_Class_Architecture.pdf]]
 ---
+
 **Previous:** [[3- Closures, Factory Functions and the Module Pattern]] | **Next:** [[5- Imports & Exports]]

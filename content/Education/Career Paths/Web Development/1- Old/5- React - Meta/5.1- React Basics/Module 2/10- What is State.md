@@ -3,6 +3,7 @@
 ## The Alarm Clock Analogy
 
 Think of React state like the modes of an alarm clock:
+
 - Just as an alarm clock has built-in modes (on, off, snooze) that change its behavior
 - React components can have different states that affect how they behave and what they display
 - These states are internal to the component, like how alarm modes are internal to the clock
@@ -10,6 +11,7 @@ Think of React state like the modes of an alarm clock:
 ## What is State in React?
 
 State can be understood as:
+
 - A component's internal data that determines its current behavior
 - A way to keep components synchronized with each other
 - A mechanism for parent components to send data to child components (via props)
@@ -20,6 +22,7 @@ State can be understood as:
 Here's how they differ:
 
 ### Stateless Component Example:
+
 ```jsx
 function App() {
     return (
@@ -29,6 +32,7 @@ function App() {
 ```
 
 ### Stateful Component Example:
+
 ```jsx
 function App() {
     const [greet, setGreet] = React.useState("Hello");
@@ -53,6 +57,7 @@ const [state, setState] = React.useState("Hello");
 ```
 
 Key points about useState:
+
 - Returns an array with two elements:
   1. The current state value
   2. A function to update that value
@@ -65,6 +70,7 @@ Key points about useState:
 ## State Management Pattern
 
 The flow of state in React:
+
 - Parent components can have state
 - They pass this state down to child components via props
 - Child components can have their own state
@@ -82,4 +88,5 @@ The flow of state in React:
 This structured approach to state management helps developers create more predictable and maintainable React applications, where data flow and component behavior are clearly defined and easily managed.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/9- Using hooks|9- Using hooks]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/11- Observing State|Understanding State in React]]

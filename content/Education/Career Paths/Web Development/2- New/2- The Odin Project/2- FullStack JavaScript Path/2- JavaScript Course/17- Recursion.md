@@ -1,4 +1,4 @@
-### **What is Recursion?**
+### **What Is Recursion?**
 
 Recursion is a programming pattern where a function calls itself within its own definition. It is based on the idea of taking a complex task and solving it by breaking it down into smaller, simpler versions of that same task. Instead of using a traditional loop to repeat an action, the function "passes the buck" to a new call of itself, making the problem slightly smaller each time until it reaches a point where the answer is obvious.
 
@@ -136,7 +136,10 @@ function walk(node) {
 walk(tree);
 ```
 ---
+
 # Summary PDF
-![[The_Webpack_Blueprint.pdf]]
+
+![[Mastering_Recursion.pdf]]
 ---
-**Previous: ** [[16- Mock Testing]]
+
+**Previous:** [[16- Mock Testing]] | **Next:** [[18- Big O Notation]]

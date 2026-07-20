@@ -1,16 +1,19 @@
 # Unit 18: Probability and Statistics
 
 ## Overview
+
 This unit introduces students to probability and statistics, two interconnected branches of mathematics that deal with uncertainty, data analysis, and making predictions. Probability provides tools for quantifying the likelihood of events, while statistics involves collecting, analyzing, interpreting, and presenting data. Together, these concepts help students make sense of random phenomena, draw conclusions from data, and develop critical thinking skills for evaluating claims based on data.
 
 ## Key Concepts
 
 ### Concept 1: Basic Probability
+
 **Definition**: Probability is a measure of the likelihood that an event will occur, expressed as a number between 0 (impossible) and 1 (certain).
 
 **Clarification**: Probability can be calculated as the ratio of favorable outcomes to the total number of possible outcomes, assuming all outcomes are equally likely. Understanding probability helps students quantify uncertainty and make predictions about random events.
 
-**Example**: 
+**Example**:
+
 - When rolling a fair six-sided die, the probability of rolling a 3 is 1/6 because there is 1 favorable outcome out of 6 possible outcomes.
 - When drawing a card from a standard deck, the probability of drawing a heart is 13/52 = 1/4 because there are 13 hearts out of 52 cards.
 - The probability of a coin landing on heads is 1/2, assuming the coin is fair.
@@ -75,11 +78,13 @@ This unit introduces students to probability and statistics, two interconnected 
 ```
 
 ### Concept 2: Experimental vs. Theoretical Probability
+
 **Definition**: Theoretical probability is calculated mathematically based on the possible outcomes, while experimental probability is determined by conducting experiments and observing the results.
 
 **Clarification**: Theoretical probability represents what should happen in the long run, while experimental probability represents what actually happened in a specific experiment. As the number of trials increases, experimental probability tends to approach theoretical probability. This concept helps students understand the relationship between mathematical models and real-world observations.
 
-**Example**: 
+**Example**:
+
 - Theoretical probability of rolling a 6 on a die: 1/6 ≈ 0.167
 - Experimental probability after 10 rolls with 2 sixes: 2/10 = 0.2
 - Experimental probability after 1000 rolls with 158 sixes: 158/1000 = 0.158
@@ -144,11 +149,13 @@ This unit introduces students to probability and statistics, two interconnected 
 ```
 
 ### Concept 3: Compound Events and Sample Spaces
+
 **Definition**: Compound events involve multiple simple events, and a sample space is the set of all possible outcomes of an experiment.
 
 **Clarification**: Calculating probabilities for compound events requires understanding how to count outcomes systematically. Techniques include using tree diagrams, tables, and the multiplication principle. The sample space provides the denominator for probability calculations.
 
-**Example**: 
+**Example**:
+
 - When rolling two dice, the sample space consists of 36 possible outcomes (pairs of numbers).
 - The probability of rolling a sum of 7 is 6/36 = 1/6 because there are 6 favorable outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), and (6,1).
 - When flipping a coin twice, the sample space is {HH, HT, TH, TT}, and the probability of getting exactly one head is 2/4 = 1/2.
@@ -220,11 +227,13 @@ This unit introduces students to probability and statistics, two interconnected 
 ```
 
 ### Concept 4: Data Collection and Representation
+
 **Definition**: Data collection involves gathering information systematically, and data representation involves organizing and displaying that information in various formats.
 
 **Clarification**: Different methods of data collection and representation are appropriate for different types of data and purposes. Common representations include tables, bar graphs, line plots, histograms, and scatter plots. Understanding these representations helps students interpret and communicate information effectively.
 
-**Example**: 
+**Example**:
+
 - A survey of students' favorite colors might be represented in a bar graph, with colors on the x-axis and number of students on the y-axis.
 - Temperature measurements over time might be displayed in a line graph to show trends.
 - The distribution of test scores might be shown in a histogram to visualize the frequency of scores in different ranges.
@@ -350,12 +359,15 @@ This unit introduces students to probability and statistics, two interconnected 
 ```
 
 ### Concept 5: Measures of Central Tendency
+
 **Definition**: Measures of central tendency are values that represent the center or typical value of a data set, including the mean (average), median (middle value), and mode (most frequent value).
 
 **Clarification**: Each measure provides different information about the data and is appropriate in different contexts. The mean is influenced by all values but can be skewed by outliers. The median is resistant to outliers. The mode shows the most common value(s). Understanding these measures helps students summarize and compare data sets.
 
-**Example**: 
+**Example**:
+
 For the data set {4, 7, 10, 12, 12, 15, 20}:
+
 - Mean = (4 + 7 + 10 + 12 + 12 + 15 + 20) ÷ 7 = 80 ÷ 7 ≈ 11.4
 - Median = 12 (the middle value when ordered)
 - Mode = 12 (the most frequent value)
@@ -449,12 +461,15 @@ For the data set {4, 7, 10, 12, 12, 15, 20}:
 ```
 
 ### Concept 6: Measures of Variation
+
 **Definition**: Measures of variation describe how spread out the data is, including range, interquartile range (IQR), and standard deviation.
 
 **Clarification**: These measures provide information about the dispersion or variability of the data. The range is the difference between the maximum and minimum values. The IQR is the difference between the third quartile (Q3) and the first quartile (Q1). The standard deviation measures the average distance of each data point from the mean. Understanding variation helps students assess the consistency and reliability of data.
 
-**Example**: 
+**Example**:
+
 For the data set {4, 7, 10, 12, 12, 15, 20}:
+
 - Range = 20 - 4 = 16
 - Q1 = 7, Q3 = 15, so IQR = 15 - 7 = 8
 - Standard deviation involves calculating the average of the squared differences from the mean
@@ -566,11 +581,13 @@ For the data set {4, 7, 10, 12, 12, 15, 20}:
 ```
 
 ### Concept 7: Making Inferences and Predictions
+
 **Definition**: Making inferences involves drawing conclusions about a population based on a sample, while making predictions involves using data and probability to forecast future events or values.
 
 **Clarification**: These processes require understanding the relationship between samples and populations, as well as the role of randomness and variability. Statistical inferences are always accompanied by a level of uncertainty, which can be quantified using probability. This concept helps students use data to make informed decisions and evaluate claims.
 
-**Example**: 
+**Example**:
+
 - If a random sample of 100 students shows that 65% prefer digital textbooks, we might infer that about 65% of all students at the school prefer digital textbooks, with some margin of error.
 - Based on historical weather data showing that it has rained on 30% of April days, we might predict a 30% chance of rain on any given day in April.
 - If a basketball player has made 80% of free throws this season, we might predict an 80% chance of making the next free throw.
@@ -653,10 +670,13 @@ For the data set {4, 7, 10, 12, 12, 15, 20}:
 ```
 
 ## Summary
+
 Unit 18 introduces students to probability and statistics, focusing on quantifying uncertainty and analyzing data. Students learn about basic probability concepts, the difference between experimental and theoretical probability, compound events and sample spaces, data collection and representation, measures of central tendency and variation, and making inferences and predictions. These concepts provide tools for making sense of random phenomena, drawing conclusions from data, and developing critical thinking skills for evaluating claims based on data.
 
 ## Connection to Next Unit
+
 The probability and statistics concepts learned in Unit 18 provide a foundation for Unit 19, which focuses on financial literacy. Statistical analysis is often applied in financial contexts, such as analyzing market trends, assessing risk, and making investment decisions. Probability concepts are essential for understanding financial risk and making informed financial choices. Additionally, the data analysis skills developed in this unit will be useful for interpreting financial data and evaluating financial options. The critical thinking skills fostered through statistical reasoning will also support sound financial decision-making.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_17_Algebraic_Thinking|Unit 17: Algebraic Thinking]] | **Next**: [[Education/Math/Arithmetic/Unit_19_Financial_Literacy|Unit 19: Financial Literacy]]

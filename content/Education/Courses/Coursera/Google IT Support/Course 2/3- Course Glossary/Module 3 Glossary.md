@@ -75,4 +75,5 @@
 **Urgent pointer field:** A field used in conjunction with one of the TCP control flags to point out particular segments that might be more important than others
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 2 Glossary|Module 2 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 4 Glossary|Module 4 Glossary]]

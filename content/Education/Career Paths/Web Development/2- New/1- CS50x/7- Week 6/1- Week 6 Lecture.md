@@ -153,6 +153,7 @@ print("hello, world")
 - As with C, the CS50 library can be utilized within Python.
 
 The following functions will be of particular use:
+
 - `get_float`
 - `get_int`
 - `get_string`
@@ -245,6 +246,7 @@ Notice that various objects can be provided to print. A separator of a single sp
 - Data types in Python do not need to be explicitly declared. For example, you saw how `answer` above is a string, but we did not have to tell the interpreter this was the case: It knew on its own.
 
 In Python, commonly used types include:
+
 - `bool`
 - `float`
 - `int`
@@ -253,6 +255,7 @@ In Python, commonly used types include:
 Notice that `long` and `double` are missing. Python will handle what data type should be used for larger and smaller numbers.
 
 Some other data types in Python include:
+
 - `range` - sequence of numbers
 - `list` - sequence of mutable values
 - `tuple` - sequence of immutable values
@@ -711,7 +714,9 @@ Notice that the above code repeatedly tries to get the correct type of data, pro
 ## Mario
 
 Recall a few weeks ago our challenge of building three blocks on top of one another, like in Mario.
+
 ![Mario blocks](https://cs50.harvard.edu/x/notes/6/cs50Week6Slide073.png)
+
 In Python, we can implement something akin to this as follows:
 
 ```python
@@ -1010,7 +1015,7 @@ with open("phonebook.csv", "a") as file:
 	writer.writerow({"name": name, "number": number})
 ```
 
-Notice this code is quite similar to our prior iteration but with `csv.DictWriter` instead    
+Notice this code is quite similar to our prior iteration but with `csv.DictWriter` instead
 
 ## Third-Party Libraries
 
@@ -1037,4 +1042,5 @@ In this lesson, you learned how the building blocks of programming from prior le
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/Section - Data Structures, Linked Lists, Hash Tables, and Inheritance|CS50x Section 5: Data Structures, Linked Lists, Hash Tables, and Inheritance]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/7- Week 6/2- Week 6 Short|Week 6 Short: Python Programming Language]]

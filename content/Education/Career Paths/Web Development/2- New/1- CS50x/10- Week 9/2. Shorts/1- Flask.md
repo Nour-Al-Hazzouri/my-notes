@@ -29,7 +29,7 @@ HTML websites suffer from one major limitation: they are static. Imagine creatin
 </html>
 ```
 
-This is great for a minute, but at 14:09 (2:09 PM), it becomes not accurate anymore. If you're the webmaster and you have a page written entirely in HTML, every minute you have to go through and update this page so that it is always consistent. 
+This is great for a minute, but at 14:09 (2:09 PM), it becomes not accurate anymore. If you're the webmaster and you have a page written entirely in HTML, every minute you have to go through and update this page so that it is always consistent.
 
 If you were actually a webmaster and this was your job, you probably wouldn't last too long because you'd be literally just changing things constantly. And imagine if we were going to the nearest second or the nearest millisecond - you wouldn't be able to actually even do it.
 
@@ -53,6 +53,7 @@ def time():
 ```
 
 This code:
+
 - Imports Flask and necessary modules for datetime functionality
 - Imports the datetime module and specifically pulls the datetime function from it
 - Imports the timezone function from the pytz (py timezone) module
@@ -114,7 +115,8 @@ def sample():
     return "You are on the sample page!"
 ```
 
-These decorators are basically associating a particular function with executing when you visit a particular URL. 
+These decorators are basically associating a particular function with executing when you visit a particular URL.
+
 - If you go to your web application's home page (just `/`), it will show "You are at the index page"
 - If you go to `/sample`, it will show "You are on the sample page"
 
@@ -125,21 +127,27 @@ Decorators are actually not something native to Flask - they're native to Python
 To run our Flask application, we need three steps (the first two only need to be run once):
 
 ### 1. Export Flask App
+
 ```bash
 export FLASK_APP=application.py
 ```
+
 This is a system variable that gets stored in the memory of your IDE, so if you ever run an application again, it knows exactly which application to run.
 
 ### 2. Enable Debug Mode (Optional but Recommended)
+
 ```bash
 export FLASK_DEBUG=1
 ```
+
 The 1 here basically means true. This runs your Flask application in debug mode, so if something goes wrong, it will get printed out to your terminal. Your site won't just crash without you knowing what happened.
 
 ### 3. Run the Application
+
 ```bash
 flask run
 ```
+
 This will take about a second to spin up, then give you a URL that you can click on and visit, which will be the home page of your application.
 
 After the first time configuration, you can leave out the export commands and just continue to type `flask run` to run the same application over and over.
@@ -156,7 +164,8 @@ def show(number):
     return "You passed in {}".format(number)
 ```
 
-The angle brackets around `<number>` are important - we actually have to leave those in. 
+The angle brackets around `<number>` are important - we actually have to leave those in.
+
 - If you visit `/show/10`, the page would show "You passed in 10"
 - If you go to `/show/50`, it would say "You passed in 50"
 
@@ -195,6 +204,7 @@ def login():
 ```
 
 This allows us to:
+
 - Use one URL to do two different things depending on how the data came to us
 - Show the form if we got a GET request
 - Process the submitted data if we got a POST request
@@ -210,13 +220,17 @@ from flask import Flask, url_for, redirect, session, render_template
 ```
 
 ### url_for()
+
 Allows you to define a function and have a decorator associated with it. Instead of specifying the exact URL you want to go to (which might be very long), you can say `url_for('login')` to reference the URL associated with the login function. It's a way to shorthand URLs.
 
 ### redirect()
+
 Flask's function that redirects you from one page to another.
 
 ### session()
+
 Useful for HTTP session data. In addition to GET and POST, there's also session variables (not necessarily an HTTP thing but usually stored in the headers). You can use this to:
+
 - Track that a user is logged in
 - Constantly check they are logged in even if they're going to different pages
 - Store data in the session for the user
@@ -224,6 +238,7 @@ Useful for HTTP session data. In addition to GET and POST, there's also session 
 A session is used sort of like a global variable - it's accessible by all pages.
 
 ### render_template()
+
 Used to create pages on your site that mix HTML and Python together. You might render a template where that template is an HTML form. You might have an HTML template where you've written the general form, and you render that template with specific data filled in.
 
 You can mix HTML and Python together using a language called Jinja (Python-inspired syntax). Some things familiar from Python syntax will be relevant there, but there are a couple of little twists as well.
@@ -232,7 +247,7 @@ You can mix HTML and Python together using a language called Jinja (Python-inspi
 
 - **Flask Quick Start Guide**: http://flask.pocoo.org/docs/0.12/quickstart/
   You can get started pretty quickly with Flask using this guide
-  
+
 - **Jinja Documentation**: http://jinja.pocoo.org/
   Learn how to mix HTML and Python together to create basic templates where you can substitute different things depending on what the user has submitted via GET or POST requests
 
@@ -247,4 +262,5 @@ You can mix HTML and Python together using a language called Jinja (Python-inspi
 7. Dynamic pages automatically update without manual intervention, unlike static HTML
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/1- Week 9 Lecture|CS50 Week 9 Lecture - Flask Web Development]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/2. Shorts/2- AJAX|AJAX - CS50 Short Summary]]

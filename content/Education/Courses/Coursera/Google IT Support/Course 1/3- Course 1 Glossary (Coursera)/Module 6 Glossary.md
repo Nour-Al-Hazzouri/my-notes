@@ -11,4 +11,5 @@
 **Troubleshooting:** The ability to diagnose and resolve a problem
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 5 Glossary|Module 5 Glossary]]

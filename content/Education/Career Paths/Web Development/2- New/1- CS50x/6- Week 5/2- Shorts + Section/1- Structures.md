@@ -81,4 +81,5 @@ mycar->engine_size = 2.5;
 Structures are a fundamental building block in C programming, allowing for the creation of complex data types by grouping related data of different types. They are essential for organizing data logically and are used extensively in the implementation of many other data structures.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/1- Week 5 Lecture|Lecture 5]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/2- Singly Linked Lists|CS50x Short: Singly-Linked Lists]]

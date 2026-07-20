@@ -5,6 +5,7 @@ Effective resource monitoring is essential for maintaining optimal system perfor
 ## Understanding Load in Linux
 
 In Linux, **load** represents the set of processes a CPU is currently running or waiting to run:
+
 - Each running or waiting process adds 1 to the load
 - An idle system with no processes has a load of 0
 - Example: 3 running applications + 2 waiting = load of 5
@@ -18,20 +19,23 @@ Linux uses load average calculations over three time periods instead of percenta
 3. **15-minute average**: Long-term system activity
 
 Load average values are decimal numbers where:
+
 - 0.03 represents approximately 3% CPU utilization
 - Higher values indicate increased resource usage
 
 ## Monitoring Commands
 
-### The uptime Command
+### The Uptime Command
 
 The `uptime` command provides a quick view of load averages:
+
 - Displays three decimal values representing 1, 5, and 15-minute averages
 - Simple way to quickly check system resource usage
 
-### The top Command
+### The Top Command
 
 The `top` (table of processes) command provides comprehensive resource monitoring:
+
 - First line shows the same load average information as `uptime`
 - Second line displays task output with process status information
 

@@ -20,6 +20,7 @@ Before JSON, XML (Extensible Markup Language) was the most common data interchan
 ## JSON as a Subset of JavaScript
 
 JSON is considered a subset of JavaScript, meaning:
+
 - All JSON code is valid JavaScript
 - Not all JavaScript code is valid JSON
 - JSON follows stricter formatting rules than JavaScript
@@ -34,6 +35,7 @@ JSON serves as both a data interchange format and a file format:
 - Processed data can be stringified back to JSON for sending to servers
 
 Example workflow:
+
 ```
 Server JSON data → Parse to JS object → Process data → Stringify to JSON → Send back to server
 ```
@@ -68,6 +70,7 @@ JSON can only include:
 ### Unsupported Data Types
 
 The following JavaScript data types cannot be included in JSON:
+
 - Functions (operation silently fails)
 - BigInt (throws TypeError)
 - Undefined
@@ -77,21 +80,25 @@ The following JavaScript data types cannot be included in JSON:
 ## JSON Examples
 
 ### Simple Object
+
 ```json
 {"color":"red"}
 ```
 
 ### Nested Object
+
 ```json
 {"color":"red", "nestedObject": { "color": "blue" }}
 ```
 
 ### Array
+
 ```json
 ["one", "two", "three"]
 ```
 
 ### Array of Objects
+
 ```json
 [{ "color": "blue" }, {"color": "red"}]
 ```
@@ -99,4 +106,5 @@ The following JavaScript data types cannot be included in JSON:
 These examples demonstrate how JSON can represent both simple and complex data structures while adhering to its formatting rules.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/21- Exercise- Web page content update|Capturing and Processing User Input in JavaScript]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/23- JavaScript Object Notation-JSON|23- JavaScript Object Notation-JSON]]

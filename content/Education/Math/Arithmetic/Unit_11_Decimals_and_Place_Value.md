@@ -1,16 +1,19 @@
 # Unit 11: Decimals and Place Value
 
 ## Overview
+
 This unit introduces students to decimals and extends their understanding of place value beyond whole numbers. Decimals represent parts of a whole using the base-10 system and are essential for expressing quantities that fall between whole numbers. Understanding decimals and their place value is fundamental for many real-world applications, including money, measurement, and scientific notation. This unit builds on students' knowledge of fractions and whole number place value to develop a comprehensive understanding of our number system.
 
 ## Key Concepts
 
 ### Concept 1: Decimal Place Value
+
 **Definition**: Decimal place value extends the base-10 system to the right of the decimal point, with each position representing a power of 1/10.
 
 **Clarification**: Just as each position to the left of the decimal point represents a power of 10 (ones, tens, hundreds, etc.), each position to the right represents a power of 1/10 (tenths, hundredths, thousandths, etc.). The decimal point serves as the reference point that separates whole numbers from fractional parts.
 
 **Example**: In the number 3.752:
+
 - The digit 3 is in the ones place (3 × 1 = 3)
 - The digit 7 is in the tenths place (7 × 0.1 = 0.7)
 - The digit 5 is in the hundredths place (5 × 0.01 = 0.05)
@@ -42,11 +45,13 @@ This unit introduces students to decimals and extends their understanding of pla
 ```
 
 ### Concept 2: Decimals and Fractions
+
 **Definition**: Decimals are another way to represent fractions, particularly those with denominators that are powers of 10.
 
 **Clarification**: Every decimal can be written as a fraction, and fractions with denominators that are powers of 10 can be easily converted to decimals. This connection helps students understand that decimals and fractions are different representations of the same concept—parts of a whole.
 
-**Example**: 
+**Example**:
+
 - 0.3 = 3/10 (3 tenths)
 - 0.45 = 45/100 (45 hundredths)
 - 0.125 = 125/1000 (125 thousandths)
@@ -102,11 +107,13 @@ This unit introduces students to decimals and extends their understanding of pla
 ```
 
 ### Concept 3: Reading and Writing Decimals
+
 **Definition**: Reading and writing decimals involves understanding the place value of each digit and expressing the number in words or standard form.
 
 **Clarification**: When reading decimals, the decimal point is read as "and" or "point," and the digits to the right are read according to their place value. When writing decimals from words, it's important to place each digit in its correct position relative to the decimal point.
 
-**Example**: 
+**Example**:
+
 - 5.34 is read as "five and thirty-four hundredths" or "five point three four"
 - "Twenty-three and seven tenths" is written as 23.7
 - "Six hundredths" is written as 0.06 (note the leading zero before the decimal point)
@@ -143,15 +150,18 @@ This unit introduces students to decimals and extends their understanding of pla
 ```
 
 ### Concept 4: Comparing Decimals
+
 **Definition**: Comparing decimals involves determining which of two or more decimals represents a greater or lesser value.
 
 **Clarification**: To compare decimals, we first compare the whole number parts. If these are equal, we compare the digits in the tenths place, then the hundredths place, and so on. This process is similar to comparing whole numbers but requires careful attention to place value.
 
 **Example**: To compare 3.45 and 3.54:
+
 1. The whole number parts are both 3, so we move to the tenths place
 2. In the tenths place, 4 < 5, so 3.45 < 3.54
 
 To compare 0.8 and 0.75:
+
 1. The whole number parts are both 0, so we move to the tenths place
 2. In the tenths place, 8 > 7, so 0.8 > 0.75 (Note: 0.8 = 0.80 when written with the same number of decimal places)
 
@@ -197,11 +207,13 @@ To compare 0.8 and 0.75:
 ```
 
 ### Concept 5: Rounding Decimals
+
 **Definition**: Rounding decimals involves finding the nearest value to a given decimal with a specified precision.
 
 **Clarification**: The rules for rounding decimals are similar to those for rounding whole numbers. We look at the digit to the right of the rounding position: if it's 5 or greater, we round up; if it's less than 5, we round down. This skill is important for estimation and working with approximate values.
 
-**Example**: 
+**Example**:
+
 - Rounding 3.748 to the nearest tenth: Since the digit in the hundredths place (4) is less than 5, we round down to 3.7
 - Rounding 2.85 to the nearest tenth: Since the digit in the hundredths place (5) is 5, we round up to 2.9
 - Rounding 0.632 to the nearest hundredth: Since the digit in the thousandths place (2) is less than 5, we round down to 0.63
@@ -255,11 +267,13 @@ To compare 0.8 and 0.75:
 ```
 
 ### Concept 6: Decimal Models
+
 **Definition**: Decimal models are visual representations that help students understand the value of decimals and their relationship to fractions.
 
 **Clarification**: Common decimal models include base-10 blocks, grids, and number lines. These models provide concrete or visual representations that help students develop conceptual understanding of decimal values and operations.
 
-**Example**: 
+**Example**:
+
 - A 10×10 grid can represent 1 whole, with each small square representing 0.01 (one hundredth). Shading 37 squares would represent 0.37.
 - On a number line, the interval between 0 and 1 can be divided into 10 equal parts to represent tenths, or 100 equal parts to represent hundredths.
 
@@ -314,11 +328,13 @@ To compare 0.8 and 0.75:
 ```
 
 ### Concept 7: Money and Decimals
+
 **Definition**: Money provides a real-world context for understanding decimals, with dollars and cents representing whole numbers and hundredths.
 
 **Clarification**: The connection between money and decimals helps students see the practical application of decimal concepts. In the U.S. monetary system, dollars represent whole numbers and cents represent hundredths of a dollar.
 
-**Example**: 
+**Example**:
+
 - $5.75 represents 5 dollars and 75 cents, or 5 and 75/100 dollars
 - $0.08 represents 8 cents, or 8/100 of a dollar
 - $3.50 represents 3 dollars and 50 cents, or 3 and 1/2 dollars
@@ -376,10 +392,13 @@ To compare 0.8 and 0.75:
 ```
 
 ## Summary
+
 Unit 11 introduces students to decimals and extends their understanding of place value to include positions to the right of the decimal point. Students learn to connect decimals to fractions, read and write decimals, compare and order decimal values, round decimals to different place values, use models to represent decimals, and apply decimal concepts in money contexts. These skills provide the foundation for performing operations with decimals in subsequent units and for applying decimal concepts in various real-world situations.
 
 ## Connection to Next Unit
+
 The decimal place value concepts learned in Unit 11 directly support Unit 12, which focuses on adding and subtracting decimals. Understanding decimal place value is essential for performing these operations correctly, particularly when aligning digits by place value. The ability to read, write, and compare decimals will help students set up addition and subtraction problems properly and verify the reasonableness of their answers. Additionally, the connection between decimals and fractions will be useful when interpreting the results of decimal operations in various contexts.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_10_Multiply_Fractions|Unit 10: Multiply Fractions]] | **Next**: [[Education/Math/Arithmetic/Unit_12_Add_and_Subtract_Decimals|Unit 12: Add and Subtract Decimals]]

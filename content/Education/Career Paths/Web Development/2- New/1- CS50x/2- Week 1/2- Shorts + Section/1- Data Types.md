@@ -53,4 +53,5 @@ Unlike modern programming languages like PHP and JavaScript, C requires explicit
 CS50 provides several custom data types to simplify programming, including `bool` and `string`, which are not natively available in standard C.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/1- Week 1 Notes|Lecture 1 - CS50x 2025]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/2- Operators|Operators]]

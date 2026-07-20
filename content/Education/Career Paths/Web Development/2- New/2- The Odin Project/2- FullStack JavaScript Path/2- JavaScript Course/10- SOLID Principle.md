@@ -1,4 +1,5 @@
 # **Single Responsibility Principle**
+
 #### **The Core Concept**
 
 The Single Responsibility Principle is the **"S"** in SOLID. It is often summarized as:
@@ -6,29 +7,26 @@ The Single Responsibility Principle is the **"S"** in SOLID. It is often summari
 > _"A class, module, or function should have one, and only one, reason to change."_
 
 - **One Responsibility:** Every part of your code should focus on doing one thing well.
-    
+
 - **Reason to Change:** If you can think of two different reasons why you would need to modify a piece of code (e.g., changing how data is calculated vs. changing how data is displayed), it has more than one responsibility.
-    
 
 #### **Why It Matters**
 
 - **Decoupling:** By separating concerns, you ensure that changes in one area (like how you log errors) don't accidentally break logic in another area (like how you calculate values).
-    
-- **Maintainability:** Small, focused files are easier to navigate, test, and understand.
-    
-- **Reusability:** A dedicated "Logger" module can be used across your entire application, whereas a logger buried inside a "CalorieTracker" cannot.
-    
 
-#### **The "Red Flag" (When to apply SRP)**
+- **Maintainability:** Small, focused files are easier to navigate, test, and understand.
+
+- **Reusability:** A dedicated "Logger" module can be used across your entire application, whereas a logger buried inside a "CalorieTracker" cannot.
+
+#### **The "Red Flag" (When to aPply SRP)**
 
 Look for bloated classes that handle multiple unrelated tasks, such as:
 
 1. Performing calculations **AND** saving to a database.
-    
+
 2. Managing state **AND** handling API requests.
-    
+
 3. Processing data **AND** formatting it for the UI/Console.
-    
 
 ---
 
@@ -95,25 +93,24 @@ class CalorieTracker {
 The goal isn't to make every single line of code its own file, but to identify unrelated tasks. Ask yourself: _"If I want to change how the user sees this information, do I have to open the file that calculates the information?"_ If the answer is yes, you are likely violating SRP. Breaking these apart makes your code modular and much more resilient to future changes.
 
 ---
-# The Open/Closed Principle 
+
+# The Open/Closed Principle
 
 > _"Software entities (classes, modules, functions, etc.) should be **open for extension**, but **closed for modification**."_
 
 - **Open for Extension:** You should be able to add new functionality or features to your code.
-    
+
 - **Closed for Modification:** You should be able to add those new features **without** changing the existing, already-tested source code.
-    
 
 #### **Why It Matters**
 
 - **Reduced Bugs:** Every time you modify existing code (like adding a new `case` to a switch statement), you risk breaking old functionality.
-    
-- **Maintainability:** It prevents "fragile code" where a small change in one place requires updates in ten other places.
-    
-- **Readability:** It replaces massive, complex conditional blocks with smaller, focused classes or functions.
-    
 
-#### **The "Red Flag" (When to apply OCP)**
+- **Maintainability:** It prevents "fragile code" where a small change in one place requires updates in ten other places.
+
+- **Readability:** It replaces massive, complex conditional blocks with smaller, focused classes or functions.
+
+#### **The "Red Flag" (When to aPply OCP)**
 
 The biggest indicator that you are violating OCP is the presence of **large `switch` statements** or **chained `if/else if` blocks** that check for a "type" or "role" to determine behavior.
 
@@ -195,6 +192,7 @@ printQuiz(quiz);
 While you shouldn't over-engineer every small project, you should reach for OCP when you find yourself repeatedly returning to the same function to add new "types" or "logic branches." By moving that logic into modules or classes that "know" how to handle themselves, you create a system that grows by **adding** code, not by **rewriting** it.
 
 ---
+
 # **Liskov Substitution Principle (LSP)**
 
 #### **The Core Concept**
@@ -208,20 +206,18 @@ In plain terms: **Subclasses should be able to stand in for their parent classes
 #### **Why It Matters**
 
 - **Predictability:** It ensures that inheritance doesn't introduce hidden bugs.
-    
-- **Trust in Abstraction:** You can write code based on a parent class and be confident it will work for _any_ child class.
-    
-- **Clean Architecture:** It forces you to think deeply about whether an "is-a" relationship (e.g., "a Penguin is a Bird") actually makes sense in terms of _behavior_, not just taxonomy.
-    
 
-#### **The "Red Flag" (When to apply LSP)**
+- **Trust in Abstraction:** You can write code based on a parent class and be confident it will work for _any_ child class.
+
+- **Clean Architecture:** It forces you to think deeply about whether an "is-a" relationship (e.g., "a Penguin is a Bird") actually makes sense in terms of _behavior_, not just taxonomy.
+
+#### **The "Red Flag" (When to aPply LSP)**
 
 - **Unexpected Errors:** A subclass throws an error for a method that the parent class is supposed to support (e.g., a `Penguin` throwing an error when `fly()` is called).
-    
+
 - **Type Checking:** You find yourself using `if (obj instanceof Subclass)` inside a function that is supposed to handle the parent class.
-    
+
 - **Empty Overrides:** You override a parent method but leave it empty because the subclass doesn't actually do that thing.
-    
 
 ---
 
@@ -296,9 +292,8 @@ Inheritance forces you to design types based on **what they are** (e.g., _a Dog 
 Design types based on **what they do** rather than what they are. Instead of a deep inheritance tree, create small, functional building blocks and "compose" your objects from them.
 
 - **Inheritance:** A Dog _is_ an Animal.
-    
+
 - **Composition:** A Dog _is a_ Barker + _is a_ Pooper.
-    
 
 #### **Code Example: Functional Composition**
 
@@ -348,6 +343,7 @@ snickers.kill();  // "Target eliminated."
 LSP is often a warning that your **inheritance is too broad**. Just because something is a "type" of something else in the real world (a Square is a Rectangle, a Penguin is a Bird) doesn't mean it should inherit from it in code if their **behaviors** differ.
 
 ---
+
 # **Interface Segregation Principle (ISP)**
 
 #### **The Core Concept**
@@ -361,18 +357,16 @@ In simpler terms: **Don't bloat a class or interface with methods that only some
 #### **Why It Matters**
 
 - **Avoids "Fat" Interfaces:** Prevents classes from being forced to implement "dead code" (methods that do nothing or throw errors).
-    
-- **Decoupling:** If you change a specific method, you only affect the classes that actually use it, rather than every class connected to a giant interface.
-    
-- **Clarity:** It makes it immediately obvious what a specific component is actually capable of doing.
-    
 
-#### **The "Red Flag" (When to apply ISP)**
+- **Decoupling:** If you change a specific method, you only affect the classes that actually use it, rather than every class connected to a giant interface.
+
+- **Clarity:** It makes it immediately obvious what a specific component is actually capable of doing.
+
+#### **The "Red Flag" (When to aPply ISP)**
 
 - **Empty Implementations:** You find yourself writing `return null` or `// do nothing` inside a method because the class _must_ have that method to satisfy an inheritance/interface requirement.
-    
+
 - **Large Base Classes:** A base class has 20 methods, but most subclasses only use 3 or 4 of them.
-    
 
 ---
 
@@ -462,20 +456,18 @@ In simple terms: **Your main application logic (the "what") should not be hard-c
 #### **Why It Matters**
 
 - **Swappability:** You can switch from Stripe to PayPal, or from a SQL database to MongoDB, by only changing one small wrapper class.
-    
-- **Testability:** You can easily swap a real API for a "mock" or "fake" version during testing so you don't actually charge credit cards while debugging.
-    
-- **Decoupling:** Your core business logic becomes independent of the specific version or syntax of third-party libraries.
-    
 
-#### **The "Red Flag" (When to apply DIP)**
+- **Testability:** You can easily swap a real API for a "mock" or "fake" version during testing so you don't actually charge credit cards while debugging.
+
+- **Decoupling:** Your core business logic becomes independent of the specific version or syntax of third-party libraries.
+
+#### **The "Red Flag" (When to aPply DIP)**
 
 - **Hard-coded Imports:** You see specific library names (like `import Stripe from 'stripe'`) directly inside your business logic classes.
-    
+
 - **Complex Refactoring:** Changing a service provider requires searching and replacing code in dozens of files.
-    
+
 - **Rigid Constructors:** A class creates its own dependencies internally (using `new`) rather than having them passed in.
-    
 
 ---
 
@@ -544,4 +536,5 @@ const store = new Store(new StripePaymentProcessor('John'));
 store.purchaseBike(2);
 ```
 ---
+
 **Next:** [[10.1- Odin_todo-list Notes]] | **Previous:** [[9- JSON]]

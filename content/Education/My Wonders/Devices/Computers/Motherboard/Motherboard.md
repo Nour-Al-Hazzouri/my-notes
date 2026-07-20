@@ -49,22 +49,29 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **The Northbridge / Southbridge Era:** Historically, the motherboard was the true central hub of the PC. The **Northbridge** (fast) handled direct communication between the CPU, RAM, and AGP/PCIe graphics, while the **Southbridge** (slow) handled USB, SATA, and audio. The speed of a PC was heavily reliant on the motherboard's Front Side Bus (FSB).
 *   **The Integration Shift (PCH Era):** Starting roughly with Intel's Sandy Bridge (and earlier AMD K8 memory integration), the functions of the Northbridge (Memory Controller, primary PCIe lanes) were moved directly onto the CPU die to eliminate latency. The Southbridge evolved into the modern **PCH (Platform Controller Hub)** or Chipset, connecting to the CPU via a high-speed link (DMI / Infinity Fabric).
 
 ### Chipset vs. CPU Logic
+
 Modern motherboards split resources between the CPU and the Chipset (PCH):
+
 *   **CPU-Direct Links:** Time-sensitive components (Primary GPU, Top M.2 SSD) connect directly to the CPU to minimize latency and maximize PCIe 5.0 bandwidth.
 *   **PCH Logic:** Secondary devices (USB, SATA, Audio, Network controllers, secondary PCIe slots) connect to the Chipset. The Chipset acts as a high-speed hub that funnels all this data through a single high-speed bus (DMI 4.0 on Intel, PCIe/GMI on AMD) back to the CPU.
 
 ### VRM (Power Delivery) Sub-systems
-The VRM is essentially a DC-to-DC converter. 
+
+The VRM is essentially a DC-to-DC converter.
+
 *   **Control Logic:** The PWM controller sends signals to the MOSFETs to shut on and off thousands of times per second.
 *   **DrMOS/Power Stages:** Integrated chips that handle the high-current switching.
 *   **Filtering:** Large chokes and capacitors (often Japanese 10K/12K rated) smooth out the "rippling" electricity into a flat line of pure power for the CPU cores.
 
 ### Board Manufacturer Implementations & Proprietary Tech
+
 While Intel and AMD design the chipsets, the physical motherboards are engineered by third-party OEMs (ASUS, MSI, Gigabyte, ASRock), leading to massive divergence in build quality and proprietary features:
+
 *   **ASUS (ROG/TUF):** Pioneered **Q-Release** (a physical button to eject the GPU) and **Q-Latch** (toolless M.2 installation). High-end boards often use **Teamed Power Stages** in the VRM instead of traditional phase doublers, improving transient response times under heavy CPU loads.
 *   **MSI (MEG/MPG):** Known for robust memory trace layouts improving RAM overclocking margins. High-end MEG boards feature the **M.Vision Dashboard** (an integrated OLED screen for hardware monitoring and debug codes).
 *   **Gigabyte (AORUS):** Employs **EZ-Latch Plus** mechanisms and often uses massive "Fins-Array" heatsinks to keep heavy PCIe 5.0 and VRM thermal loads under control without active fans.
@@ -97,13 +104,16 @@ While Intel and AMD design the chipsets, the physical motherboards are engineere
 ## VII. Troubleshooting & Field Diagnostics
 
 ### Symptom: 00 / FF Debug Code (No Post)
+
 *   **Cause**: CPU not detected, dead motherboard, or catastrophic power failure.
 *   **Isolation**: Check EPS 8-pin power cables. Reseat CPU. If debug code 00 remains, it often indicates a dead CPU or toasted VRM logic.
 
 ### Symptom: Long Boot Times (DDR5 Platforms)
+
 *   **Cause**: "Memory Training" – the motherboard is testing the stability of high-speed RAM timings.
 *   **Isolation**: Enable "Memory Context Restore" in BIOS. Ensure BIOS is updated (early AM5/1700 boards had bugged training cycles).
 
-### Symptom: USB Devices Disconnecting under heavy GPU load
+### Symptom: USB Devices Disconnecting under Heavy GPU Load
+
 *   **Cause**: PCIe 4.0/5.0 signal interference or chipset voltage dropping.
 *   **Isolation**: Update BIOS (AMD had a specific fix for this). Manually set PCIe Gen to 3.0 temporarily to isolate signal integrity issues.

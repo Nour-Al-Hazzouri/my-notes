@@ -37,4 +37,5 @@
 **System software:** Software used to keep our core system running, like operating system tools and utilities
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 4 Glossary|Module 4 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 6 Glossary|Module 6 Glossary]]

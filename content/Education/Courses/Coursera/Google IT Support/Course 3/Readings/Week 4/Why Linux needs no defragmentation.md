@@ -1,4 +1,4 @@
-# Why Linux needs no defragmentation
+# Why Linux Needs No Defragmentation
 
 ## Understanding File Fragmentation
 
@@ -11,12 +11,14 @@ Defragmentation rearranges file fragments into contiguous locations to improve r
 ### Windows File Systems
 
 **FAT File System**
+
 - Saves files as close to disk start as possible
 - Places subsequent files immediately after previous ones
 - Provides no room for file growth, guaranteeing fragmentation
 - Last used by default in Windows 98/ME (still used on USB drives)
 
 **NTFS File System**
+
 - Introduced with Windows 2000/XP for consumer PCs
 - Allocates buffer space around files
 - Still becomes fragmented over time
@@ -25,6 +27,7 @@ Defragmentation rearranges file fragments into contiguous locations to improve r
 ### Linux File Systems
 
 **Ext2/3/4 File Systems**
+
 - Used by most current Linux distributions including Ubuntu
 - Scatters files across the disk with substantial free space between them
 - Provides room for files to grow without fragmentation
@@ -34,12 +37,14 @@ Defragmentation rearranges file fragments into contiguous locations to improve r
 ## Exceptional Cases
 
 Linux file systems may experience fragmentation when:
+
 - File system becomes 80-95% full
 - Solution is typically to increase disk capacity
 
 ## Manual Defragmentation Method
 
 If fragmentation becomes problematic:
+
 1. Copy all files off the partition
 2. Erase the files from the partition
 3. Copy the files back (the file system will allocate them intelligently)
@@ -47,4 +52,5 @@ If fragmentation becomes problematic:
 ## Measuring Fragmentation
 
 Use the fsck command to check fragmentation levels:
+
 - Look for "non-contiguous inodes" in the output

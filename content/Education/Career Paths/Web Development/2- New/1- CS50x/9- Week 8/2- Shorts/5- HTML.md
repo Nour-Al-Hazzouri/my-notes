@@ -1,17 +1,20 @@
 # Week 8 Short: HTML (HyperText Markup Language)
 
 ## Overview
+
 After spending approximately 35 videos covering C programming, we're now transitioning to other languages more quickly. HTML is covered in just one video because once you understand the fundamentals of one language, learning others becomes much easier. The internet provides vast resources for continued learning beyond these videos.
 
 ## What is HTML?
 
 ### Key Distinctions
+
 - **HTML is a language but NOT a programming language**
 - No variables, logic, or functions
-- Cannot write "HTML programs" 
+- Cannot write "HTML programs"
 - People calling themselves "HTML programmers" is technically inaccurate
 
 ### What HTML Actually Does
+
 - **Markup Language**: Uses tags to mark up text
 - **Semantic Structure**: Defines the structure of a page
 - **Browser Interpretation**: Tags cause browsers to interpret plain text in different ways
@@ -20,6 +23,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Basic HTML Structure
 
 ### Simple HTML Page Example
+
 ```html
 <html>
   <head>
@@ -32,6 +36,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ```
 
 ### Key Components
+
 - **HTML Tags**: Bounded by angle brackets `< >`
 - **Opening and Closing**: Tags come in pairs
   - Opening: `<html>`
@@ -41,6 +46,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - **Body Section**: Actual content visible on the web page
 
 ### Demonstration in CS50 IDE
+
 - File: `hello.html`
 - Indentation used for cleanliness and organization
 - Preview shows:
@@ -51,12 +57,14 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## White Space and Formatting
 
 ### White Space is Data
+
 ```html
 <!-- Ugly but functional version -->
 <html><head><title>Hello,World</title></head><body>World, hello</body></html>
 ```
 
 ### Important Points
+
 - **Indentation doesn't matter** functionally
 - White space costs money in data transmission
 - Production websites often minimize white space
@@ -66,14 +74,16 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Learning Resources
 
 ### Over 100 HTML Tags Available
+
 - Video covers fundamental tags only
 - Extensive online resources available
 - Not exhaustive coverage (would be too much)
 
 ### Developer Tools for Learning
+
 - **Access**: F12 key in Chrome
 - **Elements Tab**: Shows HTML of any web page
-- **Learn by Example**: 
+- **Learn by Example**:
   - Inspect favorite websites
   - Hover over elements to see their HTML
   - See how cool patterns are created
@@ -90,6 +100,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 | `<u>` | Underlined text | `<u>This is underlined</u>` |
 
 ### Demonstration (BIU.html)
+
 - Each tag renders text with its respective style
 - Can be combined for multiple effects
 - Simple way to emphasize text
@@ -97,22 +108,25 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Content Organization Tags
 
 ### Paragraph Tags (`<p>`)
+
 - **Purpose**: Break text into paragraphs
-- **Why Needed**: 
+- **Why Needed**:
   - Hitting Enter doesn't create paragraphs
   - Computer ignores white space
   - Must explicitly define paragraphs
 - **Usage**: Enclose each paragraph in `<p>` tags
 
 ### Header Tags (`<h1>` through `<h6>`)
+
 - **Six Levels**: H1 (largest) to H6 (smallest)
-- **Hierarchy**: 
+- **Hierarchy**:
   - H1: Top-level header
   - H2: Second-level header
   - Progressively smaller
 - **Usage**: Draw attention to sections
 
 ### Example (PH.html)
+
 - Lorem ipsum text as filler content
 - H1 header noticeably larger than H2
 - P tags create proper paragraph separation
@@ -121,6 +135,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## List Tags
 
 ### Unordered Lists (Bulleted)
+
 ```html
 <ul>
   <li>First item</li>
@@ -130,6 +145,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ```
 
 ### Ordered Lists (Numbered)
+
 ```html
 <ol start="6">
   <li>Item six</li>
@@ -139,6 +155,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ```
 
 ### Key Points
+
 - **UL**: Unordered/bulleted list
 - **OL**: Ordered/numbered list
 - **LI**: List items (used in both)
@@ -149,6 +166,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Table Tags
 
 ### Basic Table Structure
+
 ```html
 <table>
   <tr>
@@ -167,12 +185,14 @@ After spending approximately 35 videos covering C programming, we're now transit
 ```
 
 ### Table Components
+
 - **`<table>`**: Table definition
 - **`<tr>`**: Table row
 - **`<td>`**: Table data (column within a row)
 - **Why TD not TC?**: Stands for "table data"
 
 ### Example (table.html)
+
 - 4x4 multiplication table
 - Basic structure without styling
 - CSS needed for better formatting (covered later)
@@ -180,6 +200,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Forms and Input
 
 ### Form Structure
+
 ```html
 <form>
   <input name="A" type="text">
@@ -191,6 +212,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ```
 
 ### Input Types
+
 - **text**: Regular text input
 - **password**: Hidden text (shows dots)
 - **radio**: Radio button selection
@@ -198,6 +220,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - **submit**: Submit button
 
 ### Div Tags
+
 - **Purpose**: Arbitrary division of the page
 - **No visual effect** by default
 - Just marks a section of the page
@@ -205,6 +228,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Styling needed for visual separation
 
 ### Self-Closing Tags
+
 ```html
 <input name="x" type="y" />
 ```
@@ -216,6 +240,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Links and Images
 
 ### Hyperlinks (Anchor Tags)
+
 ```html
 <a href="http://www.example.com">Click here</a>
 ```
@@ -224,6 +249,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Text between tags becomes clickable blue link
 
 ### Images
+
 ```html
 <img src="image.jpg" alt="Description" width="100" height="100" />
 ```
@@ -233,6 +259,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Can specify dimensions
 
 ### Example (image_link.html)
+
 - Local image: `rick.jpg` in current directory
 - Internal link: `hello.html` (same directory)
 - External link: `https://cs50.harvard.edu` (full URL)
@@ -241,6 +268,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Special HTML5 Tags
 
 ### DOCTYPE Declaration
+
 ```html
 <!DOCTYPE html>
 ```
@@ -251,6 +279,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Current de facto standard (since 2014)
 
 ### Comments
+
 ```html
 <!-- This is a comment -->
 ```
@@ -262,6 +291,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Well-Formed HTML Rules
 
 ### Proper Tag Closure
+
 - **Every opened tag must be closed**
 - **Close in reverse order** (LIFO - Last In, First Out)
 - Example:
@@ -271,17 +301,20 @@ After spending approximately 35 videos covering C programming, we're now transit
   ```
 
 ### Encapsulation
+
 - Proper nesting maintains organization
 - Like parentheses in mathematics
 - Keeps HTML structured and clean
 
 ### Error Handling
+
 - **Unlike C**: Syntax errors might not break HTML
 - Page might still work with errors
 - **But**: Can cause unexpected behavior
 - **Your responsibility**: Be vigilant about proper syntax
 
 ### Validation Tools
+
 - **Challenge**: Hard to track tag opening/closing in large files
 - **Solution**: Online HTML validators
 - Check if HTML is well-formed
@@ -291,16 +324,19 @@ After spending approximately 35 videos covering C programming, we're now transit
 ## Key Takeaways
 
 ### HTML is Different from Programming
+
 - No logic or computation
 - Just structure and presentation
 - Markup, not programming
 
 ### Tags Are Everything
+
 - Define document structure
 - Must be properly nested
 - Opening and closing pairs (except self-closing)
 
 ### Learning Approach
+
 1. Start with basic tags
 2. Use developer tools to explore
 3. Learn from existing websites
@@ -308,6 +344,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 5. Validate your HTML
 
 ### Common Elements to Master
+
 - Text formatting (b, i, u)
 - Structure (p, h1-h6, div)
 - Lists (ul, ol, li)
@@ -316,6 +353,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Links and images
 
 ### Best Practices
+
 - Keep HTML well-formed
 - Use proper indentation for readability
 - Close tags in reverse order
@@ -323,6 +361,7 @@ After spending approximately 35 videos covering C programming, we're now transit
 - Learn by inspecting other websites
 
 ### Moving Forward
+
 - HTML is foundation for web pages
 - Works with CSS for styling
 - Works with JavaScript for interactivity
@@ -332,4 +371,5 @@ After spending approximately 35 videos covering C programming, we're now transit
 This foundation in HTML, combined with your C programming knowledge, makes learning web technologies much more approachable. The concepts transfer, even though the syntax and purpose differ significantly.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/9- Week 8/2- Shorts/4- HTTP|Week 8 Short: HTTP (Hypertext Transfer Protocol)]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/9- Week 8/2- Shorts/6- CSS|Week 8 Short: CSS (Cascading Style Sheets)]]

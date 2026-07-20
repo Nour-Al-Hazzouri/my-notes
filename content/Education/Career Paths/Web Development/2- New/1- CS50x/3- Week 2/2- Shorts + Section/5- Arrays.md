@@ -2,7 +2,7 @@
 
 This short introduces arrays as a fundamental data structure in programming, explaining their purpose, structure, and how they are used in C.
 
-## What are Arrays?
+## What Are Arrays?
 
 Arrays are used to store collections of values of the same data type in contiguous memory locations. They provide an efficient way to manage multiple related variables without needing to declare a separate name for each one. This is particularly useful when dealing with a large number of values.
 
@@ -134,4 +134,5 @@ void set_int(int x)
 In this example, `set_int(a)` will not change `a` in `main` (it will remain 10), but `set_array(b)` will change the first element of `b` to 22. The output will be `10 22`.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/4- Debugging (Step Through)|CS50x Short: Debugging (Step Through)]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/6- Command Line Arguments|CS50x Short: Command Line Arguments]]

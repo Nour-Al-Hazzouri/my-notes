@@ -24,7 +24,7 @@ console.log(localVar); // ERROR: Cannot look "down" into function scope
 
 ### 2. Closures
 
-A **closure** is a function that "remembers" its surrounding state (lexical environment) even after its parent function has finished running. 
+A **closure** is a function that "remembers" its surrounding state (lexical environment) even after its parent function has finished running.
 
 ```javascript
 function makeCounter() { 
@@ -99,8 +99,10 @@ console.log(Calculator.total()); // 5
 ```
 
 ---
+
 ### Summary PDF
 
 ![[The_Lexical_Backpack.pdf]]
---- 
+---
+
 **Previous:** [[2- Object Constructors]] | **Next:** [[4- Classes]]

@@ -58,4 +58,5 @@
 * Particularly useful as applications grow in complexity
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/11- Observing State|Understanding State in React]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/13- Prop Drilling|Understanding Prop Drilling in React]]

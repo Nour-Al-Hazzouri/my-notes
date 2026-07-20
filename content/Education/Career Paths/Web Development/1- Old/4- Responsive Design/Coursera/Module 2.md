@@ -1,6 +1,7 @@
 # Module 2: Media Queries and Responsive Design
 
 ## Table of Contents
+
 - [Media Queries](#media-queries)
 - [Wire Frames](#wire-frames)
 - [Breakpoints](#breakpoints)
@@ -17,9 +18,9 @@
 - Every query has 2 components:
   - A media type: screen, print, all, …
   - The actual query of a media feature and "trigger" size: width, height, orientation, resolution, …
-    
+
     example: screen and (max-device-width: 480px) and (resolution: 163dpi)
-    
+
 - 3 ways to implement media queries:
   - Use the @import rule: @import url(smallstyle.css) screen and (min-width:600px
   - Put media query directly in the style sheet: @media screen and (min-width:500px){..}
@@ -86,4 +87,5 @@
   - doesn't mean the content doesn't get downloaded-this can affect performance
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 1|Module 1: Responsive Design Fundamentals]] | **Next**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 3|Module 3: Media Queries for Accessibility]]

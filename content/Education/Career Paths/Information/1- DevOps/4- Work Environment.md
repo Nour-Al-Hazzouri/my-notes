@@ -24,4 +24,5 @@ In summary, DevOps roles typically involve **standard working hours** (around 40
 [Real life DevOps employees' experience](https://www.reddit.com/r/devops/comments/r65xbk/whats_the_worklife_balance_for_your_devops/)
 
 ---
+
 **Previous**: [[Education/Career Paths/Information/1- DevOps/3-Detailed Roadmap|3-Detailed Roadmap]] | **Next**: [[Education/Career Paths/Information/1- DevOps/5- Job Criteria|DevOps Career: Key Insights and Challenges]]

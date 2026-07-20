@@ -75,29 +75,28 @@ Then **yes, you need shared hosting.**
 ## DNS Records Cheat Sheet
 
 1. **A (Address)** - Maps a domain name (FQDN) to an IPv4 address. Translates domain names to IP addresses. Points to the main route to check which IP address hosts the website.
-    
+
 2. **AAAA (Quad A)** - Maps to an IPv6 address (smartphones prefer IPv6 when available).
-    
+
 3. **ANAME** - Allows you to point the root of your domain to a hostname or FQDN.
-    
+
 4. **CNAME (Canonical Name)** - An alias that points to another domain or subdomain (never an IP address). Points to subdomains like `www.`. Useful when you want to change IP addresses over time without affecting user bookmarks.
-    
+
 5. **SOA (Start of Authority)** - Stores domain information and directs how a DNS zone propagates to secondary name servers.
-    
+
 6. **NS (Name Server)** - Specifies which name servers are authoritative for a domain or subdomains. If hosting differs from domain registrar, this must be edited in both places. Should NOT point to a CNAME.
-    
+
 7. **MX (Mail Exchange)** - Maps where to deliver email for a domain. Should point to a mail server name, not an IP address.
-    
+
 8. **TXT (Text)** - Allows administrators to add human and machine-readable notes for email validation, site/ownership verification, framework policies, etc. No specific formatting required.
-    
+
 9. **SRV (Service)** - Allows services like instant messaging or VoIP to be directed to a separate host and port location.
-    
+
 10. **SPF (Sender Policy Framework)** - Helps prevent email spoofing and limits spammers.
-    
+
 11. **PTR (Pointer)** - Reverse of A and AAAA records; maps IP addresses to domain names. Requires domain authority and must exist in reverse zones, not with other DNS record types.
-    
+
 12. **QUICK TIP** - Always check for typos when entering DNS record information, especially IP addresses. Use the Zone Config File to verify your work.
-    
 
 **Note for Beginners:** DNS records are advanced options. For small projects, A records and CNAME are mostly what needs changing.
 
@@ -136,7 +135,7 @@ Browsers display:
 - 🔒 **Secure** (with SSL)
 - ⚠️ **Not Secure** (without SSL)
 
-**With SSL → your website becomes HTTPS**  
+**With SSL → your website becomes HTTPS**
 **Without SSL → your website stays HTTP (not secure)**
 
 ---
@@ -170,7 +169,7 @@ When the website is hosted on a different platform than where the domain was reg
 
 ### Legacy vs. Modern Deployment
 
-**Before:** Manual process of updating website files in `public_html` (difficult and time-consuming)  
+**Before:** Manual process of updating website files in `public_html` (difficult and time-consuming)
 **Now:** CI/CD pipelines handle deployment. Simply use `git add`, `git commit`, and `git push` - GitHub automatically updates the files. This is the standard practice nowadays.
 
 ---

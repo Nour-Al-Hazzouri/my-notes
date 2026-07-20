@@ -7,6 +7,7 @@ As explained by Doug Lloyd, Python represents a significant shift from C program
 ### What is Python?
 
 Python is:
+
 - A **commonly used modern programming language** (in the top 5-6 most popular languages)
 - **Over 25 years old** - established and mature
 - **Great for simplifying complex C operations**, especially string manipulation
@@ -15,6 +16,7 @@ Python is:
 - **Inspired by C** with consistent style elements
 
 ### Python's Key Advantages
+
 - Makes complex operations from C much easier
 - Simplifies string manipulation significantly
 - Excellent for networking applications
@@ -26,6 +28,7 @@ Python is:
 ### File Creation and Execution
 
 To start writing Python:
+
 1. Create a file with `.py` extension in CS50 IDE
 2. IDE automatically provides syntax highlighting
 3. Unlike C, Python is **not necessarily compiled**
@@ -35,6 +38,7 @@ To start writing Python:
 ### Important Version Note
 
 **Critical**: CS50 teaches **Python 3**, not Python 2
+
 - Two popular versions exist: Python 2 and Python 3
 - All syntax in this course is Python 3 specific
 - When searching documentation, always include "Python 3" in searches
@@ -50,16 +54,19 @@ To start writing Python:
 ### Variable Examples
 
 **C Code:**
+
 ```c
 int x = 54;
 ```
 
 **Python Code:**
+
 ```python
 x = 54
 ```
 
 Key observations:
+
 - No `int` keyword needed
 - No semicolon required
 - Python infers the type automatically
@@ -67,11 +74,13 @@ Key observations:
 ### String Variables
 
 **C Code (requires CS50 library):**
+
 ```c
 string phrase = "This is CS50";
 ```
 
 **Python Code:**
+
 ```python
 phrase = "This is CS50"
 # OR
@@ -79,6 +88,7 @@ phrase = 'This is CS50'
 ```
 
 Python advantages:
+
 - Strings are a **native data type** (no library needed)
 - Supports both **single and double quotes**
 - Can alternate quotes for nested quotations: `"He said 'hello' to me"`
@@ -87,6 +97,7 @@ Python advantages:
 ### No Semicolons
 
 Python statements don't need semicolons:
+
 - Can include them (won't cause problems)
 - Better to omit for cleaner code
 - One less thing to worry about forgetting
@@ -98,6 +109,7 @@ All C conditionals are available but with cleaner syntax.
 ### Basic If Statement
 
 **C Code:**
+
 ```c
 if (y < 43 || z == 15) {
     // code
@@ -105,12 +117,14 @@ if (y < 43 || z == 15) {
 ```
 
 **Python Code:**
+
 ```python
 if y < 43 or z == 15:
     # code
 ```
 
 Changes:
+
 - No parentheses required around condition
 - `||` becomes the word `or`
 - Curly braces replaced with colon (`:`)
@@ -119,6 +133,7 @@ Changes:
 ### Comments
 
 Python comments use the pound sign (`#`):
+
 ```python
 # This is a comment
 ```
@@ -126,6 +141,7 @@ Python comments use the pound sign (`#`):
 ### If-Else Statement
 
 **C Code:**
+
 ```c
 if (y < 43 && z == 15) {
     // code
@@ -135,6 +151,7 @@ if (y < 43 && z == 15) {
 ```
 
 **Python Code:**
+
 ```python
 if y < 43 and z == 15:
     # code
@@ -143,12 +160,14 @@ else:
 ```
 
 Changes:
+
 - `&&` becomes the word `and`
 - English-like readability
 
 ### Else-If Statement
 
 **C Code:**
+
 ```c
 if (course_num == 50) {
     // code
@@ -158,6 +177,7 @@ if (course_num == 50) {
 ```
 
 **Python Code:**
+
 ```python
 if course_num == 50:
     # code
@@ -166,11 +186,13 @@ elif course_num != 51:
 ```
 
 Important:
+
 - `else if` becomes `elif` (not `elseif`)
 - Can also use: `elif not course_num == 51:`
 - More English-like with `not` keyword
 
 ### Logical Operators Summary
+
 - `&&` → `and`
 - `||` → `or`
 - `!` → `not`
@@ -178,12 +200,14 @@ Important:
 ### Ternary Operator
 
 **C Code:**
+
 ```c
 char c = get_char();
 bool alphabetic = isalpha(c) ? true : false;
 ```
 
 **Python Code:**
+
 ```python
 alphabetic = True if c.isalpha() else False
 ```
@@ -199,12 +223,14 @@ name = input("Name: ")
 ```
 
 CS50 library functions are also available:
+
 - Available in Python through the CS50 module
 - `get_char`, `get_float`, `get_int`, etc.
 
 ## Loops in Python
 
 Python has **two types of loops** (C has three):
+
 1. `while` loops
 2. `for` loops
 3. ~~`do-while` loops~~ (not available in Python)
@@ -212,6 +238,7 @@ Python has **two types of loops** (C has three):
 ### While Loops
 
 **C Code:**
+
 ```c
 int counter = 0;
 while (counter < 100) {
@@ -221,6 +248,7 @@ while (counter < 100) {
 ```
 
 **Python Code:**
+
 ```python
 counter = 0
 while counter < 100:
@@ -229,6 +257,7 @@ while counter < 100:
 ```
 
 Important differences:
+
 - No type declaration
 - No parentheses around condition
 - No curly braces
@@ -238,6 +267,7 @@ Important differences:
 ### For Loops
 
 **C Code:**
+
 ```c
 for (int x = 0; x < 100; x++) {
     printf("%i\n", x);
@@ -245,12 +275,14 @@ for (int x = 0; x < 100; x++) {
 ```
 
 **Python Code:**
+
 ```python
 for x in range(100):
     print(x)
 ```
 
 The `range()` function:
+
 - Creates a list of numbers
 - `range(100)` gives 0 to 99 (excludes final value)
 - Much more concise than C syntax
@@ -258,12 +290,14 @@ The `range()` function:
 ### Advanced Range Usage
 
 **Counting by twos:**
+
 ```python
 for x in range(0, 100, 2):
     print(x)
 ```
 
 Parameters:
+
 - Start point (inclusive)
 - End point (exclusive)
 - Step value
@@ -283,6 +317,7 @@ Python doesn't have arrays; it has **lists** which are much more powerful.
 ### Creating Lists
 
 **Empty list:**
+
 ```python
 nums = []
 # OR
@@ -290,29 +325,35 @@ nums = list()
 ```
 
 **Pre-populated list:**
+
 ```python
 nums = [1, 2, 3, 4]
 ```
 
 **List comprehension:**
+
 ```python
 nums = [x for x in range(500)]
 ```
+
 Creates list with numbers 0-499
 
 ### List Operations
 
 **Append to end:**
+
 ```python
 nums.append(5)
 ```
 
 **Insert at position:**
+
 ```python
 nums.insert(4, 5)  # Insert 5 at index 4
 ```
 
 **Advanced slicing:**
+
 ```python
 nums[len(nums):] = [5]  # Append list to end
 ```
@@ -320,6 +361,7 @@ nums[len(nums):] = [5]  # Append list to end
 ### Mixed Data Types
 
 Unlike C, Python lists can contain different types:
+
 ```python
 my_list = ["string", 42, 3.14, True]
 ```
@@ -332,7 +374,7 @@ my_list = ["string", 42, 3.14, True]
 
 A new data structure not available in C.
 
-### What are Tuples?
+### What Are Tuples?
 
 - **Ordered, immutable sets of data**
 - Values never change
@@ -343,6 +385,7 @@ A new data structure not available in C.
 ### Syntax
 
 Tuples use parentheses:
+
 ```python
 # Single tuple
 washington = ("George Washington", 1789)
@@ -364,6 +407,7 @@ for prez, year in presidents:
 ```
 
 Output formatting:
+
 - `{0}` and `{1}` specify order of substitution
 - `.format()` method replaces placeholders
 - Can rearrange output order
@@ -390,28 +434,33 @@ pizzas = {
 ```
 
 Structure:
+
 - Keys and values separated by colon
 - Key-value pairs separated by commas
 
 ### Dictionary Operations
 
 **Access value:**
+
 ```python
 price = pizzas["cheese"]  # Returns 9
 ```
 
 **Change value:**
+
 ```python
 pizzas["cheese"] = 8
 ```
 
 **Use in conditionals:**
+
 ```python
 if pizzas["vegetable"] < 12:
     # code
 ```
 
 **Add new key-value pair:**
+
 ```python
 pizzas["bacon"] = 14
 ```
@@ -419,18 +468,21 @@ pizzas["bacon"] = 14
 ### Iterating Over Dictionaries
 
 **Iterate over keys:**
+
 ```python
 for pie in pizzas:
     print(pie)
 ```
 
 **Iterate over values:**
+
 ```python
 for pie, price in pizzas.items():
     print(price)
 ```
 
 **Print both keys and values:**
+
 ```python
 for pie, price in pizzas.items():
     print("A whole {} pizza costs ${}".format(pie, price))
@@ -451,6 +503,7 @@ print("A whole {} pizza costs ${}".format(pie, price))
 ```python
 print("A whole " + pie + " pizza costs $" + str(price))
 ```
+
 Note: Must convert numbers to strings with `str()`
 
 ### Method 3: % Formatting (Deprecated in Python 3)
@@ -458,6 +511,7 @@ Note: Must convert numbers to strings with `str()`
 ```python
 print("A whole %s pizza costs $%d" % (pie, price))
 ```
+
 Avoid this method even though it's familiar from C
 
 ## Functions in Python
@@ -472,6 +526,7 @@ Avoid this method even though it's familiar from C
 ### Basic Function Definition
 
 **C Code:**
+
 ```c
 int square(int x) {
     return x * x;
@@ -479,6 +534,7 @@ int square(int x) {
 ```
 
 **Python Code:**
+
 ```python
 def square(x):
     return x * x
@@ -487,12 +543,14 @@ def square(x):
 ### Alternative Implementations
 
 **Using exponentiation operator:**
+
 ```python
 def square(x):
     return x ** 2  # ** is exponentiation
 ```
 
 **Using addition (convoluted example):**
+
 ```python
 def square(x):
     result = 0
@@ -516,6 +574,7 @@ if __name__ == "__main__":
 ```
 
 The `if __name__ == "__main__":` line:
+
 - Must be at the very end of file
 - Directs program to start at main function
 - Useful when code is written out of order
@@ -525,9 +584,10 @@ The `if __name__ == "__main__":` line:
 
 Python is an **object-oriented programming language**.
 
-### Objects vs C Structures
+### Objects Vs C Structures
 
 **C Structure:**
+
 ```c
 struct car {
     int year;
@@ -540,12 +600,14 @@ herbie.model = "Beetle";
 ```
 
 **Limitations in C:**
+
 - Fields (year, model) can't exist independently
 - Must always be associated with a structure
 
 ### Objects in Python
 
 Objects have:
+
 1. **Properties** (like C structure fields)
 2. **Methods** (functions inherent to the object)
 
@@ -569,6 +631,7 @@ class Student:
 ```
 
 Key elements:
+
 1. **`__init__`**: Constructor/initialization function (required)
 2. **`self`**: Reference to the object (first parameter in all methods)
 3. **Properties**: Created by assigning to `self.property_name`
@@ -587,7 +650,7 @@ jane.print()        # Output: Jane - 11
 
 ### Important Class Concepts
 
-1. **Constructor (`__init__`)**: 
+1. **Constructor (`__init__`)**:
    - Always named `__init__`
    - Creates object and assigns initial properties
    - Called when creating new instance
@@ -608,6 +671,7 @@ jane.print()        # Output: Jane - 11
 **Python uses indentation to define code blocks!**
 
 In C:
+
 ```c
 if (condition) {
     // This block defined by curly braces
@@ -616,6 +680,7 @@ if (condition) {
 ```
 
 In Python:
+
 ```python
 if condition:
     # This block defined by indentation
@@ -623,6 +688,7 @@ if condition:
 ```
 
 Key points:
+
 - **Tabs and indentation are mandatory**
 - Incorrect indentation causes program failure
 - Must follow consistent indentation style
@@ -631,6 +697,7 @@ Key points:
 ### CS50 Style Guide
 
 If not already practicing good coding style:
+
 - **Now is the time to start**
 - Poor style in Python = non-working code
 - Refer to CS50 style guide for best practices
@@ -640,23 +707,27 @@ If not already practicing good coding style:
 ### Basic Import Syntax
 
 **C Code:**
+
 ```c
 #include <stdio.h>
 #include <cs50.h>
 ```
 
 **Python Code:**
+
 ```python
 import cs50
 ```
 
 Terminology:
+
 - C: "header files" or "libraries"
 - Python: "modules"
 
 ### Using Imported Functions
 
 After importing CS50:
+
 ```python
 import cs50
 
@@ -673,6 +744,7 @@ Note: Must prefix with module name (`cs50.`)
 ### Interactive Mode
 
 Type `python` in terminal to enter interactive mode:
+
 - Write Python one line at a time
 - Useful for testing small code snippets
 - Exit with `Ctrl+D` or `exit()`
@@ -684,17 +756,20 @@ python filename.py
 ```
 
 Interpreter:
+
 - Opens file
 - Executes top to bottom, line by line
 
 ### Making Python Files Executable (Like C Programs)
 
 Add to top of Python file:
+
 ```python
 #!/usr/bin/env python3
 ```
 
 Then make executable:
+
 ```bash
 chmod +x filename.py
 ./filename.py
@@ -705,23 +780,27 @@ This allows running like compiled C programs (`./program`)
 ## Python's Power: Real-World Applications
 
 ### Data Science
+
 - Processing large data sets
 - Generating graphs and charts
 - Statistical analysis
 - Machine learning applications
 
 ### String Manipulation
+
 - Much easier than C
 - Built-in string methods
 - No manual memory management
 - Natural string operations
 
 ### Web Development
+
 - Can be used at command line
 - Also useful in web contexts
 - Flask framework for web applications (covered separately)
 
 ### Networking
+
 - Simplified network operations
 - Built-in libraries for various protocols
 - Easier than C networking code
@@ -729,6 +808,7 @@ This allows running like compiled C programs (`./program`)
 ## Summary of Key Differences from C
 
 ### What Python Eliminates
+
 1. **Type declarations** - Python infers types
 2. **Semicolons** - Not required
 3. **Curly braces** - Uses indentation instead
@@ -738,6 +818,7 @@ This allows running like compiled C programs (`./program`)
 7. **Compilation step** - Interpreted language
 
 ### What Python Adds
+
 1. **Native strings** - First-class data type
 2. **Lists** - Dynamic, mixed-type arrays
 3. **Tuples** - Immutable ordered collections
@@ -786,6 +867,7 @@ This allows running like compiled C programs (`./program`)
 ## Conclusion
 
 Python represents a significant evolution from C, offering:
+
 - **Incredible flexibility** for various applications
 - **Simplified syntax** reducing common programming errors
 - **Powerful built-in features** eliminating manual implementations
@@ -793,6 +875,7 @@ Python represents a significant evolution from C, offering:
 - **Excellent for data science** and string manipulation
 
 While this introduction only "scratches the surface," Python is an essential tool for modern programmers, particularly valuable for:
+
 - Data science applications
 - Complex string manipulation
 - Web development (with frameworks like Flask)
@@ -802,4 +885,5 @@ While this introduction only "scratches the surface," Python is an essential too
 The language's English-like syntax, automatic memory management, and rich standard library make it an invaluable addition to any programmer's toolbox, complementing the low-level control provided by C with high-level abstractions for productivity.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/7- Week 6/1- Week 6 Lecture|Lecture 6 - Python]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/7- Week 6/3- Week 6 Section|Week 6 Section: Introduction to Python]]

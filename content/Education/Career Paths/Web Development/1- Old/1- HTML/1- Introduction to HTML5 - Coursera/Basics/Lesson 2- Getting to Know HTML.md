@@ -1,6 +1,7 @@
 # Lesson 2: Getting to Know HTML
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Semantics Overview](#semantics-overview)
 - [Identifying Divisions & Spans](#identifying-divisions--spans)
@@ -46,7 +47,7 @@ Semantic code describes the _value_ of content on a page, regardless of the styl
 
 ## Identifying Divisions & Spans
 
-Divisions, or `<div>`s, and `<span>`s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value. 
+Divisions, or `<div>`s, and `<span>`s are HTML elements that act as containers solely for styling purposes. As generic containers, they do not come with any overarching meaning or semantic value.
 
 > 📝 **Note:** Paragraphs are semantic in that content wrapped within a `<p>` element is known and understood as a paragraph. `<div>`s and `<span>`s do not hold any such meaning and are simply containers.
 
@@ -101,12 +102,14 @@ Many different forms of media and content exist online; however, text is predomi
 ### Headings
 
 Headings are block-level elements, and they come in six different rankings, `<h1>` through `<h6>`. Headings help to:
+
 - Quickly break up content
 - Establish hierarchy
 - Serve as key identifiers for users reading a page
 - Help search engines index and determine the content on a page
 
 Headings should be used in an order that is relevant to the content of a page:
+
 - The primary heading should be marked up with an `<h1>` element
 - Subsequent headings should use `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>` elements as necessary
 
@@ -122,6 +125,7 @@ Here is an example of HTML for all the different heading levels:
 <h5>Heading Level 5</h5>
 <h6>Heading Level 6</h6>
 ```
+
 ### Paragraphs
 
 Headings are often followed by supporting paragraphs. Paragraphs are defined using the `<p>` block-level element. Paragraphs can appear one after the other, adding information to a page as desired.
@@ -131,6 +135,7 @@ Headings are often followed by supporting paragraphs. Paragraphs are defined usi
 
 <p>In his address Steve urged graduates to follow their dreams and, despite any setbacks, to never give up&ndash;advice which he sincerely took to heart.</p>
 ```
+
 ### Bold Text With Strong
 
 To make text bold and place a strong importance on it, we'll use the `<strong>` inline-level element. There are two elements that will bold text for us: the `<strong>` and `<b>` elements, with different semantic meanings:
@@ -147,6 +152,7 @@ We should gauge the significance of the text we wish to set as bold and choose a
 <!-- Stylistically offset -->
 <p>This recipe calls for <b>bacon</b> and <b>baconnaise</b>.</p>
 ```
+
 ### Italicize Text with Emphasis
 
 To italicize text, thereby placing emphasis on it, we'll use the `<em>` inline-level element. As with bold text, there are two different elements that will italicize text:
@@ -176,6 +182,7 @@ For the longest time, the structure of a web page was built using divisions. The
 - `<footer>`
 
 These new elements are intended to give meaning to the organization of our pages and improve structural semantics. They are all block-level elements and do not have any implied position or style. Additionally, all of these elements may be used multiple times per page, as long as each use reflects the proper semantic meaning.
+
 ### Header
 
 The `<header>` element is used to identify the top of a page, article, section, or other segment of a page. In general, the `<header>` element may include a heading, introductory text, and even navigation.
@@ -184,7 +191,7 @@ The `<header>` element is used to identify the top of a page, article, section, 
 <header>...</header>
 ```
 
-#### `<header>` vs. `<head>` vs. `<h1>` through `<h6>` Elements
+#### `<header>` Vs. `<head>` vs. `<h1>` through `<h6>` Elements
 
 It's easy to confuse these elements, but they all have different semantic meanings:
 
@@ -195,6 +202,7 @@ It's easy to confuse these elements, but they all have different semantic meanin
 ### Navigation
 
 The `<nav>` element identifies a section of major navigational links on a page. The `<nav>` element should be reserved for primary navigation sections only, such as:
+
 - Global navigation
 - Table of contents
 - Previous/next links
@@ -209,6 +217,7 @@ Most commonly, links included within the `<nav>` element will link to other page
 ### Article
 
 The `<article>` element is used to identify a section of independent, self-contained content that may be independently distributed or reused. We'll often use the `<article>` element to mark up:
+
 - Blog posts
 - Newspaper articles
 - User-submitted content
@@ -299,6 +308,7 @@ Let's apply what we've learned to our existing index.html file:
   <small>&copy; Styles Conference</small>
 </footer>
 ```
+
 ### Encoding Special Characters
 
 Special characters include various punctuation marks, accented letters, and symbols. When typed directly into HTML, they can be misunderstood or mistaken for the wrong character; thus they need to be encoded.
@@ -338,4 +348,5 @@ The two most common types of links are links to other pages of the same website 
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/1- HTML/1- Introduction to HTML5 - Coursera/Basics/Lesson 1- Building Your First Web Page|Lesson 1: Building Your First Web Page]] | **Next**: [[Education/Career Paths/Web Development/1- Old/1- HTML/1- Introduction to HTML5 - Coursera/Basics/Lesson 3- Semantic Code in HTML- What is it and does it still matter|Lesson 3: Semantic Code in HTML - What is it and does it still matter?]]

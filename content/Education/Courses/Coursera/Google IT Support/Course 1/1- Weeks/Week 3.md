@@ -3,8 +3,9 @@
 ## Remote Connection Methods
 
 ### SSH (Secure Shell)
+
 - **Definition**: Protocol for securely accessing one computer from another
-- **Components**: 
+- **Components**:
   - SSH client on connecting computer
   - SSH server (background process) on remote machine
 - **Authentication Methods**:
@@ -17,6 +18,7 @@
   - Known hosts are saved for future connections
 
 ### Windows Remote Connections
+
 - **PuTTY**: Free, open-source SSH client for Windows
   - GUI interface or command line usage
   - Command format: `putty.exe -ssh username@ip_address port`
@@ -28,19 +30,22 @@
   - Cross-platform clients available for Linux and macOS
 
 ### Other Connection Methods
+
 - **VPN (Virtual Private Network)**: Connects to private networks over the internet
 
 ## Operating System Components
 
 ### Two Main Parts
+
 - **Kernel Space**: Core system that interacts directly with hardware
 - **User Space**: Everything outside the kernel that users interact with
 
 ### Kernel Functions
+
 1. **File Management**:
    - Organizes files in directories/folders
    - Implements file systems for data storage and retrieval
-   
+
 2. **Process Management**:
    - Controls program execution order
    - Allocates resources to processes
@@ -64,11 +69,13 @@
 ## File Systems
 
 ### Components
+
 - **File Data**: The actual content stored
 - **Metadata**: Information about files (creation date, permissions, etc.)
 - **File System**: Organization method for tracking files
 
 ### Storage Concepts
+
 - **File Systems**: Vary by OS (Windows uses NTFS)
 - **Block Storage**: Data broken into pieces for faster access
 - **File Extensions**: Identify file types in certain operating systems
@@ -76,6 +83,7 @@
 ## User Interaction
 
 ### Interface Types
+
 - **Shell/Command-Line Interface (CLI)**:
   - Program interpreting text commands
   - Common in Linux environments
@@ -87,6 +95,7 @@
   - More intuitive for average users
 
 ### System Logs
+
 - Files recording system events
 - Function as the system's diary
 - Used for troubleshooting problems
@@ -130,7 +139,7 @@
 
 - **Purpose**: Secure, simple web-focused operating system
 - **Design**: Primarily for web browser usage
-- **Capabilities**: 
+- **Capabilities**:
   - Web applications
   - Android and Linux applications in containers
 - **Advantages**:
@@ -139,4 +148,5 @@
   - Security-focused design minimizes user maintenance
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/1- Weeks/Week 2|Week 2: Hardware]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/1- Weeks/Week 4|Week 4: Networking]]

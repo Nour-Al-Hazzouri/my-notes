@@ -121,4 +121,5 @@
 **VPN (Virtual private network)**: A secure method of connecting a device to a private network over the internet
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 2 Glossary|Module 2 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 4 Glossary|Module 4 Glossary]]

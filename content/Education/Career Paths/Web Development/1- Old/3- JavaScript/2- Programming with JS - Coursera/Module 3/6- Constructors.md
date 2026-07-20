@@ -5,16 +5,19 @@ This document explains JavaScript constructors, their purpose, and best practice
 ## Built-in Object Types in JavaScript
 
 JavaScript includes numerous built-in object types:
+
 - Math, Date, Object, Function, Boolean
 - Symbol, Array, Map, Set, Promise, JSON, etc.
 
 These are often called "native objects" and fall into two categories:
+
 1. Those with constructors (can create instances)
 2. Those without constructors (static objects)
 
 ## Constructor Functions
 
 Constructor functions are special functions that build instances of objects. Key characteristics:
+
 - Always capitalized by convention
 - Must be used with the `new` operator
 - Create unique instances of objects
@@ -84,6 +87,7 @@ let pear = "pear"; // "pear"
 ```
 
 Reasons to avoid object constructors for primitives:
+
 1. Primitives are more performant than objects
 2. Object equality comparisons can be confusing:
 ```javascript
@@ -103,6 +107,7 @@ For several built-in types, literal syntax is preferred over constructors:
 | new Function() | () {} |
 
 Example of RegExp literal usage:
+
 ```javascript
 "abcd".match(/d/); // ['d', index: 3, input: 'abcd', groups: undefined]
 "abcd".match(/a/); // ['a', index: 0, input: 'abcd', groups: undefined]
@@ -111,6 +116,7 @@ Example of RegExp literal usage:
 ### Appropriate Constructor Usage
 
 Constructors are appropriate for these built-in types:
+
 ```javascript
 new Date();
 new Error();
@@ -124,4 +130,5 @@ new WeakMap();
 These constructors create objects that need initialization with unique state or require the functionality provided by their prototype methods.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/5- Classes|5- Classes]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/7- Inheritance|7- Inheritance]]

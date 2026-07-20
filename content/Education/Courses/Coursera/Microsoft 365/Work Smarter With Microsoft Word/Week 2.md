@@ -30,16 +30,19 @@ In general, the Word interface includes the search bar, title bar, and profile p
 ### Formatting Marks
 
 Formatting marks are hidden by default but can be helpful to:
+
 - See where lines end
 - Remove unwanted spaces or errors
 
 **How to Show/Hide Formatting Marks:**
+
 - Press **Ctrl+Shift+8**, or
 - Click the ¶ button in the Paragraph group on the Home tab
 
 ### Sharing Documents
 
 If your document is saved in online storage like OneDrive:
+
 1. Look for the **Share** button on the right side of the ribbon
 2. Click it to open a prompt
 3. Choose who to share the document with
@@ -84,13 +87,14 @@ There are multiple ways to get help in Word:
 
 2. **Help Tab**: Access help options from the ribbon
 
-3. **Help Task Pane**: 
+3. **Help Task Pane**:
    - Open using the F1 shortcut key
    - Contains searchable help topics
 
 ### Document Views
 
 #### Protected View
+
 - Documents downloaded from the internet open in Protected View
 - To adjust these settings:
   1. Go to **Options**
@@ -107,11 +111,13 @@ The **View** tab offers many ways to view your document:
 - **Multiple Document Views**: Compare documents side by side
 
 **How to Compare Parts of the Same Document:**
+
 1. Click **Split** in the View tab
 2. The document will be divided into two panes
 3. Any change in one pane will appear in the other
 
 **How to Open Multiple Windows:**
+
 1. Click **New Window** in the View tab
 2. A second window of the same document will open
 3. Changes in one window will appear in the other
@@ -123,6 +129,7 @@ The **View** tab offers many ways to view your document:
 ### Navigate and Select Text
 
 #### Scrolling
+
 - Use scroll bars to move through documents
 - Right-click scroll bar for additional options
 
@@ -155,12 +162,14 @@ Selected text will be affected by commands. Selection can be done by mouse or ke
 #### Text Movement Options
 
 **Drag and Drop:**
+
 1. Select text
 2. Click and hold on the selection
 3. Drag to new location
 4. Release to drop
 
 **Cut, Copy and Paste:**
+
 - Available through right-click menu or keyboard shortcuts:
   - **Ctrl+X**: Cut
   - **Ctrl+C**: Copy
@@ -201,22 +210,26 @@ Selected text will be affected by commands. Selection can be done by mouse or ke
 2. Select **Advanced Find**
 
 **How to Find Text:**
+
 1. Choose **Find** tab
 2. Enter what you want to find
 3. Click **Find Next**
 
 **How to Replace Text:**
+
 1. Choose **Replace** tab
 2. Enter what you want to find
 3. Enter what you want to replace it with
 4. Click **Replace** or **Replace All**
 
 **Go To Feature:**
+
 - Navigate to a specific place in the document
 - Enter page number or use references
 - Access through the **Go To** tab in the dialog
 
 **More Options:**
+
 - Click **More** for advanced search parameters
 - Refine your search with options like match case or whole words only
 
@@ -237,10 +250,12 @@ Selected text will be affected by commands. Selection can be done by mouse or ke
   3. Click **Custom Dictionaries**
 
 **Word Count:**
+
 - Word automatically shows word count in the status bar
 - Select specific text to see its word count
 
 **Ignoring "Errors":**
+
 - If a word is marked as an error but is correct:
   1. Right-click the word
   2. Select **Ignore All**
@@ -250,10 +265,12 @@ Selected text will be affected by commands. Selection can be done by mouse or ke
 ### Other Proofing Tools
 
 #### Thesaurus and Translation
+
 - **Thesaurus**: Press **Shift+F7** to find synonyms
 - **Translation**: Click **Translate** in the Review tab
 
 #### Research Feature
+
 - Located in the References tab under Research group
 - Performs wide searches about chosen words or phrases
 - Can be customized:
@@ -264,14 +281,17 @@ Selected text will be affected by commands. Selection can be done by mouse or ke
   5. Add or remove services
 
 **Quick Access to Synonyms:**
+
 1. Right-click a word
 2. Select **Synonyms** or **Thesaurus**
 3. Choose a replacement or select **Thesaurus** for more options
 
 #### Adding Research Results to Documents
+
 1. Find the research result you want to use
 2. Click the **+** button
 3. If prompted to create a bibliography, click **Create**
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/Week 1|Week 1: Office 365 Applications]] | **Next**: [[Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/Week 3|Week 3: Formatting Text and Working with Tables]]

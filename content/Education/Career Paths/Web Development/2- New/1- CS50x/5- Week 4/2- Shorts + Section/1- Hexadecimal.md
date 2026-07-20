@@ -29,4 +29,5 @@ Hexadecimal is particularly useful because 16 is a power of 2 (2^4). This means 
 This direct relationship makes hexadecimal a convenient shorthand for representing binary data in computer science and programming.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/1- Week 4 Lecture|Lecture 4]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/2- Pointers|2- Pointers]]

@@ -44,4 +44,5 @@ It's great you're interested in technical writing! It's a field that values a bl
 While having a background in a technical field can be helpful, it's not always required. Strong writing skills, a willingness to learn, and a passion for clear communication are the most important qualities for a successful technical writer.
 
 ---
+
 **Previous**: [[Education/Career Paths/Information/4- Technical Writer/1- Introduction|Technical Writer Role Overview]] | **Next**: [[Education/Career Paths/Information/4- Technical Writer/3. Technical Writer Detailed Rowdmap|3. Technical Writer Detailed Rowdmap]]

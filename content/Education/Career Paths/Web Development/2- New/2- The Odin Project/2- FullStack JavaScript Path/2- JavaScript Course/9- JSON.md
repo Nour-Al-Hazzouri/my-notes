@@ -79,4 +79,5 @@ runHeroApp();
 **How the lines connect:** The code starts by reaching out to an external server to get a "flat" JSON file. It uses `await response.json()` to turn that text into a live object the computer can understand. Once it is an object, the script uses dot and bracket notation to "dig" into the structure and find specific strings. Finally, `JSON.stringify` is used to show how that same object could be turned back into text if we needed to send it somewhere else.
 
 ---
+
 **Previous:** [[8- webpack-merge]]

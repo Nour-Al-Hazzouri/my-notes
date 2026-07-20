@@ -5,6 +5,7 @@ Logrotate is a utility designed to manage systems that generate large numbers of
 ## Core Functionality
 
 Logrotate provides four essential log management functions:
+
 - **Rotation**: Archives current log files and creates new ones
 - **Compression**: Reduces the size of archived log files
 - **Removal**: Deletes old log files based on configured policies

@@ -5,6 +5,7 @@ Windows paging files are optional system components that use hard drive space to
 ## Primary Functions
 
 Paging files serve three essential purposes:
+
 1. Offloading infrequently used data from RAM
 2. Storing system crash dumps for troubleshooting
 3. Extending system commit charge during peak usage periods
@@ -20,6 +21,7 @@ Three key factors determine appropriate paging file size:
 Crash dumps store system state information when crashes occur:
 
 **Small Memory Dump**
+
 - Requires minimum 2 MB on boot volume
 - Stores essential troubleshooting information
 - Default location: %SystemRoot%\Minidump
@@ -29,6 +31,7 @@ Crash dumps store system state information when crashes occur:
   - Custom directory: `wmic recoveros set MiniDumpDirectory = <folderpath>`
 
 **Complete Memory Dump**
+
 - Records entire system memory contents
 - Unavailable on systems with 2+ GB RAM
 - Requires paging file equal to physical RAM plus 1 MB
@@ -42,6 +45,7 @@ Crash dumps store system state information when crashes occur:
 ### 2. System Commit Charge Management
 
 The system commit limit (RAM plus paging file space) must exceed the system commit charge for stability:
+
 - Without paging files, commit limit equals available RAM
 - Exceeding commit limit causes system or application malfunctions
 - Regularly assess paging file allocation during peak usage
@@ -51,6 +55,7 @@ The system commit limit (RAM plus paging file space) must exceed the system comm
 ### 3. RAM Data Offloading
 
 Paging files store modified memory pages not currently in use:
+
 - Modified pages tracked in \Memory\Modified Page List Bytes
 - Insufficient paging file prevents writing all modified pages
 - Indicators of undersized paging files:

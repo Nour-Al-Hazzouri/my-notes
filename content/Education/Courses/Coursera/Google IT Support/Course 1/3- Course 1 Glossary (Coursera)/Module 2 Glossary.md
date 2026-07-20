@@ -143,4 +143,5 @@
 **USB-C adapter:** One of the standard power, data and display connector types used in mobile devices
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 1 Glossary|Module 1 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 3 Glossary|Module 3 Glossary]]

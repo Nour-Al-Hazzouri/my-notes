@@ -46,7 +46,7 @@ This distinction makes the difference while inserting the layers.
 
 ## Practical Implementation: Neo Bank App
 
-### Rapid MVP Development (30-minute approach)
+### Rapid MVP Development (30-minute Approach)
 
 1. Take a screenshot and send it to an AI like ChatGPT
 2. Send the screenshot and ask it to make it using the tech stack as PRD with the website link

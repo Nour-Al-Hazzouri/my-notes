@@ -104,7 +104,6 @@ To free all memory occupied by a linked list, it must be traversed node by node,
 
 Singly-linked lists are a fundamental data structure that offers flexibility in managing dynamic collections of data. While they excel in efficient insertions and deletions, their lack of random access and increased memory overhead due to pointers are important considerations. Understanding their structure and operations is crucial for building more complex data structures and algorithms, and they serve as a stepping stone to understanding more advanced linked structures like doubly-linked lists and trees.
 
-
 ## Introduction to Singly-Linked Lists
 
 Singly-linked lists are a fundamental linear data structure in computer science. Unlike arrays, which store elements in contiguous memory locations, linked lists store elements (called "nodes") at potentially non-contiguous memory addresses. Each node in a singly-linked list contains two main parts: the data itself and a pointer (or reference) to the next node in the sequence. This structure allows for dynamic memory allocation, meaning the list can grow or shrink in size during runtime, unlike fixed-size arrays.
@@ -223,4 +222,5 @@ To visit each node in a singly-linked list, you start at the head and follow the
 Singly-linked lists are a versatile data structure suitable for applications requiring frequent insertions and deletions, especially when the size of the collection is dynamic. While they lack the random access efficiency of arrays, their flexibility in memory management and ease of modification make them a valuable tool in a programmer's arsenal. Understanding their mechanics is crucial for building more complex data structures like stacks, queues, and hash tables that often utilize linked lists as their underlying implementation.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/1- Structures|CS50x Short: Structures]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/3- Doubly Linked Lists|CS50x Short: Doubly-Linked Lists]]

@@ -13,4 +13,5 @@
 	- When used, Each components will be called and have it's contents returned to the root components of our application, which is app.js.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/7- Customizing the Project|7- Customizing the Project]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/9- Principles of Components- Props|9- Principles of Components- Props]]

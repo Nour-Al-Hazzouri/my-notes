@@ -1,10 +1,11 @@
-# Size vs Size on Disk: Understanding Windows File Properties
+# Size Vs Size on Disk: Understanding Windows File Properties
 
 ## What These Measurements Mean
 
 When viewing a folder's properties in Windows, two size measurements are displayed:
 
 **Size**: The total sum of all file sizes within the folder, calculated through a recursive directory search. This measurement:
+
 - Doesn't detect duplicate files via hard links (counts the same file multiple times)
 - Skips subdirectories you don't have access to
 - Doesn't follow reparse points
@@ -13,6 +14,7 @@ When viewing a folder's properties in Windows, two size measurements are display
 - May be inaccurate for files still being written to until file handles are closed
 
 **Size on disk**: The actual space consumed on the storage medium, calculated differently based on file attributes:
+
 - For compressed/sparse files: Uses the GetCompressedFileSize function
 - For regular files: File size rounded up to the nearest cluster
 - Originated from Windows 95 team with FAT filesystem assumptions
@@ -20,6 +22,7 @@ When viewing a folder's properties in Windows, two size measurements are display
 ## Limitations and Inaccuracies
 
 These measurements have significant limitations:
+
 - NTFS can store small files in the Master File Table (MFT) slack space, using zero clusters
 - Neither measurement accounts for filesystem overhead:
   - Space used by filenames

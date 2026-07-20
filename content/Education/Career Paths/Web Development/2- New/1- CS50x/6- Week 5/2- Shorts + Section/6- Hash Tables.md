@@ -1,4 +1,3 @@
-
 # CS50x Short: Hash Tables
 
 ## Introduction to Hash Tables
@@ -69,4 +68,5 @@ Hash tables are widely used in computer science for various purposes, including:
 Hash tables are a highly efficient and versatile data structure for managing key-value pairs. By combining the strengths of arrays and linked lists, they offer excellent average-case performance for lookups, insertions, and deletions. However, their performance is heavily reliant on a good hash function and an effective collision resolution strategy. Understanding the principles of hashing and collision handling is crucial for leveraging the full power of hash tables in various applications.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/5- Queues|CS50x Short: Queues]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/7- Tries|CS50x Short: Tries]]

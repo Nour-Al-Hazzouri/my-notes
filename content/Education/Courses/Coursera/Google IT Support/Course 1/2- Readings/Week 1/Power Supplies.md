@@ -76,4 +76,5 @@
 3. Motherboard model and form factor specifications
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/2- Readings/Week 1/Logic Gates|Logic Gates]]

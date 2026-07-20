@@ -62,6 +62,7 @@ console.log(`${1 + 1 + 1 + 1 + 1} stars!`);  // Outputs: 5 stars!
 ```
 
 This capability extends to any valid JavaScript expression, including:
+
 - Arithmetic operations
 - Function calls
 - Ternary expressions
@@ -70,6 +71,7 @@ This capability extends to any valid JavaScript expression, including:
 ## Advanced Features
 
 Template literals support additional advanced features beyond the scope of this document:
+
 - Nested template literals
 - Tagged templates
 
@@ -78,6 +80,7 @@ These features provide even more powerful string manipulation capabilities for c
 ## Summary
 
 Template literals represent a significant improvement in JavaScript string handling by providing:
+
 - Cleaner syntax for variable interpolation
 - Native support for multi-line strings
 - The ability to evaluate expressions within strings
@@ -85,4 +88,5 @@ Template literals represent a significant improvement in JavaScript string handl
 These features make code more readable and expressive when working with string content.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/12- For of loops and objects|For of Loops and Objects in JavaScript]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/14- Data Structures|JavaScript Data Structures]]

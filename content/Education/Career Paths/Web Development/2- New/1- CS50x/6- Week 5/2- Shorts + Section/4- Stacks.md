@@ -105,10 +105,10 @@ Stacks are widely used in computer science for various purposes, including:
 
 *   **Function Call Management:** Compilers use stacks to manage function calls. When a function is called, its local variables and return address are pushed onto a call stack. When the function returns, these are popped off.
 *   **Expression Evaluation:** Stacks are used to evaluate arithmetic expressions, particularly in converting infix expressions to postfix or prefix, and then evaluating them.
-*   **Undo/Redo Functionality:** Many applications implement undo/redo features using stacks. Each action is pushed onto an 
-
+*   **Undo/Redo Functionality:** Many applications implement undo/redo features using stacks. Each action is pushed onto an
 
 stack, and an undo operation pops the last action.
+
 *   **Backtracking Algorithms:** Used in algorithms like depth-first search (DFS) to keep track of paths taken and to backtrack when a dead end is reached.
 
 ### Conclusion
@@ -116,4 +116,5 @@ stack, and an undo operation pops the last action.
 Stacks are essential data structures characterized by their LIFO behavior. Whether implemented using arrays or linked lists, they provide a disciplined way to manage data, making them indispensable in various computing applications, from managing program execution to implementing complex algorithms. The choice between array-based and linked list-based implementations depends on the specific requirements of the application, particularly concerning memory efficiency and the need for dynamic resizing.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/3- Doubly Linked Lists|CS50x Short: Doubly-Linked Lists]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/5- Queues|CS50x Short: Queues]]

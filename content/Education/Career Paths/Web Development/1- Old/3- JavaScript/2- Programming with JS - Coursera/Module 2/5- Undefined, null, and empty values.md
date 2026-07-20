@@ -7,4 +7,5 @@
     - Empty strings
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 2/5- Defensive Programming|5- Defensive Programming]]

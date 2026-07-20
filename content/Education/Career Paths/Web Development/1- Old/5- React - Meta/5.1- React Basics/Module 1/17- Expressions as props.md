@@ -4,7 +4,7 @@
 
 - You can pass various expressions (e.g., logical operators, arithmetic operations, string concatenations) as props to components.
 
-**Example:**  
+**Example:**
 Passing a boolean expression:
 
 ```jsx
@@ -38,7 +38,7 @@ export default function App() {
 
 - You can pass various types of expressions as props, including mathematical calculations and string concatenations.
 
-**Example:**  
+**Example:**
 Passing boolean, arithmetic, and string expressions as props:
 
 ```jsx
@@ -85,4 +85,5 @@ export default function App() {
 - JSX seamlessly evaluates these expressions as it does in plain JavaScript.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/16- Ternary operators and functions in JSX|16- Ternary operators and functions in JSX]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/18- Embedding in attributes|18- Embedding in attributes]]

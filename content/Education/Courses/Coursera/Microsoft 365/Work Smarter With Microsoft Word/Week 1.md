@@ -67,27 +67,33 @@
 ## Optional: Introduction to Access, Publisher, and OneNote
 
 ### Microsoft Access
+
 **Desktop-only database application** used for recording and analyzing data and generating reports.
 
 #### Interface Components
+
 - **Title Bar**: Same for each program
 - **Ribbon Interface**: Access different views and editing tools
 - **Navigation Pane**: Displays tables, queries, and forms
 - **Working Area**: Change data, design forms and reports, construct queries
 
 ### Microsoft Publisher
+
 **Desktop-only publishing application** for creating professional digital content with easy-to-use and multiple functionalities.
 
 #### Interface Components
+
 - **Title Bar**: Same for each program
 - **Ribbon Interface**: Provides different designs and editing tools
 - **Pages Pane**: Displays thumbnails of all pages within the publication
 - **Working Area**: Where you create digital content
 
 ### Microsoft OneNote
+
 **Note-taking program** used to gather different content into one location and share notes, available both online and offline.
 
 #### Interface Components
+
 - **Title Bar**: Access app launcher, OneNote logo, document name/path, notifications, account options
 - **Ribbon Interface**: Access to commands and editing tools
 - **Notebook Menu**: Displays any open notebooks
@@ -141,6 +147,7 @@
 **OneDrive for Business** is a cloud-based storage service for documents managed by your organization. Offers additional tools not available with personal accounts.
 
 #### Services Provided:
+
 - Adding files to the cloud
 - Creating new files
 - Organizing files using folders
@@ -149,23 +156,27 @@
 #### How to Upload Files:
 
 **Method 1: Drag and Drop**
+
 1. Open File Explorer
 2. Navigate to the file you want to upload
 3. Drag the file from File Explorer
 4. Drop it into the OneDrive window
 
 **Method 2: Upload Button**
+
 1. Press the **Upload** button
 2. Choose **Files** or **Folder**
 3. Select the item(s) you want to upload
 4. Click **Open**
 
 #### How to Create New Files:
+
 1. Press the **New** button
 2. Choose the file type you want to create
 3. You can also create folders using this menu
 
 #### How to Organize Files:
+
 1. Press the circle on the left of the files you want to organize
 2. Choose the action you want to perform (move, copy, delete, etc.)
 
@@ -174,6 +185,7 @@
 ### Collaborate Using OneDrive
 
 #### Collaborative Tools Available:
+
 - Share files with others
 - Sync files with others
 - Sync desktop and app
@@ -181,6 +193,7 @@
 - Protect files
 
 #### How to Share a File:
+
 1. Select the file you want to share
 2. Choose **Share**
 3. In the dialog box:
@@ -190,10 +203,12 @@
 4. Alternatively, copy the link and send it manually
 
 #### How to Edit Sharing Options:
+
 1. Click the box under **Send link**
 2. Choose the permission level that suits your needs
 
 #### Using OneDrive Desktop App:
+
 - Provides access to files even when offline
 - Files will sync automatically when your device is online
 - Useful alternative to browser access
@@ -207,11 +222,13 @@
 **Microsoft Delve** is a cloud-based solution for viewing feeds of relevant shared activity within your organization's Microsoft 365 environment.
 
 #### Delve Features:
+
 - Access shared items
 - Search for items
 - Add search results to favorites
 
 #### How to Use Delve:
+
 1. Log in to Delve to see the most relevant documents for you
 2. View your items and associated people on the left side of the interface
 3. Use the search bar to search for items in Delve
@@ -225,6 +242,7 @@
 **Delve boards** is a useful feature for organizing search results into folder-like structures that can be shared with other members of your organization.
 
 #### How to Manage Boards:
+
 1. After searching for an item, press the manage icon
 2. In the pop-up dialog, choose the board you want to manage or create a new one
 3. Access boards from the left pane
@@ -232,4 +250,5 @@
 5. To remove an item from a board, press 'X' in the dialog
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/Week 2|Week 2: Getting Started with Word]]

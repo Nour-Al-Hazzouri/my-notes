@@ -11,6 +11,7 @@
 ## Six Common Logic Gates
 
 ### NOT Gate
+
 - **Inputs**: One input signal
 - **Function**: Outputs the opposite binary state of the input
 - **Truth Table**:
@@ -19,6 +20,7 @@
 - **Representation**: Triangle with small circle on output side
 
 ### AND Gate
+
 - **Inputs**: Two input signals
 - **Function**: Outputs "on" only when both inputs are "on"
 - **Truth Table**:
@@ -28,6 +30,7 @@
   - Input A: On, Input B: On → Output: On
 
 ### OR Gate
+
 - **Inputs**: Two input signals
 - **Function**: Outputs "off" only when both inputs are "off"
 - **Truth Table**:
@@ -37,6 +40,7 @@
   - Input A: On, Input B: On → Output: On
 
 ### XOR Gate (Exclusive OR)
+
 - **Inputs**: Two input signals
 - **Function**: Outputs "on" when only one input is "on" (but not both)
 - **Truth Table**:
@@ -46,6 +50,7 @@
   - Input A: On, Input B: On → Output: Off
 
 ### NAND Gate (Not-AND)
+
 - **Inputs**: Two input signals
 - **Function**: Combination of AND and NOT gates; outputs opposite of AND gate
 - **Truth Table**:
@@ -55,6 +60,7 @@
   - Input A: On, Input B: On → Output: Off
 
 ### XNOR Gate (Not-XOR)
+
 - **Inputs**: Two input signals
 - **Function**: Combination of XOR and NOT gates; outputs "on" when inputs match
 - **Truth Table**:
@@ -76,4 +82,5 @@
 - **Importance**: Computers are complex electrical systems built from interconnected logic gates
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/2- Readings/Week 1/Power Supplies|Power Supplies]]

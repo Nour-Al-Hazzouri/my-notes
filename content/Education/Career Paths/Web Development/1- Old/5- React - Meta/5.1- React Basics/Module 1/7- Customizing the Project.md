@@ -28,7 +28,7 @@ src/
     setupTests.js
 ```
 
-#### 2. **Building the App**
+#### 2. **Building The App**
 
 The app is initialized using the command:
 
@@ -158,4 +158,5 @@ This lesson highlights the importance of organizing files and building functiona
 Let me know if anything is missing!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/6- The React Project Structure|6- The React Project Structure]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/8- Importing Components|8- Importing Components]]

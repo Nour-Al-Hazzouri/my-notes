@@ -1,11 +1,13 @@
 # Unit 8: Divide with Remainders
 
 ## Overview
+
 This unit builds upon students' understanding of basic division concepts and focuses on division with remainders. Division with remainders extends students' division skills to situations where numbers do not divide evenly, which is common in real-world applications. Understanding how to interpret and work with remainders is essential for solving practical problems and developing a deeper understanding of the relationship between multiplication and division.
 
 ## Key Concepts
 
 ### Concept 1: Interpreting Remainders
+
 **Definition**: A remainder is the amount left over when one number does not divide evenly into another. The remainder is always less than the divisor.
 
 **Clarification**: When division does not result in a whole number, the remainder represents the leftover amount that could not be distributed equally. Interpreting remainders correctly depends on the context of the problem and may involve rounding up, rounding down, or expressing the remainder as a fraction.
@@ -34,11 +36,13 @@ This unit builds upon students' understanding of basic division concepts and foc
 ```
 
 ### Concept 2: Division with Remainders (2-digit by 1-digit)
+
 **Definition**: Division with remainders for 2-digit by 1-digit numbers involves finding how many times the divisor goes into the dividend and determining what amount is left over.
 
 **Clarification**: This process builds on students' understanding of basic division facts and place value. The standard algorithm systematically works through each place value, starting from the left, to find the quotient and remainder.
 
 **Example**: To divide 47 ÷ 6:
+
 1. 6 goes into 4 zero times (since 4 < 6)
 2. 6 goes into 47 seven times (7 × 6 = 42) with 5 left over
 3. The quotient is 7 with a remainder of 5, written as 7 R5
@@ -74,11 +78,13 @@ This unit builds upon students' understanding of basic division concepts and foc
 ```
 
 ### Concept 3: Dividing Multiples of 10, 100, and 1,000
+
 **Definition**: When dividing multiples of 10, 100, or 1,000 by a 1-digit number, we can divide the base number first and then attach the appropriate number of zeros to the quotient.
 
 **Clarification**: This concept leverages place value understanding and the relationship between multiplication and division. It provides an efficient strategy for dividing larger numbers and reinforces the patterns in our base-10 number system.
 
 **Example**: To divide 420 ÷ 7:
+
 1. Divide 42 ÷ 7 = 6
 2. Attach the zero: 60
 3. Check: 7 × 60 = 420, so 420 ÷ 7 = 60
@@ -123,11 +129,13 @@ Similarly, 4,200 ÷ 7 = 600 and 42,000 ÷ 7 = 6,000.
 ```
 
 ### Concept 4: Division Using Place Value
+
 **Definition**: Division using place value involves breaking down the dividend into place value components and dividing each component separately.
 
 **Clarification**: This approach makes the division process more transparent by explicitly showing how each place value contributes to the quotient. It helps students understand the standard algorithm and provides a bridge between conceptual understanding and procedural fluency.
 
 **Example**: To divide 96 ÷ 3 using place value:
+
 1. Divide the tens: 90 ÷ 3 = 30
 2. Divide the ones: 6 ÷ 3 = 2
 3. Add the partial quotients: 30 + 2 = 32
@@ -172,6 +180,7 @@ Similarly, 4,200 ÷ 7 = 600 and 42,000 ÷ 7 = 6,000.
 ```
 
 ### Concept 5: Division with Area Models
+
 **Definition**: Area models for division represent the process of finding how many equal groups can be formed from a given total, or how many items are in each group when the total and number of groups are known.
 
 **Clarification**: Area models provide a visual representation of division that helps students understand the relationship between multiplication and division. They are particularly useful for illustrating division with remainders, as the remainder becomes visibly distinct from the parts that are evenly divided.
@@ -206,11 +215,13 @@ Similarly, 4,200 ÷ 7 = 600 and 42,000 ÷ 7 = 6,000.
 ```
 
 ### Concept 6: Multi-digit Division with Remainders
+
 **Definition**: Multi-digit division with remainders involves dividing larger numbers (3 or more digits) by 1-digit numbers, following a systematic process and handling remainders at each step.
 
 **Clarification**: The standard algorithm for multi-digit division works from left to right, dividing one digit at a time and bringing down the next digit as needed. Remainders at intermediate steps become part of the next dividend, and only the final remainder is reported.
 
 **Example**: To divide 372 ÷ 5:
+
 1. Divide 3 ÷ 5: not possible, so consider 37
 2. Divide 37 ÷ 5 = 7 with a remainder of 2
 3. Bring down 2 to get 22
@@ -253,9 +264,11 @@ Similarly, 4,200 ÷ 7 = 600 and 42,000 ÷ 7 = 6,000.
 ```
 
 ### Concept 7: Word Problems with Remainders
+
 **Definition**: Word problems with remainders require interpreting the remainder in the context of the problem to determine the final answer.
 
 **Clarification**: Depending on the context, remainders might need to be:
+
 - Reported as a remainder (e.g., 7 R2)
 - Rounded up (e.g., when determining how many vehicles are needed)
 - Rounded down (e.g., when determining how many complete sets can be made)
@@ -304,10 +317,13 @@ Similarly, 4,200 ÷ 7 = 600 and 42,000 ÷ 7 = 6,000.
 ```
 
 ## Summary
+
 Unit 8 develops students' understanding of division with remainders, building on their knowledge of basic division concepts. Students learn to interpret remainders in different contexts, divide 2-digit and multi-digit numbers by 1-digit numbers, work with multiples of 10, 100, and 1,000, use place value and area models to visualize division, and solve word problems involving remainders. These skills are essential for mathematical fluency and provide the foundation for more advanced division concepts, including decimal division and long division with 2-digit divisors.
 
 ## Connection to Next Unit
+
 The division skills developed in Unit 8 provide a foundation for Unit 9, which focuses on adding and subtracting fractions with like denominators. Division with remainders naturally connects to fractions, as remainders can be expressed as fractions (e.g., 7 R3 ÷ 4 can be written as 7¾). Understanding how to interpret remainders in different contexts will help students work with fractions as parts of a whole and perform operations with fractions. Additionally, the concept of equal sharing in division directly relates to the concept of equal parts in fractions.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_07_Multiply_1_and_2_digit_Numbers|Unit 7: Multiply 1- and 2-digit Numbers]] | **Next**: [[Education/Math/Arithmetic/Unit_09_Add_and_Subtract_Fractions_Like_Denominators|Unit 9: Add and Subtract Fractions (Like Denominators)]]

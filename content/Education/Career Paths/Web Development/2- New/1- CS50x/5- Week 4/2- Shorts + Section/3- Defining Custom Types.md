@@ -34,7 +34,7 @@ Here, `old_name` is the existing type (or the type definition you are aliasing),
 
   This abstraction simplifies working with strings, as you no longer need to explicitly deal with `char *`.
 
-### `typedef` with Structures
+### `typedef` With Structures
 
 `typedef` is particularly useful when combined with structures, as structures often have two-word type names (`struct SomeStruct`). Using `typedef` can significantly shorten the declaration of variables of that structure type.
 
@@ -79,4 +79,5 @@ In this combined approach, the `struct` itself doesn't necessarily need a tag na
 `typedef` is a powerful tool in C for creating aliases for data types, making code more readable and convenient. It is especially beneficial when working with structures, allowing for shorter and more intuitive variable declarations. By using `typedef`, you can improve the clarity and maintainability of your C programs.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/2- Pointers|2- Pointers]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/4- Dynamic Memory Allocation|4- Dynamic Memory Allocation]]

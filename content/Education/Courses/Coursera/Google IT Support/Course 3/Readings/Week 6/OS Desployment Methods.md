@@ -5,6 +5,7 @@ This guide explains operating system deployment methods with a focus on disk clo
 ## Disk Cloning Overview
 
 Disk cloning creates an identical copy of a hard drive, commonly used when:
+
 - Deploying multiple identical computers in enterprise environments
 - Testing new software and configurations in lab environments
 - Performing system migrations
@@ -17,6 +18,7 @@ In enterprise deployments, IT Administrators configure one computer with the OS,
 ## Tools for Duplicating Disks
 
 ### Hard Disk Duplicators
+
 - Physical machines that make identical copies of hard drives
 - Range from single target bay to 100+ target bays
 - Target drives typically need similar characteristics to the original
@@ -24,12 +26,14 @@ In enterprise deployments, IT Administrators configure one computer with the OS,
 - Include LCD interface and/or management software
 
 ### Disk Cloning Software
+
 - Allows cloning between different media types (IDE to SSD, hard drive to USB, etc.)
 - Supports full disk copies or selected partition copies
 - Often used for network deployment or cloud-based systems
 - Virtual machine cloning is most efficient for servers and workstations
 
 **Notable Software Options:**
+
 - **NinjaOne Backup**: Cloud-based solution for MSPs and remote workplaces
 - **Acronis Cyber Protect Home Office**: Desktop/mobile solution for Windows, Apple, and Android
 - **Barracuda Intronis Backup**: Cloud-based SaaS platform for MSPs
@@ -39,6 +43,7 @@ In enterprise deployments, IT Administrators configure one computer with the OS,
 ## Deployment Methods
 
 Operating systems can be deployed through:
+
 - Cloned hard drives
 - Image libraries
 - Network storage

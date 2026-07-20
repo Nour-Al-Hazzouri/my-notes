@@ -37,4 +37,5 @@
 **VPN (Virtual private network)**: A secure method of connecting a device to a private network over the internet
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 5 Glossary|Module 5 Glossary]]

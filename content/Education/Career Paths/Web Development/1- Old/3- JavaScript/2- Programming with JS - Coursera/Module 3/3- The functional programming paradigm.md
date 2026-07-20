@@ -9,4 +9,5 @@
 The text also provides a simple example of first-class functions in JavaScript, demonstrating how a variable can be assigned a function declaration based on a condition.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/2- Function calling and recursion|2- Function calling and recursion]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/4- Scoping with var, let and const|4- Scoping with var, let and const]]

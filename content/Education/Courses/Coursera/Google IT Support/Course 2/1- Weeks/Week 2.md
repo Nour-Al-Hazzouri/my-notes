@@ -5,6 +5,7 @@
 **IP Addresses** are 32-bit numbers typically represented in **Dotted Decimal Notation (DDN)** as four octets in decimal form. Each octet can represent values from 0-255.
 
 Key characteristics of IP addresses:
+
 - Distributed to organizations in large sections rather than determined by hardware vendors
 - More hierarchical and easier to manage than physical (MAC) addresses
 - Change when connecting from different locations
@@ -14,10 +15,12 @@ IP addresses are typically assigned through **Dynamic Host Configuration Protoco
 ## IPv4 Datagrams and Encapsulation
 
 Under the IP protocol, packets are referred to as **IP Datagrams**. An IP datagram consists of two primary sections:
+
 1. **Header** - Contains routing and identification information
 2. **Payload** - Contains the actual data being transmitted
 
 Key header fields include:
+
 - **Version field** (4 bits) - Indicates IP version (typically IPv4)
 - **Header length field** (4 bits) - Indicates header size (typically 20 bytes for IPv4)
 - **Service Type Field** (8 bits) - Used for Quality of Service (QoS) specifications
@@ -60,6 +63,7 @@ IP addresses are divided into **network ID** and **host ID** portions. The **Add
 **ARP** discovers the hardware (MAC) address associated with a specific IP address. This is necessary to complete the Ethernet frame header when sending data.
 
 Network devices maintain an **ARP table** listing IP addresses and their associated MAC addresses. When a device needs to send data to an IP address not in its ARP table:
+
 1. It sends a broadcast ARP message to all nodes on the network
 2. The device with the matching IP responds with its MAC address
 3. The sender stores this information in its local ARP table
@@ -79,10 +83,12 @@ Subnetting allows splitting one network into many smaller ones, each with its ow
 A **subnet mask** is a 32-bit number that determines which portion of an IP address is the network ID, subnet ID, and host ID. It's typically written as four octets in decimal (e.g., 255.255.255.0).
 
 The subnet mask works by:
+
 - Using binary 1s to indicate the network and subnet portions
 - Using binary 0s to indicate the host portion
 
 For example, with IP 9.100.100.100 and subnet mask 255.255.255.0:
+
 - The first octet (9) is the network ID (Class A)
 - The next two octets (100.100) are the subnet ID
 - The last octet (100) is the host ID
@@ -92,6 +98,7 @@ The size of a subnet depends on its mask. A subnet mask of 255.255.255.0 allows 
 ## CIDR (Classless Inter-Domain Routing)
 
 **CIDR** provides a more flexible approach to IP addressing than the traditional class system. It expands on subnetting by:
+
 - Combining the network ID and subnet ID into one
 - Using a slash notation to indicate the number of network bits
 - Abandoning the concept of address classes entirely
@@ -99,6 +106,7 @@ The size of a subnet depends on its mask. A subnet mask of 255.255.255.0 allows 
 For example, 9.100.100.100 with subnet mask 255.255.255.0 would be written as 9.100.100.100/24, indicating that the first 24 bits are the network portion.
 
 Benefits of CIDR include:
+
 - More flexible network sizes
 - More efficient use of IP address space
 - Reduced routing table entries
@@ -109,12 +117,14 @@ Benefits of CIDR include:
 **Routing** is how data travels across networks worldwide. A **router** is a network device that forwards traffic based on destination addresses and must have at least two network interfaces.
 
 The basic routing process includes:
+
 1. Router receives a data packet on one of its interfaces
 2. It examines the destination IP
 3. It looks up the destination network in its routing table
 4. It forwards the traffic through the appropriate interface
 
 When forwarding packets, a router:
+
 - Strips away the data-link layer encapsulation
 - Examines the IP datagram header
 - Creates a new packet with decremented TTL and recalculated checksum
@@ -124,6 +134,7 @@ When forwarding packets, a router:
 ### Routing Tables
 
 Routing tables typically contain four key columns:
+
 1. **Destination Network** - The remote network definition (network ID and subnet mask)
 2. **Next Hop** - The IP address of the next router or "directly connected" indication
 3. **Total Hops** - The distance to the destination network
@@ -134,10 +145,12 @@ Routing tables typically contain four key columns:
 Routing protocols fall into two main categories:
 
 **Interior Gateway Protocols** - Used within a single autonomous system:
+
 - **Link-state routing protocols** - Routers advertise the state of each interface link
 - **Distance-vector protocols** - Routers share their routing tables with neighbors
 
 **Exterior Gateway Protocols** - Used between autonomous systems:
+
 - Connect different organizations' networks
 - Use **Autonomous System Numbers (ASNs)** assigned by IANA
 - ASNs are 32-bit numbers represented as single decimal values
@@ -145,11 +158,13 @@ Routing protocols fall into two main categories:
 ## Non-Routable Address Space
 
 **RFC 1918** defined ranges of IP addresses as **non-routable address space** for private use. These addresses:
+
 - Can be used by anyone for internal networks
 - Cannot be routed on the public internet
 - Allow internal network communication without public IP requirements
 
 The three primary non-routable address ranges are:
+
 1. 10.0.0.0/8
 2. 172.16.0.0/12
 3. 192.168.0.0/16
@@ -157,4 +172,5 @@ The three primary non-routable address ranges are:
 These ranges can be routed within an autonomous system using interior gateway protocols but will not be routed by exterior gateway protocols.
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 1|Week 1: Introduction to Networking]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 3|Week 3: The Transport and Application Layers]]

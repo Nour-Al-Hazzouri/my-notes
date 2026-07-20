@@ -73,4 +73,5 @@
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/2- CSS/1- Introduction to CSS - Coursera/Final Project/The Project/about|about]] | **Next**: [[Education/Career Paths/Web Development/1- Old/2- CSS/1- Introduction to CSS - Coursera/Final Project/The Project/Styles|Styles]]

@@ -105,7 +105,9 @@ This example combines HTML attributes, JavaScript custom logic, and CSS styling 
 </script>
 ```
 ---
+
 ### Validation Properties & Attributes
+
 **HTML Validation Attributes** - These are the declarative tools used in markup to set the rules for what constitutes valid data.
 
 ```html
@@ -192,4 +194,5 @@ This example demonstrates how HTML attributes define the rules, while JS propert
 - **`validity.valueMissing`**: This JS property specifically identifies if the `required` attribute was the cause of the failure.
 - **`validity.rangeUnderflow`**: This property identifies if the user entered a number smaller than the `min` attribute.
 ---
+
 **Previous:** [[11- ESlint & Prettier]]

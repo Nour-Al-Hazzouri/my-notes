@@ -46,20 +46,25 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **CD (Compact Disc) Era:** Originally designed for audio, the CD-ROM adapted the 780nm infrared laser to store ~700MB of data, revolutionizing software distribution by replacing floppy disks.
 *   **DVD (Digital Versatile Disc) Era:** A shift to a 650nm red laser allowed for smaller pits and lands, bumping capacity to 4.7GB (Single Layer). This enabled the distribution of full-length standard-definition movies and massive PC games.
 *   **Blu-ray Era:** A massive architectural shift to a 405nm blue-violet laser, which has a much tighter wavelength. Combined with a higher numerical aperture (0.85), it drastically shrunk the track pitch, allowing 25GB to 50GB capacities for 1080p HD video.
 *   **UHD / BDXL Era:** Retained the blue-violet laser but optimized the optical pickup and error correction to squeeze 3 or 4 physical data layers onto a single disc, reaching 100GB-128GB for 4K HDR media and archival storage.
 
 ### Optical Pickup Unit (OPU) Logic
-The OPU contains the laser diode, a series of lenses, and a photodiode. 
+
+The OPU contains the laser diode, a series of lenses, and a photodiode.
+
 1.  **Beam Generation**: The laser diode emits light.
 2.  **Focusing**: A small objective lens moved by electromagnetic coils (voice coils) maintains exact focus on the data layer, adjusting for any disc wobble.
 3.  **Reflection**: The light reflects off the pits and lands.
 4.  **Detection**: The photodiode converts the variations in light intensity back into an electrical signal (HF signal), which the ODD controller decodes into binary data.
 
 ### Integrated Sub-systems: Error Correction (ECC)
+
 Optical discs are prone to physical defects (scratches).
+
 *   **Reed-Solomon Product Code (RSPC)**: Used in DVDs to correct burst errors.
 *   **LDC/BIS (Long Distance Code / Burst Indicator Subcode)**: Advanced ECC used in Blu-ray to handle the much higher data density and smaller pits.
 *   **PureRead (Vendor Tech - Pioneer)**: Standard drives might replace unreadable audio data with silence or "interpolation." PureRead performs multiple rereads at different drive parameters to extract the original bit-perfect data.
@@ -69,10 +74,12 @@ Optical discs are prone to physical defects (scratches).
 ## V. Compatibility & Ecosystem Integration
 
 ### Backward Compatibility
+
 *   **Multi-Laser Systems**: Almost all modern Blu-ray drives contain two separate laser diodes (780nm/650nm combo and a 405nm) to ensure they can read legacy CDs and DVDs.
 *   **UDF (Universal Disk Format)**: The standard file system for optical media. Windows, macOS, and Linux support UDF 2.01+ natively for reading discs.
 
 ### Copy Protection Protocols
+
 *   **AACS (Advanced Access Content System)**: Used on Blu-ray. Requires a "Protected Path" (HDCP) between the GPU and the monitor for playback.
 *   **BD+**: An additional layer of security that runs a virtual machine on the player to verify the hardware hasn't been tampered with.
 
@@ -83,21 +90,24 @@ Optical discs are prone to physical defects (scratches).
 1.  **Dimensions**:
     *   **Standard Disc**: 120 mm diameter, 1.2 mm thick.
     *   **Internal Drive (5.25")**: 146mm x 41.3mm. Length varies (approx 170mm).
-2.  **Power Consumption**: Spinning a 12cm disc at 10,000 RPM creates significant centrifugal force and draws ~15W - 25W during acceleration. 
+2.  **Power Consumption**: Spinning a 12cm disc at 10,000 RPM creates significant centrifugal force and draws ~15W - 25W during acceleration.
 3.  **Vibration**: High-speed drives create audible noise and vibration. Manufacturers use active liquid balancing (Pioneer) or weighted trays to minimize this.
 
 ---
 
 ## VII. Troubleshooting & Field Diagnostics
 
-### Symptom: "Circular Scratches" on the disc
+### Symptom: "Circular Scratches" on the dIsc
+
 *   **Cause**: The drive was moved or bumped while the disc was spinning, causing the laser head to strike the surface.
 *   **Diagnosis**: If the scratch follows the data track (circular), it is often unfixable. If it is radial (center to edge), ECC can usually overcome it.
 
 ### Symptom: Disc Tray Jams / "No Disc" Error
+
 *   **Cause**: Slipping rubber belt (common in older drives) or a dirty laser lens.
 *   **Field Protocol**: Use a manual eject pinhole. For "No Disc," try a lens cleaning disc or gently clean the lens with 90%+ isopropyl alcohol and a lint-free swab.
 
-### Symptom: Disc Rot (Bronzing/Pinhole spots)
+### Symptom: Disc Rot (Bronzing/Pinhole Spots)
+
 *   **Cause**: Oxidation of the aluminum reflective layer due to poor manufacturing or high humidity.
 *   **Diagnosis**: Hold the disc up to a bright light. If you see tiny holes where light shines through, the data in those sectors is physically gone.

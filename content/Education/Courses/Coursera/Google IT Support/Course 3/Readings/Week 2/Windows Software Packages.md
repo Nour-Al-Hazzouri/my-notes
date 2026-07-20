@@ -5,17 +5,20 @@
 Windows software is typically distributed as executable (.exe) files through various channels including the Microsoft Store or direct downloads. Several packaging and installation methods are available:
 
 **Installation Package (.msi)**
+
 - Contains all information needed by Windows Installer
 - Includes installation database, summary information, and data streams
 - May contain internal and external source files
 - Used by Windows Installer to install, maintain, and remove programs
 
 **Portable Executable (.exe)**
+
 - Windows-specific format that may contain .msi files
 - Can include program instructions, images, or computer code
 - Primary executable format for Windows applications
 
 **Self-extracting Executable**
+
 - Allows command-line installation (useful for IT professionals)
 - Supports various command-line parameters:
   - `/extract:[path]`: Extracts content to specified folder
@@ -28,6 +31,7 @@ Windows software is typically distributed as executable (.exe) files through var
   - Help options: `/?`, `/h`, `/help`
 
 **App Packager (MakeAppx.exe)**
+
 - Included in Windows SDK and Visual Studio
 - Creates or extracts app packages from files
 - Supports app package bundles (Windows 8.1+)
@@ -36,6 +40,7 @@ Windows software is typically distributed as executable (.exe) files through var
 ## Distribution Channels
 
 **Microsoft Store**
+
 - Primary source for Windows apps, games, and media
 - Contains only certified, compatible, and curated content
 - Provides automatic updates by default

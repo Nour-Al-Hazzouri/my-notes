@@ -25,4 +25,5 @@
     - Automated tests
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/4- Introduction to Jest|4- Introduction to Jest]]

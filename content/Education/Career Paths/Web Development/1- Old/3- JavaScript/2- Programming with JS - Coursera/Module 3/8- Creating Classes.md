@@ -1,6 +1,7 @@
 # Creating Classes in JavaScript
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Class Syntax and Basic Structure](#class-syntax-and-basic-structure)
 - [Constructors and Properties](#constructors-and-properties)
@@ -116,7 +117,7 @@ train4.getPrototype(); // {constructor: f, toggleLights: f, lightsStatus: f, get
 
 ---
 
-## Inheritance with extends
+## Inheritance with Extends
 
 JavaScript allows implementing polymorphism by inheriting from a base class using the `extends` keyword:
 
@@ -129,7 +130,7 @@ This makes `Train` the super-class (base class) of the `HighSpeedTrain` sub-clas
 
 ---
 
-## The super Keyword
+## The Super Keyword
 
 When creating a sub-class, you need to define its constructor and use the `super` keyword to inherit properties from the parent class:
 
@@ -146,6 +147,7 @@ class HighSpeedTrain extends Train {
 💡 **Tip**: The `super` keyword specifies what properties get inherited from the super-class in the sub-class.
 
 In this example:
+
 - `color` and `lightsOn` are inherited from the `Train` class
 - `passengers` and `highSpeedOn` are added as new properties specific to the `HighSpeedTrain` class
 
@@ -208,6 +210,7 @@ highSpeed1.getPrototype(); // Train {constructor: ƒ, toggleHighSpeed: ƒ, toggl
 ```
 
 The prototype chain works as follows:
+
 1. The prototype object of the `train5` object was created when you defined the `Train` class
 2. The prototype object of the `highSpeed1` object has its own prototype, which can be found using `HighSpeedTrain.prototype.__proto__`
 
@@ -319,4 +322,5 @@ highSpeed1.toggleLights(); // Lights on? true, Lights are 100% operational.
 Notice how the `toggleLights()` method behaves differently on the `HighSpeedTrain` class than it does on the `Train` class, demonstrating polymorphism in action.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/7- Inheritance|7- Inheritance]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/9- Default Parameters|Default Parameters in JavaScript]]

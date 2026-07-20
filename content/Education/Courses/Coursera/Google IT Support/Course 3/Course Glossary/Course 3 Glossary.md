@@ -1,4 +1,4 @@
-### **Terms and definitions from Course 3**
+### **Terms And Definitions from Course 3**
 
 A
 
@@ -341,4 +341,5 @@ W
 **Write permission:** A permission that allows you to make changes to a file
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 1 Glossary|Module 1 Glossary]]

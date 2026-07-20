@@ -71,4 +71,5 @@
 **Total length field:** A 16-bit field that indicates the total length of the IP datagram it's attached to
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 1 Glossary|Module 1 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 3 Glossary|Module 3 Glossary]]

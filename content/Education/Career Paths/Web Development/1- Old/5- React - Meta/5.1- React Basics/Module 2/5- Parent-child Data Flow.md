@@ -20,7 +20,9 @@ function promo(){
 	);
 };
 ```
+
 This can also be applied to any other module as much as needed
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/4- Event handling and embedded expressions|4- Event handling and embedded expressions]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/6- Data flow in React|6- Data flow in React]]

@@ -27,6 +27,7 @@ This document covers the most common data structures in JavaScript with practica
 JavaScript arrays include powerful built-in methods for data manipulation:
 
 ### forEach()
+
 - Executes a function on each array element
 - Syntax: `array.forEach(function(item, index) {...})`
 - Example:
@@ -37,6 +38,7 @@ fruits.forEach((fruit, index) => console.log(`${index}. ${fruit}`));
 ```
 
 ### filter()
+
 - Creates a new array with elements that pass a test
 - Returns array items that meet specified criteria
 - Example:
@@ -46,6 +48,7 @@ nums.filter(num => num > 20); // Returns [30,40,50]
 ```
 
 ### map()
+
 - Transforms each array element and creates a new array
 - Example:
 ```javascript
@@ -94,6 +97,7 @@ const uniqueFruits = new Set(repetitiveFruits);
 ## Advanced Data Structures
 
 JavaScript can implement custom, non-native data structures including:
+
 - Queues
 - Linked lists (singly-linked and doubly-linked)
 - Trees
@@ -102,4 +106,5 @@ JavaScript can implement custom, non-native data structures including:
 *Note: While these advanced structures can be custom-coded in JavaScript, they are beyond the scope of this document.*
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/13- Template Literal|Template Literals in JavaScript]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/15- Spread and Rest Operators|15- Spread and Rest Operators]]

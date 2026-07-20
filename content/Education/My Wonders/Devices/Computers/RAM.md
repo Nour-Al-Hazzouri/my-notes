@@ -46,24 +46,30 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **SDRAM & DDR1:** Synchronous Dynamic RAM synchronized memory speed with the CPU bus. DDR (Double Data Rate) revolutionized this by transferring data on both the rising and falling edges of the clock signal, instantly doubling bandwidth.
 *   **DDR2 & DDR3:** Focused on massive frequency scaling and voltage reduction (from 2.5V down to 1.5V). They achieved higher speeds at the cost of looser CAS latencies.
 *   **DDR4:** Brought massive density increases (allowing for 16GB and 32GB individual sticks) and introduced "Bank Groups" to allow faster consecutive data reads.
 *   **DDR5 (The Radical Shift):** Completely overhauled the architecture by splitting a single 64-bit channel into two independent 32-bit sub-channels per stick, moving power management (PMIC) off the motherboard and onto the RAM module itself, and mandating On-Die ECC for stability at extreme frequencies.
 
 ### Sub-Channel Architecture (DDR5)
+
 Unlike DDR4's single 64-bit bus, DDR5 splits each module into **two independent 32-bit sub-channels**. This allows the memory controller to perform two smaller, more efficient data transfers simultaneously rather than one large one, significantly reducing "waiting" time (latency).
 
 ### Power Management (The PMIC Shift)
+
 DDR5 modules now feature a **PMIC (Power Management Integrated Circuit)** directly on the PCB. This handles the voltage conversion from 5V (from the board) to the 1.1V needed by the chips. This move reduces noise and heat on the motherboard and allows for more granular power control, which is essential for the higher frequencies of DDR5.
 
 ### Integrated Sub-systems: On-Die ECC vs. Side-band ECC
+
 *   **On-Die ECC (Standard):** Corrects bit-flips inside the DRAM chips themselves. As memory density increases, cells become smaller and more prone to "random" errors. This is mandatory for DDR5 stability.
 *   **Side-band ECC (Server/Pro):** Requires an extra 8-bits of data (an extra chip on the module) and a CPU/Chipset that supports it. This corrects errors *during transmission* from the RAM to the CPU.
 
 ### Silicon Foundries vs. Module Vendors
+
 The RAM market is fundamentally split between the **Foundries** (who physically fabricate the memory silicon) and the **Module Vendors** (who solder that silicon onto a PCB, add a PMIC, RGB, and a heatsink).
-*   **The Foundries (The "Big 3"):** 
+
+*   **The Foundries (The "Big 3"):**
     *   **SK Hynix:** Currently the undisputed leader in DDR5 performance. Their **A-Die** and **M-Die** silicon are required to achieve extreme overclocks (>7200 MT/s) and tight timings.
     *   **Samsung:** The legendary king of DDR4 (with their "B-Die"), but their DDR5 silicon currently struggles to clock as high as SK Hynix.
     *   **Micron:** Often found in reliable, baseline JEDEC or lower-tier enthusiast kits.
@@ -74,9 +80,11 @@ The RAM market is fundamentally split between the **Foundries** (who physically 
 ## V. Compatibility & Ecosystem Integration
 
 ### Physical Form Factor
+
 *   **DIMM (Desktop):** The standard 288-pin stick used in all desktop motherboards. DDR5 DIMMs have a different notch position than DDR4, preventing incorrect insertion.
 
 ### Profile Compatibility
+
 *   **Intel XMP 3.0:** Advanced memory profiles for Intel platforms.
 *   **AMD EXPO:** Optimized profiles for AMD AM5 platforms, focusing on latency and infinity fabric synchronization.
 
@@ -93,13 +101,16 @@ The RAM market is fundamentally split between the **Foundries** (who physically 
 ## VII. Troubleshooting & Field Diagnostics
 
 ### Symptom: "IRQL_NOT_LESS_OR_EQUAL" BSOD
+
 *   **Cause**: Often a memory addressing error caused by unstable timings or a faulty chip.
 *   **Isolation**: Run **MemTest86+** for 4 passes. If any errors appear (red text), the RAM or the memory controller is unstable.
 
-### Symptom: System won't boot after enabling XMP/EXPO
+### Symptom: System Won't Boot after Enabling XMP/EXPO
+
 *   **Cause**: The CPU's memory controller (IMC) cannot handle the requested speed/voltage.
 *   **Isolation**: Clear CMOS to reset BIOS. Try a lower MT/s profile or update BIOS to improve IMC compatibility.
 
-### Symptom: Half of RAM capacity missing in Windows
+### Symptom: Half of RAM Capacity Missing in Windows
+
 *   **Cause**: A loose stick or a "dead" channel.
 *   **Isolation**: Reseat both sticks. If still missing, swap sticks between slots to determine if the fault is with the module or the motherboard slot.

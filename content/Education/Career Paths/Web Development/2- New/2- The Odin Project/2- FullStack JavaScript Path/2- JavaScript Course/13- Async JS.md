@@ -1,4 +1,4 @@
-### 1. What are Callbacks?
+### 1. What Are Callbacks?
 
 **Direct Answer:** Callbacks are functions that are executed asynchronously, or at a later time. In Node.js, they are the primary way to handle tasks that take a long time to finish, like reading a file or making a network request. Instead of the computer waiting and doing nothing while a slow task finishes (blocking), it "kicks off" the task and provides a callback function to be run once the data is ready.
 
@@ -105,4 +105,5 @@ addOne(function(err, newNumber) {
 });
 ```
 ---
+
 **Previous:** [[12- Form Validation]] | **Next:** [[13.1- Event Loop]]

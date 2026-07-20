@@ -1066,4 +1066,5 @@ In this lesson, you learned how to create your own HTML files, style them, lever
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/8- Week 7/3- Week 7 Section|Week 7 Section: SQL]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/9- Week 8/2- Shorts/1- Internet Primer|Week 8 Short: Internet Primer]]

@@ -29,4 +29,5 @@
 **Termination signal:** A kill command that will stop whatever process you tell it to
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 4 Glossary|Module 4 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 6 Glossary|Module 6 Glossary]]

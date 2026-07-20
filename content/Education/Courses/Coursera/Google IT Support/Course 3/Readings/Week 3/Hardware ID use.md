@@ -41,6 +41,7 @@ Root-enumerated devices require special attention:
 Hardware IDs can be accessed through:
 
 ### User Interface Method
+
 1. Open Device Manager
 2. Locate the device in the tree
 3. Right-click and select Properties
@@ -48,11 +49,14 @@ Hardware IDs can be accessed through:
 5. Choose "Hardware Ids" or "Compatible Ids" from the Property dropdown
 
 ### Programmatic Method
+
 Use one of these APIs:
+
 - IoGetDevicePropertyData
 - SetupDiGetDeviceProperty
 - CM_Get_DevNode_Property
 
 The returned data is a REG_MULTI_SZ value with these constraints:
+
 - Maximum characters (including NULL terminators): REGSTR_VAL_MAX_HCID_LEN
 - Maximum number of IDs in a list: 64

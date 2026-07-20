@@ -9,7 +9,7 @@ npm init react app
 		Contains assets that will be displayed to the user in the app
 	- src:
 		Contains all essential component files required to ensure that a React app functions
-		- App.css: 
+		- App.css:
 			contains the styles for the app.js components
 		- index.css:
 			contains styles to use in the entire app
@@ -29,4 +29,5 @@ npm init react app
 		List of all dependencies with specific versions
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/5- Transpiling JSX|5- Transpiling JSX]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/7- Customizing the Project|7- Customizing the Project]]

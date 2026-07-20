@@ -1,6 +1,7 @@
 The tutorial focuses on two main React hooks: useState and useRef. Let's start with useState.
 
 The useState Hook:
+
 First, let's understand the basic usage through a simple text input example. This component allows users to type text, displays what they typed, and includes a reset button:
 
 ```jsx
@@ -85,12 +86,15 @@ export default function RegisterForm() {
 ```
 
 Important Rules for Hooks:
+
 When using any React hooks, including useState, you must follow these rules:
+
 1. Only call hooks at the component's top level
 2. Don't use hooks inside loops or conditions
 3. Only call hooks from React functions, not regular JavaScript functions
 
 The useRef Hook:
+
 The useRef hook provides a way to directly access DOM elements. Here's an example that creates a button to focus an input field:
 
 ```jsx
@@ -115,4 +119,5 @@ function TextInputWithFocusButton() {
 The useRef hook returns a ref object with a 'current' property. By attaching this ref to an element using the ref attribute, you can access and manipulate that element directly when needed, like focusing an input field in this example.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/8- Hooks|8- Hooks]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/10- What is State|Understanding State in React: Core Concepts]]

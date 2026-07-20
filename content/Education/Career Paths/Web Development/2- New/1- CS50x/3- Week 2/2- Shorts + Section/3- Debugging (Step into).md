@@ -1,4 +1,4 @@
-# CS50x Short: Debugging (“Step into”)
+# CS50x Short: Debugging (“Step Into”)
 
 This short builds on the previous debugging lesson by introducing the "step into" functionality of `debug50`, which is essential for debugging programs with functions.
 
@@ -14,10 +14,6 @@ This is where "step into" becomes crucial. It allows you to dive into the functi
 2.  **Run with `debug50`**: Start your program with `debug50`.
 3.  **Step Into the Function**: When the debugger pauses at the function call, instead of using the "step over" button, use the "step into" button (often a downward-pointing arrow icon). This will take you to the first line of code inside the function.
 4.  **Debug the Function**: Now you can use "step over" to execute the function's code line by line, inspect its local variables, and pinpoint the source of the bug.
-
-
-
-
 
 ## Generic Code Example for Step Into Debugging
 
@@ -59,4 +55,5 @@ int main(void)
 This process demonstrates how "step into" allows you to delve into the execution of functions, which is crucial for debugging issues that originate within those functions, rather than just at the point of their call.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/2- Variables and Scope|CS50x Short: Variables and Scope]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/4- Debugging (Step Through)|CS50x Short: Debugging (Step Through)]]

@@ -7,4 +7,5 @@ This CSS property aligns items vertically and accepts the following values:
 - `**stretch**`: Items are stretched to fit the container.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/align-content|align-content]] | **Next**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/align-self|align-self]]

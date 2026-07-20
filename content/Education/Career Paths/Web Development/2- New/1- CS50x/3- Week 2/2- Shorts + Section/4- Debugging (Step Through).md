@@ -23,10 +23,6 @@ Debugging is the process of finding and fixing errors (bugs) in computer program
     *   **Step Over (often a curved arrow icon)**: This is the primary "step through" button. It executes the current line of code and moves to the next line. If the current line calls a function, it executes the entire function without stepping into it.
     *   **Inspect Variables**: On the left panel of the debugger, you can see the current values of your program's variables. This is crucial for understanding how data changes as your program runs.
 
-
-
-
-
 ## Generic Code Example for Step Through Debugging
 
 To understand how `debug50`'s "step through" functionality works, consider the following simple C program:
@@ -60,4 +56,5 @@ int main(void)
 This process demonstrates how "step through" allows you to meticulously follow the execution flow of your program and inspect its state, which is invaluable for identifying where unexpected behavior originates.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/3- Debugging (Step into)|CS50x Short: Debugging (“Step into”)]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/5- Arrays|CS50x Short: Arrays]]

@@ -56,4 +56,5 @@ Let's use the example `./greedy 1024 CS50`:
 There is no `argv[3]` in this case because the array has `argc` (3) elements, indexed from `0` to `argc - 1` (0 to 2).
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/5- Arrays|CS50x Short: Arrays]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/Section 2-  Arrays, Command Line Arguments, and String|CS50x Section 2: Arrays, Command Line Arguments, and Strings]]

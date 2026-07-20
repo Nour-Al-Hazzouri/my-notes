@@ -108,4 +108,5 @@ int main(void)
 While both implementations achieve the same result, the recursive version is often considered more elegant and concise for problems that naturally lend themselves to recursive solutions.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/6- Merge Sort|Merge Sort]] | **Next**: [[1- Week 4 Lecture]]

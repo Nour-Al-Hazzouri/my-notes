@@ -15,12 +15,14 @@ HouseCat Tiger Parrot
 ## Key OOP Concepts
 
 ### Essential Keywords
+
 - **extends**: Creates inheritance relationships between classes
 - **super**: Allows subclasses to access functionality from parent classes
 
 ## Implementation Process
 
 ### Base Class: Animal
+
 ```javascript
 class Animal {
     constructor(color = 'yellow', energy = 100) {
@@ -48,6 +50,7 @@ class Animal {
 ### First-Level Subclasses
 
 #### Cat Class
+
 ```javascript
 class Cat extends Animal {
     constructor(sound = 'purr', canJumpHigh = true, canClimbTrees = true, color, energy) {
@@ -63,6 +66,7 @@ class Cat extends Animal {
 ```
 
 #### Bird Class
+
 ```javascript
 class Bird extends Animal {
     constructor(sound = 'chirp', canFly = true, color, energy) {
@@ -79,6 +83,7 @@ class Bird extends Animal {
 ### Second-Level Subclasses
 
 #### HouseCat Class
+
 ```javascript
 class HouseCat extends Cat {
     constructor(houseCatSound = "meow", sound, canJumpHigh, canClimbTrees, color, energy) {
@@ -95,6 +100,7 @@ class HouseCat extends Cat {
 ```
 
 #### Tiger Class
+
 ```javascript
 class Tiger extends Cat {
     constructor(tigerSound = "Roar!", sound, canJumpHigh, canClimbTrees, color, energy) {
@@ -111,6 +117,7 @@ class Tiger extends Cat {
 ```
 
 #### Parrot Class
+
 ```javascript
 class Parrot extends Bird {
     constructor(canTalk = false, sound, canFly, color, energy) {
@@ -175,4 +182,5 @@ cuddles.makeSound(true);  // 'purr', 'Roar!'
 5. Method overriding with the `option` parameter demonstrates how to create flexible behaviors that can either replace or extend parent class functionality.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/10- De-structuring arrays and objects|10- De-structuring arrays and objects]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/11- OOP Benefits|Object-Oriented Programming Benefits and Principles]]

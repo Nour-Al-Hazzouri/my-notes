@@ -1,4 +1,5 @@
 # Exports
+
 ### 1. The Export Declaration & Module Basics
 
 The `export` declaration is used to share values (variables, functions, classes) from a JavaScript module so they can be used in other programs via an `import` statement. For this to work, the file must be interpreted as a module (e.g., using `<script type="module">` in HTML), and it will automatically run in **strict mode**.
@@ -107,7 +108,9 @@ const version = 1.2;
 - **Resource Management**: You cannot directly export a `using` or `await using` declaration. While you can export a variable declared with `using` elsewhere, it is discouraged because it will be "disposed" (cleaned up) as soon as the module finishes, leaving importers with a dead value.
 - **Environment**: Modules cannot be run via `file://` URLs due to CORS security; they must be served through an **HTTP server**.
 ---
+
 # Imports
+
 The following is a complete summary of the core ideas from the source regarding the JavaScript `import` declaration.
 
 ### 1. Basic Import and Module Context
@@ -252,4 +255,5 @@ import data from "./config.json" with { type: "json" };
 - **`with { type: "json" }`**: An attribute that tells the engine exactly how to interpret the file's content.
 - **Connection**: If the server sends a file that isn't JSON, the engine will block it for security reasons.
 ---
+
 **Previous:** [[4- Classes]] | **Next:** [[6- Webpack]]

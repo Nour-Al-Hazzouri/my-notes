@@ -5,6 +5,7 @@
 ### Check Accessibility
 
 To keep documents accessible, you should:
+
 - Apply Alternative Text
 - Use Table Accessibility
 - Apply consistent style
@@ -13,10 +14,12 @@ To keep documents accessible, you should:
 - Maintain consistency
 
 #### How to Check Accessibility:
+
 1. Go to the **Review** tab
 2. Click **Check Accessibility** button
 
 This will open a pane with different sections showing:
+
 - Errors (e.g., graphics without alternative text, tables without header rows)
 - Warnings (e.g., hard-to-read color combinations)
 
@@ -25,11 +28,13 @@ This will open a pane with different sections showing:
 ### Using Accessibility Features
 
 #### For Reading Challenges:
+
 1. Go to the **Review** tab
 2. Press the **Read Aloud** command
 3. Use the control buttons that appear on the bottom right of the ribbon to stop or resume
 
 #### For Reading Difficulties:
+
 1. Go to the **View** tab
 2. Press the **Immersive Reader** command
 3. Adjust the options to suit your needs
@@ -41,6 +46,7 @@ This will open a pane with different sections showing:
 ### Saving in Different Formats
 
 To save a Word document in another format:
+
 1. Go to the **File** tab
 2. Click **Save As**
 3. Select the desired file format from the dropdown menu
@@ -50,6 +56,7 @@ To save a Word document in another format:
 ### Checking Compatibility
 
 To check if features from newer versions are available in older versions:
+
 1. Go to the **File** tab
 2. Click **Info**
 3. Select **Check for Issues**
@@ -58,6 +65,7 @@ To check if features from newer versions are available in older versions:
 ### Converting to Latest Version
 
 To convert a file to the latest version of MS Word:
+
 1. Go to the **File** tab
 2. Click **Convert**
 3. Click **OK**
@@ -69,6 +77,7 @@ To convert a file to the latest version of MS Word:
 Word provides backup options in case of unexpected issues like PC crashes:
 
 ### Enabling Autosave and Autorecover:
+
 1. Go to the **File** tab
 2. Click **Options**
 3. Select **Save**
@@ -77,6 +86,7 @@ Word provides backup options in case of unexpected issues like PC crashes:
 > **Note**: Documents saved on cloud storage may have these features automatically enabled.
 
 ### Recovering Unsaved Files:
+
 1. Go to **File** > **Save As**
 2. Look for the option at the bottom showing unsaved documents
 
@@ -85,16 +95,19 @@ Word provides backup options in case of unexpected issues like PC crashes:
 ## Managing Additional File Types
 
 ### Opening Non-DOCX Files:
+
 1. Simply open the file
 2. If not supported, a window will appear
 3. Click **OK** to open it by changing the file format
 
 ### Adding Text from Another Document:
+
 1. Go to the **Insert** tab
 2. Click **Object** command
 3. Choose **Text from File**
 
 ### Linking to External Files:
+
 1. Go to the **Insert** tab
 2. Click **Object**
 3. Select **Create from File**
@@ -111,23 +124,27 @@ This creates a link so that when the source file changes, your document updates 
 ### Apply a Page Border and Color
 
 In Word you can:
+
 - Apply a page border
 - Add a watermark
 - Add headers and footers
 - Control page layout
 
 #### Adding a Border:
+
 1. Go to **Design** tab
 2. Click **Page Borders**
 3. Choose border options in the dialog box
 4. Click **OK**
 
 #### Changing Page Color:
+
 1. Go to **Design** tab
 2. Click **Page Color** (left of Page Borders)
 3. Select desired color
 
 To ensure the color prints:
+
 1. Click **Options**
 2. Check **Apply this color for printing**
 
@@ -140,6 +157,7 @@ To ensure the color prints:
 3. Choose a style you want
 
 For a custom photo watermark:
+
 1. Choose **Custom Watermark**
 2. Set the path to your image
 3. Check **Washout** to lighten dark photos
@@ -154,6 +172,7 @@ For a custom photo watermark:
 3. Choose a style
 
 For page numbers:
+
 1. Go to the **Insert** tab
 2. Click **Page Number**
 3. Choose position and style
@@ -168,6 +187,7 @@ When a header or footer is active, the **Header & Footer** tab appears with addi
 2. Adjust margins, orientation, and other settings as needed
 
 To insert a page break:
+
 1. Place cursor where you want the break
 2. Press **Ctrl + Enter**
 
@@ -178,12 +198,14 @@ To insert a page break:
 ### Controlling Paragraph Flow
 
 In Word you can:
+
 - Control paragraph flow
 - Insert section breaks
 - Insert columns
 - Link text boxes
 
 #### Paragraph Flow Options:
+
 1. Go to the **Home** tab
 2. In the Paragraph section, click the dialog launcher (small arrow)
 3. Select the **Line and Page Breaks** tab
@@ -203,6 +225,7 @@ In Word you can:
 3. Choose the type of section break you want
 
 For charts visibility:
+
 1. Set cursor at start of page
 2. Choose break type
 3. Go to **Orientation** and set to vertical mode
@@ -236,11 +259,13 @@ Text boxes adjust automatically, making them ideal for columns.
 ### Add Captions
 
 In Word you can:
+
 - Add captions
 - Insert cross-references
 - Add bookmarks
 
 #### Adding Captions to Diagrams, Maps, and Flowcharts:
+
 1. Select the object
 2. Go to the **References** tab
 3. Click **Insert Caption**
@@ -248,6 +273,7 @@ In Word you can:
 5. Click **OK**
 
 #### Creating a Table of Figures:
+
 1. Go to the **References** tab
 2. Click **Insert Table of Figures**
 3. Adjust settings as needed
@@ -277,10 +303,12 @@ Cross-references should link to headings, bookmarks, or captioned figures.
 5. Click **Add**
 
 To view bookmarks:
+
 - Press **F5**
 - Or go to **Options** > **Advanced** > **Show document content** > check **Show bookmarks**
 
 To delete a bookmark:
+
 1. Go to **Insert** > **Bookmark**
 2. Select the bookmark
 3. Click **Delete**
@@ -300,6 +328,7 @@ To delete a bookmark:
 7. Click **OK**
 
 #### Managing Hyperlinks:
+
 - **Add Screen Tip**: Right-click link > **Edit Hyperlink** > **ScreenTip**
 - **Remove Link**: Right-click link > **Remove Hyperlink**
 
@@ -308,15 +337,18 @@ To delete a bookmark:
 ### Insert Footnotes and Endnotes
 
 **Footnotes** appear at the bottom of the page.
+
 **Endnotes** appear at the end of the document.
 
 #### Adding a Footnote:
+
 1. Place cursor where you want the reference
 2. Go to the **References** tab
 3. Click **Insert Footnote**
 4. Type your footnote text
 
 #### Adding an Endnote:
+
 1. Place cursor where you want the reference
 2. Go to the **References** tab
 3. Click **Insert Endnote**
@@ -337,11 +369,13 @@ Citations reference sources like websites, books, or reports.
 5. Click **OK**
 
 To insert a citation in your document:
+
 1. Place cursor where you want the citation
 2. Click **Insert Citation**
 3. Select the source from the list
 
 To change citation style:
+
 1. Go to **References** tab
 2. Select style from the **Style** dropdown
 
@@ -356,6 +390,7 @@ A bibliography lists all citations used in your document.
 3. Choose a style
 
 To update a bibliography:
+
 - Select it and press **F9**, or
 - Right-click and select **Update Field**, or
 - Select it and click **Update Citations and Bibliography**
@@ -371,13 +406,16 @@ To update a bibliography:
 5. Choose a style
 
 To update a table of contents:
+
 - Select it and press **F9**, or
 - Right-click and select **Update Field**
 
 To remove a table of contents:
+
 1. Click the table of contents
 2. Click the control icon that appears
 3. Choose **Remove Table of Contents**
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/Week 4|Week 4: Working with Graphics and Visual Elements]] | **Next**: [[Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/Week 6|Week 6: Collaboration and Document Review]]

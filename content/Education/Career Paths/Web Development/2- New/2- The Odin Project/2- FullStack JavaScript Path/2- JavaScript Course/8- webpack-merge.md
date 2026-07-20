@@ -104,6 +104,7 @@ npx webpack --mode=production --optimization-minimize
 - **`--mode=production`**: Sets the build environment to production via the CLI.
 - **`--optimization-minimize`**: A shorthand flag to enable code minification directly through the terminal.
 ---
+
 To implement a professional environment-specific workflow, the sources recommend a "three-file" setup using the `webpack-merge` utility. This approach keeps your code "DRY" (Don't Repeat Yourself) by putting shared logic in a **common** file, which is then merged with **development** or **production** specific settings.
 
 ### The Three-File Configuration Example
@@ -196,4 +197,5 @@ To actually use these files, you must update your `package.json` scripts to poin
 This setup ensures that when you run `npm start`, you get a fast development experience, and when you run `npm run build`, webpack generates an optimized, minified bundle ready for a live website. Use separate maps in production (like `source-map`) because `inline` maps significantly increase bundle size and hurt performance.To implement a professional environment-specific workflow, the sources recommend a "three-file" setup using the `webpack-merge` utility. This approach keeps your code "DRY" (Don't Repeat Yourself) by putting shared logic in a **common** file, which is then merged with **development** or **production** specific settings.
 
 ---
+
 **Previous:** [[7- npm Scripts]]

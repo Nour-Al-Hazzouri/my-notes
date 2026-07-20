@@ -66,4 +66,5 @@ Again, edge cases like deleting the head, tail, or the only node in the list nee
 Doubly-linked lists offer enhanced flexibility and efficiency for certain operations, particularly deletion, by allowing bidirectional traversal. The trade-off is increased memory consumption per node and slightly more complex pointer manipulation during insertions. The choice between a singly-linked list and a doubly-linked list depends on the specific requirements of the application, balancing memory usage against the need for efficient backward traversal and deletion.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/2- Singly Linked Lists|CS50x Short: Singly-Linked Lists]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/4- Stacks|CS50x Short: Stacks]]

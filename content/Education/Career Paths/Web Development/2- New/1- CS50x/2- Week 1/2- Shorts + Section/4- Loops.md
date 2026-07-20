@@ -18,10 +18,10 @@ while (true)
 }
 ```
 
-- **Analogy to Scratch**: Similar to Scratch's 
-
+- **Analogy to Scratch**: Similar to Scratch's
 
 forever` block.
+
 - **Stopping an Infinite Loop**: In a terminal, you can typically stop a program stuck in an infinite loop by pressing `Ctrl+C`.
 
 ### Conditional `while` Loop
@@ -119,7 +119,7 @@ for (int i = 0; i < 3; i++) // Outer loop
 }
 ```
 
-## `break` and `continue` Statements
+## `break` And `continue` Statements
 
 - **`break`**: Immediately terminates the innermost loop (or `switch` statement) and transfers control to the statement immediately following the loop.
 - **`continue`**: Skips the rest of the current iteration of the innermost loop and proceeds to the next iteration (re-evaluating the loop condition).
@@ -127,4 +127,5 @@ for (int i = 0; i < 3; i++) // Outer loop
 These statements provide fine-grained control over loop execution flow.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/3- Conditional Statements|Conditional Statements]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/5- Command Line|Command Line]]

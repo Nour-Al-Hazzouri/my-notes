@@ -3,6 +3,7 @@
 ## Linux Operating System Overview
 
 Linux is a free, open-source operating system deployed across diverse computing environments:
+
 - Embedded devices
 - Mobile devices (including Android)
 - Personal computers
@@ -37,6 +38,7 @@ The kernel serves as the critical interface between hardware and software proces
 Ubuntu has become one of the most popular Linux distributions due to its user-friendly approach to system maintenance. Two primary update methods are available:
 
 ### Update Manager (GUI Approach)
+
 - Nearly fully automated graphical interface
 - Automatically appears when updates are available
 - Checks for security updates daily
@@ -44,6 +46,7 @@ Ubuntu has become one of the most popular Linux distributions due to its user-fr
 - Supports manual update checking
 
 ### Apt Package Management (Command-Line Approach)
+
 - Requires manual execution of update commands
 - Two-step update process:
   1. `apt-get update` - Updates the list of available packages

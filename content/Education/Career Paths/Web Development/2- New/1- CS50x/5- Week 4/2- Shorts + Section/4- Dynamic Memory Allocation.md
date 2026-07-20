@@ -81,7 +81,7 @@ p = NULL;
 -   **Free once:** Do not free the same memory block multiple times. This is also undefined behavior.
 -   **Dangling Pointers:** After calling `free(p)`, the pointer `p` still holds the memory address, but that memory is no longer valid for your program to use. This is called a dangling pointer. It's good practice to set the pointer to `NULL` immediately after freeing it (`p = NULL;`) to prevent accidental dereferencing of invalid memory.
 
-### `calloc` and `realloc`
+### `calloc` And `realloc`
 
 -   **`calloc`:** Similar to `malloc`, but it takes two arguments: the number of elements and the size of each element. It also initializes the allocated memory to all zeros.
 
@@ -107,4 +107,5 @@ Dynamic memory allocation is a powerful feature in C that provides flexibility i
 4.  Set freed pointers to **`NULL`** to avoid dangling pointers.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/3- Defining Custom Types|3- Defining Custom Types]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/5- Call Stacks|5- Call Stacks]]

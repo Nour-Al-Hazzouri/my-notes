@@ -1,6 +1,7 @@
 # Module 1: Introduction to HTML
 
 ## Table of Contents
+
 - [Syllabus](#syllabus)
 - [01.01: To Succeed in This Class](#0101-to-succeed-in-this-class)
 - [Required Materials](#required-materials)
@@ -107,6 +108,7 @@ The client requests a page and a server responds with the appropriate files.
 ### Uniform Resource Locator
 
 URL: 3 parts:
+
 - **Protocol**: how to connect
 - **Domain**: the server
 - **Document** (optional): the specific file needed (Most pages are made up of multiple files)
@@ -234,4 +236,5 @@ This shows that there's isn't a specific browser than can stay popular at all ti
   - Try typing code in by hand, not copy-and-paste
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/1- HTML/1- Introduction to HTML5 - Coursera/Module 2|Module 2: HTML Structure and Elements]]

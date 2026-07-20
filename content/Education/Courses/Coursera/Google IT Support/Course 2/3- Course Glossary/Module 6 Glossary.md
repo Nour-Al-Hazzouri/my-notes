@@ -57,4 +57,5 @@ offering guests a virtual operating platform that's indistinguishable from actua
 **Virtualization:** A single physical machine called a host runs many individual virtual instances called guests
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/3- Course Glossary/Module 5 Glossary|Module 5 Glossary]]

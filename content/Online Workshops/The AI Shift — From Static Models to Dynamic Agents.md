@@ -3,6 +3,7 @@
 > **Workshop:** The AI Shift — From Static Models to Dynamic Agents
 > *Build Your First AI Agent in 30 Minutes*
 ---
+
 ## 1. The Evolution to Agentic AI
 
 > **❓ What's the difference between a chatbot and an agent?**
@@ -283,4 +284,5 @@ from `agent.py`.
 > 🚀 **GO BUILD THE FUTURE OF AUTOMATION**
 
 ## PDF Guide
+
 ![[Workshop_Guide_Build_Your_First_AI_Agent_in_30_Minutes.pdf]]

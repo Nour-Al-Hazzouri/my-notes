@@ -44,18 +44,22 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **The Passive & Early Active Era:** Early CPUs (like the 8086) required no heatsink at all. As TDPs rose in the 90s, small extruded aluminum blocks with tiny, high-RPM fans became standard.
 *   **The Heatpipe Revolution:** As thermal densities exploded (Pentium 4 era), solid aluminum couldn't move heat fast enough. Copper heatpipes (using internal phase-change liquids) became the industry standard, allowing heat to be moved quickly from the baseplate to massive dual-tower fin stacks.
 *   **The AIO (All-In-One) Liquid Era:** Initially niche, closed-loop liquid coolers (pioneered largely by Asetek) became mainstream. They moved the bulky heatsink off the CPU socket and onto the case chassis, allowing for massive 360mm+ radiator surfaces that air coolers could never physically match due to motherboard clearance.
 *   **Smart & LCD Cooling:** Modern flagships integrate embedded microcontrollers, LCD screens, and daisy-chained magnetic fans (e.g., Corsair iCUE Link), shifting focus from pure thermal dissipation to ecosystem aesthetics and cable management.
 
 ### Heatpipe Physics (Air Cooling)
+
 Heatpipes are filled with a liquid (usually water) under a partial vacuum. When the CPU heats the copper base, the liquid evaporates or "boils" at a very low temperature. The vapor travels to the cool end (the fins), releases the heat, condenses back into liquid, and is pulled back to the heat source by a "wicking" internal structure (sintered or grooved copper).
 
 ### Pump Architecture (AIO)
+
 Modern AIOs (Asetek Gen 8) utilize a **3-phase motor**. Unlike standard single-phase motors, 3-phase designs provide smoother torque, significantly reducing the "hum" or vibration often heard at low speeds and allowing for much higher flow rates to keep up with high-TDP spikes.
 
 ### Radiator Material Integration
+
 *   **Aluminum (AIO)**: Cheap, lightweight, but prone to galvanic corrosion if mixed with copper. AIOs use specialized inhibitors in their coolant to prevent this.
 *   **Copper/Brass (Custom)**: Superior thermal conductivity and no corrosion risk when used with copper blocks.
 
@@ -64,6 +68,7 @@ Modern AIOs (Asetek Gen 8) utilize a **3-phase motor**. Unlike standard single-p
 ## V. Compatibility & Ecosystem Integration
 
 ### Socket & Clearance
+
 *   **Socket Brackets**: Specialized hardware for **LGA 1700** and **AM5** ensure the correct mounting pressure. Incorrect pressure can lead to 10-20°C temperature increases.
 *   **RAM Clearance**: Massive air coolers often overhang RAM slots. Builders must check the "RAM height clearance" (e.g., 32mm vs 59mm in "high clearance" modes).
 *   **Case Radiator Support**: A case might support a 360mm radiator, but thick radiators (30mm+) plus fans (25mm) can collide with motherboard VRM heatsinks.
@@ -81,17 +86,21 @@ Modern AIOs (Asetek Gen 8) utilize a **3-phase motor**. Unlike standard single-p
 ## VII. Troubleshooting & Field Diagnostics
 
 ### Symptom: 100°C Temps at Idle (AIO)
+
 *   **Cause**: **Pump Failure**. The liquid is sitting still and heat isn't moving to the radiator.
 *   **Diagnosis**: Feel the AIO tubes. If one is extremely hot and the other is cold (or both are cold), the pump has stopped. Check BIOS RPM readings for the Pump header.
 
 ### Symptom: Bubbling / "Rattling" Noises
+
 *   **Cause**: Air trapped in the pump block.
 *   **Field Protocol**: Ensure the radiator's highest point is **above the pump**. Tilt the PC case while running to force the air bubbles out of the block and into the radiator reservoir.
 
-### Symptom: Gradual performance drop over 2-3 years
+### Symptom: Gradual Performance Drop over 2-3 Years
+
 *   **Cause**: **NAND-level clogging** (in water blocks) or **Thermal Paste Pump-out**.
 *   **Field Protocol**: Re-paste the CPU. If custom water, check the micro-fins in the block for "gunk" or biological growth from degraded coolant.
 
-### Symptom: Fan "Surging" (Revving up and down)
+### Symptom: Fan "Surging" (Revving up and dOwn)
+
 *   **Cause**: Aggressive BIOS fan curve following rapid CPU temperature fluctuations.
 *   **Field Protocol**: Apply a "Fan Step Up/Down" delay (e.g., 2-3 seconds) in BIOS or use a liquid-temperature-based curve (for AIOs).

@@ -10,4 +10,5 @@
 	- In-memory representation/clone of the real DOM which minimizes updates to the DOM itself causing the website to be faster
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/2- JavaScript modules, imports - exports|2- JavaScript modules, imports - exports]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/4- Introduction to functional components|4- Introduction to functional components]]

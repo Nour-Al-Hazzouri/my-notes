@@ -63,13 +63,13 @@
 
 ### Components of an Operating System
 
-- OS is formed of 2 parts: 
+- OS is formed of 2 parts:
   - **Kernel space** (Process, memory, file, I/O Manager)
   - **User space** (Applications)
 
 ### Files and File Systems
 
-- 3 main components of handling files on our OS: 
+- 3 main components of handling files on our OS:
   - **Data**
   - **Metadata**
   - **File System**
@@ -97,7 +97,7 @@
 
 ### OS: User Space
 
-- To interact with the OS we can use 2 ways: 
+- To interact with the OS we can use 2 ways:
   - **CLI** (Command Line Interface)
   - **GUI** (Graphical User Interface)
 - Learning how to use commands is very important beside knowing GUI, some tasks can only be completed through commands

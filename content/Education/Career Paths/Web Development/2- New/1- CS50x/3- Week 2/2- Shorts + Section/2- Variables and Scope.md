@@ -136,4 +136,5 @@ In this example, the `x` in `main` and the `x` in `increment` are distinct varia
 To avoid confusion, especially in collaborative projects, it's often good practice to use distinct variable names even if their scopes technically allow for reuse, or to be very clear about variable ownership and purpose.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/1- Functions|CS50x Short: Functions]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/3- Debugging (Step into)|CS50x Short: Debugging (“Step into”)]]

@@ -66,4 +66,5 @@ int main(int argc, string argv[])
 The section concludes with exercises designed to reinforce the concepts of arrays, command-line arguments, and strings, encouraging practical application of the learned material.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/6- Command Line Arguments|CS50x Short: Command Line Arguments]] | **Next**: [[1- Week 3 Notes]]

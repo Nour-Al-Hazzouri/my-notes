@@ -51,6 +51,7 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **Intel Evolution:**
     *   **8086 & Pentium:** The 8086 established the foundational x86 instruction set. The Pentium (P5) introduced superscalar architecture, allowing multiple instructions to execute per clock cycle.
     *   **Core 2 Duo:** A radical departure from the power-hungry NetBurst architecture (Pentium 4). It prioritized IPC (Instructions Per Clock) and efficiency over raw frequency, cementing the multi-core era.
@@ -62,11 +63,13 @@
     *   **Zen 4 & 5:** The maturation of the chiplet ecosystem on 5nm/4nm nodes, transitioning exclusively to DDR5, and achieving high IPC gains through wider execution engines and advanced branch prediction.
 
 ### Intel (Desktop — Raptor Lake / Arrow Lake)
+
 *   **Hybrid Architecture:** Combines **Raptor Cove** P-cores (high clock, high IPC) and **Gracemont** E-cores (throughput, efficiency) on a monolithic die. Arrow Lake transitions to a tile-based design with **Lion Cove** P-cores and **Skymont** E-cores.
 *   **Integrated Graphics (UHD 770):** Features 32 Execution Units based on the Xe-LP architecture. Sufficient for display output, basic media playback, and troubleshooting without a discrete GPU.
 *   **Vendor Tech — Thread Director:** A hardware-level scheduler embedded in the CPU that communicates real-time core telemetry (instruction mix, thermal state) to the OS. The OS kernel uses this data to place performance-sensitive threads on P-cores and background tasks on E-cores in real time.
 
 ### AMD Zen 5 (Desktop — Ryzen 9000)
+
 *   **Front-End Overhaul:** Uses an **8-wide dispatch** and wider execution engines (6 Integer, 4 FP pipelines) to maximize parallelism.
 *   **Integrated Graphics (Radeon):** Modern Ryzen CPUs (7000/9000 desktop) include a basic RDNA 2 iGPU (2 Compute Units). Useful for display output and troubleshooting.
 *   **Clock Efficiency:** Focuses on maintaining high "effective" clocks through improved branch prediction rather than just increasing raw MHz.
@@ -99,9 +102,11 @@
 ## VII. Troubleshooting & Field Diagnostics
 
 ### Symptom: Constant Blue Screen (BSOD) - "CLOCK_WATCHDOG_TIMEOUT"
+
 *   **Cause**: CPU core hangups, usually due to unstable undervolting, insufficient VCORE voltage, or degradation (Vmin shift in older 13th/14th Gen Intel).
 *   **Isolation**: Reset BIOS to defaults. Increase LLC (Load Line Calibration) or slightly bump voltage.
 
-### Symptom: Thermal Throttling @ 100°C under light load
+### Symptom: Thermal Throttling @ 100°C under Light Load
+
 *   **Cause**: Mounting pressure issues, dried thermal paste, or "IHS Bowing" (common on LGA 1700).
 *   **Isolation**: Re-paste and re-mount. Check for "pump out" effect. Use a thermal contact frame if on Intel 12th-14th gen.

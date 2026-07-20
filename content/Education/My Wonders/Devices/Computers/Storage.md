@@ -47,26 +47,32 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **The HDD Platter Era:** Relied entirely on mechanical spinning magnetic platters and actuator arms. Speeds were bound by rotational latency (RPM) and data density.
 *   **The SATA SSD Era (AHCI):** Flash memory revolutionized random read/write speeds, but drives were severely bottlenecked by the SATA III interface (600 MB/s limit) and the legacy AHCI protocol, which was originally designed for mechanical drives.
-*   **The NVMe PCIe Era:** NVMe (Non-Volatile Memory express) was built from the ground up for flash storage. By connecting directly to the CPU's PCIe lanes, storage bypassed the chipset bottleneck entirely. 
+*   **The NVMe PCIe Era:** NVMe (Non-Volatile Memory express) was built from the ground up for flash storage. By connecting directly to the CPU's PCIe lanes, storage bypassed the chipset bottleneck entirely.
     *   **Gen 3 to Gen 4:** Doubled bandwidth, reaching up to ~7.5 GB/s.
     *   **Gen 5:** Reached up to ~14 GB/s but exposed extreme thermal challenges, forcing consumer drives to adopt active cooling (fans on SSDs) for the first time.
 
 ### Flash Storage Architecture (SSD)
+
 1.  **NAND Controller**: The "brain" that manages data placement, wear leveling, and error correction (ECC). Flagship controllers (like Samsung Pascal or Phison E26) have multi-core ARM chips.
-2.  **Flash Translation Layer (FTL)**: A software layer in the controller that maps logical addresses from the OS to physical NAND cells. 
+2.  **Flash Translation Layer (FTL)**: A software layer in the controller that maps logical addresses from the OS to physical NAND cells.
 3.  **3D V-NAND / BiCS**: Instead of fitting cells side-by-side, manufacturers "stack" cells vertically (up to 232+ layers) to increase density and reduce interference.
 4.  **SLC Caching**: A performance trick where a portion of TLC/QLC NAND operates in "Single Level Cell" mode. This allows for extremely fast bursts of writes until the SLC buffer is full.
 
 ### HDD Mechanical Integration
+
 Desktop HDDs utilize **CMR (Conventional Magnetic Recording)** or **SMR (Shingled Magnetic Recording)**. CMR is preferred for performance as it allows random writes without rewriting adjacent tracks. The drive motor spins at 7200 RPM, and an actuator arm moves a reader head across the spinning platters.
 
 ### Integrated Sub-systems: Storage Management
+
 Modern SSDs integrated into the desktop ecosystem rely on **Host Memory Buffer (HMB)** in DRAM-less drives to "borrow" system RAM for the L2P table, though flagship drives always include dedicated on-board DRAM for maximum stability.
 
 ### The Controller & NAND Ecosystem
+
 SSD performance is dictated by a combination of the Controller (the brain) and the NAND Flash (the storage cells).
+
 *   **Controller Manufacturers:**
     *   **Phison:** A dominant third-party controller manufacturer. Their **E26** controller powers nearly all first-generation PCIe Gen 5 SSDs (Crucial, Corsair, Gigabyte). It is exceptionally fast but runs notoriously hot, mandating extreme cooling.
     *   **Samsung & Western Digital:** Vertically integrated giants. They design their own proprietary controllers (e.g., Samsung Pascal) perfectly optimized for their own NAND, often resulting in industry-leading power efficiency and sustained write performance.
@@ -77,7 +83,8 @@ SSD performance is dictated by a combination of the Controller (the brain) and t
 
 ## V. Compatibility & Ecosystem Integration
 
-### M.2 Keying & PCIe x16 Allocation
+### M.2 Keying & PCIe X16 Allocation
+
 *   **M-Key (M.2 NVMe)**: Uses 4 PCIe lanes for maximum bandwidth.
 *   **Physical slots**: A Gen 5 SSD can fit in a Gen 4 slot, but its speed will be capped at Gen 4 limits (~7.5 GB/s).
 *   **PCIe Lane Spacing**: Plugging a Gen 5 NVMe into a slot that shares lanes with the GPU (on many Intel/AMD boards) will often drop the GPU from x16 to x8.
@@ -97,14 +104,17 @@ SSD performance is dictated by a combination of the Controller (the brain) and t
 
 ## VII. Troubleshooting & Field Diagnostics
 
-### Symptom: Drive disappears from BIOS after a cold boot
+### Symptom: Drive Disappears from BIOS after a Cold Boot
+
 *   **Cause**: "Sudden Death" of the controller or firmware panic.
 *   **Field Protocol**: Power cycle the PC. If it's a SATA drive, swap cables. If M.2, try the second slot. If still gone, the controller hardware has likely failed.
 
-### Symptom: Extremely slow write speeds (worse than HDD)
+### Symptom: Extremely Slow Write Speeds (Worse than HDD)
+
 *   **Cause**: The **SLC Cache is exhausted** or the drive is near 100% capacity. SSD performance drops significantly when the controller has to move data around to find free space ("Write Amplification").
 *   **Field Protocol**: Ensure TRIM is enabled. Delete unnecessary files to keep the drive below 80-90% usage.
 
-### Symptom: Clicking or "Grinding" noise
+### Symptom: Clicking or "Grinding" nOise
+
 *   **Cause**: Mechanical failure of the HDD actuator arm or motor (Head Crash).
 *   **Field Protocol**: **Immediately back up data**. Do not continue using the drive, as the reader head is likely scratching the physical platters.

@@ -59,7 +59,7 @@ fclose(ptr);
 
 It's essential to close files when you are finished with them to release system resources and ensure that all buffered data is written to the disk.
 
-#### `fgetc` and `fputc`
+#### `fgetc` And `fputc`
 
 -   **`fgetc`**: Reads the next character from the file pointed to by the file pointer. It returns the character read as an `int` or `EOF` if the end of the file is reached or an error occurs.
 
@@ -73,7 +73,7 @@ It's essential to close files when you are finished with them to release system 
     fputc("H", ptr);
     ```
 
-#### `fread` and `fwrite`
+#### `fread` And `fwrite`
 
 These functions are used for reading and writing blocks of data (e.g., arrays, structures) to and from files.
 
@@ -94,4 +94,5 @@ These functions are used for reading and writing blocks of data (e.g., arrays, s
 File pointers and file I/O functions are indispensable for creating programs that can store and retrieve persistent data. By understanding and correctly using `fopen`, `fclose`, `fgetc`, `fputc`, `fread`, and `fwrite`, you can enable your C programs to interact with the file system, making them more powerful and versatile.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/5- Call Stacks|5- Call Stacks]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/Section- Week 4 Memory|Section- Week 4 Memory]]

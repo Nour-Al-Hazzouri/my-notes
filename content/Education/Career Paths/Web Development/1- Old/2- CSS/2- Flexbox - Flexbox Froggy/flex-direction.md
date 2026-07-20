@@ -6,4 +6,5 @@ This CSS property defines the direction items are placed in the container, and a
 - `**column-reverse**`: Items are placed bottom to top.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/align-self|align-self]] | **Next**: [[Education/Career Paths/Web Development/1- Old/2- CSS/2- Flexbox - Flexbox Froggy/flex-flow|flex-flow]]

@@ -6,11 +6,11 @@
     - JEST:
         - A framework used to test codes and expect results
         - Example:
-            
+
 ```JavaScript
 expect(concatStrings("abc", "def")).toBe("abcdef");
 ```
-            
+
 - Advantages:
 	- Conciseness
 	- Clarity
@@ -22,4 +22,5 @@ expect(concatStrings("abc", "def")).toBe("abcdef");
 - Red tests are a sign for you to know how to keep improving your code to get green tests, which is known as red-green-refactor cycle, which is the basis of Test Driven Development or TDD
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/1- Other JS environments - node & NPM|1- Other JS environments - node & NPM]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 4/3- Types of Testing|3- Types of Testing]]

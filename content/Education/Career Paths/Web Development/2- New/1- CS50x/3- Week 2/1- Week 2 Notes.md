@@ -7,15 +7,15 @@ When we compile source code, the compiler goes through a series of steps:
 1. **Preprocessing**: The compiler first looks for lines that start with a `#` symbol, such as `#include <stdio.h>`. The preprocessor essentially copies and pastes the contents of the included file into your program.
 
 2. **Compiling**: The compiler converts your C code into assembly code, which is a lower-level representation of your program.
-   
+
    ![Assembly Code](https://private-us-east-1.manuscdn.com/sessionFile/GT0ZLQYLwMuUypkGvSQPha/sandbox/kVW8izvj8z4nTRzonf2pFE-images_1745089973794_na1fn_L2hvbWUvdWJ1bnR1L015IFZhdWx0L21lZGlhL2NzNTBfd2VlazIvYXNzZW1ibHlfY29kZQ.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvR1QwWkxRWUx3TXVVeXBrR3ZTUVBoYS9zYW5kYm94L2tWVzhpenZqOHo0blRSem9uZjJwRkUtaW1hZ2VzXzE3NDUwODk5NzM3OTRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwwMTVJRlpoZFd4MEwyMWxaR2xoTDJOek5UQmZkMlZsYXpJdllYTnpaVzFpYkhsZlkyOWtaUS5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NjcyMjU2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=VLR9U4yCipu-J~YaMvexMqcpP1VrgZkk6X7-uh3qkw7HOPL4u-T2cC0IMUtzWJ-FAB3qzT-n~6nNlByPpI9R-xVPrDM3FDDq-l90R4w-V-7vzXfcOXZXjQncla7LveOTL~WkqQTF3FKxMYefePwDGL9YfyA7QpEKZYX1Lmzb8l9abVBHBzETtivGsWaNiHd3Qps0E7ywfq3PWyV~XGY0KDrInCgJ125WKzuqrE6S60s8XR6pvGhER8eNzkTF6hGrGS~xGu-TEwZp4T4zVHfMEarLQVx2SxXsITXrBPfultbYOMZlYbV2Tra8EDiMdiPH09WzoOLi8D2kVmiNv9rJog__)
 
 3. **Assembling**: The compiler then converts your assembly code into machine code (binary).
-   
+
    ![Machine Code](https://private-us-east-1.manuscdn.com/sessionFile/GT0ZLQYLwMuUypkGvSQPha/sandbox/kVW8izvj8z4nTRzonf2pFE-images_1745089973794_na1fn_L2hvbWUvdWJ1bnR1L015IFZhdWx0L21lZGlhL2NzNTBfd2VlazIvbWFjaGluZV9jb2Rl.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvR1QwWkxRWUx3TXVVeXBrR3ZTUVBoYS9zYW5kYm94L2tWVzhpenZqOHo0blRSem9uZjJwRkUtaW1hZ2VzXzE3NDUwODk5NzM3OTRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwwMTVJRlpoZFd4MEwyMWxaR2xoTDJOek5UQmZkMlZsYXpJdmJXRmphR2x1WlY5amIyUmwucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=llatugJA53409bSeVnQlHcuK3mV6PkEzPK1Y0BNgziaUK6QlatNtwt1yAcL0cMXA99sBsWzcthmbAgQExsAY8n2S7LAwwHbMeGNjr0toKMzGH9DELCD60aG2RluaCO36~OffW3khISjAB8pNFfE7YbXT091aZva4hTt2Xnv9ZSd2fdiu29MLPmQax0ETMkDUHMVJ4KSXF0q1QUYeb4aEbbcs2ZOr0MNDq5WkPewNS4QAk5ONGvE8lQ7WFx~LJOjdIHYP~QAMCFKNcstumWMUxMfxgaM3qEqIlqlbfrooO8eGH5P9SJ71aI7yi6Qzvrnvslfk3O0wpU8UeLQOtuVcKA__)
 
 4. **Linking**: Finally, the compiler combines the machine code from your program with the machine code from the included libraries.
-   
+
    ![Linking Process](https://private-us-east-1.manuscdn.com/sessionFile/GT0ZLQYLwMuUypkGvSQPha/sandbox/kVW8izvj8z4nTRzonf2pFE-images_1745089973794_na1fn_L2hvbWUvdWJ1bnR1L015IFZhdWx0L21lZGlhL2NzNTBfd2VlazIvbGlua2luZw.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvR1QwWkxRWUx3TXVVeXBrR3ZTUVBoYS9zYW5kYm94L2tWVzhpenZqOHo0blRSem9uZjJwRkUtaW1hZ2VzXzE3NDUwODk5NzM3OTRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwwMTVJRlpoZFd4MEwyMWxaR2xoTDJOek5UQmZkMlZsYXpJdmJHbHVhMmx1WncucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=u31ah51xH~s1XIKPgysvk~QenoU0Wz~JHuh4BidAn3P1MfRQkx3dQvkg2P7Nu8PwSmL~0CyiQjJi0fe0BAepjThGqcxe8IK6C1OwT-sx3njpJ4Wnpd52djQiMsiIcntg7Rz822~wrMyjytTb91EFkdr6H7L2TXkWtL5YKpfZiaS-KDgWy-7wmwdzlgzAOtTZJYs1N2X-IcPejzkmTJoMKk3St6ML7lbx9FJ7ygh~1LgXNBgyZLK2T4Jcxw7eY3eNFOkzS5VDEpkRpGuyJakZX5vx4xwlV0zuc1SAm9i0o83geJE9YWmPnxBsqMWRAuUrZDZD9b5Lv6W2RN2DKb2aEQ__)
 
 ## Debugging
@@ -40,7 +40,7 @@ int main(void)
 
 Running this code, four bricks appear instead of the intended three.
 
-### Using printf for Debugging
+### Using Printf for Debugging
 
 `printf` is a very useful way of debugging your code. You could modify your code as follows:
 
@@ -553,6 +553,7 @@ In the problem set, you'll have the opportunity to implement a cryptographic key
 In this lesson, we explored arrays, strings, and command-line arguments. We also learned about debugging techniques and cryptography. These concepts are fundamental to understanding how to manipulate data in C.
 
 Key takeaways:
+
 - Arrays allow us to store multiple values of the same type in contiguous memory locations
 - Strings in C are essentially arrays of characters terminated by a null character
 - Command-line arguments provide a way to pass information to our programs when they start
@@ -562,4 +563,5 @@ Key takeaways:
 In the next lecture, we'll delve deeper into algorithms and their efficiency.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/CS50x Week 1 Section_ C|CS50x Week 1 Section: C]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/1- Functions|CS50x Short: Functions]]

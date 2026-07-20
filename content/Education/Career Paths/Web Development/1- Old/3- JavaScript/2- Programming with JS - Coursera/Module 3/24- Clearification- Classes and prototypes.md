@@ -4,7 +4,7 @@ In JavaScript, you can create objects using **prototypes** or **classes**, and t
 
 JavaScript was originally built on a prototype-based system. Every object in JavaScript has a prototype, which is another object from which it inherits properties and methods.
 
-### Example using Prototypes:
+### Example Using Prototypes:
 
 ```JavaScript
 // Create a constructor function
@@ -31,7 +31,7 @@ person1.greet(); // Hello, my name is Alice and I'm 25 years old.
 
 ES6 introduced `classes`, which provide a cleaner, more intuitive way to create objects, but under the hood, they still use prototypes.
 
-### Example using Classes:
+### Example Using Classes:
 
 ```JavaScript
 // Create a class
@@ -61,8 +61,8 @@ person2.greet(); // Hello, my name is Bob and I'm 30 years old.
     - It creates a new object.
     - Sets `this` to refer to that new object.
     - Links the object to the prototype (either in constructor function or class).
-- **Usage with built-in objects**:  
-    You can also use  
+- **Usage with built-in objects**:
+    You can also use
     `new` with built-in objects like `Date` or `Array`.
 
 ### Example:
@@ -83,4 +83,5 @@ console.log(arr); // [1, 2, 3]
 For most modern projects, using **classes** is recommended due to their clear structure. Prototypes are still important to understand because they form the basis of JavaScript's inheritance model.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/23- JavaScript Object Notation-JSON|23- JavaScript Object Notation-JSON]]

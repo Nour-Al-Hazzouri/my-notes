@@ -1,10 +1,13 @@
 Now run the command to add a brand new React app to the machine:
+
 ```bash
 npm init react-app firstapp
 ```
+
 The installation and setup might take a few minutes.
 
 Here's the output of executing the above command:
+
 ```bash
 Creating a new React app in /home/pc/Desktop/firstapp.
 
@@ -65,12 +68,15 @@ cd firstapp
 npm start
 
 ```
+
 If you follow the suggestions from the above output, you'll run: cd firstapp, and then npm start.
 
 This will end up with the following output in the built-in terminal:
+
 ```bash
 _Compiled successfully! You can now view firstapp in the browser.   Local:_            [_http://localhost:3000_](http://localhost:3000/)   _On Your Network:_  [_http://192.168.1.167:3000_](http://192.168.1.167:3000/) _Note that the development build is not optimized. To create a production build, use npm run build. webpack compiled successfully_
 ```
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/2- JavaScript modules, imports - exports|2- JavaScript modules, imports - exports]]

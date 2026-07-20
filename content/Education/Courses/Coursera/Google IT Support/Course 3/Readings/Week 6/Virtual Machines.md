@@ -31,11 +31,13 @@ VM software divides hardware resources among virtualized environments:
 ## Common VM Software
 
 ### Free Options
+
 - **VirtualBox**: Cross-platform (Windows, Linux, Mac, Solaris), open-source solution supporting various guest OSs
 - **Hyper-V**: Microsoft's integrated virtualization platform for Windows, supporting Windows, Linux, and FreeBSD (no macOS support)
 - **VMware Workstation Player**: Free for non-commercial use, runs on Windows, Linux, and macOS
 
 ### Commercial Options
+
 - **Red Hat Virtualization (RHV)**: Enterprise-focused platform with annual subscription for support and updates
 
 ## Key Takeaways

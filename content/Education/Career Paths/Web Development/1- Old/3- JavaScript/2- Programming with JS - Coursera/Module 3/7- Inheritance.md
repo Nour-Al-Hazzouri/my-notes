@@ -1,6 +1,6 @@
 - Inheritance in JS revolves around something called the prototype
 - in JS, the prototype is an object that can hold properties that will be shared with other objects
-    
+
 ```JavaScript
 var bird = {
 	hasWings: true,
@@ -9,8 +9,8 @@ var bird = {
 }
 var eagle1= Object.create(bird);
 ```
-    
-- In this syntax, now the eagle1 object has inherited all the properties from the bird object, so eagle1.hasWings will output true on the console 
+
+- In this syntax, now the eagle1 object has inherited all the properties from the bird object, so eagle1.hasWings will output true on the console
 
 The code you provided uses the `Object.create()` method to create an object with a prototype, which is another way of creating objects in JavaScript. Here's how it differs from the examples I previously explained:
 
@@ -58,4 +58,5 @@ In contrast:
 - In the earlier examples with **classes** and **constructor functions**, the focus was on defining custom properties (like `name` and `age`) and methods on instances, while `Object.create()` focuses on directly linking an object to another object's prototype.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/6- Constructors|JavaScript Constructors]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/8- Creating Classes|Creating Classes in JavaScript]]

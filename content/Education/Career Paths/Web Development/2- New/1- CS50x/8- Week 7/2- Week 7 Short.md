@@ -3,8 +3,9 @@
 ## Introduction to Databases
 
 Doug Lloyd introduces SQL (Structured Query Language) and its role in web development. For building complex websites beyond simple static pages, databases become essential for storing and managing information such as:
+
 - Username and password combinations for user authentication
-- Shopping history 
+- Shopping history
 - Any other long-term user information
 
 When a user attempts to log in, their credentials are sent to the database, checked against stored information, and access is granted if the combination matches.
@@ -32,11 +33,13 @@ Each sheet contains its own unique set of rows and columns, but all sheets are c
 ## SQL Implementation Types
 
 ### MySQL
+
 - Open-source platform
 - Very commonly used for establishing relational databases
 - Industry standard for many applications
 
-### SQLite  
+### SQLite
+
 - Similar feature set to MySQL
 - More lightweight implementation
 - Easier to use in development environments
@@ -45,6 +48,7 @@ Each sheet contains its own unique set of rows and columns, but all sheets are c
 ## phpMyAdmin Tool
 
 Most SQL implementations come with **phpMyAdmin**, a Graphical User Interface (GUI) tool that:
+
 - Executes database queries in a user-friendly way through web browser clicks
 - Most commonly used to build databases initially
 - Helps set up tables (avoiding cumbersome syntax)
@@ -53,6 +57,7 @@ Most SQL implementations come with **phpMyAdmin**, a Graphical User Interface (G
 ### Table Creation Process
 
 When building a table, you must:
+
 1. Specify exactly which columns will be stored
 2. Define column names upfront (username, password, etc.)
 3. Design the table structure **before** inserting any data
@@ -65,19 +70,22 @@ Once created, most queries will refer to data stored in the different rows of th
 SQL has many more data types than C. Here are 20 common ones (not exhaustive):
 
 ### Integer Types
+
 - **INT** - Standard integers (similar to C)
 - **SMALLINT** - Smaller range integers
-- **TINYINT** - Very small range integers  
+- **TINYINT** - Very small range integers
 - **MEDIUMINT** - Medium range integers
 - **BIGINT** - Large range integers
 
 Each has different upper bounds on values they can store.
 
 ### Floating Point Types
+
 - **DECIMAL** - Precise decimal numbers
 - **FLOAT** - Floating point numbers (replaces C's float/double)
 
 ### Date and Time Types
+
 - **DATE** - Store dates
 - **TIME** - Store times
 - **DATETIME** - Combined date and time
@@ -86,11 +94,13 @@ Each has different upper bounds on values they can store.
 These have no native equivalent in C.
 
 ### Text Types
+
 - **TEXT** - Arbitrarily large chunks of text (like strings)
 - **CHAR** - Fixed-length strings
 - **VARCHAR** - Variable-length strings
 
 ### Special Types
+
 - **ENUM** - Limited set of predefined values
 - **GEOMETRY** - Store map/GIS data drawings
 - **LINESTRING** - Store line/path data on maps
@@ -98,9 +108,10 @@ These have no native equivalent in C.
 - **BINARY** - Binary data
 - **BIT** - Bit values
 
-### CHAR vs VARCHAR Explained
+### CHAR Vs VARCHAR Explained
 
 **CHAR (Fixed-Length Strings):**
+
 - Not a single character like in C
 - Fixed length specified at creation: `CHAR(10)`
 - Always stores exact length specified
@@ -108,6 +119,7 @@ These have no native equivalent in C.
 - Attempting to store 15 characters only stores first 10
 
 **VARCHAR (Variable-Length Strings):**
+
 - Variable length up to specified maximum: `VARCHAR(99)`
 - Can store 1, 2, 3... up to 99 characters
 - No wasted space with null bytes
@@ -132,12 +144,14 @@ Everything reduces to one of these five affinities in SQLite.
 After specifying columns, you must designate a **primary key** column.
 
 ### Why Primary Keys Matter
+
 - Every row must be uniquely and quickly identifiable
 - Allows efficient SQL queries
 - Ensures data integrity
 - Enables fast row lookups
 
 ### Primary Key Best Practices
+
 - Usually an integer column
 - Should be set to **auto-increment**
 - Automatically assigns unique values
@@ -145,6 +159,7 @@ After specifying columns, you must designate a **primary key** column.
 - You can forget about it in queries - database handles it
 
 ### Joint Primary Keys
+
 - Combination of two or more columns
 - The combination must always be unique
 - Example: Column A (letters) + Column B (numbers)
@@ -157,21 +172,25 @@ After specifying columns, you must designate a **primary key** column.
 SQL has limited vocabulary but powerful operations:
 
 ### 1. INSERT - Add Information
+
 ```sql
 INSERT INTO table (columns) VALUES (values)
 ```
 
-### 2. SELECT - Retrieve Information  
+### 2. SELECT - Retrieve Information
+
 ```sql
 SELECT columns FROM table WHERE condition ORDER BY column
 ```
 
 ### 3. UPDATE - Modify Information
+
 ```sql
 UPDATE table SET column = value WHERE condition
 ```
 
 ### 4. DELETE - Remove Information
+
 ```sql
 DELETE FROM table WHERE condition
 ```
@@ -183,12 +202,14 @@ These four operations handle most database interactions in CS50 and general web 
 Doug uses two example tables throughout:
 
 **users table:**
+
 - idnum (primary key)
 - username
-- password  
+- password
 - fullname
 
 **moms table:**
+
 - username
 - mother
 
@@ -197,17 +218,20 @@ Doug uses two example tables throughout:
 Adds new rows to a table.
 
 ### Syntax:
+
 ```sql
 INSERT INTO table (columns) VALUES (values)
 ```
 
 ### Example 1 - Users Table:
+
 ```sql
 INSERT INTO users (username, password, fullname)
 VALUES ('newman', 'USMAIL', 'Newman')
 ```
 
 Result: Adds new row with:
+
 - username: newman
 - password: USMAIL
 - fullname: Newman
@@ -216,6 +240,7 @@ Result: Adds new row with:
 The idnum appears automatically because it's set to auto-increment. This ensures uniqueness without manual tracking.
 
 ### Example 2 - Moms Table:
+
 ```sql
 INSERT INTO moms (username, mother)
 VALUES ('kramer', 'Babs Kramer')
@@ -228,6 +253,7 @@ Result: Adds row with kramer's mother information.
 Retrieves information from tables.
 
 ### Basic Syntax:
+
 ```sql
 SELECT columns FROM table WHERE predicate ORDER BY column
 ```
@@ -235,6 +261,7 @@ SELECT columns FROM table WHERE predicate ORDER BY column
 WHERE and ORDER BY are optional but commonly used.
 
 ### Example 1 - Simple Select:
+
 ```sql
 SELECT idnum, fullname FROM users
 ```
@@ -242,6 +269,7 @@ SELECT idnum, fullname FROM users
 Returns all idnum-fullname pairs from entire users table (3 rows = 3 pairs).
 
 ### Example 2 - With WHERE Clause:
+
 ```sql
 SELECT password FROM users WHERE idnum < 12
 ```
@@ -249,6 +277,7 @@ SELECT password FROM users WHERE idnum < 12
 Returns passwords only for rows where idnum is less than 12 (rows 10 and 11, not 12).
 
 ### Example 3 - Select All Columns:
+
 ```sql
 SELECT * FROM moms WHERE username = 'jerry'
 ```
@@ -260,17 +289,20 @@ The asterisk (*) is shorthand for all columns. Returns complete row data for jer
 Combines data from multiple tables using relationships.
 
 ### Why Use Joins?
+
 - Avoid storing all information in one massive table
 - Use relationships between tables (relational database)
 - Pull information from where needed without duplication
 - Keep tables organized and manageable
 
 ### Join Syntax:
+
 ```sql
 SELECT columns FROM table1 JOIN table2 ON predicate
 ```
 
 ### Complex Join Example:
+
 ```sql
 SELECT users.fullname, moms.mother
 FROM users
@@ -291,13 +323,15 @@ ON users.username = moms.username
 3. **Extract Requested Data**: Returns only specified columns
 
 ### Join Process Example:
+
 - Newman: Not in both tables - excluded
-- Kramer: Not in both tables - excluded  
+- Kramer: Not in both tables - excluded
 - jerry & gcostanza: In both tables - included
 
 Result: Returns fullname from users and mother from moms for matching usernames.
 
 ### Table.Column Notation:
+
 - Disambiguates columns with same names in different tables
 - Format: `tablename.columnname`
 - Example: `users.username` vs `moms.username`
@@ -307,11 +341,13 @@ Result: Returns fullname from users and mother from moms for matching usernames.
 Modifies existing data in tables.
 
 ### Syntax:
+
 ```sql
 UPDATE table SET column = value WHERE predicate
 ```
 
 ### Example:
+
 ```sql
 UPDATE users SET password = 'yadayada' WHERE idnum = 10
 ```
@@ -320,38 +356,43 @@ Result: Changes password from 'fusilli' to 'yadayada' for row with idnum 10.
 
 The WHERE clause identifies which row to update, then the specified column gets the new value.
 
-## DELETE Operation  
+## DELETE Operation
 
 Removes entire rows from tables.
 
 ### Syntax:
+
 ```sql
 DELETE FROM table WHERE predicate
 ```
 
 ### Example:
+
 ```sql
 DELETE FROM users WHERE username = 'newman'
 ```
 
 Result: Completely removes the row where username equals 'newman' from the users table.
 
-## phpMyAdmin vs Programmatic Access
+## phpMyAdmin Vs Programmatic Access
 
 ### phpMyAdmin Limitations:
+
 - Requires manual intervention
 - Must log in and click buttons
 - Not suitable for automated operations
 - Impractical for dynamic websites
 
 ### Programmatic Solutions:
+
 - SQL integrates with modern languages (Python, PHP)
 - Languages have functions to connect to databases
 - Can execute queries automatically through code
 - No manual intervention needed
 - Enables dynamic, automated database operations
 
-### Integration Example (mentioned for PHP):
+### Integration Example (Mentioned for PHP):
+
 ```php
 $results = query("SELECT fullname FROM users WHERE idnum = 10");
 ```
@@ -361,7 +402,7 @@ This allows websites to automatically handle database operations without human i
 ## Key Takeaways
 
 1. **Database Design**: Plan table structure before implementation
-2. **Primary Keys**: Essential for row identification and query efficiency  
+2. **Primary Keys**: Essential for row identification and query efficiency
 3. **Auto-increment**: Lets database handle unique ID generation
 4. **Four Operations**: INSERT, SELECT, UPDATE, DELETE cover most needs
 5. **Relationships**: Use joins to connect related data across tables
@@ -371,4 +412,5 @@ This allows websites to automatically handle database operations without human i
 Doug emphasizes that while this video covers the fundamentals, actual implementation details for connecting programming languages to databases will be covered in language-specific videos. The goal is to understand what databases are, why we use them, and how to manipulate them with SQL's core operations.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/8- Week 7/1- Week 7 Lecture|1- Week 7 Lecture]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/8- Week 7/3- Week 7 Section|Week 7 Section: SQL]]

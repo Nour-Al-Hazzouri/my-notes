@@ -1,6 +1,7 @@
 # Week 1: DOM Review and JavaScript Basics
 
 ## Table of Contents
+
 - [DOM Review with OOP](#dom-review-with-oop)
 - [Newer DOM Methods](#newer-dom-methods)
 - [Output](#output)
@@ -105,13 +106,17 @@ Note: Do not start with the value.
 ```JavaScript
 var topic= document.getElementById("myID");
 ```
+
   Nodes are more than a single value, they have attributes
+
 - Array:
   Return more than one value:
 ```JavaScript
 var links= document.getElementsByTagName('a');
 ```
+
   Accessing arrays elements requires a variable name and an index:
+
 ```JavaScript
 var links= document.getElementsByTagName('a')
 document.write(links[0]);
@@ -120,4 +125,5 @@ document.write(links[0]);
 ---
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/1- Interactivity with JavaScript - Coursera/Week 2|Week 2: Functions, Events, and this Keyword]]

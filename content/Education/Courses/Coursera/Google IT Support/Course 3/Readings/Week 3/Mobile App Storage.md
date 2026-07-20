@@ -3,6 +3,7 @@
 ## Storage Challenges and Troubleshooting
 
 Storage space on mobile devices is inherently limited and requires active management. For IT Support Specialists, checking available storage is a critical troubleshooting step when users encounter:
+
 - Unexpected errors during app installation
 - Problems saving files
 - Unusual performance issues
@@ -13,6 +14,7 @@ Storage limitations can occur even without user action, as automatically generat
 ## Storage Management Strategies
 
 Effective mobile storage management includes:
+
 - Uninstalling unused or rarely used applications
 - Deleting unnecessary files
 - Using cloud storage for photos, videos, and documents (which also provides data protection if the device is lost or damaged)
@@ -21,6 +23,7 @@ Effective mobile storage management includes:
 ## Platform-Specific Management Techniques
 
 ### Apple Devices (iOS/iPadOS)
+
 1. **Checking Available Storage**
    - Navigate to Settings > General > iPhone/iPad Storage
    - Review the visual storage indicator showing used and available space
@@ -39,6 +42,7 @@ Effective mobile storage management includes:
    - Move photos, videos, and files to iCloud and remove local copies
 
 ### Android Devices
+
 1. **Checking Available Storage**
    - Navigate to Settings > Storage (location varies by manufacturer)
    - For Samsung devices, look under Device Maintenance or Device Care

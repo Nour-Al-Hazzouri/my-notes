@@ -44,4 +44,5 @@ Technical writing is often project-based, with clear deadlines and deliverables.
 **In summary:** If you find yourself answering "yes" to most of these questions, a career as a technical writer could be a great fit for you. It's a field that rewards those who are passionate about clear communication, technology, and continuous learning.
 
 ---
+
 **Previous**: [[Education/Career Paths/Information/4- Technical Writer/4- Work Environment|4- Work Environment]]

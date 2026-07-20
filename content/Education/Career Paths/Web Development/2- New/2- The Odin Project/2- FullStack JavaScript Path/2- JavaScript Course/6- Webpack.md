@@ -1,4 +1,5 @@
 ### Core Concepts
+
 - **Bundling & Dependency Graphs**: Webpack starts at an **entry point**, follows every `import` to build a **dependency graph**, and combines everything into a single output file.
     - _Note:_ This fixes the performance issue of browsers downloading dozens of individual module files.
 - **The `src` and `dist` Convention**: You write all code in the `src` folder. Webpack outputs the final, optimized version to the `dist` folder.
@@ -105,7 +106,9 @@ module.exports = {
 11. **`loader: "html-loader"`**: Finds images inside your HTML file (like `<img src="...">`) so Webpack can process them.
 12. **`type: "asset/resource"`**: Tells Webpack to emit image files into the output directory and provide their final URLs to your code.
 ---
+
 ## Concepts
+
 ### 1. Direct Answer: Concepts Revision (Idea -> Explanation)
 
 - **Multi-Bundle Generation**: While often used for one file, Webpack is a static module bundler designed to build a dependency graph from "one or more" entry points to produce "one or more" bundles.
@@ -213,7 +216,9 @@ module.exports = {
 };
 ```
 ---
+
 ## Asset Management
+
 ### 1. Loading Fonts
 
 **Explanation:** Webpack treats fonts (like `.woff` or `.ttf`) as internal resources. By using `asset/resource`, Webpack automatically copies the font file to your `dist` folder and updates the `url()` paths in your CSS to point to the new, hashed filename.
@@ -357,6 +362,9 @@ module.exports = {
   },
 };
 ```
+
 ## Summary PDF
+
 ![[The_Webpack_Blueprint.pdf]]
+
 **Previous:** [[5- Imports & Exports]]

@@ -46,14 +46,17 @@ Tracing the parallel evolution of the three major desktop and server kernels (Li
 ## IV. Architecture & Low-Level Design
 
 ### System Integration
+
 The kernel sits as the absolute intermediary between the physical hardware and user-space applications. When an application needs to interact with hardware (e.g., saving a document), it triggers a **System Call**. This action generates a hardware interrupt, forcing a "context switch"—the CPU transitions from standard user mode into privileged kernel mode. The kernel securely processes the request, interacts with the storage controller via loaded drivers, and returns the execution flow back to the application.
 
 ### Internal Components
+
 *   **Process Scheduler:** The subsystem that dictates which running process gets CPU execution time and for how long. Linux utilizes the Completely Fair Scheduler (CFS) to balance multi-core workloads.
 *   **Virtual File System (VFS):** An abstraction layer that provides a unified API for all file operations, allowing the kernel to interact identically with an EXT4 SSD, an NTFS thumb drive, or a network NFS share.
 *   **Networking Stack:** Manages the low-level implementation of network protocols (TCP/IP, UDP) and packet routing directly in kernel space to achieve maximum throughput with minimal latency overhead.
 
 ### Memory & Threading Model
+
 *   **Virtual Memory & Paging:** The kernel divides both physical RAM and application memory into fixed-size blocks called **pages**. Every process operates under the illusion of possessing a massive, contiguous block of isolated memory. The kernel utilizes hardware-assisted "Page Tables" to map these virtual addresses down to physical RAM frames.
 *   **Demand Paging & Swapping:** To conserve RAM, the kernel employs demand paging—loading memory pages into physical RAM *only* when explicitly requested by a process. Unused or stagnant pages are automatically "swapped" out to a secondary storage disk (Swap partition/Pagefile) to free up high-speed physical memory for active tasks.
 *   **Concurrency Model:** Modern kernels are highly preemptive and heavily multithreaded. They rely on synchronization primitives—such as Spinlocks, Mutexes, and Semaphores—to lock resources and prevent catastrophic race conditions when multiple processes attempt to access shared memory simultaneously.
@@ -71,11 +74,13 @@ The kernel sits as the absolute intermediary between the physical hardware and u
 ## VI. Security, Networking & Optimization
 
 ### Security Model
+
 *   **Discretionary Access Control (DAC):** The traditional, baseline Unix permission model where file owners explicitly grant Read, Write, or Execute privileges to specific users and groups.
 *   **Mandatory Access Control (MAC):** Advanced security frameworks (like **SELinux** or **AppArmor** in Linux, and Mandatory Integrity Control in Windows) that enforce system-wide security policies. Even a compromised `root` or Administrator user cannot violate these strict confinement rules.
 *   **Privilege Separation (Capabilities):** Instead of granting a process absolute `root` power, the Linux kernel breaks privileges down into granular capabilities. For example, assigning `CAP_NET_BIND_SERVICE` allows an application to open port 80 without giving it the power to format the hard drive.
 
 ### Optimization Flags
+
 *   **Compilation:** Mainstream kernels are compiled using the GCC compiler with the `-O2` optimization flag, providing an optimal balance of speed and stability. Disabling optimization entirely (`-O0`) will frequently break the kernel build process. For developers, the `-Og` flag is utilized to maintain debugging clarity while retaining structural optimizations.
 *   **Boot-Time Tuning:** Boot parameters fundamentally alter kernel behavior. Appending `mitigations=off` to the bootloader disables software patches for CPU vulnerabilities (like Spectre/Meltdown), yielding a significant CPU performance boost at the cost of a severe security risk.
 
@@ -86,6 +91,7 @@ The kernel sits as the absolute intermediary between the physical hardware and u
 When a system fails or hardware malfunctions, field diagnostics rely entirely on kernel-level logging utilities.
 
 ### Linux Diagnostics
+
 *   **`dmesg` (Kernel Ring Buffer):** The absolute primary tool for diagnosing low-level hardware and driver initialization failures. The ring buffer is populated before the main OS even starts.
     *   `dmesg -w`: Monitors hardware events in real-time.
     *   `dmesg -T`: Converts the default machine-time output into human-readable timestamps.
@@ -93,10 +99,12 @@ When a system fails or hardware malfunctions, field diagnostics rely entirely on
 *   **Diagnostic Boot Parameters:** Appending `debug` to GRUB forces max verbosity; `nomodeset` universally disables kernel graphics drivers to bypass black-screen conflicts.
 
 ### Windows NT Diagnostics
+
 *   **Event Viewer (System Log):** The primary GUI/PowerShell interface for querying hardware and driver errors generated by the NT Kernel.
 *   **Blue Screen of Death (BSOD) Minidumps:** When the NT kernel crashes (`KeBugCheck`), it dumps memory into a `.dmp` file. Engineers use **WinDbg** (Windows Debugger) to analyze these dumps, checking the faulting module/driver stack.
 *   **Driver Verifier:** A built-in diagnostic tool (`verifier.exe`) that aggressively monitors third-party kernel-mode drivers for illegal function calls or memory corruption, intentionally crashing the system if it detects foul play to isolate the culprit.
 
 ### macOS (XNU) Diagnostics
+
 *   **`log show --predicate`:** macOS's unified logging system. Replaced traditional text logs. Administrators use predicates to filter specifically for kernel events.
 *   **Kernel Panics:** Stored in `/Library/Logs/DiagnosticReports/`. Similar to Windows, these are read to determine which `kext` or hardware fault triggered the panic.

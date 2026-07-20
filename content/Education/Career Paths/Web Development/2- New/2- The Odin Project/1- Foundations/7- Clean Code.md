@@ -16,9 +16,8 @@ Clean code is immediately understandable due to meaningful names, consistent for
 **Naming Conventions**:
 
 - **`camelCase`**: Common in JavaScript, where the first word is lowercase and the first letter of subsequent words is capitalized (e.g., `generateUserGreeting`).
-    
+
 - **Consistency**: Follow a set convention and apply it consistently across a project.
-    
 
 ---
 
@@ -40,11 +39,10 @@ Good names are descriptive and predictable, helping the reader immediately under
 While different style guides exist, **consistency is paramount**.
 
 - **Indentation**: Choose a method (spaces or tabs) and stick to it.
-    
+
 - **Line Length**: Limit line length (often around **80 characters**) for easier reading. When breaking a long line, break after an operator or comma, and choose a consistent formatting for the continuation lines.
-    
+
 - **Semicolons (JavaScript)**: Although they are often optional due to automatic insertion, it is recommended to **add semicolons consistently** to prevent potential bugs where automatic insertion fails.
-    
 
 ---
 
@@ -62,4 +60,5 @@ Comments are useful tools that can be misused; good code often speaks for itself
 ---
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/2- The Odin Project/1- Foundations/6- Problem Solving|6- Problem Solving]] | **Next**: [[Education/Career Paths/Web Development/2- New/2- The Odin Project/1- Foundations/7.1- Clean Code Principles|7.1- Clean Code Principles]]

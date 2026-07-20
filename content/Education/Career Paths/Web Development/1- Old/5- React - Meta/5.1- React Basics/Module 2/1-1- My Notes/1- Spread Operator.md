@@ -42,4 +42,5 @@ This pattern becomes especially valuable in larger applications where components
 Would you like to explore some real-world scenarios where this pattern becomes particularly useful, such as in higher-order components or when working with form elements?
 
 ---
+
 **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/1-1- My Notes/1.2- State management in React|1.2- State management in React]]

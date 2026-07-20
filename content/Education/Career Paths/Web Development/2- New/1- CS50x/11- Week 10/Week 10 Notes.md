@@ -48,4 +48,5 @@ In this lesson, we reflected on your journey through this course. Specifically, 
 This was CS50!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/10- Week 9/3- Week 9 Section|CS50x Week 9 Section Summary]]

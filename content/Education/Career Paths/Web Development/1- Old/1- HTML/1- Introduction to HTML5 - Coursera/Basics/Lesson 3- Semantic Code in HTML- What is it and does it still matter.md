@@ -1,6 +1,7 @@
-# Lesson 3: Semantic Code in HTML - What is it and does it still matter?
+# Lesson 3: Semantic Code in HTML - What is it and Does it Still Matter?
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [What is semantic code in HTML?](#what-is-semantic-code-in-html)
 - [What is an example of semantic markup today?](#what-is-an-example-of-semantic-markup-today)
@@ -18,7 +19,7 @@ Semantic code in HTML is still important in modern web development. It can impro
 
 ---
 
-## What is semantic code in HTML?
+## What is Semantic Code in HTML?
 
 Semantic code in HTML refers to coding your HTML in a way that describes the content, rather than how that content should look.
 
@@ -54,7 +55,7 @@ However, these frameworks have introduced a different version of the same proble
 
 ---
 
-## What is an example of semantic markup today?
+## What is an Example of Semantic Markup Today?
 
 Although inline CSS styles have become less common, descriptive class names are frequently used, such as the `class="large-text"` example above.
 
@@ -76,7 +77,7 @@ This class explains the **role** of the image and can then be styled accordingly
 
 ---
 
-## What type of classes should I use?
+## What Type of Classes Should I Use?
 
 It is important to stress that there is nothing inherently wrong with having CSS classes that describe the design, often known as "utility classes." In fact, there are [some great arguments for adopting this approach](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/), in addition, using a framework such as Tailwind or [Bootstrap](https://getbootstrap.com/) can save quite a bit of time.
 
@@ -86,7 +87,7 @@ The main drawback to using utility classes is that if you change your design, yo
 
 ---
 
-## Why is it important to write code in a semantic way?
+## Why is it Important to Write Code in a Semantic Way?
 
 ### Accessibility
 
@@ -100,7 +101,7 @@ Search engines like Google use semantic code to understand the structure and con
 
 Semantic code makes it easier for developers to understand and maintain websites, as it clearly conveys the structure and purpose of each element. This promotes a more efficient development process and reduces the likelihood of errors or misinterpretations.
 
-### Cross-device compatibility
+### Cross-device Compatibility
 
 As the number of devices and screen sizes continues to grow, it's essential to design websites that work seamlessly on various platforms. Semantic code helps to ensure that content is presented consistently and meaningfully across different devices, browsers, and operating systems.
 
@@ -108,17 +109,17 @@ As the number of devices and screen sizes continues to grow, it's essential to d
 
 Web standards continue to evolve, and adhering to semantic code helps ensure that your website remains relevant and functional as new technologies emerge. By following best practices, you can reduce the likelihood of encountering compatibility issues as browsers and devices update and improve.
 
-### Improved collaboration
+### Improved Collaboration
 
 When working with a team of designers, developers, and content creators, semantic code in HTML makes it easier for everyone to understand the structure and purpose of each element. This fosters better communication and collaboration throughout the development process.
 
-### Faster page load times
+### Faster Page Load times
 
 Semantic code is typically cleaner and more efficient than non-semantic code, which can help reduce file sizes and improve page load times. Faster-loading websites lead to better user experiences, improved SEO rankings and increased conversion.
 
 ---
 
-## How do I make code more semantic?
+## How Do I Make Code More Semantic?
 
 Here are some key practices to make your code more semantic:
 
@@ -134,7 +135,7 @@ Since creating semantic code is so easy, you may be wondering why the code of so
 
 ---
 
-## Where things go wrong
+## Where Things Go Wrong
 
 One of the biggest obstacles to ensuring your code is semantic is the use of tools that automatically generate code. These tools don't understand the meaning of content they format, so they can't write semantic code unless you explicitly tell them to do so. This often results in code that's full of `<div>` or `<span>` tags, and can even mislabel headings and other elements.
 
@@ -151,6 +152,7 @@ Fortunately, many website builders and content management systems provide the ne
 It is clear that semantic code is still essential in modern web development. Although design frameworks and website builder tools have increased the use of utility classes and non-semantic code, it is crucial to remember the advantages of semantic code.
 
 Semantic code enhances:
+
 - Accessibility
 - SEO
 - Maintainability
@@ -162,4 +164,5 @@ Semantic code enhances:
 The good news is that creating semantic code is simple and straightforward. By following a few simple guidelines, we can ensure that our code is clean and semantic. Therefore, let's prioritize semantic code in our web development projects and enjoy the benefits it brings.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/1- HTML/1- Introduction to HTML5 - Coursera/Basics/Lesson 2- Getting to Know HTML|Lesson 2: Getting to Know HTML]]

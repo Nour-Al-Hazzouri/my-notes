@@ -1,9 +1,10 @@
 # Q&A Session
+
 ## Understanding the Value of Connections
 
 **Q: When you started your journey in dev, did you know how powerful connections are?**
 
-**A:** No, I thought if I had powerful coding skills that would be enough. It started when clients debated me on $400-500 per project, while others with basic skills charged $5,000 for basic WordPress. It's all about marketing power.
+**A:** No, I thought if I had powerful coding skills that would be enough. It started when clients debated me on `$400-500` per project, while others with basic skills charged `$5,000` for basic WordPress. It's all about marketing power.
 
 ---
 

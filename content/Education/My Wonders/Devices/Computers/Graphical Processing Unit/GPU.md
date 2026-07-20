@@ -65,6 +65,7 @@
 ## IV. Architecture & System Integration
 
 ### Historical Architecture Overview
+
 *   **NVIDIA Evolution:**
     *   **Tesla to Fermi:** Tesla introduced the unified shader architecture, abandoning separate pixel and vertex pipelines. Fermi drastically expanded parallel computing capabilities.
     *   **Kepler & Maxwell:** Focused heavily on power efficiency and performance-per-watt, establishing NVIDIA's dominance in laptop and desktop efficiency.
@@ -78,6 +79,7 @@
     *   **RDNA 3:** Pioneered the use of chiplet technology in consumer GPUs to bypass the skyrocketing costs of large monolithic silicon dies.
 
 ### NVIDIA Ada Lovelace (RTX 40 Series) Architecture
+
 *   **Monolithic Silicon:** Built on the custom TSMC 4N process, delivering extreme transistor density and aggressive clocks nearing 3.0 GHz.
 *   **3rd Generation RT Cores:** Features new Opacity Micromap (OMM) and Displaced Micro-Mesh (DMM) engines, doubling ray-primitive intersection rates. Shader Execution Reordering (SER) dynamically organizes shading workloads to optimize pipeline efficiency in ray-traced scenes.
 *   **4th Generation Tensor Cores & DLSS 3:** Employs an Optical Flow Accelerator to analyze motion and generate completely new frames (Frame Generation) entirely via AI, bypassing the CPU bottleneck.
@@ -86,6 +88,7 @@
 *   **Vendor Tech — NVIDIA Reflex:** A low-latency SDK that synchronizes GPU render queue and CPU scheduling to minimize end-to-end system latency, measurable via Reflex Latency Analyzer in supported monitors.
 
 ### AMD RDNA 3 (RX 7000 Series) Architecture
+
 *   **Chiplet Design (Navi 31):** First consumer GPU to use chiplets. A centralized 5nm Graphics Compute Die (GCD) handles shading, surrounded by up to six 6nm Memory Cache Dies (MCDs) housing Infinity Cache and GDDR6 memory controllers. This reduces bleeding-edge node costs.
 *   **Dual-Issue Compute Units:** RDNA 3 CUs can execute two FP32 instructions per clock (SIMD32), doubling theoretical throughput if the workload can be vectorized properly by the compiler.
 *   **AI Accelerators:** Dedicated matrix-math accelerators per unit, significantly accelerating machine learning tasks on Radeon hardware compared to RDNA 2.
@@ -94,6 +97,7 @@
 *   **Vendor Tech — HYPR-RX:** A one-click toggle in AMD Adrenalin drivers that simultaneously enables FSR, Radeon Anti-Lag, and Radeon Boost for a combined latency and FPS improvement.
 
 ### Intel Xe-HPG / Xe2 Architecture
+
 *   **Xe-cores & XMX:** Intel's discrete hardware relies heavily on Xe Matrix Extensions (XMX) arithmetic logic units. These engines are massively pipelined to run deep learning network topologies (XeSS upscaling).
 *   **Battlemage (Xe2):** Overhauled vector engines. Transitions to purely standardized INT8/FP16 SIMD units and greatly improved the dispatch utilization overhead of the geometry pipeline.
 *   **Vendor Tech — XeSS (Xe Super Sampling):** Intel's AI-driven upscaling technology. Uses XMX engines on Intel hardware (DP4a on non-Intel GPUs). XeSS 2 adds Frame Generation and latency reduction similar to DLSS 3.
@@ -126,13 +130,16 @@
 ## VII. Troubleshooting & Field Diagnostics
 
 ### Symptom: Code 43 (Windows Device Manager) / Black Screen on Boot
+
 *   **Cause**: Driver initialization failure, corrupted BIOS, or physical PCIe lane damage.
 *   **Field Protocol**: Run Display Driver Uninstaller (DDU) in Safe Mode. If persisting across fresh OS install, attempt a GPU BIOS re-flash. If hardware level, inspect the gold PCIe pins for damage.
 
 ### Symptom: Severe Stuttering (1% Lows) despite High Average FPS
+
 *   **Cause**: Resizable BAR is disabled in UEFI, Thermal Throttling, or VRAM overallocation.
 *   **Field Protocol**: Verify ReBAR in GPU-Z. Monitor "GPU Hotspot Temperature" (Delta > 25°c over Core indicates bad thermal paste mounting pressure). Check if the application is spilling into system RAM via PCIe (VRAM bottleneck).
 
 ### Symptom: 12VHPWR Connector Melting
+
 *   **Cause**: High resistance due to incomplete insertion / aggressive bending near the shroud.
 *   **Field Protocol**: Ensure the 16-pin clip firmly locks. Do not bend cables horizontally or vertically within 35mm of the plug header. Consider a 90-degree certified adapter block.

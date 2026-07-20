@@ -1,4 +1,4 @@
-### **Terms and definitions from Course 1**
+### **Terms And Definitions from Course 1**
 
 #
 
@@ -467,4 +467,5 @@ W
 **World Wide Web (WWW):** The information system that enables documents and other web resources to be accessed over the Internet
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 1 Glossary|Module 1 Glossary]]

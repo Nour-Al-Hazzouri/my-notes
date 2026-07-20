@@ -4,13 +4,14 @@
 
 File system mounting is the process of connecting physical storage devices to specific locations (mount points) within a Linux file system. This essential operation allows the operating system to access and interact with the storage device's contents. For IT Support professionals working with Linux systems, understanding how to mount and unmount file systems is crucial when configuring servers and connecting to network file systems.
 
-## The File System Table (fstab)
+## The File System Table (Fstab)
 
 The File System Table (fstab) is a configuration file that simplifies and automates the mounting process. It offers two key advantages over manual mounting:
+
 - Automatic mounting of partitions during system boot
 - Customized mounting rules for individual file systems
 
-### fstab Table Structure
+### Fstab Table Structure
 
 The fstab configuration consists of six columns:
 
@@ -38,7 +39,7 @@ The Options column (4) can include various parameters:
   - nouser: Only root can mount (default)
 - **defaults**: Standard settings (rw, suid, dev, exec, auto, nouser, async)
 
-## Adding a New Drive to fstab
+## Adding a New Drive to Fstab
 
 When expanding storage on a Linux system, follow these steps to add a new drive:
 
@@ -56,7 +57,7 @@ When expanding storage on a Linux system, follow these steps to add a new drive:
    - Pass value (2 for non-root file systems)
 4. **Reboot the system** to apply changes
 
-### Example fstab Entry
+### Example Fstab Entry
 
 ```
 /dev/sdb1    /mnt/mystorage    ext4    defaults    0    2

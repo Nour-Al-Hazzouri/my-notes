@@ -12,7 +12,7 @@
 | High | Intel Xe-HPG Whitepaper | https://cdrdv2-public.intel.com/758302/introduction-to-the-xe-hpg-architecture-white-paper.pdf | Official overview of Arc A-Series architecture. |
 | High | Intel Xe2 Deep Dive | https://cdrdv2-public.intel.com/824434/2024_Intel_Tech%20Tour%20TW_Xe2%20and%20Lunar%20Lakes%20GPU.pdf | 2024 Tech Tour PDF for Battlemage/Xe2. |
 
-## [CPU Resources] 
+## [CPU Resources]
 
 | Reliability | Source Name | URL | Description |
 | :--- | :--- | :--- | :--- |
@@ -22,6 +22,7 @@
 | High | TechInsights: Kirin 9010 Deep-Dive | https://www.techinsights.com/blog/hisilicon-kirin-9010-powers-huawei-pura-70-ultra | Professional technical analysis of the Kirin 9010 (7nm) architecture. |
 
 ## [CPU Resources - Supplementary]
+
 | Reliability | Source Name | URL | Description |
 | :--- | :--- | :--- | :--- |
 | High | Intel Thread Director | https://www.intel.com/content/www/us/en/developer/articles/technical/hybrid-architecture.htm | Official Intel developer docs on hybrid P/E core scheduling. |
@@ -31,6 +32,7 @@
 | High | Snapdragon X Elite Specs | https://www.qualcomm.com/laptops/products/snapdragon-x-elite | Official Qualcomm page with Oryon CPU and 42MB total cache. |
 
 ## [GPU Resources - Supplementary]
+
 | Reliability | Source Name | URL | Description |
 | :--- | :--- | :--- | :--- |
 | High | NVIDIA NVENC Support Matrix | https://developer.nvidia.com/video-encode-decode-gpu-support-matrix | Official codec support and hardware encoder/decoder capabilities. |
@@ -40,6 +42,7 @@
 | High | AMD RX 7900 XTX Specs | https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html | Official specs: 6144 Stream Processors, 24GB GDDR6, 355W TGP. |
 
 ## Extraction Log
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-19 | Micron/Kingston | Confirmed 1.1V, PMIC on-module, BL16, two 32-bit subchannels, On-die ECC. |
@@ -60,6 +63,7 @@
 | High | UEFI Specifications | https://uefi.org/specifications | Official repository for UEFI 2.10 and ACPI standards. |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-22 | Intel/AMD/MSI | **Chipsets**: Intel Z890 supports PCIe 5.0 and Arrow Lake-S. AMD X870E features dual-chipset design for maximized PCIe 5.0 lanes. <br> **VRMs**: Confirmed DrMOS (Driver MOSFET) as the standard for high-performance power delivery. <br> **Standards**: ATX 3.1 and UEFI 2.10 confirmed as current interoperability targets. |
@@ -75,6 +79,7 @@
 | High | DDR5 PMIC Technical Guide | https://www.ti.com/lit/pdf/sbaa792 | Technical breakdown of on-module voltage regulation (PMIC) and noise reduction. |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-22 | Micron/Samsung/JEDEC | **Architecture**: DDR5 introduces two independent 32-bit sub-channels per DIMM and Burst Length 16 (BL16). <br> **Mobile**: LPDDR5x reaches up to 10.7 Gbps with significantly lower voltage requirements than desktop DDR5. <br> **Form Factor**: CAMM2 (JESD318) finalized for both DDR5 and LPDDR5/x on a single modular standard, enabling thinner laptops with replaceable LP memory. <br> **Power**: DDR5 moves voltage regulation (PMIC) from the motherboard to the module to improve power integrity. |
@@ -89,6 +94,7 @@
 | High | Seasonic LLC Resonant Guide | https://seasonic.com/insights/power-electronics-in-seasonic-power-supplies/ | Technical explanation of high-efficiency switching topologies and DC-DC conversion. |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-22 | Intel/USB-IF/Infineon | **Desktop**: ATX 3.1 introduces the 12V-2x6 connector (safer successor to 12VHPWR) and mandates 200% power excursion handling. <br> **Laptop**: USB PD 3.1 (EPR) enables up to 240W (48V/5A) over USB-C, utilizing GaN for compact, high-efficiency adapters. <br> **Efficiency**: GaN transistors offer faster switching and lower resistance than Silicon, enabling significantly smaller PSUs with higher power density. |
@@ -105,6 +111,7 @@
 | High | Seagate BarraCuda HDD | https://www.seagate.com/products/hard-drives/barracuda-hard-drive/ | Official Seagate page — desktop 3.5" HDD family (1TB-24TB). |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-22 | NVMe/Samsung/Crucial/Seagate | **NVMe Gen 5**: Crucial T700 achieves 12,400/11,800 MB/s seq. read/write via PCIe 5.0 x4. <br> **NVMe Gen 4**: Samsung 990 Pro reaches 7,450/6,900 MB/s with V-NAND TLC. <br> **SATA III**: 6 Gb/s (theoretical max 600 MB/s), unchanged since 2009. <br> **HDD**: Seagate BarraCuda offers up to 24TB via CMR platters at 7200 RPM, with ~250 MB/s sustained sequential throughput. |
@@ -120,6 +127,7 @@
 | High | ASUS BW-16D1X-U Tech Specs | https://www.asus.com/motherboards-components/optical-drives/external-blu-ray-drive/bw-16d1x-u/techspec/ | Official ASUS page for flagship external USB 3.0 BD writer. |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-23 | BDA/ECMA/Pioneer/ASUS | **Blu-ray**: 405nm (Blue-violet), 0.85 NA, 0.32µm pitch. 1X speed = 36 Mbps (4.5 MB/s). Supports BDXL (128GB). <br> **DVD**: 650nm (Red), 0.60 NA, 0.74µm pitch. 1X speed = 11.08 Mbps (1.38 MB/s). <br> **CD**: 780nm (Infrared), 0.45 NA, 1.6µm pitch. 1X speed = 1.2 Mbps (150 KB/s). <br> **Drives**: Pioneer BDR-213EBK supports 16X BD-R writing and PureRead 3+ for audio correction. ASUS BW-16D1X-U provides 16X external writing over USB 3.0. |
@@ -136,11 +144,13 @@
 | High | Asetek Pump Generations | https://www.asetek.com/blogs/generation-wealth-asetek-aio-coolers-listed-by-pump-generation/ | Official overview of AIO pump technology (Gen 8 specifics). |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-23 | Noctua/Corsair/EK/Arctic | **Fans**: Arctic P12 Max provides 4.35 mm H₂O static pressure at 3300 RPM. Noctua NH-D15 G2 delivers 155.6 m³/h airflow. <br> **AIOs**: Corsair H150i uses a 360mm radiator and 56mm copper coldplate. <br> **Custom Water**: EK Velocity2 uses 99.99% pure electrolytic copper for the base. <br> **Pump Tech**: Asetek Gen 8 uses a 3-phase motor for improved flow and reduced noise. <br> **TIM**: Arctic MX-6 has a 45,000 Poise viscosity for optimal gap filling. |
 
 ## [PC Case Resources]
+
 > [!NOTE]
 > These URLs are known official manufacturer product pages. Live browser verification was unavailable due to quota limits. User may manually verify.
 
@@ -153,6 +163,7 @@
 | High | Cooler Master NR200P Max | https://www.coolermaster.com/catalog/cases/mini-itx/nr200p-max/ | Official page — SFF ITX case with pre-installed 280mm AIO and SFX PSU. |
 
 ## Extraction Log (Cont.)
+
 | Date | Source | Info Extracted |
 | :--- | :--- | :--- |
 | 2026-03-23 | Fractal/Lian Li/NZXT/Corsair/CM | **Form Factors**: Full Tower (North XL: E-ATX, 496mm GPU), Mid-Tower (5000D: ATX, 420mm GPU), Dual-Chamber (O11 EVO: E-ATX, 422mm GPU), SFF (NR200P Max: ITX, 336mm GPU). <br> **Airflow**: Mesh front panels standard on all modern airflow cases. Corsair 5000D supports up to 10x 120mm fans. <br> **Materials**: SECC steel body with Tempered Glass panels (3-4mm thickness). <br> **Cable Mgmt**: 20-30mm behind-motherboard-tray spacing; Corsair RapidRoute channels route cables in under 10 min. |

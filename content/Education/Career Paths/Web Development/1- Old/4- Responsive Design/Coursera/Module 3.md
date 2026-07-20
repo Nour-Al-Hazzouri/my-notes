@@ -1,6 +1,7 @@
 # Module 3: Media Queries for Accessibility
 
 ## Table of Contents
+
 - [Media Queries for Accessibility](#media-queries-for-accessibility)
   - [Reacting to User Preferences](#reacting-to-user-preferences)
   - [Prefers Reduced Motion](#prefers-reduced-motion)
@@ -15,6 +16,7 @@
 In addition to screen sizes, users may have certain preferences set on their machines.
 
 These might include:
+
 - Prefers reduced motion
 - Prefers contrast
 - Prefers color scheme
@@ -24,6 +26,7 @@ These might include:
 In addition to screen sizes, users may have certain preferences set on their machines.
 
 These might include:
+
 - Prefers reduced motion
 - Prefers contrast
 - Prefers color scheme
@@ -84,4 +87,5 @@ These might include:
 - Test your site frequently as you add CSS (or JavaScript)
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 2|Module 2: Media Queries and Responsive Design]] | **Next**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 4|Module 4: Frameworks and Bootstrap]]

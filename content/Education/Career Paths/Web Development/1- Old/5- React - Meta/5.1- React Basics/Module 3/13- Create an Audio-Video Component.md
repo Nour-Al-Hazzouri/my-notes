@@ -1,6 +1,7 @@
 # React Player Implementation Summary
 
 ## 🛠️ Setup & Installation
+
 1. **Install the package**:
 ```bash
    npm install react-player
@@ -14,6 +15,7 @@ import ReactPlayer from "react-player";
 ---
 
 ## 🎥 Implementation Steps
+
 1. **Create video URL variable**:
 ```jsx
 const vidUrl = "https://www.facebook.com/facebook/videos/10153231379946729/";
@@ -31,6 +33,7 @@ const vidUrl = "https://www.facebook.com/facebook/videos/10153231379946729/";
 ---
 
 ## ⚙️ Common Settings
+
 - `playing={false}`: Disables automatic playback
 - `volume={0.5}`: Sets initial volume (0-1 range)
 - `controls`: Shows native player controls (implied default)
@@ -38,6 +41,7 @@ const vidUrl = "https://www.facebook.com/facebook/videos/10153231379946729/";
 ---
 
 ## 🔗 Documentation Reference
+
 - **GitHub Repository**: [github.com/CookPete/react-player](https://github.com/CookPete/react-player)
 - **Live Demo**: Contains adjustable settings for:
   - Playback speed
@@ -48,6 +52,7 @@ const vidUrl = "https://www.facebook.com/facebook/videos/10153231379946729/";
 ---
 
 ## ✅ Final Component Structure
+
 ```jsx
 import './App.css';
 import ReactPlayer from "react-player";
@@ -71,4 +76,5 @@ export default App;
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 3/12- Media Packages|12- Media Packages]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 3/14- Module Summary|React Module Summary: Navigation, Conditional Rendering & Assets]]

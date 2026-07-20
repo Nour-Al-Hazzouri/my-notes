@@ -13,11 +13,13 @@ The command line interpreter in Linux is called a **shell**, and the language th
 ### Themes in This Lesson
 
 #### Basic Operating System Navigation
+
 - Navigating from one directory to another
 - Getting file information
 - Removing files and directories
 
 #### File and Text Manipulation
+
 - Searching through your directories
 - Finding specific files
 - Copying and pasting
@@ -30,6 +32,7 @@ The command line interpreter in Linux is called a **shell**, and the language th
 Files and folders in operating systems are organized in a hierarchical directory tree; their locations are called **paths**.
 
 In Windows:
+
 - Each drive letter is a filesystem
 - Subdirectories are separated by `\` (backslash)
 - Unlike Linux, which uses forward slashes `/`
@@ -44,16 +47,19 @@ In the file properties of a file, there is size and size on disk (explanation in
 Many Powershell commands used will be aliases for common commands in other shells. An **alias** is sort of like a nickname for a command.
 
 ##### Listing Files and Directories
+
 ```
 Ls 'path'
 Ls C:\
 ```
+
 `Ls` is the command, path isn't a part of it, it's a parameter (like a value associated to the command).
 
 - **Parent Directory**: root
 - **Child Directory**: inside root
 
-To see hidden files: 
+To see hidden files:
+
 ```
 ls -Force 'path'
 ```
@@ -83,14 +89,17 @@ It is possible to write it like this: `ls -la` (works the same as `ls -l -a`)
 #### Windows: Changing Directories in the GUI
 
 An **absolute path** is one that starts from the main directory.
+
 A **relative path** is the path from your current directory.
 
 In the CLI:
+
 - `pwd`: shows you what directory you're currently in
 - `cd 'path'`: changes the directory
 - `cd ..`: return to the previous directory
 
 In Windows, if a directory is in the same mother directory but going back is needed to change, this command can be used:
+
 - `cd ..\`: lets you go to the directory immediately instead of going back and retyping the command
 - `cd ~`: lets you go to the home directory, it can be used like this: `cd ~ 'path'` (if path is in the home directory)
 
@@ -109,22 +118,27 @@ Tab completion is available in Bash but it will show all options at once.
 ### Creating and Managing Directories
 
 #### Windows: Make Directories in the GUI & CLI
+
 ```
 Mkdir 'name'
 ```
+
 Makes new directory.
 
 **Note**: Making a name with spaces will cause an error, you can use `_`.
 
 To make a directory with spaces in the name there are 2 ways:
+
 ```
 Mkdir 'name is here' | mkdir name` is` here
 ```
 
 #### Linux: Make Directories in Bash
+
 ```
 Mkdir
 ```
+
 Is used to make new directories.
 
 To make a directory with spaces in Linux `\` can be used or `'name here'`.
@@ -146,49 +160,65 @@ For Linux, everything is the same.
 ### File Operations
 
 #### Windows: Copying Files and Directories
+
 ```
 cp 'filename' 'path'
 ```
+
 Is how to copy files in Powershell.
 
 **Wildcard** is a character that's used to help select files based on a certain pattern.
+
 ```
 cp *'the thing repeated in many files' 'path'
 ```
+
 Is the command to copy multiple files based on a common character.
 
 Using `cp` on a directory will make it copy an empty folder. To copy the content too, do this:
+
 - `-Recurse` lists the contents of a directory; if there are any sub-directories it will recurse or repeat the directory listing process for each of those sub-directories
 - `-Verbose` will show each thing copied
 ```
 cp 'name' 'path' -Recurse -Verbose
 ```
+
 Is the full command.
 
 #### Linux: Copying Files and Directories
+
 ```
 cp
 ```
+
 Is also used to copy in Bash (`cp 'filename' 'path'`).
 
 It is also possible to use wildcard, same as Windows.
+
 ```
 cp -r 'directory name' 'path'
 ```
+
 To copy a directory with content.
 
 #### Windows: Moving and Renaming Files, Directories
+
 ```
 mv
 ```
+
 Can be used to rename and move directories, this depends on the command.
+
 ```
 mv 'filename.format' 'filename.format'
 ```
+
 To rename a file (can be used for directories).
+
 ```
 mv 'filename' 'path'
 ```
+
 To move a file or directory.
 
 Wildcards can be used to move files too.
@@ -198,14 +228,17 @@ The same is for Linux.
 #### Windows: Removing Files and Directories
 
 In PowerShell the command to remove files and directories is `rm` or `remove`. Keep cautious as there's no recycle bin in this case.
+
 ```
 rm 'path'
 ```
 
 There are safety options for this command (Permissions).
+
 ```
 rm 'path' -Force
 ```
+
 Will remove even important files if we have permission.
 
 In some cases a confirmation message will appear with possibility to respond by y (yes) and n (no). For a directory that has children directories it can also ask for Yes to all or No to all.
@@ -217,59 +250,79 @@ The same is for Linux.
 ## File and Text Manipulation
 
 ### Windows: Display File Contents
+
 ```
 cat 'name'
 ```
+
 Is used to show the content of files.
+
 ```
 more 'name'
 ```
+
 Is good to see large text documents. Enter advances the program by one line and space advances the program by one page. The q key will allow to exit the more window.
+
 ```
 cat 'name' -Head 'number of lines'
 ```
+
 Will allow us to see the first few lines of the file depending on the number.
+
 ```
 cat 'name' -Tale 'number'
 ```
+
 Shows us the last lines of a line depending on the number.
 
 ### Linux: Display File Contents
 
 `cat` is the same for Linux.
+
 ```
 less 'name'
 ```
+
 Is used to see large files. Up and down keys, page up and page down are usable in less. g moves to the beginning of a file, G moves to the end of a text file, /word_search allows to search for a word or phrase, and q is used to quit less.
+
 ```
 head 'name'
 ```
+
 Will show by default first 10 lines of a file.
+
 ```
 tail 'name'
 ```
+
 Shows by default last 10 lines of a file.
 
 ### Windows: Modifying Text Files
 
 **Note**: Notepad++ is used in this tutorial.
+
 ```
 Start notepad++ 'filename'
 ```
+
 Will open a document with notepad++.
 
 ### Linux: Modifying Text Files
 
 In Linux, **Nano** is a powerful text editor files that can be used in Bash.
+
 ```
 Nano 'filename'
 ```
+
 Will launch Nano.
 
 ### Windows PowerShell
+
 ```
 Get-Alias 'command'
 ```
+
 Shows the original command, example:
 
 `Get-Children C:\`, this is the same command as `ls`, but PowerShell commands are descriptive which means more typing so it's faster to use Aliases.
@@ -283,63 +336,85 @@ Search bar → indexing options → Users, Advanced → File Type → Index Prop
 Now in the files explorer it is possible to search for a file by typing a word of its content.
 
 It is also possible to use Notepad++ then pressing `Ctrl+Shift+F`.
+
 ```
 Select-String 'word' 'filename'
 ```
+
 Will search in the content of a file for a certain word from CLI.
+
 ```
 Select-String 'word' 'word'*
 ```
+
 To search for word in a group of files with same names.
 
 ### Windows: Searching within Directories
 
 **Filter** can be used in commands to filter the type of result we want, example:
+
 ```
 ls 'C:\Program Files\' -Recurse -Filter *.exe
 ```
+
 Will output a list of all exe files in the directory.
 
 ### Linux: Searching Within Files
+
 ```
 grep 'word' 'filename'
 ```
+
 Is used to search for a word in a file.
+
 ```
 grep 'word' *'word'
 ```
+
 Is used to search words in multiple files.
 
 ### Windows: Input, Output and the Pipeline
+
 ```
 echo 'word'
 ```
+
 Will print the word written.
+
 ```
 echo 'word'>'filename'
 ```
+
 Will create the file with the word inside it.
 
 To produce commands in Windows we use **I/O Streams**. Each process has 3 different streams:
+
 - **stdin**: the command we write that will be processed by Windows
 - **stdout**: the output of the command printed on the screen
 - **stderr**: error messages
 
 `>` is redirect operator that will overwrite a file or create a file that doesn't exist.
+
 `>>` is used to add to a file without overwriting its content.
+
 `|` pipeline used to send output to the input of another command, example:
+
 ```
 cat 'filename' | Select-String st
 ```
+
 Now the output of filename will be filtered by st.
 
 It is also possible to add more commands to do more complicated tasks. For example, by adding `>` after st we can make a new file with the filtered words.
 
 When typing a command that causes an error, it is possible to redirect the error to not show on the screen, example:
+
 ```
 rm filesystem
 ```
+
 This will surely cause an error saying can't delete, so we can do this:
+
 ```
 rm filesystem 2> errors.txt
 ```
@@ -353,9 +428,11 @@ All of the output streams are numbered, 1 is for stdout(output), 2 is for stderr
 I/O streams are the same as Windows.
 
 `<` is used to make the input come from a file specified, example:
+
 ```
 cat < 'filename'
 ```
+
 The input would be the content of the file.
 
 `null` in Linux is a file where errors can be redirected.
@@ -399,18 +476,24 @@ Instead of logging into a local administrator account you can log into your own 
 
 UAC is a feature in Windows that prevents unauthorized changes to a system.
 
-### Windows: View User and Group Information using CLI
+### Windows: View User and Group Information Using CLI
+
 ```
 Get-LocalUser
 ```
+
 Is used to show users with description and if they're enabled.
+
 ```
 Get-LocalGroup
 ```
+
 Is used to show groups on the local machine.
+
 ```
 Get-LocalGroupMember 'group name'
 ```
+
 Shows what users are in a specific group.
 
 ### Linux: Users, Superuser and Beyond
@@ -418,24 +501,33 @@ Shows what users are in a specific group.
 Standard users are administrators in Linux.
 
 **Root user** is the first User that gets automatically created on a Linux machine. This user is the superuser that has all the powers on the Linux OS.
+
 ```
 sudo 'command'
 ```
+
 Lets us do commands using administrative powers.
+
 ```
 sudo su -
 ```
+
 Changes your current user to root user.
+
 ```
 exit
 ```
+
 To logout of root.
+
 ```
 cat /etc/group
 ```
+
 Lets us see user groups with each user in which group.
 
 In this list each line is separated by 4 columns:
+
 1. The group
 2. The password which is usually 'X' which means encrypted and stored in a file
 3. The ID
@@ -443,70 +535,95 @@ In this list each line is separated by 4 columns:
 ```
 cat /etc/password
 ```
+
 Is where the users information are stored.
 
 ### Windows: Passwords
 
 To user reset a password in the GUI we go to:
+
 Computer management → Local Users and Groups → Users → choose user → Check reset password at next logon
 
 If a user forgets his password it is possible for the admin to set a password for the user but this will cause to lose some credentials.
+
 ```
 net user 'username' 'password'
 ```
+
 To change a local user's password.
+
 ```
 net user 'username' *
 ```
+
 Is a more secure way to type the password.
+
 ```
 net user 'username' /logonpasswordchg:yes
 ```
+
 To force a user to change his password on the next logon.
 
 ### Linux: Passwords
+
 ```
 passwd 'username'
 ```
+
 Is to change a user's password.
+
 ```
 sudo passwd -e 'username'
 ```
+
 Will make the password expire which means they will change it.
 
 ### Windows: Adding and Removing Users
 
 To add a user go to:
+
 Computer management → Local Users and Groups → right click + select new user
 
 We will need to add a username, full name, and a password. The password would be default so when the user logs in will need to change it.
 
 To remove a user right click on it then delete.
+
 ```
 net user 'username' * /add
 ```
+
 Will add a new user to the machine.
+
 ```
 net user 'username' 'password' /add /logonpasswordchg:yes
 ```
+
 Will make a new user and force him to change the password in the next login in 1 command.
+
 ```
 net user 'username' /del
 ```
+
 Will delete the user.
+
 ```
 Remove-LocalUser 'username'
 ```
+
 Another way to remove user.
 
 ### Linux: Adding and Removing Users
+
 ```
 sudo useradd 'username'
 ```
+
 To add a user.
+
 ```
 sudo userdel 'username'
 ```
+
 To delete the user.
 
 ---
@@ -522,6 +639,7 @@ Specifically, we're going to be working with **Discretionary Access Control List
 Windows files and folders can also have **system Access Control Lists** or **SACLs** assigned to them. SACLs are used to tell Windows that it should use an event log to make a note of every time someone accesses a file or folder.
 
 #### Permissions Types
+
 - **Read**: Lets you see file and read it
 - **Read and execute**: Lets you see the file and read it, if executable you can execute it
 - **List folder contents**: Alias for read & execute
@@ -531,6 +649,7 @@ Windows files and folders can also have **system Access Control Lists** or **SAC
 ```
 icacls 'path'
 ```
+
 Will show permissions of a user to a directory.
 
 **NTFS permissions** can be inherited so if a file is created inside a NTFS directory where all permissions are granted, the file will have the same permissions.
@@ -538,9 +657,11 @@ Will show permissions of a user to a directory.
 ### Linux: File Permissions
 
 There are 3 permissions in Linux: **Read**, **Write** and **Execute**.
+
 ```
 ls -l 'file path'
 ```
+
 Can be used to see file permissions.
 
 The permissions that will appear are: `-rwxrw-r--`
@@ -548,6 +669,7 @@ The permissions that will appear are: `-rwxrw-r--`
 `-` means that the file we're looking at is just a regular file.
 
 The next permissions are set in trios:
+
 - The first trio represents the permissions of the owner of the file
 - The second trio represents the group it belongs to
 - The third trio represents the permissions of all other users
@@ -558,6 +680,7 @@ The next permissions are set in trios:
 - **-**: Disabled
 
 ### Windows: Modifying Permissions
+
 ```
 Icacls 'directory path' /grant 'user or everyone:' 'permissions (OI-CI...)'
 ```
@@ -565,9 +688,11 @@ Icacls 'directory path' /grant 'user or everyone:' 'permissions (OI-CI...)'
 **Guest users**: This is a special type of user that's allowed to use the computer without a password. Guest users are disabled by default; you might enable them in very specific situations.
 
 Authenticated users group doesn't have guest users.
+
 ```
 icacls 'path' /remove 'user-everyone'
 ```
+
 To remove permissions from who you want.
 
 ### Linux: Modifying Permissions
@@ -575,28 +700,35 @@ To remove permissions from who you want.
 Permission sets in Linux: Owner (u) - Group (g) - other users (o)
 
 To add or remove permissions we use + or –
+
 ```
 chmod 'owner-group-another one' '+ or -' 'permissions wanted' 'file'
 ```
 
 The numerical equivalent of rwx is:
+
 - **4** for read or r
 - **2** for write or w
 - **1** for execute or x
 ```
 chmod 754 'file'
 ```
+
 Is chmod using numerical equivalent:
+
 - 7 is the owner's permissions (4+2+1)
 - 5 is the group permissions
 - 4 is the other's permissions
 ```
 sudo chown 'username' 'file'
 ```
+
 To change the owner of a file.
+
 ```
 sudo chgrp 'group name' 'filename'
 ```
+
 To change group of a file.
 
 ### Windows: Special Permissions
@@ -608,35 +740,47 @@ Simple permissions are actually sets of special, or specific permissions.
 ### Linux: SetUID, SetGID, Sticky BIT
 
 The **SetUID bit** is used to allow a file to be run as the owner of the file.
+
 ```
 sudo chmod u+s 'file'
 ```
+
 Is used to enable SetUID.
 
 If you use ls, in the permissions field the last 's' stands for SetUID enabled.
+
 ```
 sudo chmod 4755 'file'
 ```
+
 Is also used for SetUID.
+
 ```
 sudo chmod g+s 'file'
 ```
+
 Is used to enable SetGID.
+
 ```
 sudo chmod 2755 'file'
 ```
+
 Is also used for SetGID.
 
 If you use ls, beside root we will see tty which means file ran in the tty group which means SetGID enabled.
 
 The **sticky bit** allows the file to be modified by anyone, but only removed by the owner or root.
+
 ```
 sudo chmod +t 'directory'
 ```
+
 To enable sticky Bit.
+
 ```
 sudo chmod 1755 'directory'
 ```
+
 Is also used to enable sticky Bit.
 
 If you use ls you will see t in the permissions which stands for sticky Bit enabled.
@@ -674,21 +818,29 @@ To install a program in Windows, we need to download the installer file, which i
 **Package managers** are used to install, update, and remove software on Linux.
 
 **APT (Advanced Package Tool)** is a package manager used in Debian-based distributions like Ubuntu.
+
 ```
 sudo apt update
 ```
+
 Updates the package list.
+
 ```
 sudo apt upgrade
 ```
+
 Upgrades all installed packages.
+
 ```
 sudo apt install 'package name'
 ```
+
 Installs a package.
+
 ```
 sudo apt remove 'package name'
 ```
+
 Removes a package.
 
 ### Windows: Updating Applications
@@ -700,87 +852,117 @@ For other applications, you need to update them manually or use their built-in u
 ### Linux: Updating Applications
 
 Package managers are used to update applications in Linux.
+
 ```
 sudo apt update && sudo apt upgrade
 ```
+
 Updates all installed packages.
 
 ### Windows: Removing Applications
 
 To remove a program in Windows, we go to:
+
 Control Panel → Programs → Programs and Features → select the program → Uninstall
 
 ### Linux: Removing Applications
+
 ```
 sudo apt remove 'package name'
 ```
+
 Removes a package.
+
 ```
 sudo apt purge 'package name'
 ```
+
 Removes a package and its configuration files.
 
 ### Windows: Verifying Application Installation
 
 To verify if a program is installed in Windows, we can check:
+
 Control Panel → Programs → Programs and Features
 
 ### Linux: Verifying Application Installation
+
 ```
 dpkg -l | grep 'package name'
 ```
+
 Lists installed packages and filters for the specified package.
+
 ```
 which 'command'
 ```
+
 Shows the path of the command if it's installed.
 
 ### Windows: Command-Line Installation
 
 Some Windows applications can be installed using the command line.
+
 ```
 msiexec /i 'path to msi file'
 ```
+
 Installs an msi package.
 
 ### Linux: Command-Line Installation
+
 ```
 sudo apt install 'package name'
 ```
+
 Installs a package.
+
 ```
 sudo dpkg -i 'path to deb file'
 ```
+
 Installs a .deb package.
 
 ### Windows: Chocolatey
 
 **Chocolatey** is a package manager for Windows.
+
 ```
 choco install 'package name'
 ```
+
 Installs a package.
+
 ```
 choco upgrade 'package name'
 ```
+
 Upgrades a package.
+
 ```
 choco uninstall 'package name'
 ```
+
 Uninstalls a package.
 
 ### Linux: Advanced Package Management
+
 ```
 sudo apt-get dist-upgrade
 ```
+
 Upgrades the distribution.
+
 ```
 sudo apt autoremove
 ```
+
 Removes unused dependencies.
+
 ```
 sudo apt clean
 ```
+
 Cleans the local repository of retrieved package files.
 
 ### Windows: DLLs
@@ -794,17 +976,23 @@ Using `Find-Package` cmdlet we can locate software along with its dependencies.
 **Sysinternals package** is a set of tools released by Microsoft that can help you troubleshoot all sorts of problems on your Windows computer.
 
 If we use sysinternals in Powershell an error will occur because we need to change the source from Powershell Gallery to chocolatey, to do this:
+
 ```
 Register-PackageSource -Name chocolatey -ProviderName Chocolatey -Location http://chocolatey.org/api/v2
 ```
+
 Is used to register the new source.
+
 ```
 Get-PackageSource
 ```
+
 To verify the software source is good-to-go.
+
 ```
 Find-Package sysinternals -IncludeDependencies
 ```
+
 To locate source and its dependencies.
 
 ### Linux: Package Dependencies
@@ -820,13 +1008,17 @@ So for Linux installing a package won't install its dependencies automatically.
 **Package Manager** makes sure that the process of software installation, removal, update, and dependency management is as easy and automatic as possible.
 
 **Chocolatey** is a third party package manager for Windows that helps install any application in its depository.
+
 ```
 Install-Package -Name sysinternals
 ```
+
 To install chocolatey.
+
 ```
 uninstall-Package -Name sysinternals
 ```
+
 To uninstall chocolatey.
 
 #### Linux: Package Manager Apt
@@ -842,13 +1034,17 @@ A **Personal Package Archive (PPA)** is a software repository for uploading sour
 PPA's are hosted on Launchpad servers; Launchpad is a website hosted by Canonical Limited.
 
 Repositories are regularly updated so we should update them using:
+
 ```
 sudo apt update
 ```
+
 To update repositories.
+
 ```
 sudo apt upgrade
 ```
+
 To upgrade repositories.
 
 ### What's Happening in the Background
@@ -894,13 +1090,17 @@ In Linux a lot of drivers are within the kernel so a device would work automatic
 **Security patch** is a software that's meant to fix up a security hole.
 
 ### Linux: Operating System Updates
+
 ```
 uname -r
 ```
+
 To see kernel version.
+
 ```
 sudo apt full-upgrade
 ```
+
 To update kernel.
 
 ---
@@ -938,37 +1138,53 @@ To boot in UEFI you need to have GUID (GPT).
 **File and folder compression** means files will take less space on the disk but when we want to open them the CPU will take some time to decompress them.
 
 It is possible to re-partition a disk using diskpart (cmd tool):
+
 ```
 Diskpart
 ```
+
 To enter the tool.
+
 ```
 list disk
 ```
+
 Used to list disk on our system.
+
 ```
 select disk 'disk number'
 ```
+
 Select the disk you want.
+
 ```
 clean
 ```
+
 Used to remove all data including partitions.
+
 ```
 create partition primary
 ```
+
 Will create a blank partition for our filesystem.
+
 ```
 select partition 'partition number'
 ```
+
 Used to select partition.
+
 ```
 active
 ```
+
 Mark it as active.
+
 ```
 format FS='filesystem you want' label='label you want' quick
 ```
+
 To format the partition.
 
 ### Windows: Mounting and Unmounting a Filesystem
@@ -978,55 +1194,77 @@ To format the partition.
 ### Linux: Disk Partitioning and Formatting a Filesystem
 
 **Parted** partitioning tool supports both GPT and MBR in interactive and command line.
+
 ```
 sudo parted -l
 ```
+
 Shows disk connected to the computer.
 
 The number shows which partition it is, start shows where it starts and end shows where it ends, the size tell us which size it is, the filesystem field shows the filesystem, then there is the name and flags fields.
+
 ```
 sudo parted /deb/'partition you want'
 ```
+
 To run parted at a specific disk.
+
 ```
 print
 ```
+
 Will show disk details.
+
 ```
 mklabel 'GPT/MBR'
 ```
+
 Will assign a partition table to an unrecognized partition table.
+
 ```
 mkpart 'name' 'filesystem' 'start' 'end'
 ```
+
 To make a partition in a disk.
+
 ```
 quit
 ```
+
 To quit parted.
+
 ```
 sudo mkfs -t 'format' 'disk'
 ```
+
 To format a disk to a specific filesystem.
 
 ### Linux: Mounting and Unmounting a Filesystem
+
 ```
 sudo mount 'disk you want' 'directory you want'
 ```
+
 To mount a disk you want.
+
 ```
 sudo unmount 'disk'
 ```
+
 Will unmount the disk you want.
 
 After turning off the PC the mountpoint will disappear. To make it mount automatically after turning the device on:
+
 ```
 cat /etc/fstab
 ```
+
 This directory contains mount points.
+
 ```
 sudo blkid
 ```
+
 Shows current disks's UUID.
 
 A **UUID** is a unique ID for storage devices. If we add one to fstab the storage device will be mounted automatically.
@@ -1044,13 +1282,16 @@ Windows uses **Memory Manager** to manage memory.
 ### Linux Swap
 
 In Linux, the dedicated area of the hard drive used for virtual memory is known as **swap space**.
+
 ```
 sudo parted 'location'
 mkpart primary 'name' 5GiB 100%
 ```
+
 The 100% refers that we are using all remaining storage so we should use it all.
 
 To make swap space:
+
 ```
 sudo mkswap 'path'
 sudo swapon 'same path'
@@ -1075,11 +1316,13 @@ If we make a text file and a shortcut for it, if we open the shortcut using note
 Now if we make a symbolic link to the same file and open it through the notepad, the content would be the same.
 
 To make a symbolic link of a file:
+
 ```
 mklink 'filename' 'the file you want'
 ```
 
 **Hard Link** is when you create a hard link in NTFS, an entry is added to the MFT that points to the linked file record number, not the name of the file, which means if the name of the file changes the hard link would still point to it.
+
 ```
 mklink /H 'filename' 'file you want'
 ```
@@ -1097,13 +1340,17 @@ In Linux shortcuts are called **softlink**, and they work the same way as symbol
 **Hardlink** link to inode which is stored in the inode table.
 
 If we `ls -l` a file, in the third field it shows how many hardlinks it has. If this field reaches 0 it means it's completely deleted from the system.
+
 ```
 ln -s 'file you want' 'filename'
 ```
+
 Is used to create a softlink to a file.
+
 ```
 ln 'file you want' 'filename'
 ```
+
 Is used to create a hardlink to a file.
 
 ### Windows: Disk Usage
@@ -1115,13 +1362,17 @@ This works by making the hard drive's actuator arm travel less to read the data 
 Defragmentation is automatic but it can be manually done by the disk defragmentation tool.
 
 ### Linux: Disk Usage
+
 ```
 du -h
 ```
+
 Shows the disk usage of a specific directory. If not specified it will default your current one. `-h` shows the data in human readable text.
+
 ```
 df -h
 ```
+
 Shows free space available on the entire machine.
 
 ### Windows: Filesystem Repair
@@ -1133,19 +1384,25 @@ So when files are copied they first gets copied to the data buffer then to the l
 NTFS file system has a recovery measurement in case of sudden accidents called **journaling** (log changes made to a file metadata into a log file called NTFS log). By logging these changes, NTFS created a history of the actions it's taken. Thanks to this if a bug or a crash happened it can start recovery by checking these logs to make sure the system is in a consistent state.
 
 **Self-Healing** in NTFS and Windows makes changes to minor problems and corruptions on the disk automatically in the background.
+
 ```
 fsutil repair query 'path'
 ```
+
 To check the process of the self-healing on a specific drive.
 
 If errors are so bad, it is possible to use the chkdsk utility, by opening admin CMD then:
+
 ```
 CHKDSK
 ```
+
 Will run the utility in read only mode and scan the disk.
+
 ```
 CHKDSK /F
 ```
+
 Will run the utility with permission to modify and fix errors.
 
 If the operating system detects that some data's been corrupted or that the disk has a bad sector, it'll set a bit in a metadata file on the volume that indicates there's corruption.
@@ -1153,9 +1410,11 @@ If the operating system detects that some data's been corrupted or that the disk
 When the system boots, the check disk utility will check this bit. If it's set, it'll execute and try to repair the corruption by reconstructing the broken bits of the file system from the NTFS log.
 
 ### Linux: Filesystem Repair
+
 ```
 sudo fschk 'path'
 ```
+
 Will check the filesystem for error.
 
 **NOTE**: The partition needs to be unmounted. If scanned while mounted, damaged filesystem is possible.
@@ -1164,7 +1423,7 @@ Will check the filesystem for error.
 
 ## Week 5: Life of a Process
 
-### Programs vs Processes Revisited
+### Programs Vs Processes Revisited
 
 **Processes** are programs that are running using resources like CPU, RAM...
 
@@ -1177,9 +1436,11 @@ The kernel makes decision to figure out what resources to give each process.
 In Windows, each new process that's created needs a parent to tell the operating system that a new process needs to be made. The child process inherit some things from its parent like variables and settings, which we can collectively refer to as an environment. This gives the child process a pretty good start in life, but after the initial creation step, the child is pretty much on its own. Unlike in Linux, Windows processes can operate independently of their parents.
 
 This means if we run notepad from powershell then terminate powershell process, the notepad process won't terminate.
+
 ```
 taskkill /pid 'process id'
 ```
+
 To kill a process using its process ID from the CMD.
 
 ### Linux: Process Creation and Termination
@@ -1195,23 +1456,30 @@ When you startup your computer, the kernel creates a process called init, which 
 A process is a program in motion. Once you start it up, the operating system takes that resting code then turns it into a running, responding, working application.
 
 Processes PID is available in 'Details' tab in the task manager.
+
 ```
 tasklist
 ```
+
 Will show current running tasks from CMD. From powershell it is `Get-Process`.
 
 ### Linux: Reading Process Information
+
 ```
 ps -x
 ```
+
 Shows a snapshot of the current processes you have running on your system.
+
 - **STAT** means: R: running - T: stopped - S: interruptible sleep
 - **TIME**: total CPU time that the process is taking up
 - **COMMAND**: name of the command we're running
 ```
 ps -ef
 ```
+
 Shows all processes ran by all users (e) with full details (f).
+
 - **UID** indicates the user ID who launched the process
 - **PPID** indicates the parent ID
 - **C** is the number of children processes that this process has
@@ -1220,6 +1488,7 @@ Shows all processes ran by all users (e) with full details (f).
 ```
 ps -ef | grep 'process name'
 ```
+
 Can be used to see a specific process.
 
 To view files corresponding to processes we can view the `/proc` directory.
@@ -1237,21 +1506,29 @@ Signals are also in Linux, CTRL+C also works.
 **Process Explorer** is a utility Microsoft created to let IT Support Specialists, system admins and other users look at running processes.
 
 ### Linux: Managing Processes
+
 ```
 kill 'PID'
 ```
+
 Is used to terminate a process, this lets the process cleanup before closing (SIGTERM).
+
 ```
 kill -KILL 'PID'
 ```
+
 Is used to terminate a process, this closes it right away without cleanup which might lead to corruption (SIGKILL).
+
 ```
 kill -TSTP 'PID'
 ```
+
 Is used to suspend a process (SIGTSTP).
+
 ```
 kill -CONT 'PID'
 ```
+
 Is used to resume a suspended process (SIGCONT).
 
 ### Mobile App Management
@@ -1265,23 +1542,31 @@ In mobile we can't see processes, instead there is the multitasking button that 
 **Resource Monitoring** tool on Windows can shows graphs about resources usage of processes.
 
 Processes explorer can also show graphs of specific processes by pressing right click → properties → performance graph, this will show it.
+
 ```
 Get-Process | Sort CPU -descending | Select -first 3 -property ID, ProcessName, CPU
 ```
+
 This command will show the top 3 apps using CPU resources.
 
 ### Linux: Resources Monitoring
+
 ```
 top
 ```
+
 Shows us the top processes running on our machine, q is to quit.
+
 ```
 uptime
 ```
+
 Shows current time, how long the system's been running, how many users are logged on, and average load machine.
+
 ```
 lsof
 ```
+
 Lists open files and what processes are using them.
 
 ---
@@ -1295,9 +1580,11 @@ Remote Connection allows us to manage multiple machines from anywhere in the wor
 **Secure shell (SSH)** is a protocol implemented by other programs to securely access one computer from another.
 
 On Linux to login to a remote machine, we have to have an account on that computer, we also need the host name or IP address of that computer.
+
 ```
 ssh 'username'@'ip address'
 ```
+
 Connect to another computer remotely.
 
 There is a more secure way, SSH authentication, comes with 2 keys (Private-Public).
@@ -1313,9 +1600,11 @@ After installing, you can run it and choose the IP Address, Port, and other opti
 After confirming a CMD window will appear which asks for the username and password to make the connection.
 
 From PowerShell you can run PuTTY like this:
+
 ```
 putty.exe -shh 'user'@'IP address' 'port'
 ```
+
 Is to make putty connections from Powershell.
 
 ### Remote Connection: File Transfer on Linux
@@ -1323,14 +1612,17 @@ Is to make putty connections from Powershell.
 **Secure Copy (SCP)** is a command you can use in Linux to copy files between computers on a network.
 
 It utilizes SSH to transfer the data, just like you can SSH to a machine, you can send a file that way, to do this:
+
 ```
 scp 'path' 'username'@'IP Address'
 ```
+
 To send a file using SSH.
 
 ### Remote Connection: File Transfer on Windows
 
 PuTTY comes with a tool that supports scp, it's called pscp.exe, from Powershell:
+
 ```
 Pscp.exe 'path' 'username'@'IP Address'
 ```
@@ -1342,9 +1634,11 @@ Right click on the folder → Share with → Specific People
 Once the folder is shared it can be accessed from other computers.
 
 Start by opening up this PC. Then going to the computer tab, and from here you can map the folder directly to your computer with the map network drive option. Finally, on another computer, you can visit it directly from the run box by typing in backslash whatever the computer name is and then backslash the folder name that you mapped it to.
+
 ```
 net share 'folder name'='path' /grant:'specify who', 'permission level'
 ```
+
 To give users permission to a shared folder to specific people.
 
 The net share command can also be used to list the currently shared folders on your computer by executing it without any arguments.
@@ -1396,9 +1690,11 @@ If you're getting an error from a specific application you can search logs with 
 When you need to see a lot of logs starting from the top or bottom is a good idea, multiple error could be happening because of a root issue in which if it is solved the other error will be solved.
 
 Real-time checking can be done be using this:
+
 ```
 tail -f /var/log/syslog
 ```
+
 See logs in real-time.
 
 ## Operating System Deployment
@@ -1408,10 +1704,13 @@ See logs in real-time.
 **Imaging** a machine means formatting a machine with another machine's image.
 
 ### Operating Systems Deployment Methods
+
 ```
 sudo dd tf='path' of='path' bs='size'
 ```
+
 How to turn data you want to an image.
 
 ---
+
 **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Windows and Linux CLI Commands|Windows and Linux CLI Commands Reference]]

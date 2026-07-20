@@ -37,9 +37,10 @@ Linux organizes devices into four primary categories:
 
 ## Device Management
 
-### Automatic Detection with udev
+### Automatic Detection with Udev
 
 The udev system provides dynamic device management:
+
 - Runs as a daemon listening for kernel device messages
 - Automatically creates device files when hardware is connected
 - Removes device files when hardware is disconnected
@@ -50,6 +51,7 @@ The udev system provides dynamic device management:
 Due to Linux's open-source nature, installation methods vary across distributions. For printer installation on Red Hat 9 with GNOME:
 
 **GUI Method:**
+
 1. Open Settings → Printers
 2. Click Unlock (requires superuser, sudo, or printadmin privileges)
 3. Select printer from available devices
@@ -61,6 +63,7 @@ Due to Linux's open-source nature, installation methods vary across distribution
    - Install PPD File (manual file selection)
 
 **Command Line Method (CUPS):**
+
 ```
 $ lpadmin -p printername -m driverfilename.ppd
 ```
@@ -70,9 +73,11 @@ $ lpadmin -p printername -m driverfilename.ppd
 ### Verifying Device Installation
 
 **GUI Method:**
+
 - Navigate through Settings menu device categories
 
 **Command Line Methods:**
+
 - `ls /dev`: List all device files
 - `lspci`: List PCI bus devices
 - `lsusb`: List USB devices

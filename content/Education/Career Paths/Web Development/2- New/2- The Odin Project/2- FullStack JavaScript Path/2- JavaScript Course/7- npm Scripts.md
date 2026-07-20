@@ -1,4 +1,4 @@
-### 1. Introduction to npm Scripts
+### 1. Introduction to Npm Scripts
 
 **Explanation:** npm scripts are automation tools built into Node.js that allow you to define custom commands for repetitive tasks like building, testing, or deploying applications. They eliminate the need for extra build tools and serve as documentation for a project's workflow.
 
@@ -129,4 +129,5 @@
 As seen in the **Production | webpack** source, these npm scripts are often used to bridge different configurations. For example, you might have a `"build"` script that points to a production-specific file: `"build": "webpack --config webpack.prod.js"`, and a `"start"` script for development: `"start": "webpack serve --config webpack.dev.js"`. This allows you to maintain optimized assets for production while keeping helpful debugging tools for development.**[]()**
 
 ---
+
 **Previous:** [[6- Webpack]] | **Next:** [[8- webpack-merge]]

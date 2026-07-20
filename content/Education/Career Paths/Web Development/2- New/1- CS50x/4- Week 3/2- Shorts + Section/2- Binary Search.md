@@ -19,6 +19,7 @@ For binary search to work correctly, the array **must be sorted** in ascending o
 Consider a sorted array and a target value of `19`.
 
 Array: `[6, 7, 8, 9, 10, 11, 14, 15, 17, 19, 22, 23, 25, 28, 30]`
+
 Target: `19`
 
 1.  **Initial Search:**
@@ -57,4 +58,5 @@ If the target element is not in the array, the search will continue until the `s
 -   Time Complexity: **O(log n)** (Big O of log n) - logarithmic time, where 'n' is the number of elements in the array. This is significantly faster than linear search for large arrays.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/1- Linear Search|Linear Search]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/3- Bubble Sort|Bubble Sort]]

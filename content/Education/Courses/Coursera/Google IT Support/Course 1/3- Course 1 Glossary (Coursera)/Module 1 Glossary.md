@@ -37,4 +37,5 @@
 **UTF-8:** The most prevalent encoding standard used today
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Course 1 Glossary|Course 1 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 2 Glossary|Module 2 Glossary]]

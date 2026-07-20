@@ -1,12 +1,14 @@
 # Common Scripting Solutions
 
 ## Introduction
+
 - **Scripting vs. Programming**: Scripting languages are translated (not compiled into executables) and combine existing components
 - **IT Support Applications**: Automation of routine tasks, backups, security settings changes, and high-volume operations
 
 ## Scripting Languages by Environment
 
 ### Windows Environments
+
 - **PowerShell (.ps1)**
   - Built on .NET platform
   - Used for building, testing, deploying solutions
@@ -23,12 +25,14 @@
   - Still found in legacy systems
 
 ### Linux and Unix Environments
+
 - **Shell Script (.sh)**
   - Used in command-line interpreter shells
   - Common shells: Bourne, Bash, C shell, Korn shell
   - Functions: File manipulation, program execution, system navigation
 
 ### Cross-Platform Languages
+
 - **JavaScript (.js)**
   - Most used programming language worldwide
   - Applications: Web development, mobile/web apps, games
@@ -42,6 +46,7 @@
 ## Common Use Cases
 
 ### Task-Specific Solutions
+
 - **Basic Automation**: Python (preferred)
 - **Restarting Machines**: PowerShell (Windows), Shell scripts (Linux)
 - **Mapping Network Drives**: PowerShell (current Windows), Shell scripts (Linux)
@@ -53,6 +58,7 @@
 ## Security Risks
 
 ### Potential Dangers
+
 - **Malware Introduction**: Risk from unverified scripts downloaded from internet
   - Potential for file deletion, data corruption, information theft
   - Can create security weaknesses and entry points for attackers

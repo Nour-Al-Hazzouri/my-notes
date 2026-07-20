@@ -59,4 +59,5 @@
 **Windows Search service:** A service that indexes files on your computer by looking through them on a schedule
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Course 3 Glossary|Course 3 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 3/Course Glossary/Module 2 Glossary|Module 2 Glossary]]

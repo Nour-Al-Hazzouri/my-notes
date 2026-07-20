@@ -12,10 +12,11 @@
         - preventDefault();
 - Event delegation:
     - Allows users to append a single event listener to a parent element that adds it to all of its present and future descendants that match that selector;
-        
+
 ```JavaScript
 document.querySelector('parentElement').addEventListener('eventType', function())
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/3- DOM (Document Object Model) Manipulation/5- Event Listeners|5- Event Listeners]]

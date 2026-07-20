@@ -65,4 +65,5 @@
 **World Wide Web (WWW):** The information system that enables documents and other web resources to be accessed over the Internet
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 3 Glossary|Module 3 Glossary]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 1/3- Course 1 Glossary (Coursera)/Module 5 Glossary|Module 5 Glossary]]

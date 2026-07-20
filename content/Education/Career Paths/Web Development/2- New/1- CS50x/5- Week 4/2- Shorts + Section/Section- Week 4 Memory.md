@@ -45,7 +45,7 @@ int *p = &x; // p stores the address of x
 printf("%i\n", *p); // This will print 4, because *p dereferences the address in p to get the value of x.
 ```
 
-### `char *` and Strings
+### `char *` And Strings
 
 This section clarifies that what has been referred to as `string` in earlier weeks is actually a `char *` (a pointer to a character). A string in C is essentially an array of characters, and the `char *` points to the first character of that array.
 
@@ -89,4 +89,5 @@ fclose(ptr);
 Understanding pointers and memory management is fundamental to writing robust and efficient C programs. While they introduce complexities, mastering these concepts, along with proper file I/O techniques, allows for powerful data manipulation and persistent storage, which are essential for many real-world applications. Visualizing memory and drawing out pointer relationships can be highly beneficial for grasping these abstract concepts.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/6- File Pointers|6- File Pointers]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/1- Week 5 Lecture|Lecture 5]]

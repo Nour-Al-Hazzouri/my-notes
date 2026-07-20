@@ -7,12 +7,14 @@ Symbolic links are special file system objects that point to other files or dire
 ## Types of Symbolic Links
 
 ### Absolute Symbolic Links
+
 - Specify each portion of the path name explicitly
 - When processed, the link component and everything before it is completely replaced by the target path
 - Can point directly to remote locations using UNC paths
 - Example: If "absLink" maps to "\\machineB\share", then "C:\alpha\beta\absLink\gamma\file" resolves to "\\machineB\share\gamma\file"
 
 ### Relative Symbolic Links
+
 - Determined relative to their location in the specified path
 - Restricted to a single volume
 - When processed, only the link component is replaced, with path resolution applied afterward

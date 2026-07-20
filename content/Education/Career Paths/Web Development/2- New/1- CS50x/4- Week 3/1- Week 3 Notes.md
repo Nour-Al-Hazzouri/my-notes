@@ -450,4 +450,5 @@ In this lesson, you learned about algorithmic thinking and building your own dat
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/3- Scrabble Approaches|CS50 Scrabble Code Comparison]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/1- Linear Search|Linear Search]]

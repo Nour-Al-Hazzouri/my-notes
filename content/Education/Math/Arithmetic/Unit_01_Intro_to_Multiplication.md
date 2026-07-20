@@ -1,11 +1,13 @@
 # Unit 1: Intro to Multiplication
 
 ## Overview
+
 This unit introduces the fundamental concept of multiplication, which is a cornerstone of arithmetic and higher mathematics. Multiplication provides an efficient way to express repeated addition and to work with equal groups of objects. Understanding multiplication is essential for developing number sense, solving real-world problems, and building a foundation for more advanced mathematical concepts.
 
 ## Key Concepts
 
 ### Concept 1: Multiplication as Equal Groups
+
 **Definition**: Multiplication represents the total quantity when combining several equal-sized groups. The first factor indicates the number of groups, while the second factor indicates the size of each group.
 
 **Clarification**: When we write a multiplication expression like 3 × 7, we are representing 3 groups with 7 items in each group, resulting in 21 total items. This concept helps us move beyond counting individual items to recognizing and working with groups efficiently.
@@ -23,6 +25,7 @@ This unit introduces the fundamental concept of multiplication, which is a corne
 ```
 
 ### Concept 2: Multiplication as Repeated Addition
+
 **Definition**: Multiplication can be understood as adding the same number multiple times.
 
 **Clarification**: The expression a × b means adding the number b to itself a times. This connection between addition and multiplication helps students transition from familiar addition concepts to the more efficient operation of multiplication.
@@ -43,6 +46,7 @@ This unit introduces the fundamental concept of multiplication, which is a corne
 ```
 
 ### Concept 3: Multiplication on the Number Line
+
 **Definition**: Multiplication can be visualized as making equal-sized jumps on a number line.
 
 **Clarification**: When multiplying a × b, we start at 0 and make a jumps of size b. The final position on the number line represents the product. This visual representation helps students understand multiplication as repeated addition in a spatial context.
@@ -61,6 +65,7 @@ This unit introduces the fundamental concept of multiplication, which is a corne
 ```
 
 ### Concept 4: Multiplication with Arrays
+
 **Definition**: An array is a rectangular arrangement of objects in equal rows and columns that represents a multiplication expression.
 
 **Clarification**: In an array, the number of rows represents one factor, and the number of columns represents the other factor. The total number of objects in the array is the product. Arrays provide a visual model that helps students understand the structure of multiplication.
@@ -80,6 +85,7 @@ This unit introduces the fundamental concept of multiplication, which is a corne
 ```
 
 ### Concept 5: Commutative Property of Multiplication
+
 **Definition**: The commutative property states that changing the order of the factors does not change the product. Mathematically, a × b = b × a.
 
 **Clarification**: While the physical interpretation may differ (3 groups of 4 versus 4 groups of 3), the total quantity remains the same. This property allows for flexibility in calculation and helps students memorize fewer multiplication facts.
@@ -102,10 +108,13 @@ This unit introduces the fundamental concept of multiplication, which is a corne
 ```
 
 ## Summary
+
 Unit 1 introduces multiplication as a powerful mathematical operation that represents equal groups, repeated addition, and rectangular arrays. Students learn to interpret multiplication in various contexts, visualize it on number lines and through arrays, and understand the commutative property. These foundational concepts provide the basis for developing multiplication fluency and applying multiplication to solve real-world problems.
 
 ## Connection to Next Unit
+
 The concepts introduced in Unit 1 lay the groundwork for Unit 2, which focuses on 1-digit multiplication facts and strategies. Understanding the meaning of multiplication and its properties will help students develop fluency with basic multiplication facts and apply these skills to more complex calculations and problem-solving scenarios.
 
 ---
+
 **Next**: [[Education/Math/Arithmetic/Unit_02_1-Digit_Multiplication|Unit 2: 1-Digit Multiplication]]

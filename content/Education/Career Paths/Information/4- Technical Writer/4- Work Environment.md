@@ -45,4 +45,5 @@ The work environment for a technical writer can vary depending on the company, i
 If you're considering a career as a technical writer, it's a good idea to research specific companies and industries to get a better understanding of their work environments.
 
 ---
+
 **Previous**: [[Education/Career Paths/Information/4- Technical Writer/3. Technical Writer Detailed Rowdmap|3. Technical Writer Detailed Rowdmap]] | **Next**: [[Education/Career Paths/Information/4- Technical Writer/5- Job Criteria|5- Job Criteria]]

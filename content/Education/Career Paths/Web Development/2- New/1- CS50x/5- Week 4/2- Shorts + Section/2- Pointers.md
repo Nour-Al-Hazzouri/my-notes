@@ -100,4 +100,5 @@ int *p = NULL;
 Pointers are a powerful tool for direct memory manipulation and efficient data passing in C. While they require careful handling and a solid understanding of memory, mastering them unlocks significant capabilities for writing more efficient and flexible programs. Proper pointer discipline, including careful initialization and deallocation, is key to avoiding common errors.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/1- Hexadecimal|1- Hexadecimal]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/3- Defining Custom Types|3- Defining Custom Types]]

@@ -38,4 +38,5 @@ Consider a program with a `main` function that calls `printf`, which in turn cal
 Understanding the call stack is crucial for debugging, comprehending program flow, and optimizing memory usage in C programs.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/4- Dynamic Memory Allocation|4- Dynamic Memory Allocation]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/6- File Pointers|6- File Pointers]]

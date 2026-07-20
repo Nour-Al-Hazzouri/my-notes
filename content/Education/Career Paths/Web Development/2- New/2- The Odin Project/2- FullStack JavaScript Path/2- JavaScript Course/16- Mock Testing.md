@@ -151,7 +151,9 @@ describe('UserService', () => {
 });
 ```
 ---
+
 ### What To Test
+
 According to Sandi Metz's "The Magic Tricks of Testing," the secret to stable and fast unit tests is to treat every object as a **Space Capsule** (a black box) and focus entirely on the **messages** passing through its walls rather than the code inside.
 
 To achieve "magical" tests, you must identify if a message is a **Query** (it returns a value but has no side effects) or a **Command** (it has a side effect but returns nothing you depend on).
@@ -360,4 +362,5 @@ test('notifies observer of change', () => {
 |**Outgoing**|**Command**|Set **Expectation** (Verify message was sent)|
 
 ---
+
 **Previous:** [[15- TDD]] | **Next:** [[17- Recursion]]

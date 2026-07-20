@@ -25,6 +25,7 @@ const player2 = new Player("Bob", "O");
 
 player1.sayHello(); // "Hi, I am Alice"
 ```
+
 *Note: Using `new` sets `this` to point to the newly created, empty object rather than the global object.*
 
 ---
@@ -79,7 +80,9 @@ admin1.sayName(); // Inherited method works!
 ```
 
 ---
+
 # Summary PDF
+
 ![[Objects and Constructors.pdf]]
 
-**Previous:** [[Education/Career Paths/Web Development/2- New/2- The Odin Project/2- FullStack JavaScript Path/2- JavaScript Course/1- Organizing Code with Objects|1- Organizing Code with Objects]]  | **Next:** [[3- Closures, Factory Functions and the Module Pattern]]
+**Previous:** [[Education/Career Paths/Web Development/2- New/2- The Odin Project/2- FullStack JavaScript Path/2- JavaScript Course/1- Organizing Code with Objects|1- Organizing Code with Objects]] | **Next:** [[3- Closures, Factory Functions and the Module Pattern]]

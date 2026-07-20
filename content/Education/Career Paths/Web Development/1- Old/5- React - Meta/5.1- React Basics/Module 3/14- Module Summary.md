@@ -1,6 +1,7 @@
 # React Module Summary: Navigation, Conditional Rendering & Assets
 
-## 🧭 **Navigation in React**
+## 🧭 **Navigation In React**
+
 1. **Single-Page Applications (SPAs)**:
    - Entire app loads in a single `div`, simulating multi-page navigation.
    - Uses React Router (`react-router-dom`) for client-side routing.
@@ -23,6 +24,7 @@
 ---
 
 ## 🎨 **Conditional Rendering**
+
 - **Dynamic Content**:
   - Use ternary operators for simplified `if-else` logic.
   - Example: Render components based on user authentication status.
@@ -33,6 +35,7 @@
 ---
 
 ## 📂 **Asset Management**
+
 1. **Folder Structure**:
    - **Embedded Assets**: Stored in `src/assets/` (e.g., images, fonts).
    - **Public Assets**: Static files (e.g., `favicon.ico`) in `public/`.
@@ -56,6 +59,7 @@ import logo from './assets/logo.png';
 ---
 
 ## 🛠️ **Key Skills Gained**
+
 1. **Navigation**:
    - Design SPAs with React Router.
    - Implement multi-page-like routing and navbars.
@@ -70,6 +74,7 @@ import logo from './assets/logo.png';
 ---
 
 ## 🧪 **Labs & Projects**
+
 - **Ungraded Labs**:
   1. Extended navbar with React Router links.
   2. Embedded images from `src/assets`.
@@ -79,6 +84,7 @@ import logo from './assets/logo.png';
 ---
 
 ## 🎯 **Learning Outcomes**
+
 - Describe SPA vs. multi-page navigation.
 - Create and configure React Router routes.
 - Conditionally render UI components.
@@ -90,4 +96,5 @@ import logo from './assets/logo.png';
 **Next Module**: Build a calculator app to apply React fundamentals.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 3/13- Create an Audio-Video Component|React Player Implementation Summary]]

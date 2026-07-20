@@ -1,4 +1,4 @@
-## Final Project: Create your site!
+## Final Project: Create Your Site!
 
 ## Objectives
 
@@ -13,7 +13,7 @@
 
 In this assignment you will _**create an original site**_ and then demonstrate the skills you have learned in this course to style the site. Since this site will be unique, an exact example is impossible, so check out the video to see ideas for your site.
 
-## Getting started
+## Getting Started
 
 You will need to create new code to get started. You can use the starter code as inspiration, but you should replace any images with your own image. (Here is a [list of resources](https://docs.google.com/document/d/1VXcfZu3rHAcPThdSAN7w_vHDVoLGbHV9hih5yEsB6Fw/edit?usp=sharing) for finding diverse images.)
 

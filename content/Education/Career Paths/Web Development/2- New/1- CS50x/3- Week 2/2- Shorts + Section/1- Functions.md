@@ -2,7 +2,7 @@
 
 This short introduces the concept of functions in programming, explaining their purpose, structure, and benefits.
 
-## What are Functions?
+## What Are Functions?
 
 Functions are a fundamental concept in programming that allow us to organize code and break down complex problems into smaller, more manageable parts. In C, and many other programming languages, functions are often referred to as procedures, methods (especially in object-oriented programming), or subroutines. They all refer to the same basic idea: a self-contained block of code that performs a specific task.
 
@@ -46,15 +46,18 @@ return-type name(argument-list);
     ```c
     int add_two_ints(int a, int b);
     ```
+
     This declares a function named `add_two_ints` that takes two integer arguments (`a` and `b`) and returns an integer.
 
 *   **Function to multiply two floating-point numbers:**
     ```c
     float mult_two_reals(float x, float y);
     ```
+
     This declares a function named `mult_two_reals` that takes two float arguments (`x` and `y`) and returns a float.
 
     Alternatively, using `double` for higher precision:
+
     ```c
     double mult_two_reals(double x, double y);
     ```
@@ -138,6 +141,7 @@ Once a function is declared and defined, it can be called (or invoked) from othe
 **Problem**: Declare and write a function called `valid_triangle` that takes three real numbers (e.g., `float` or `double`) representing the lengths of the three sides of a triangle as its arguments. The function should output `true` or `false` (using a `bool` return type) depending on whether those three lengths can form a valid triangle.
 
 **Rules for a valid triangle:**
+
 1.  A triangle may only have sides with positive length (i.e., length > 0).
 2.  The sum of the lengths of any two sides of the triangle must be greater than the length of the third side.
 
@@ -168,4 +172,5 @@ bool valid_triangle(float x, float y, float z)
 ```
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/1- Week 2 Notes|CS50x Week 2: Arrays]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/3- Week 2/2- Shorts + Section/2- Variables and Scope|CS50x Short: Variables and Scope]]

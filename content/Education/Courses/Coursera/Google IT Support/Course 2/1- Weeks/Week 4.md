@@ -3,6 +3,7 @@
 ## Domain Name System (DNS)
 
 **DNS** (Domain Name System) is a global, distributed network service that resolves human-readable domain names into IP addresses. This system is essential because:
+
 - Domain names are easier to remember than IP addresses
 - IP addresses can change frequently
 - Domain names provide stability when underlying infrastructure changes
@@ -73,6 +74,7 @@ These parts together form a **Fully Qualified Domain Name (FQDN)**, which can ha
 ## Dynamic Host Configuration Protocol (DHCP)
 
 **DHCP** (Dynamic Host Configuration Protocol) automates the configuration of hosts on a network. It provides:
+
 - IP address assignment
 - Subnet mask configuration
 - Default gateway information
@@ -101,6 +103,7 @@ All configuration provided by DHCP is known as a **DHCP Lease** and includes an 
 ## Network Address Translation (NAT)
 
 **Network Address Translation (NAT)** is a technique that translates IP addresses between networks. It serves several purposes:
+
 - Preserves limited IPv4 address space
 - Provides security through IP masquerading
 - Enables multiple devices to share a single public IP
@@ -108,6 +111,7 @@ All configuration provided by DHCP is known as a **DHCP Lease** and includes an 
 ### NAT Operation
 
 NAT works by:
+
 - Gateway rewriting the source IP of outgoing packets
 - Maintaining translation information to route responses correctly
 - Hiding internal network structure from external networks
@@ -125,6 +129,7 @@ NAT uses several techniques to manage connections:
 ### NAT and Non-Routable Address Space
 
 NAT works with private IP ranges defined in RFC 1918:
+
 - 10.0.0.0/8
 - 172.16.0.0/12
 - 192.168.0.0/16
@@ -136,6 +141,7 @@ These addresses can be used by anyone for internal networks because internet rou
 ### VPN Functionality
 
 **Virtual Private Networks (VPNs)** extend private networks across public networks:
+
 - Create encrypted tunnels for secure communication
 - Provide virtual interfaces with private network addressing
 - Encapsulate entire packets within encrypted payloads
@@ -146,6 +152,7 @@ VPNs typically work by using the transport layer's payload section to carry an e
 ### Proxy Services
 
 **Proxy servers** act on behalf of clients to access other services, providing benefits such as:
+
 - Anonymity
 - Security
 - Content filtering
@@ -154,4 +161,5 @@ VPNs typically work by using the transport layer's payload section to carry an e
 A **Reverse Proxy** appears as a single server to external clients but actually represents multiple servers behind it, providing load balancing and security benefits.
 
 ---
+
 **Previous**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 3|Week 3: The Transport and Application Layers]] | **Next**: [[Education/Courses/Coursera/Google IT Support/Course 2/1- Weeks/Week 5|Week 5: Connecting to the Internet]]

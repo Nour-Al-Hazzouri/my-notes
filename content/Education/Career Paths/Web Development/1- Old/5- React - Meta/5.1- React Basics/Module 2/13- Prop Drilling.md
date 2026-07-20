@@ -1,6 +1,7 @@
 # Understanding Prop Drilling in React
 
 ## What is Prop Drilling?
+
 * Props being passed through multiple layers of components
 * Data flows from parent → child → grandchild and so on
 * Each intermediate component must pass the prop even if it doesn't use it
@@ -58,6 +59,7 @@ function Button(props) {
 ```
 
 ## Data Flow Breakdown
+
 * App → Creates the original message
 * Main → Passes to Header
 * Header → Passes to Wrapper
@@ -65,6 +67,7 @@ function Button(props) {
 * Button → Finally uses the message in an alert
 
 ## Visual Structure
+
 * Components are nested within each other
 * Each has a distinct border to show boundaries:
   * Header: Whitesmoke border
@@ -73,6 +76,7 @@ function Button(props) {
 * Main component doesn't have visual representation
 
 ## Key Observations
+
 * Only the Button component actually uses the msg prop
 * All intermediate components (Main, Header, Wrapper) just pass it through
 * This creates unnecessary coupling between components
@@ -81,6 +85,7 @@ function Button(props) {
 * Real applications would need better solutions (like Context API) for this pattern
 
 ## Why This Matters
+
 * Demonstrates a common React anti-pattern
 * Shows why more sophisticated state management might be needed
 * Helps understand the need for solutions like:
@@ -90,4 +95,5 @@ function Button(props) {
   * Custom hooks
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/12- Managing State|Managing State in React: Key Concepts]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/14- React State Management|State Management in React: From Props to Context API]]

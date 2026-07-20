@@ -106,4 +106,5 @@ With default parameters, the class works correctly even when instantiated withou
 - How default parameters improve inheritance in object-oriented programming
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/8- Creating Classes|Creating Classes in JavaScript]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/10- De-structuring arrays and objects|10- De-structuring arrays and objects]]

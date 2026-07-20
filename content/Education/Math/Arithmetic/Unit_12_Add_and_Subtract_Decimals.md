@@ -1,16 +1,19 @@
 # Unit 12: Add and Subtract Decimals
 
 ## Overview
+
 This unit builds upon students' understanding of decimal place value to develop proficiency in adding and subtracting decimals. These operations are essential for working with money, measurements, and many other real-world applications. By mastering addition and subtraction of decimals, students extend their computational skills beyond whole numbers and fractions, further developing their number sense and problem-solving abilities.
 
 ## Key Concepts
 
 ### Concept 1: Aligning Decimal Points
+
 **Definition**: When adding or subtracting decimals, the decimal points must be aligned to ensure that digits with the same place value are combined.
 
 **Clarification**: Aligning decimal points ensures that we add or subtract values of the same magnitude (tenths with tenths, hundredths with hundredths, etc.). This concept builds directly on place value understanding and is crucial for performing decimal operations correctly.
 
 **Example**: To add 3.45 + 2.7, we align the decimal points:
+
 ```
     Aligning Decimal Points
     
@@ -51,11 +54,13 @@ This unit builds upon students' understanding of decimal place value to develop 
 ```
 
 ### Concept 2: Adding Decimals
+
 **Definition**: Adding decimals involves combining like place values while maintaining the position of the decimal point.
 
 **Clarification**: The process for adding decimals is similar to adding whole numbers, with the additional step of aligning decimal points. After alignment, we add the digits in each column, working from right to left, and carry when necessary. The decimal point in the sum aligns with the decimal points in the addends.
 
 **Example**: To add 5.63 + 2.48:
+
 1. Align the decimal points:
 ```
   5.63
@@ -119,11 +124,13 @@ This unit builds upon students' understanding of decimal place value to develop 
 ```
 
 ### Concept 3: Subtracting Decimals
+
 **Definition**: Subtracting decimals involves finding the difference between like place values while maintaining the position of the decimal point.
 
 **Clarification**: The process for subtracting decimals is similar to subtracting whole numbers, with the additional step of aligning decimal points. After alignment, we subtract the digits in each column, working from right to left, and borrow when necessary. The decimal point in the difference aligns with the decimal points in the minuend and subtrahend.
 
 **Example**: To subtract 7.82 - 3.47:
+
 1. Align the decimal points:
 ```
   7.82
@@ -187,11 +194,13 @@ This unit builds upon students' understanding of decimal place value to develop 
 ```
 
 ### Concept 4: Adding and Subtracting Decimals with Different Decimal Places
+
 **Definition**: When adding or subtracting decimals with different numbers of decimal places, we align the decimal points and use zeros as placeholders to ensure that all place values are properly aligned.
 
 **Clarification**: Adding zeros after the last digit to the right of the decimal point doesn't change the value of a decimal. This concept helps students understand that 0.5 = 0.50 = 0.500, which is important for correctly aligning decimals with different numbers of decimal places.
 
 **Example**: To add 4.3 + 1.75:
+
 1. Align the decimal points and add a zero as a placeholder:
 ```
   4.30
@@ -201,6 +210,7 @@ This unit builds upon students' understanding of decimal place value to develop 
 ```
 
 To subtract 5.6 - 2.375:
+
 1. Align the decimal points and add zeros as placeholders:
 ```
   5.600
@@ -249,11 +259,13 @@ To subtract 5.6 - 2.375:
 ```
 
 ### Concept 5: Adding and Subtracting Decimals with Regrouping
+
 **Definition**: Regrouping in decimal addition and subtraction involves carrying or borrowing across place values, including across the decimal point.
 
 **Clarification**: The principles of regrouping are the same as with whole numbers, but students must be careful to maintain the correct place value when working with decimals. Regrouping across the decimal point requires understanding the relationship between ones and tenths, tenths and hundredths, etc.
 
 **Example**: To add 3.8 + 4.6:
+
 1. Align the decimal points:
 ```
   3.8
@@ -266,6 +278,7 @@ To subtract 5.6 - 2.375:
 5. The sum is 8.4
 
 To subtract 6.2 - 3.85:
+
 1. Align the decimal points and add a zero as a placeholder:
 ```
   6.20
@@ -356,16 +369,19 @@ To subtract 6.2 - 3.85:
 ```
 
 ### Concept 6: Mental Math with Decimals
+
 **Definition**: Mental math strategies for decimals involve using number properties and relationships to perform calculations efficiently without written algorithms.
 
 **Clarification**: These strategies include using landmark numbers (like 0.5 or 1), decomposing decimals by place value, and applying the commutative and associative properties. Mental math with decimals promotes number sense and computational fluency.
 
 **Example**: To add 2.75 + 3.25 mentally:
+
 - Recognize that 0.75 + 0.25 = 1.00
 - Add 2 + 3 + 1 = 6
 - The sum is 6.00 or simply 6
 
 To subtract 5 - 2.75 mentally:
+
 - Subtract 2 from 5 to get 3
 - Subtract 0.75 from 3 by thinking of it as 3 - 0.75 = 2.25
 - The difference is 2.25
@@ -413,14 +429,17 @@ To subtract 5 - 2.75 mentally:
 ```
 
 ### Concept 7: Word Problems with Decimal Addition and Subtraction
+
 **Definition**: Word problems with decimal addition and subtraction involve real-world scenarios where combining or finding the difference between decimal quantities is required.
 
 **Clarification**: These problems help students understand the practical applications of decimal operations. They often involve money, measurements, or other quantities that are naturally expressed as decimals. Interpreting the problem correctly is key to setting up the appropriate addition or subtraction expression.
 
 **Example**: If a recipe calls for 2.5 cups of flour and 1.75 cups of sugar, how much flour and sugar are needed in total?
+
 2.5 + 1.75 = 4.25 cups
 
 If a runner completes 3.6 miles in the morning and 2.75 miles in the evening, how much farther did they run in the morning?
+
 3.6 - 2.75 = 0.85 miles
 
 ```
@@ -479,10 +498,13 @@ If a runner completes 3.6 miles in the morning and 2.75 miles in the evening, ho
 ```
 
 ## Summary
+
 Unit 12 develops students' proficiency in adding and subtracting decimals, building on their understanding of decimal place value. Students learn to align decimal points, add and subtract decimals with the same or different numbers of decimal places, handle regrouping across place values, use mental math strategies for decimal calculations, and solve word problems involving decimal addition and subtraction. These skills are essential for mathematical fluency and provide the foundation for more advanced operations with decimals.
 
 ## Connection to Next Unit
+
 The addition and subtraction skills developed in Unit 12 provide a foundation for Unit 13, which focuses on multiplying decimals. Many of the concepts, such as place value understanding and regrouping, will be applied in decimal multiplication. Additionally, the ability to add decimals will be used when finding the sum of partial products in the multiplication process. The word problem solving skills will also be extended to more complex scenarios involving multiplication of decimals in various real-world contexts.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_11_Decimals_and_Place_Value|Unit 11: Decimals and Place Value]] | **Next**: [[Education/Math/Arithmetic/Unit_13_Multiply_Decimals|Unit 13: Multiply Decimals]]

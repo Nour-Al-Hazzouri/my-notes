@@ -1,16 +1,19 @@
 # Unit 14: Divide Decimals
 
 ## Overview
+
 This unit builds upon students' understanding of decimal place value and division of whole numbers to develop proficiency in dividing decimals. Division of decimals is essential for solving problems involving rates, unit pricing, proportional relationships, and many other real-world applications. By mastering decimal division, students extend their computational skills and deepen their understanding of the number system.
 
 ## Key Concepts
 
 ### Concept 1: Dividing Decimals by Powers of 10
+
 **Definition**: When dividing a decimal by 10, 100, 1,000, etc., the decimal point shifts to the left by the number of zeros in the power of 10.
 
 **Clarification**: This pattern is a direct result of our base-10 number system and provides an efficient method for these calculations. Understanding this pattern helps students develop mental math strategies and reinforces the relationship between multiplication and division.
 
-**Example**: 
+**Example**:
+
 - 34.5 ÷ 10 = 3.45 (decimal point shifts 1 place to the left)
 - 34.5 ÷ 100 = 0.345 (decimal point shifts 2 places to the left)
 - 34.5 ÷ 1,000 = 0.0345 (decimal point shifts 3 places to the left)
@@ -63,11 +66,13 @@ This unit builds upon students' understanding of decimal place value and divisio
 ```
 
 ### Concept 2: Dividing a Decimal by a Whole Number
+
 **Definition**: Dividing a decimal by a whole number involves using the standard division algorithm and placing the decimal point in the quotient directly above the decimal point in the dividend.
 
 **Clarification**: The process is similar to dividing whole numbers, with the additional step of ensuring the decimal point is correctly placed in the quotient. This approach works because each digit in the quotient represents a specific place value.
 
 **Example**: To divide 12.6 ÷ 3:
+
 1. Place the decimal point in the quotient directly above the decimal point in the dividend
 2. Divide as with whole numbers: 12.6 ÷ 3 = 4.2
 3. Check: 4.2 × 3 = 12.6
@@ -136,11 +141,13 @@ This unit builds upon students' understanding of decimal place value and divisio
 ```
 
 ### Concept 3: Dividing by a Decimal
+
 **Definition**: Dividing by a decimal involves converting the divisor to a whole number by multiplying both the divisor and dividend by the same power of 10, then performing the division.
 
 **Clarification**: This strategy simplifies the division process by eliminating the decimal in the divisor. Since we multiply both the divisor and dividend by the same factor, the quotient remains unchanged. This approach is based on the principle that multiplying both terms of a division expression by the same non-zero number does not change the result.
 
 **Example**: To divide 4.2 ÷ 0.6:
+
 1. Multiply both the divisor and dividend by 10 to make the divisor a whole number: (4.2 × 10) ÷ (0.6 × 10) = 42 ÷ 6
 2. Perform the division with the whole number divisor: 42 ÷ 6 = 7
 3. The quotient is 7
@@ -199,11 +206,13 @@ This unit builds upon students' understanding of decimal place value and divisio
 ```
 
 ### Concept 4: Long Division with Decimals
+
 **Definition**: Long division with decimals involves using the standard long division algorithm, with careful attention to decimal point placement in both the dividend and quotient.
 
 **Clarification**: The long division process with decimals follows the same steps as with whole numbers: divide, multiply, subtract, bring down the next digit. The key difference is the placement of the decimal point in the quotient and the potential need to add zeros to the dividend to continue the division process.
 
 **Example**: To divide 5.64 ÷ 2.4 using long division:
+
 1. Multiply both numbers by 10 to make the divisor a whole number: 56.4 ÷ 24
 2. Set up the long division and place the decimal point in the quotient directly above the decimal point in the dividend
 3. Divide: 24 goes into 56 twice (2 × 24 = 48), subtract to get 8, bring down 4 to get 84
@@ -274,14 +283,17 @@ This unit builds upon students' understanding of decimal place value and divisio
 ```
 
 ### Concept 5: Interpreting Decimal Division Results
+
 **Definition**: Interpreting decimal division results involves understanding what the quotient represents in the context of the problem and expressing it in appropriate units.
 
 **Clarification**: The meaning of a decimal quotient depends on the context of the problem. It might represent a rate, a unit price, a measurement, or a scaling factor. Understanding the units and the relationship between the dividend and divisor is crucial for correct interpretation.
 
 **Example**: If 3.6 meters of fabric costs $18.00, what is the cost per meter?
+
 $18.00 ÷ 3.6 = $5.00 per meter
 
 If a car travels 157.5 miles in 3.5 hours, what is its average speed?
+
 157.5 ÷ 3.5 = 45 miles per hour
 
 ```
@@ -346,11 +358,13 @@ If a car travels 157.5 miles in 3.5 hours, what is its average speed?
 ```
 
 ### Concept 6: Estimating Decimal Quotients
+
 **Definition**: Estimating decimal quotients involves rounding the dividend and divisor to convenient values and then dividing to find an approximate quotient.
 
 **Clarification**: Estimation helps students check the reasonableness of their answers and develop number sense. It involves rounding decimals to a specified place value and then performing the division with the rounded values.
 
 **Example**: To estimate 42.75 ÷ 8.2:
+
 1. Round 42.75 to 40 and 8.2 to 8
 2. Divide the rounded values: 40 ÷ 8 = 5
 3. The exact quotient is 5.21, which is close to our estimate of 5
@@ -404,14 +418,17 @@ If a car travels 157.5 miles in 3.5 hours, what is its average speed?
 ```
 
 ### Concept 7: Word Problems with Decimal Division
+
 **Definition**: Word problems with decimal division involve real-world scenarios where finding the quotient of decimal quantities is required.
 
 **Clarification**: These problems help students understand the practical applications of decimal division. They often involve rates, unit pricing, averages, or proportional relationships. Interpreting the problem correctly is key to setting up the appropriate division expression.
 
 **Example**: If 2.5 pounds of apples cost $4.75, what is the cost per pound?
+
 $4.75 ÷ 2.5 = $1.90 per pound
 
 If a runner completes 10 kilometers in 0.75 hours, what is their speed in kilometers per hour?
+
 10 ÷ 0.75 = 13.33 kilometers per hour
 
 ```
@@ -472,10 +489,13 @@ If a runner completes 10 kilometers in 0.75 hours, what is their speed in kilome
 ```
 
 ## Summary
+
 Unit 14 develops students' understanding of decimal division, building on their knowledge of decimal place value and whole number division. Students learn to divide decimals by powers of 10, divide decimals by whole numbers and by other decimals, use long division with decimals, interpret decimal quotients in context, estimate decimal quotients, and solve word problems involving decimal division in various contexts. These skills are essential for mathematical fluency and provide the foundation for more advanced operations with decimals and applications in science, engineering, and everyday life.
 
 ## Connection to Next Unit
+
 The division skills developed in Unit 14 provide a foundation for Unit 15, which focuses on measurement and data. Understanding decimal operations, particularly division, is crucial for working with measurements, converting between units, and analyzing data. The ability to interpret decimal quotients in context will help students make sense of rates and ratios in measurement situations. Additionally, the problem-solving skills developed through word problems with decimal division will be applied to more complex real-world scenarios involving measurement and data analysis.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_13_Multiply_Decimals|Unit 13: Multiply Decimals]] | **Next**: [[Education/Math/Arithmetic/Unit_15_Measurement_and_Data|Unit 15: Measurement and Data]]

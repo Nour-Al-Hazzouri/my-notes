@@ -413,7 +413,7 @@ int main(void)
 
 - Notice that the `%s` has been changed to `%p` in the print statement.
 
-## Copying and malloc
+## Copying and Malloc
 
 - A common need in programming is to copy one string to another.
 - In your terminal window, type `code copy.c` and write code as follows:
@@ -798,7 +798,7 @@ void swap(int *a, int *b)
 - A stack overflow is when too many functions are called, overflowing the amount of memory available.
 - Both of these are considered buffer overflows.
 
-## scanf
+## Scanf
 
 - In CS50, we have created functions like `get_int` to simplify the act of getting input from the user.
 - `scanf` is a built-in function that can get user input.
@@ -992,4 +992,5 @@ In this lesson, you learned about pointers that provide you with the ability to 
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/3- Problem Set 3- Sort|3- Problem Set 3- Sort]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/5- Week 4/2- Shorts + Section/1- Hexadecimal|1- Hexadecimal]]

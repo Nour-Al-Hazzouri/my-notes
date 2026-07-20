@@ -3,15 +3,16 @@
 	-  Tool used to spread array items and join objects together
 	- The spread operator allows you to pass all array elements into a function without having to type them all individually
 	- 
+
 In this reading, you'll learn how to join arrays, objects using the rest operator. You will also discover how to use the spread operator to:
 
 - Add new members to arrays without using the **push()** method,
 - Convert a string to an array and
 - Copy either an object or an array into a separate object
 
-### Recall that the **push()** and **pop()** methods are used to add and remove items from the end of an array.
+### Recall that the **push()** and **pop()** Methods Are Used to Add and Remove Items from the End of an Array.
 
-## Join arrays, objects using the rest operator
+## Join Arrays, Objects Using the Rest Operator
 
 Using the spread operator, it's easy to concatenate arrays:
 
@@ -37,7 +38,7 @@ const flyingCar = {...flying, ...car}
 console.log(flyingCar) // {wings: 2, wheels: 4}
 ```
 
-## Add new members to arrays without using the **push()** method
+## Add New Members to Arrays without Using the **push()** Method
 
 Here's how to use the spread operator to easily add one or more members to an existing array:
 
@@ -53,7 +54,7 @@ Here's the output:
 ['onion', 'parsley', 'carrot', 'beetroot']
 ```
 
-## Convert a string to an array using the spread operator
+## Convert a String to an Array Using the Spread Operator
 
 Given a string, it's easy to spread it out into separate array items:
 
@@ -63,7 +64,7 @@ const arrayOfChars = [...greeting];
 console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
 ```
 
-## Copy either an object or an array into a separate one
+## Copy either an Object or an Array into a Separate One
 
 Here's how to copy an object into a completely separate object, using the spread operator.
 
@@ -101,4 +102,5 @@ Note that the spread operator only performs a shallow copy of the source array o
 There are many more tricks that you can perform with the spread operator. Some of them are really handy when you start working with a library such as React.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/14- Data Structures|JavaScript Data Structures]] | **Next**: [[Education/Career Paths/Web Development/1- Old/3- JavaScript/2- Programming with JS - Coursera/Module 3/16- JavaScript Modules|16- JavaScript Modules]]

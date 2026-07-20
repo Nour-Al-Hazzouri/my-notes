@@ -62,4 +62,5 @@ Merge Sort has a time complexity of O(n log n) in all cases (best, average, and 
 Therefore, the total time complexity is the product of these two factors: n * log n.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/5- Call Stacks|Call Stacks]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/4- Week 3/2- Shorts + Section/7- Recursion|Recursion]]

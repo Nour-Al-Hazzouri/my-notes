@@ -57,7 +57,7 @@ Incrementing or decrementing a variable by 1 is a very common operation in C, es
 - **Increment**: `++` (e.g., `x++`)
 - **Decrement**: `--` (e.g., `x--`)
 
-- **Equivalence**: 
+- **Equivalence**:
     - `x++` is equivalent to `x = x + 1` or `x += 1`.
     - `x--` is equivalent to `x = x - 1` or `x -= 1`.
 
@@ -72,4 +72,5 @@ counter--; // counter will be 0
 These operators can be placed before or after the variable (`++x` or `x++`), which affects when the increment/decrement occurs in an expression (prefix vs. postfix), but for simple standalone operations, the result is the same.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/1- Data Types|Data Types]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/3- Conditional Statements|Conditional Statements]]

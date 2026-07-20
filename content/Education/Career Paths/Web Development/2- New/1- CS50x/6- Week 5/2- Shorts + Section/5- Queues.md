@@ -119,4 +119,5 @@ Queues are widely used in computer science for various purposes, including:
 Queues are essential data structures characterized by their FIFO behavior. They provide a fair and ordered way to process elements, making them indispensable in various computing applications where the sequence of operations is critical. The choice between array-based and linked list-based implementations depends on factors such as the expected maximum size of the queue, memory constraints, and the complexity of implementation desired.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/4- Stacks|CS50x Short: Stacks]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/6- Hash Tables|CS50x Short: Hash Tables]]

@@ -34,11 +34,11 @@
         for row in reader:
             print(row[1])
 ```
-    
+
     Notice that the `csv` library is imported. Further, we created a `reader` that will hold the result of `csv.reader(file)`. The `csv.reader` function reads each row from the file, and in our code, we store the results in `reader`. `print(row[1])`, therefore, will print the language from the `favorites.csv` file.
     
 - You can improve your code as follows:
-    
+
 ```python
     # Stores favorite in a variable
     
@@ -255,7 +255,7 @@ Notice the arguments passed to `sorted`. The `key` argument allows you to tel
     for favorite, count in counts.most_common():
         print(f"{favorite}: {count}")
 ```
-    
+
 Notice how `counts = Counter()` enables the use of this imported `Counter` class from `collections`.
 
 - You can learn more about [sorted](https://docs.python.org/3/howto/sorting.html) in the [Python Documentation](https://docs.python.org/3/howto/sorting.html).
@@ -308,7 +308,6 @@ Notice how `counts = Counter()` enables the use of this imported `Counter` c
 
 Notice that we use `--` to write a comment in SQL.
 
-
 ## SELECT
 
 - For example, we can execute `SELECT COUNT(*) FROM favorites WHERE language = 'C';`. A count is presented.
@@ -343,14 +342,14 @@ Notice that we use `--` to write a comment in SQL.
 - We can imagine a database that we might want to create to catalog various TV shows. We could create a spreadsheet with columns like `title`, `star`, `star`, `star`, `star`, and more stars. A problem with this approach is that it has a lot of wasted space. Some shows may have one star. Others may have dozens.
 - We could separate our database into multiple sheets. We could have a `shows` sheet, a `stars` sheet, and a `people` sheet. On the `people` sheet, each person could have a unique `id`. On the `shows` sheet, each show could have a unique `id` too. On a third sheet called `stars` we could relate how each show has people for each show by having a `show_id` and `person_id`. While this is an improvement, this is not an ideal database.
 - IMDb offers a database of people, shows, writers, stars, genres, and ratings. Each of these tables is related to one another as follows:
-    
+
     ![six boxes that represent various sql tables arrows are drawn to each showing their many relationships with one another](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide025.png "imdb relationships")
-    
+
 - After downloading [`shows.db`](https://cdn.cs50.net/2024/fall/lectures/7/src7/imdb/shows.db), you can execute `sqlite3 shows.db` in your terminal window.
 - Let’s zero in on the relationship between two tables within the database called `shows` and `ratings`. The relationship between these two tables can be illustrated as follows:
-    
+
     ![two boxes one called shows and the other called ratings](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide032.png "imdb shows and ratings")
-    
+
 - To illustrate the relationship between these tables, we could execute the following command: `SELECT * FROM ratings LIMIT 10;`. Examining the output, we could execute `SELECT * FROM shows LIMIT 10;`.
 - Examining `shows` and `rating`, we can see these have a one-to-one relationship: One show has one rating.
 - To understand the database, upon executing `.schema` you will find not only each of the tables but the individual fields inside each of these fields.
@@ -358,7 +357,7 @@ Notice that we use `--` to write a comment in SQL.
 - As you can see, `show_id` exists in all of the tables. In the `shows` table, it is simply called `id`. This common field between all the fields is called a _key_. Primary keys are used to identify a unique record in a table. _Foreign keys_ are used to build relationships between tables by pointing to the primary key in another table. You can see in the schema of `ratings` that `show_id` is a foreign key that references `id` in `shows`.
 - By storing data in a relational database, as above, data can be more efficiently stored.
 - In _sqlite_, we have five data types, including:
-    
+
 ```text
       BLOB       -- binary large objects that are groups of ones and zeros
       INTEGER    -- an integer
@@ -391,7 +390,6 @@ Notice that we use `--` to write a comment in SQL.
 ```
 
 Notice that this query nests together two queries. An inner query is used by an outer query.
-
 
 ## JOINs
 
@@ -482,7 +480,7 @@ This results in a list of titles of shows wherein Steve Carell starred.
 - To understand how indexes can speed up our queries, run the following: `SELECT * FROM shows WHERE title = 'The Office';` Notice the time that displays after the query executes.
 - Then, we can create an index with the syntax `CREATE INDEX title_index ON shows (title);`. This tells `sqlite3` to create an index and perform some special under-the-hood optimization relating to this column `title`.
 - This will create a data structure called a _B Tree_, a data structure that looks similar to a binary tree. However, unlike a binary tree, there can be more than two child nodes.
-    
+
     ![one node at the top from which come four children and below that there are three children coming from one of the nodes and two from another two from another and three from another](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide039.png "b tree")
 
 - Further, we can create indexes as follows:
@@ -538,7 +536,6 @@ This results in a list of titles of shows wherein Steve Carell starred.
 
 Notice that `db = SQL("sqlite:///favorites.db")` provides Python the location of the database file. Then, the line that begins with `rows` executes SQL commands utilizing `db.execute`. Indeed, this command passes the syntax within the quotation marks to the `db.execute` function. We can issue any SQL command using this syntax. Further, notice that `rows` is returned as a list of dictionaries. In this case, there is only one result, one row, returned to the rows list as a dictionary.
 
-
 ## Race Conditions
 
 - Utilization of SQL can sometimes result in some problems.
@@ -550,7 +547,7 @@ Notice that `db = SQL("sqlite:///favorites.db")` provides Python the location 
 
 - Now, still considering the code above, you might be wondering what the `?` question marks do above. One of the problems that can arise in real-world applications of SQL is what is called an _injection attack_. An injection attack is where a malicious actor could input malicious SQL code.
 - For example, consider a login screen as follows:
-    
+
     ![harvard key login screen with username and password fields](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide051.png "harvard key login screen")
 
 - Without the proper protections in our own code, a bad actor could run malicious code. Consider the following:
@@ -581,4 +578,5 @@ In this lesson, you learned more syntax related to Python. Further, you learned 
 See you next time!
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/7- Week 6/3- Week 6 Section|Week 6 Section: Introduction to Python]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/8- Week 7/2- Week 7 Short|Week 7 Short: SQL]]

@@ -36,6 +36,7 @@ To address these challenges, Microsoft has implemented several remediation strat
 ### .NET Strong Name Assemblies
 
 The .NET framework identifies DLLs using Strong Name Assemblies with four components:
+
 - Assembly name (shared across versions)
 - Version number (differentiates iterations)
 - Culture (region/country designation)
@@ -44,6 +45,7 @@ The .NET framework identifies DLLs using Strong Name Assemblies with four compon
 ### Side-by-Side Assemblies
 
 Modern Windows applications often use side-by-side assemblies, which:
+
 - Contain XML manifest files with configuration data
 - Store shared manifests in the WinSxS folder
 - Keep private manifests within application directories

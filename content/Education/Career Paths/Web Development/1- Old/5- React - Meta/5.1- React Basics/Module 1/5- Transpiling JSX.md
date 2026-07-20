@@ -28,13 +28,13 @@ React components simplify building modular apps. Understanding how React, JSX, a
 - Babel transpiles JSX into plain JavaScript, making it browser-compatible.
 - Example:
     - **Input JSX**:
-        
+
 ```jsx
 function Heading(props) {
   return <h1>{props.title}</h1>;
 }
 ```
-        
+
     - **Transpiled JavaScript**:
         
 ```javascript
@@ -42,7 +42,7 @@ function Heading(props) {
   return React.createElement("h1", null, props.title);
 }
 ```
-        
+
     - `React.createElement()` accepts:
         1. The DOM element to render (e.g., `"h1"`).
         2. HTML attributes (e.g., `null` if none).
@@ -53,17 +53,17 @@ function Heading(props) {
 ### Rendering Transpiled Components
 
 - JSX render example:
-    
+
 ```jsx
 <Heading title="This is the heading text!" />
 ```
-    
+
 - Transpiled output:
-    
+
 ```javascript
 React.createElement(Heading, { title: "This is the heading text!" });
 ```
-    
+
 - The `React.createElement()` method handles rendering with properties like `Heading` and its attributes.
 
 ---
@@ -86,4 +86,5 @@ export default Example;
 This text illustrates how JSX is transpiled to plain JavaScript using tools like Babel. The process ensures compatibility and enables React components to function in browsers. Understanding this process is crucial for React development.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/4- Introduction to functional components|4- Introduction to functional components]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 1/6- The React Project Structure|6- The React Project Structure]]

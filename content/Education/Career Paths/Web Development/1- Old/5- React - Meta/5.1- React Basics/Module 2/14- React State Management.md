@@ -1,6 +1,7 @@
 # State Management in React: From Props to Context API
 
 ## Traditional Props Management
+
 When using props, data must flow through each component level - even if some components don't use it. Think of it like a mail system where each letter must go through every post office, even if that office doesn't need to process it.
 
 ```jsx
@@ -22,6 +23,7 @@ function Header({ userName, setUserName }) {
 ```
 
 ## Context API Implementation
+
 Context API provides a way to pass data through the component tree without manually passing props at every level.
 
 1. **Create the Context:**
@@ -64,6 +66,7 @@ const MealsList = () => {
 ```
 
 ## useReducer Example
+
 useReducer is like a traffic controller for state changes - it handles different types of state updates in a structured way.
 
 ```jsx
@@ -91,6 +94,7 @@ function App() {
 ```
 
 ## Simple Analogy
+
 - Props are like passing a note through multiple people to reach someone
 - Context is like a radio broadcast - anyone with a receiver (useContext) can tune in
 - useReducer is like a vending machine - put in a specific action, get a specific state change
@@ -98,4 +102,5 @@ function App() {
 Would you like me to expand on any of these concepts or provide more detailed examples?
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/13- Prop Drilling|Understanding Prop Drilling in React]] | **Next**: [[Education/Career Paths/Web Development/1- Old/5- React - Meta/5.1- React Basics/Module 2/15- Stateful Vs. Stateless Data|Stateful vs Stateless Components in React]]

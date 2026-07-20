@@ -1,16 +1,19 @@
 # Unit 16: Geometry
 
 ## Overview
+
 This unit focuses on geometry, the branch of mathematics that deals with shapes, sizes, positions, and dimensions of objects. Geometry provides a framework for understanding the spatial aspects of our world and connects mathematical concepts to visual and physical experiences. By developing geometric reasoning, students enhance their spatial visualization skills, logical thinking, and problem-solving abilities, which are essential for many fields including architecture, engineering, art, and design.
 
 ## Key Concepts
 
 ### Concept 1: Points, Lines, and Angles
+
 **Definition**: Points are locations in space, lines are straight paths that extend infinitely in both directions, and angles are formed by two rays sharing a common endpoint (vertex).
 
 **Clarification**: These fundamental geometric elements form the building blocks for more complex shapes and structures. Understanding their properties and relationships is essential for geometric reasoning. Points have no dimension, lines are one-dimensional, and angles measure the opening between two rays.
 
-**Example**: 
+**Example**:
+
 - A point is typically represented by a dot and labeled with a capital letter (e.g., point A).
 - A line can be named using two points on the line (e.g., line AB or ↔AB).
 - An angle can be measured in degrees, with a full circle being 360 degrees. A right angle measures 90 degrees, an acute angle measures less than 90 degrees, and an obtuse angle measures more than 90 degrees but less than 180 degrees.
@@ -82,11 +85,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 2: Polygons and Their Properties
+
 **Definition**: Polygons are closed, two-dimensional shapes formed by connecting straight line segments, where each line segment intersects exactly two others.
 
 **Clarification**: Polygons are classified by the number of sides they have (triangles have 3, quadrilaterals have 4, pentagons have 5, etc.). Each polygon has specific properties related to its sides, angles, diagonals, and symmetry. Understanding these properties helps students analyze and classify shapes.
 
-**Example**: 
+**Example**:
+
 - A triangle is a polygon with 3 sides. The sum of the angles in any triangle is 180 degrees.
 - A quadrilateral is a polygon with 4 sides. Special quadrilaterals include squares (all sides equal, all angles 90 degrees), rectangles (opposite sides equal, all angles 90 degrees), parallelograms (opposite sides parallel and equal), and rhombuses (all sides equal).
 
@@ -166,11 +171,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 3: Triangles and Their Classification
+
 **Definition**: Triangles are three-sided polygons that can be classified based on their sides (scalene, isosceles, equilateral) or angles (acute, right, obtuse).
 
 **Clarification**: The classification of triangles provides a framework for understanding their properties and relationships. Each type of triangle has specific characteristics that determine its behavior in geometric contexts. Triangles are particularly important in geometry because any polygon can be decomposed into triangles.
 
-**Example**: 
+**Example**:
+
 - Scalene triangle: All sides and angles are different (no congruence).
 - Isosceles triangle: At least two sides are equal, and the angles opposite those sides are also equal.
 - Equilateral triangle: All three sides are equal, and all three angles are equal (60 degrees each).
@@ -264,11 +271,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 4: Quadrilaterals and Their Classification
+
 **Definition**: Quadrilaterals are four-sided polygons that can be classified into various types based on their properties.
 
 **Clarification**: The hierarchy of quadrilaterals shows the relationships between different types, with more specific types inheriting the properties of more general types. Understanding these relationships helps students recognize patterns and make logical deductions about shapes.
 
-**Example**: 
+**Example**:
+
 - Parallelogram: Opposite sides are parallel and equal, opposite angles are equal.
 - Rectangle: A parallelogram with four right angles.
 - Rhombus: A parallelogram with all sides equal.
@@ -378,11 +387,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 5: Circles and Their Parts
+
 **Definition**: A circle is the set of all points in a plane that are a fixed distance (the radius) from a fixed point (the center).
 
 **Clarification**: Circles have unique properties that distinguish them from polygons. Key parts of a circle include the radius, diameter, circumference, chord, arc, and sector. Understanding these parts and their relationships is essential for solving problems involving circles.
 
-**Example**: 
+**Example**:
+
 - Radius: The distance from the center to any point on the circle.
 - Diameter: A line segment that passes through the center and has endpoints on the circle. The diameter is twice the radius.
 - Circumference: The distance around the circle, calculated as C = 2πr or C = πd.
@@ -451,11 +462,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 6: Symmetry and Transformations
+
 **Definition**: Symmetry involves the invariance of a shape under certain transformations, while transformations are operations that change the position, size, or orientation of shapes.
 
 **Clarification**: Common types of symmetry include reflection (line or mirror symmetry), rotation (rotational symmetry), and translation (sliding). Transformations include reflections, rotations, translations, and dilations. Understanding symmetry and transformations helps students analyze patterns and relationships in geometric figures.
 
-**Example**: 
+**Example**:
+
 - A square has four lines of symmetry (horizontal, vertical, and two diagonal) and rotational symmetry of order 4.
 - Reflecting a triangle over a line creates a mirror image of the original triangle.
 - Rotating a figure around a point by a specific angle creates a rotated version of the original figure.
@@ -553,11 +566,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ### Concept 7: Three-Dimensional Shapes
+
 **Definition**: Three-dimensional shapes, or solids, are geometric figures that have length, width, and height.
 
 **Clarification**: Common 3D shapes include prisms, pyramids, cylinders, cones, and spheres. Each has specific properties related to its faces, edges, vertices, and volume. Understanding 3D shapes helps students visualize and analyze objects in the physical world.
 
-**Example**: 
+**Example**:
+
 - A rectangular prism has 6 rectangular faces, 12 edges, and 8 vertices.
 - A cylinder has 2 circular bases and 1 curved surface.
 - A sphere is the set of all points in three-dimensional space that are a fixed distance (the radius) from a fixed point (the center).
@@ -686,10 +701,13 @@ This unit focuses on geometry, the branch of mathematics that deals with shapes,
 ```
 
 ## Summary
+
 Unit 16 develops students' understanding of geometry, focusing on the properties and relationships of shapes in two and three dimensions. Students learn about points, lines, and angles as fundamental geometric elements, explore the classification and properties of polygons (particularly triangles and quadrilaterals), study circles and their parts, investigate symmetry and transformations, and analyze three-dimensional shapes. These concepts provide a foundation for spatial reasoning and problem-solving in various contexts.
 
 ## Connection to Next Unit
+
 The geometric concepts learned in Unit 16 provide a foundation for Unit 17, which focuses on algebraic thinking. Geometry and algebra are interconnected branches of mathematics, with geometric problems often requiring algebraic methods for solution and algebraic concepts often having geometric interpretations. For example, the coordinate plane bridges geometry and algebra by allowing geometric shapes to be represented algebraically. Additionally, the logical reasoning developed through geometric proofs supports the analytical thinking needed for algebraic problem-solving. The spatial visualization skills developed in geometry will also be useful for understanding graphs and other visual representations of algebraic relationships.
 
 ---
+
 **Previous**: [[Education/Math/Arithmetic/Unit_15_Measurement_and_Data|Unit 15: Measurement and Data]] | **Next**: [[Education/Math/Arithmetic/Unit_17_Algebraic_Thinking|Unit 17: Algebraic Thinking]]

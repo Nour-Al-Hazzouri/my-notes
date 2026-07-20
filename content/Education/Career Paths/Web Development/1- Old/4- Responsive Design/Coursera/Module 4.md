@@ -1,6 +1,7 @@
 # Module 4: Frameworks and Bootstrap
 
 ## Table of Contents
+
 - [Frameworks](#frameworks)
 - [Introduction to Bootstrap](#introduction-to-bootstrap)
   - [Popular Sites Built with Bootstrap](#popular-sites-built-with-bootstrap)
@@ -15,10 +16,12 @@
 
 Frameworks have different meanings to:
 
-### Front-end developers
+### Front-end Developers
+
 - CSS, JavaScript, jQuery
 
-### Back-end developers
+### Back-end Developers
+
 - Routing, resources, security
 
 - Bootstrap (2011) is one of the first and most popular frameworks
@@ -38,6 +41,7 @@ Frameworks have different meanings to:
 - Emphasis on interfaces and layouts
 
 ### Popular Sites Built with Bootstrap
+
 - [nba.com](http://nba.com/)
 - [target.com](http://target.com/)
 - [walmart.com](http://walmart.com/)
@@ -83,4 +87,5 @@ Frameworks have different meanings to:
 - It is important to test often when using code that isn't yours.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/1- Old/4- Responsive Design/Coursera/Module 3|Module 3: Media Queries for Accessibility]]

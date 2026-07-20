@@ -55,4 +55,5 @@ Tries (prefix trees) are specialized tree-like data structures primarily used fo
 Each data structure has its strengths and weaknesses. The choice depends on the specific requirements of the application, particularly the frequency of insertion, deletion, and lookup operations, and constraints on memory usage and the need for sorted data.
 
 ---
+
 **Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/7- Tries|CS50x Short: Tries]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/6- Week 5/2- Shorts + Section/CS50 Week 5_ Data Structures - Comprehensive Summary|CS50 Week 5: Data Structures - Comprehensive Summary]]
