@@ -117,4 +117,5 @@ Initial Release- Quartz V4 Setup
 	- Vault-wide changes using an Obsidian Linter plugin
 	- [[How to Build a Powerful Network of Connections - With Samer Bechara]]: Fixed a formatting issue with $ - $ causing unintentional LaTeX formatting
 	- [[17- Recursion]]: Fixed an issue where the summarized PDF was for webpack instead of recursion
+	- Added PDF references for all CS50x notes, and removed external links and img references.
 

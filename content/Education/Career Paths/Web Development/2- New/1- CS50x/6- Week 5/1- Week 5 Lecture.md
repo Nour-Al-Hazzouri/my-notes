@@ -1,5 +1,7 @@
 # Lecture 5
 
+📄 [[../Media/Lecture 5 - CS50x 2025.pdf|Lecture 5 PDF]]
+
 *   [Welcome!](#welcome)
 *   [Data Structures](#data-structures)
 *   [Queues](#queues)
@@ -72,7 +74,7 @@ Notice that an array called people is of type `person`. The `CAPACITY` is how hi
 
 ## Jack Learns the Facts
 
-*   We watched a video called [Jack Learns the Facts](https://www.youtube.com/watch?v=ItAG3s6KIEI) by Professor Shannon Duvall of Elon University.
+*   We watched a video called Jack Learns the Facts by Professor Shannon Duvall of Elon University.
 
 ## Resizing Arrays
 

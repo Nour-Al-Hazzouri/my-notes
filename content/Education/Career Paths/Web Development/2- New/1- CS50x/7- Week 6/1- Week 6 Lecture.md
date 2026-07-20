@@ -1,5 +1,7 @@
 # Lecture 6 - Python
 
+📄 [[../Media/Lecture 6 - CS50x 2025.pdf|Lecture 6 PDF]]
+
 ## Table of Contents
 
 - [Welcome!](#welcome)
@@ -100,7 +102,7 @@ The above code illustrates why higher-level languages exist: To simplify and all
 
 However, speed is a tradeoff. Because C allows you, the programmer, to make decisions about memory management, it may run faster than Python – depending on your code. While C only runs your lines of code, Python runs all the code that comes under the hood with it when you call Python's built-in functions.
 
-You can learn more about functions in the [Python documentation](https://docs.python.org/3/library/functions.html).
+You can learn more about functions in the Python documentation.
 
 ## Filter
 
@@ -226,7 +228,7 @@ Notice how the curly braces allow for the `print` function to interpolate the `a
 
 - Functions in C like `fread`, `fwrite`, and `printf` use positional arguments, where you provide arguments with commas as separators. You, the programmer, must remember what argument is in which position. These are referred to as positional arguments.
 - In Python, named parameters allow you to provide arguments without regard to positionality.
-- You can learn more about the parameters of the `print` function in the [documentation](https://docs.python.org/3/library/functions.html#print).
+- You can learn more about the parameters of the `print` function in the documentation.
 
 Accessing that documentation, you may see the following:
 
@@ -537,9 +539,9 @@ print(f"t: {t}")
 
 Notice how much shorter this program is than its counterpart in C.
 
-In this class, we will only scratch the surface of Python. Therefore, the [Python documentation](https://docs.python.org) will be of particular importance as you continue.
+In this class, we will only scratch the surface of Python. Therefore, the Python documentation will be of particular importance as you continue.
 
-You can learn more about string methods in the [Python documentation](https://docs.python.org/3/library/stdtypes.html#string-methods).
+You can learn more about string methods in the Python documentation.
 
 ## Loops
 
@@ -715,8 +717,6 @@ Notice that the above code repeatedly tries to get the correct type of data, pro
 
 Recall a few weeks ago our challenge of building three blocks on top of one another, like in Mario.
 
-![Mario blocks](https://cs50.harvard.edu/x/notes/6/cs50Week6Slide073.png)
-
 In Python, we can implement something akin to this as follows:
 
 ```python
@@ -746,8 +746,6 @@ Notice how the while loop is used to obtain the height. Once a height greater th
 
 Consider the following image:
 
-![Mario Question Marks](https://cs50.harvard.edu/x/notes/6/cs50Week6Slide075.png)
-
 In Python, we could implement by modifying your code as follows:
 
 ```python
@@ -770,8 +768,6 @@ Notice that we can utilize `*` to multiply the print statement to repeat `4` tim
 
 What about a large block of bricks?
 
-![Mario Grid](https://cs50.harvard.edu/x/notes/6/cs50Week6Slide078.png)
-
 To implement the above, you can modify your code as follows:
 
 ```python
@@ -784,7 +780,7 @@ for i in range(3):
 
 Notice how one `for` loop exists inside another. The `print` statement adds a new line at the end of each row of bricks.
 
-You can learn more about the `print` function in the [Python documentation](https://docs.python.org/3/library/functions.html#print).
+You can learn more about the `print` function in the Python documentation.
 
 ## Lists
 
@@ -826,9 +822,9 @@ print(f"Average: {average}")
 
 Notice that this code utilizes the built-in `append` method for lists.
 
-You can learn more about lists in the [Python documentation](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range).
+You can learn more about lists in the Python documentation.
 
-You can also learn more about `len` in the [Python documentation](https://docs.python.org/3/library/functions.html#len).
+You can also learn more about `len` in the Python documentation.
 
 ## Searching and Dictionaries
 
@@ -928,7 +924,7 @@ Notice that the dictionary is implemented using curly braces. Then, the statemen
 
 Python has done their best to get to constant time using their built-in searches.
 
-You can learn more about dictionaries in the [Python documentation](https://docs.python.org/3/library/stdtypes.html#dict).
+You can learn more about dictionaries in the Python documentation.
 
 ## Command-Line Arguments
 
@@ -946,7 +942,7 @@ else:
 
 Notice that `argv[1]` is printed using a formatted string, noted by the `f` present in the `print` statement.
 
-You can learn more about the `sys` library in the [Python documentation](https://docs.python.org/3/library/sys.html).
+You can learn more about the `sys` library in the Python documentation.
 
 ## Exit Status
 
@@ -1020,7 +1016,7 @@ Notice this code is quite similar to our prior iteration but with `csv.DictWrit
 ## Third-Party Libraries
 
 - One of the advantages of Python is its massive user base and similarly large number of third-party libraries.
-- You can install the CS50 Library on your own computer by typing `pip install cs50`, provided you have [Python](https://python.org/) installed.
+- You can install the CS50 Library on your own computer by typing `pip install cs50`, provided you have Python installed.
 - Considering other libraries, David demoed the use of `cowsay` and `qrcode`.
 
 ## Summing Up

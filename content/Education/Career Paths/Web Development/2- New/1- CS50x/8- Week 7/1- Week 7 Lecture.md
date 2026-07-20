@@ -1,3 +1,7 @@
+# Lecture 7 - CS50x 2025
+
+📄 [[../Media/Lecture 7 - CS50x 2025.pdf|Lecture 7 PDF]]
+
 ## Welcome!
 
 - In previous weeks, we introduced you to Python, a high-level programming language that utilized the same building blocks we learned in C. However, we introduced this new language not for the purpose of learning “just another language.” Instead, we do so because some tools are better for some jobs and not so great for others!
@@ -13,7 +17,7 @@
 - If you look at a `csv` file, you’ll notice that the file is flat in that all of our data is stored in a single table represented by a text file. We call this form of data a _flat-file database_.
 - All data is stored row by row. Each column is separated by a comma or another value.
 - Python comes with native support for `csv` files.
-- First, download [favorites.csv](https://cdn.cs50.net/2023/fall/lectures/7/src7/favorites/favorites.csv) and upload it to your file explorer inside [cs50.dev](https://cs50.dev/). Second, examining this data, notice that the first row is special in that it defines each column. Then, each record is stored row by row.
+- First, download favorites.csv and upload it to your file explorer inside cs50.dev. Second, examining this data, notice that the first row is special in that it defines each column. Then, each record is stored row by row.
 - In your terminal window, type `code favorites.py` and write code as follows:
 
 ```python
@@ -258,7 +262,7 @@ Notice the arguments passed to `sorted`. The `key` argument allows you to tel
 
 Notice how `counts = Counter()` enables the use of this imported `Counter` class from `collections`.
 
-- You can learn more about [sorted](https://docs.python.org/3/howto/sorting.html) in the [Python Documentation](https://docs.python.org/3/howto/sorting.html).
+- You can learn more about sorted in the Python Documentation.
 
 ## Relational Databases
 
@@ -343,12 +347,8 @@ Notice that we use `--` to write a comment in SQL.
 - We could separate our database into multiple sheets. We could have a `shows` sheet, a `stars` sheet, and a `people` sheet. On the `people` sheet, each person could have a unique `id`. On the `shows` sheet, each show could have a unique `id` too. On a third sheet called `stars` we could relate how each show has people for each show by having a `show_id` and `person_id`. While this is an improvement, this is not an ideal database.
 - IMDb offers a database of people, shows, writers, stars, genres, and ratings. Each of these tables is related to one another as follows:
 
-    ![six boxes that represent various sql tables arrows are drawn to each showing their many relationships with one another](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide025.png "imdb relationships")
-
-- After downloading [`shows.db`](https://cdn.cs50.net/2024/fall/lectures/7/src7/imdb/shows.db), you can execute `sqlite3 shows.db` in your terminal window.
+- After downloading `shows.db`, you can execute `sqlite3 shows.db` in your terminal window.
 - Let’s zero in on the relationship between two tables within the database called `shows` and `ratings`. The relationship between these two tables can be illustrated as follows:
-
-    ![two boxes one called shows and the other called ratings](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide032.png "imdb shows and ratings")
 
 - To illustrate the relationship between these tables, we could execute the following command: `SELECT * FROM ratings LIMIT 10;`. Examining the output, we could execute `SELECT * FROM shows LIMIT 10;`.
 - Examining `shows` and `rating`, we can see these have a one-to-one relationship: One show has one rating.
@@ -481,8 +481,6 @@ This results in a list of titles of shows wherein Steve Carell starred.
 - Then, we can create an index with the syntax `CREATE INDEX title_index ON shows (title);`. This tells `sqlite3` to create an index and perform some special under-the-hood optimization relating to this column `title`.
 - This will create a data structure called a _B Tree_, a data structure that looks similar to a binary tree. However, unlike a binary tree, there can be more than two child nodes.
 
-    ![one node at the top from which come four children and below that there are three children coming from one of the nodes and two from another two from another and three from another](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide039.png "b tree")
-
 - Further, we can create indexes as follows:
 
 ```sql
@@ -509,7 +507,7 @@ This results in a list of titles of shows wherein Steve Carell starred.
 ```
 
 - Similar to previous uses of the CS50 Library, this library will assist with the complicated steps of utilizing SQL within your Python code.
-- You can read more about the CS50 Library’s SQL functionality in the [documentation](https://cs50.readthedocs.io/libraries/cs50/python/#cs50.SQL).
+- You can read more about the CS50 Library’s SQL functionality in the documentation.
 - Using our new knowledge of SQL, we can now leverage Python alongside.
 - Modify your code for `favorites.py` as follows:
 
@@ -547,8 +545,6 @@ Notice that `db = SQL("sqlite:///favorites.db")` provides Python the location 
 
 - Now, still considering the code above, you might be wondering what the `?` question marks do above. One of the problems that can arise in real-world applications of SQL is what is called an _injection attack_. An injection attack is where a malicious actor could input malicious SQL code.
 - For example, consider a login screen as follows:
-
-    ![harvard key login screen with username and password fields](https://cs50.harvard.edu/x/notes/7/cs50Week7Slide051.png "harvard key login screen")
 
 - Without the proper protections in our own code, a bad actor could run malicious code. Consider the following:
 

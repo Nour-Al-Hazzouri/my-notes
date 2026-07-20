@@ -1,5 +1,7 @@
 # Lecture 1 - CS50x 2025
 
+📄 [[../Media/Lecture 1 - CS50x 2025.pdf|Lecture 1 PDF]]
+
 ## Table of Contents
 
 * [Welcome!](#welcome)
@@ -36,10 +38,8 @@
 * The integrated development environment (IDE) that is utilized for this course is _Visual Studio Code_, affectionately referred to as VS Code, which can be accessed via that same URL or simply as VS Code.
 * One of the most important reasons we utilize VS Code is that it has all the software required for the course already pre-loaded on it. This course and the instructions herein were designed with VS Code in mind.
 * Manually installing the necessary software for the course on your own computer is a cumbersome headache. Best always to utilize VS Code for assignments in this course.
-* You can open VS Code at [cs50.dev](https://cs50.dev).
+* You can open VS Code at cs50.dev.
 * The compiler can be divided into a number of regions:
-
-    ![VS Code Screenshot](https://private-us-east-1.manuscdn.com/sessionFile/oQGW8tFgddLlZfbWwuNws5/sandbox/PBt6HJTQckrGLJkpjAoGfm-images_1745149306543_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL3ZzY29kZV9zY3JlZW5zaG90.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvb1FHVzh0RmdkZExsWmZiV3d1TndzNS9zYW5kYm94L1BCdDZISlRRY2tyR0xKa3BqQW9HZm0taW1hZ2VzXzE3NDUxNDkzMDY1NDNfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMM1p6WTI5a1pWOXpZM0psWlc1emFHOTAucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=qrQzwfECvFQLfD2FZKIw9hz6xDqXiWfZ38osTPsM6jPqO8m0MDfaLpoTSO8KmvLYCmC47rHOEJA2wg~Q4BakTD~6hyLHh7GTURpuGz6G8fI~p7lNkxgU~MKRwThfGMbQ~DVuPPYAQ-6sDQ4RSAJsBJyc~OLMlmeLcprc9DB1FkluBn9nzhL6jxKmyiMjEzpw5rpTYPtIZCk2eKQsdXTjtRqV7~iWpJLMl8Bqs4V8W1moPh30G~HzK0FkNv-AKIyndQLPKlkStKXCU9mEitQWdp2NjTNunGAHxRF4xvvOw-gkfqfvEPRaRsUu4o58c4Y4k-r3IXqMi~GNjQkZV14kyQ__)
 
     Notice that there is a _file explorer_ on the left side where you can find your files. Further, notice that there is a region in the middle called a _text editor_ where you can edit your program. Finally, there is a `command line interface`, known as a _CLI_, _command line_, or _terminal window_, where we can send commands to the computer in the cloud.
 
@@ -116,13 +116,13 @@
 * In your terminal window, run `make hello`. Typing `./hello` in the terminal window, how did your program change? This `\` character is called an _escape character_ that tells the compiler that `\n` is a special instruction to create a line break.
 * There are other escape characters you can use:
 
-    ```
-    \n  create a new line
-    \r  return to the start of a line
-    \"  print a double quote
-    \`  print a single quote
-    \\  print a backslash
-    ```
+```
+\n  create a new line
+\r  return to the start of a line
+\"  print a double quote
+\`  print a single quote
+\\  print a backslash
+```
 
 * Restore your program to the following:
 
@@ -160,7 +160,7 @@
 
     Notice how we are including another library called `cs50.h`.
 
-* You can read about the CS50 library at [Manual Pages](https://manual.cs50.io/).
+* You can read about the CS50 library at Manual Pages.
 * The CS50 library provides you with new functions like `get_string` and other functions that we'll soon see.
 
 ## Hello, You
@@ -520,8 +520,6 @@
 * The following will help you orient toward working on a problem set for this class in general: How does one approach a computer science-related problem?
 * Imagine we wanted to emulate the visual of the game Super Mario Bros. Considering the four question blocks pictured, how could we create code that roughly represents these four horizontal blocks?
 
-    ![Mario Blocks](https://private-us-east-1.manuscdn.com/sessionFile/oQGW8tFgddLlZfbWwuNws5/sandbox/PBt6HJTQckrGLJkpjAoGfm-images_1745149306552_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL21hcmlvX2Jsb2Nrcw.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvb1FHVzh0RmdkZExsWmZiV3d1TndzNS9zYW5kYm94L1BCdDZISlRRY2tyR0xKa3BqQW9HZm0taW1hZ2VzXzE3NDUxNDkzMDY1NTJfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMjFoY21sdlgySnNiMk5yY3cucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=umm2x7xP4J1uH6-IqajdhdquvNe5skXQUjKkc7iFj73g1~mZzOI3m6HPPGZFJDoG3SAPmYTL~iGVTxfiP11sa1DueBT5AOxczFtjI8FKiP2Kdz0YvQql0JrMTEdZsgyAKvTpw~~pTSXhN87wtUkcPuoxH~qGcknUsOyVI6E-0t~2P0iuXORVdwaXaS0Nto83PBjZvZaCu8sCDbdoJXI98kSCBdGqmMKqwqDBBz5KVELTSnmzOYMBCnS8-Km1Ui2nu0-BgPQczfEciekgAUMh6Cr7CcjJfIAtQc5-OZ7wD4AducqDjBzNt0-lUT21etTeoS-0pojXa0kP1pivIbUPQg__)
-
 * In the terminal window, type `code mario.c` and code as follows:
 
     ```c
@@ -543,8 +541,6 @@
 
 * Similarly, we can apply this same logic to create three vertical blocks:
 
-    ![Mario Vertical Bricks](https://private-us-east-1.manuscdn.com/sessionFile/oQGW8tFgddLlZfbWwuNws5/sandbox/PBt6HJTQckrGLJkpjAoGfm-images_1745149306552_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL21hcmlvX3ZlcnRpY2FsX2JyaWNrcw.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvb1FHVzh0RmdkZExsWmZiV3d1TndzNS9zYW5kYm94L1BCdDZISlRRY2tyR0xKa3BqQW9HZm0taW1hZ2VzXzE3NDUxNDkzMDY1NTJfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMjFoY21sdlgzWmxjblJwWTJGc1gySnlhV05yY3cucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Csl9vIhGkZ7tRDEdTjhvBlDKX~4YRrKSr~XBuvlnIwR5VO9L6KwtN3XhO3Ynru9PnTXJvdlYnToDuTWOW1Qxo3vanSOmzOzu-T3t0el8mKMuHplnLYcP50LxizO8UAidEv5pugFpIfP0pGfLz3A8apmoI9ga2qMYCN-Vetuw0zOtnL1GC1D2ujykEQdeblUfPK93osIl2T1IwiDfg0kc7jo5MgHR~zfgA~waYtrgZMWikkqqqMyRPKdcaSjlQlwbJQLeJkJIENkwnAs4vxfiBW~Hcg3BXDNrl4ofgAyScEvS44ZHNyjBNyUvLvX-nAew4NoPcpxdtKkfu7GHThRFtw__)
-
 * To accomplish this, modify your code as follows:
 
     ```c
@@ -564,8 +560,6 @@
     Notice how three vertical bricks are printed using a loop.
 
 * What if we wanted to combine these ideas to create a three-by-three group of blocks?
-
-    ![Mario Grid Bricks](https://private-us-east-1.manuscdn.com/sessionFile/oQGW8tFgddLlZfbWwuNws5/sandbox/PBt6HJTQckrGLJkpjAoGfm-images_1745149306552_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL21hcmlvX2dyaWRfYnJpY2tz.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvb1FHVzh0RmdkZExsWmZiV3d1TndzNS9zYW5kYm94L1BCdDZISlRRY2tyR0xKa3BqQW9HZm0taW1hZ2VzXzE3NDUxNDkzMDY1NTJfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMjFoY21sdlgyZHlhV1JmWW5KcFkydHoucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=a~SIAi3bZL0CBItyTx~lZr8L-wEAKMlOpkNfytvUHs8A-rOJw6lK8tvDwqAomJaDA1G-lDij4xbIa4PTfWt9ckuGm-CGtx~ouogE1MSzclqNcw4hNJSYPzBLt34caM9EObN1x4TxqE4WQVwOLUy2sjAqHDbE7DXRbb2BRCe6Z-3IwL777Y0ldZXKZ4F7VEZlLKK0INYQJRQtl4GrdIEokzKqMD9GGrZrIPXIKL1WbUV1GLaxO9S-q17ffgOqRMudOmoqJUeW6NCXHGY7FSiVkkZ5FS1POGYqs~sXUZxsAGevm-Li9fI2favsMwveAv5jQlwFMcMLKM1Ov9MNnd4qlg__)
 
 * We can follow the logic above, combining the same ideas:
 
@@ -845,4 +839,4 @@ See you next time!
 
 ---
 
-**Previous**: [[Education/Career Paths/Web Development/2- New/1- CS50x/1- Week 0/0- Week 0 Notes|Lecture 0 - CS50x 2025]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/1- Data Types|Data Types]]
+**Previous**: [[0- Week 0 Notes|Lecture 0 - CS50x 2025]] | **Next**: [[Education/Career Paths/Web Development/2- New/1- CS50x/2- Week 1/2- Shorts + Section/1- Data Types|Data Types]]

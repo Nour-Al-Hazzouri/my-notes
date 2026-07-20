@@ -1,5 +1,7 @@
 # CS50 Week 9 Lecture - Flask Web Development
 
+📄 [[../Media/Lecture 9 - CS50x 2025.pdf|Lecture 9 PDF]]
+
 ## Welcome!
 
 In previous weeks, you have learned numerous programming languages, techniques, and strategies. Indeed, this class has been far less of a _C class_ or _Python class_ and far more of a _programming class_, such that you can go on to follow future trends.
@@ -38,7 +40,7 @@ This week, we introduce the ability to engage with _routes_ such as `https://www
 
 ### Getting Started with Flask
 
-You can run Flask by executing `flask run` in your terminal window in [cs50.dev](https://cs50.dev/).
+You can run Flask by executing `flask run` in your terminal window in cs50.dev.
 
 To do so, you will need a file called `app.py` and another called `requirements.txt`.
 
@@ -64,7 +66,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
     return "hello, world"
@@ -82,7 +83,6 @@ We can also create code that implements HTML:
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
@@ -124,7 +124,6 @@ Notice the double `{{ name }}` that is a placeholder for something that will be 
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
@@ -195,11 +194,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/greet")
 def greet():
@@ -318,11 +315,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/greet", methods=["POST"])
 def greet():
@@ -346,7 +341,6 @@ Still, this code can be advanced further by utilizing a single route for both `g
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -389,7 +383,6 @@ Still, there is a bug in this code. With our new implementation, when someone ty
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -454,11 +447,9 @@ SPORTS = [
     "Ultimate Frisbee"
 ]
 
-
 @app.route("/")
 def index():
     return render_template("index.html", sports=SPORTS)
-
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -574,11 +565,9 @@ SPORTS = [
     "Ultimate Frisbee"
 ]
 
-
 @app.route("/")
 def index():
     return render_template("index.html", sports=SPORTS)
-
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -600,7 +589,6 @@ def register():
 
     # Confirm registration
     return redirect("/registrants")
-
 
 @app.route("/registrants")
 def registrants():
@@ -652,7 +640,7 @@ Notice that:
 
 Notice that `{% for name in registrants %}...{% endfor %}` will iterate through each of the registrants. Very powerful to be able to iterate on a dynamic web page!
 
-Finally, create a folder called `static` in the same folder as `app.py`. There, upload the following file of a [cat](https://cdn.cs50.net/2024/fall/lectures/9/src9/froshims4/static/cat.jpg).
+Finally, create a folder called `static` in the same folder as `app.py`. There, upload the following file of a cat.
 
 ### Security Considerations
 
@@ -668,7 +656,7 @@ Just as we have seen how Python can interface with a SQL database, we can combin
 
 To implement this, you will need to take a number of steps.
 
-First, download the following [SQL database](https://cdn.cs50.net/2024/fall/lectures/9/src9/froshims4/froshims.db) into your `froshims` folder.
+First, download the following SQL database into your `froshims` folder.
 
 Execute in the terminal `sqlite3 froshims.db` and type `.schema` to see the contents of the database file. Further type `SELECT * FROM registrants;` to learn about the contents. You'll notice that there are currently no registrations in the file.
 
@@ -701,11 +689,9 @@ SPORTS = [
     "Ultimate Frisbee"
 ]
 
-
 @app.route("/")
 def index():
     return render_template("index.html", sports=SPORTS)
-
 
 @app.route("/deregister", methods=["POST"])
 def deregister():
@@ -715,7 +701,6 @@ def deregister():
     if id:
         db.execute("DELETE FROM registrants WHERE id = ?", id)
     return redirect("/registrants")
-
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -739,7 +724,6 @@ def register():
 
     # Confirm registration
     return redirect("/registrants")
-
 
 @app.route("/registrants")
 def registrants():
@@ -917,11 +901,9 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-
 @app.route("/")
 def index():
     return render_template("index.html", name=session.get("name"))
-
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -929,7 +911,6 @@ def login():
         session["name"] = request.form.get("name")
         return redirect("/")
     return render_template("login.html")
-
 
 @app.route("/logout")
 def logout():
@@ -969,12 +950,10 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-
 @app.route("/")
 def index():
     books = db.execute("SELECT * FROM books")
     return render_template("books.html", books=books)
-
 
 @app.route("/cart", methods=["GET", "POST"])
 def cart():
@@ -1038,11 +1017,9 @@ app = Flask(__name__)
 
 db = SQL("sqlite:///shows.db")
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/search")
 def search():
@@ -1111,11 +1088,9 @@ app = Flask(__name__)
 
 db = SQL("sqlite:///shows.db")
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/search")
 def search():
@@ -1234,11 +1209,9 @@ app = Flask(__name__)
 
 db = SQL("sqlite:///shows.db")
 
-
 @app.route("/")
 def index():
     return render_template("index.html")
-
 
 @app.route("/search")
 def search():
@@ -1277,12 +1250,12 @@ In this lesson, you learned how to utilize Python, SQL, and Flask to create web 
 
 ### Resources
 
-- [Flask Documentation](https://flask.palletsprojects.com/)
-- [Flask Session Documentation](https://flask.palletsprojects.com/en/stable/api/#flask.session)
-- [AJAX Documentation](https://api.jquery.com/category/ajax/)
-- [JSON Documentation](https://www.json.org/json-en.html)
+- Flask Documentation
+- Flask Session Documentation
+- AJAX Documentation
+- JSON Documentation
 
-See you next time for our final lecture for this term at [Sanders Theatre](https://websites.harvard.edu/memhall/home-2/buildings/sanders-theatre/)!
+See you next time for our final lecture for this term at Sanders Theatre!
 
 ---
 

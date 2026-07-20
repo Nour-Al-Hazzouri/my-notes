@@ -1,5 +1,7 @@
 # Lecture 3 - CS50x 2025
 
+📄 [[../Media/Lecture 3 - CS50x 2025.pdf|Lecture 3 PDF]]
+
 - [Welcome!](#welcome)
 - [Linear Search](#linear-search)
 - [Binary Search](#binary-search)
@@ -20,8 +22,6 @@
 - Also, we are going to consider the efficiency of these algorithms. Indeed, we are going to be building upon our understanding of how to use some of the concepts we discussed last week in building algorithms.
 - Recall back to earlier in the course when we introduced the following graph:
 
-![Algorithm Efficiency Graph](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL2FsZ29yaXRobV9lZmZpY2llbmN5X2dyYXBoXzE.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMkZzWjI5eWFYUm9iVjlsWm1acFkybGxibU41WDJkeVlYQm9YekUucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Gj2Zy~7YwS3PAgC~a4nE4uFwpbzfBlhwwW0m-EfhP0zsIKHcPNTQcKxxKwsp5fBzKkYq9la7~S6umSNgpMzSYNiOq2YTRhFM5SzBBQ~y-GX9Wvbc69zOVC1zh3wbqQVwrvD02miWxZHtlhHjwU6fENXOFI8LZ8zMmziYm4LWDusDwZnZu6gjdUfCLGtHTZIVEUyKihRLAvN5hB~NavSteeYHAoNuA6uPIsEicoBVX9NgxduSiPrWbXVxXe4zUmHxKeA0bYpqmkmOHeqHo7Q-Julw5zfKDRnvs8Usv2GbO~xOXmqpr9JF4WlZFv0jMmUqloDmnwp~lMRZGEhqXDwp-g__)
-
 - As we step into this week, you should consider how the way an algorithm works with a problem may determine the time it takes to solve a problem! Algorithms can be designed to be more and more efficient to a limit.
 - Today, we will focus on the design of algorithms and how to measure their efficiency.
 
@@ -30,13 +30,9 @@
 - Recall that last week, you were introduced to the idea of an _array_, blocks of memory that are consecutive: side-by-side with one another.
 - You can metaphorically imagine an array like a series of seven red lockers as follows:
 
-![Red Lockers Array](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL3JlZF9sb2NrZXJzX2FycmF5.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMM0psWkY5c2IyTnJaWEp6WDJGeWNtRjUucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=VysGJLYAKO3vlPQM~N4IlB~wcez~P2EoOCRf2B9OzHW3rbqpZjMC2tMaJ3LZAI6TmaY9p68NrWDUFWTe82YddeW~MGr2Bu~eFLMUcFMFDuAiyvVEnC6O0n7XGkoFjV6cWAZ8w1lBqfS-JtLoeo99elPiZBO7Ka86ttljaWwUKj8ux67ED0Zap9uMBBGQ6CNpazNCoWVHQZJKneRmG-EvGKme9y1LqOyKtT~RICcavCsdrBWE6kQeG~FSAGSFgkOpJISlkN-lCT94TH~egyNLRaAfhyxezOe7kiCR5DImfvo0bhoeZXoiaWbjnSDD5ZYx87R~Iy6l8hKRnhoSfzMzzg__)
-
 - The far-left position is called _location 0_ or _the beginning of the array_. The far-right position is _location 7_ or _the end of the array_.
 - We can imagine that we have an essential problem of wanting to know, "Is the number 50 inside an array?" A computer must look at each locker to be able to see if the number 50 is inside. We call this process of finding such a number, character, string, or other item _searching_.
 - We can potentially hand our array to an algorithm, wherein our algorithm will search through our lockers to see if the number 50 is behind one of the doors, returning the value `true` or `false`.
-
-![Algorithm Diagram](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL2FsZ29yaXRobV9kaWFncmFt.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMkZzWjI5eWFYUm9iVjlrYVdGbmNtRnQucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzY3MjI1NjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HRhlsy0LEqCb97xK17h76VwiVtL9T6YDlXGUc7ZE4GxhE9sB37dcc7fk6-hLwEor0t8maMplUKPS0blF6aMsjKERbgmegn-y36JORtpxrRN9UAs3JJNckJbO9a4X43sbZ9Y1hduXh8zAYZhWhdjvvxLvn9mHtwJEU9IroWzMV5-QiHJFo88J~h2cRWaoFiOosjau1gs3T5AFgdq2w~K74utTvAjx6~HgcRTnfBKUobWG0pdYrY6mOaSTXAhxLHqQCQmDSXqWR024l-VdIhP4kmbobtNNvTIB8Yan8Liy9X8VKL9dMEacrWedflKG5VQ-fR-p~xZQ8ESHE0f7vHY2GA__)
 
 - We can imagine various instructions we might provide our algorithm to undertake this task as follows:
 
@@ -95,8 +91,6 @@ Notice that by looking at this approximation of code, you can nearly imagine wha
 
 - You can consider how much time it takes an algorithm to solve a problem.
 - _running time_ involves an analysis using _big O_ notation. Take a look at the following graph:
-
-![Big O Notation Graph](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL2JpZ19vX25vdGF0aW9uX2dyYXBo.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMMkpwWjE5dlgyNXZkR0YwYVc5dVgyZHlZWEJvLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=bsiWYKNL05LjrpgprzlSBGwstyWBnYbbVhFT1-uPn6HmF7BWj8fraLexFQqvsoz9jTmfhs5wpdD1O-glEJx4~vcnnoMjgRVaqSYrkDRGuW~2qi24cqajkAuL12yFA4GvqenhQaFh7GwMM8fVh1tQ0cuwQHQC5Nr52Dj788JFpbH3dMCZf7bj8z6LGhHgGooME3J7~sZHc35hNC0MmJMR7-5cHVn~L7bGwbE~e3iVioXKGOJy7CGmAIDn3oV8FY9pCr8-iqgiS7xPzZB5c-iXLD5bSHqMdYg883qRz78LZ6pqvo28X7v2V79TdBuoKhkV6F21e0ovmwdHR~UHZkTOJw__)
 
 - Rather than being ultra-specific about the mathematical efficiency of an algorithm, computer scientists discuss efficiency in terms of _the order of_ various running times.
 - In the above graph, the first algorithm is O(n) or _in the order of n_. The second is in O(n) as well. The third is in O(log n).
@@ -182,7 +176,7 @@ Notice that we cannot utilize `==` as in our previous iteration of this program.
 
 - Indeed, running this code allows us to iterate over this array of strings to see if a certain string is within it. However, if you see a segmentation fault, where a part of memory was touched by your program that it should not have access to, do make sure you have `i < 6` noted above instead of `i < 7`.
 
-- You can learn more about `strcmp` at the [CS50 Manual Pages](https://manual.cs50.io/).
+- You can learn more about `strcmp` at the CS50 Manual Pages.
 
 ## phonebook.c
 
@@ -292,8 +286,6 @@ _Sorting_ is the act of taking an unsorted list of values and transforming this 
 - _Selection sort_ is one such sorting algorithm.
 - We can represent an array as follows:
 
-![Sorting Array Visualization](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL3NvcnRpbmdfYXJyYXlfdmlzdWFsaXphdGlvbg.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMM052Y25ScGJtZGZZWEp5WVhsZmRtbHpkV0ZzYVhwaGRHbHZiZy5wbmciLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3NjcyMjU2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=LhoslTLvajxAg5MiHiig1FiByzZHIOzcBKCJ35R47guhj-0R5gNoAy~dXLLJ9Lf6WTAPst~9rjFe8-EFNDzbfsBE2Vba2-4KOO9M1G0iIpJOhcJHf4atoRUTL0x9FstgjE~g2CJGUvwuJao4ETMy14i7amjW6yqWHyUD0DTjfO8LHv9B-BupgBZSN-pcqwqEc99zXLoNtOclI-o9wPUPyyN~AfaQv2ang-162f6vSqDXRCDwYnr74-YJZpH5ULqenKSeTutAJSUaED-7bZnd5OcHehHtePvcc~5vmhpAmIcm-JlDFyahJxaS2-my3NkaH6Ys0iwsPDEzLg6ZGA8RmA__)
-
 - The algorithm for selection sort in pseudocode is:
 
 ```
@@ -338,9 +330,7 @@ or, more simply, O(n²).
 
 - In the worst-case, or upper-bound, bubble sort is in the order of O(n²). In the best-case, or lower-bound, bubble sort is in the order of Ω(n).
 
-- You can [visualize](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) a comparison of these algorithms.
-
-![Sorting Algorithm Visualization](https://private-us-east-1.manuscdn.com/sessionFile/iY6MeOmnDpvITt044X8RcL/sandbox/pap0vb9pclZ3bNCDKteEzD-images_1745522744324_na1fn_L2hvbWUvdWJ1bnR1L2NzNTBfaW1hZ2VzL3NvcnRpbmdfYWxnb3JpdGhtX3Zpc3VhbGl6YXRpb24.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvaVk2TWVPbW5EcHZJVHQwNDRYOFJjTC9zYW5kYm94L3BhcDB2YjlwY2xaM2JOQ0RLdGVFekQtaW1hZ2VzXzE3NDU1MjI3NDQzMjRfbmExZm5fTDJodmJXVXZkV0oxYm5SMUwyTnpOVEJmYVcxaFoyVnpMM052Y25ScGJtZGZZV3huYjNKcGRHaHRYM1pwYzNWaGJHbDZZWFJwYjI0LnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2NzIyNTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=FsnsW91dkvYDlK3y2mo0BCYtUqVVn3Z-W5F0a3BeZlW4yARFpA0eBoHuROt93xfK6MciVDjRakiVrs8RPL5pyiDy2usoZqt9BUXpaVWpp~zWIZJ9LFUu6vATTYjBmas3ZygHACt3jmg~DEuWD~cw~ax7k0~TLmcB2aySB747oUe8hWf8-eRfPuFHm-X3kvOSj3Nx0icimkYMFpZ55lz0SW45463jH99IobTKHQXZF~5zidwyCWgdqz9uKEBvoqezwhYqpz~STYMpbOAzyPgOOf3ZCV2MEFyqe4KIm0pWPw4GJveV2dZihPod5rALCdSE5PQbcZC5okCwYXZBOujXNg__)
+- You can visualize a comparison of these algorithms.
 
 ## Recursion
 
@@ -435,7 +425,7 @@ Else
 
 - Merge sort is a very efficient sort algorithm with a worst-case of O(n log n) and a best-case of Ω(n log n) because the best-case and worst-case are the same.
 
-- A final [visualization](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html) was shared.
+- A final visualization was shared.
 
 ## Summing Up
 

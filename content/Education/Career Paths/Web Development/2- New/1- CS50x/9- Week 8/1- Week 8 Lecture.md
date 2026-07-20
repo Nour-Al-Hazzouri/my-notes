@@ -1,5 +1,7 @@
 # Lecture 8 - HTML, CSS, and JavaScript
 
+📄 [[../Media/Lecture 8 - CS50x 2025.pdf|Lecture 8 PDF]]
+
 ## Welcome!
 
 In previous weeks, we introduced you to Python, a high-level programming language that utilized the same building blocks we learned in C. Today, we will extend those building blocks further in HTML, CSS, and JavaScript.
@@ -160,8 +162,6 @@ You can serve your code by typing `http-server`. This served content is now avai
 When you visit this URL, notice that the file name hello.html appears at the end of this URL. Further, notice, based upon the URL, that the server is serving via port 8080.
 
 The hierarchy of tags can be represented as a tree structure. Knowledge of this hierarchy will be useful later as we learn JavaScript.
-
-![HTML Tree Hierarchy](https://cs50.harvard.edu/x/notes/8/cs50Week8Slide065.png)
 
 The browser will read your HTML file top to bottom and left to right.
 

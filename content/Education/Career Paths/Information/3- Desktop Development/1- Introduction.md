@@ -20,6 +20,7 @@ Desktop development involves creating applications that run on desktop operating
 #### Desktop Development Approaches for Different Platforms
 
 **1. Windows Development**
+
 Windows offers two primary approaches:
 
 - **Native Development**:
@@ -32,6 +33,7 @@ Windows offers two primary approaches:
     - **Best For**: Apps that need to target multiple platforms with minimal codebase duplication.
 
 **2. Linux Development**
+
 Linux supports both native and cross-platform approaches:
 
 - **Native Development**:
