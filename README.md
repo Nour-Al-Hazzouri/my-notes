@@ -6,7 +6,7 @@ My digital garden / personal notes website — built with [Quartz v4](https://qu
 
 A public version of the Obsidian vault I use for my own learning. If you're reading this on GitHub, you can visit the actual website where it's readable and navigable the way it's meant to be.
 
-I take notes on whatever I'm learning. Mostly IT and web development, but also Islamic studies, or whatever random rabbit hole grabs my attention.
+I take notes on whatever I'm learning. Mostly IT and web development,or whatever random rabbit hole grabs my attention.
 There's no timeline, sometimes I might update frequently, sometimes you might think I'm dead in my cave.
 
 ## Who's It For?
