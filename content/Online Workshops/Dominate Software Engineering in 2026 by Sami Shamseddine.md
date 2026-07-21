@@ -1,6 +1,6 @@
 Reference PDF:
 
-[[Dominate Software Engineering in 2026 by Sami Shamseddine]]
+[[Dominate Software Engineering in 2026 by Sami Shamseddine.pdf]]
 
 # Dominate Software Engineering in 2026
 
