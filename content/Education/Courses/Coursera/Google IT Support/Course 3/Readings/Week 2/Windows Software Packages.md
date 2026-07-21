@@ -51,3 +51,7 @@ Windows software is typically distributed as executable (.exe) files through var
 Windows offers multiple methods for distributing, installing, and updating software. IT professionals may use different installation options depending on organizational requirements and software distribution needs.
 
 For more detailed information, Microsoft provides comprehensive documentation on each packaging and installation method (see original document for resource links).
+
+---
+
+**Previous:** [[ACL]]

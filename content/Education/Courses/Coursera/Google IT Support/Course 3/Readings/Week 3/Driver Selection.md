@@ -47,3 +47,5 @@ Once Windows identifies one or more matching driver packages, it applies the fol
      - These values are specified by the INF DriverVer directive in the driver's INF file
 
 After selection, Windows proceeds with driver installation according to established installation protocols.
+
+---

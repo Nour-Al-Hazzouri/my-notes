@@ -60,3 +60,5 @@ The returned data is a REG_MULTI_SZ value with these constraints:
 
 - Maximum characters (including NULL terminators): REGSTR_VAL_MAX_HCID_LEN
 - Maximum number of IDs in a list: 64
+
+---

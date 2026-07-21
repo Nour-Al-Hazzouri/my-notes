@@ -136,6 +136,7 @@ Browsers display:
 - ⚠️ **Not Secure** (without SSL)
 
 **With SSL → your website becomes HTTPS**
+
 **Without SSL → your website stays HTTP (not secure)**
 
 ---
@@ -170,6 +171,7 @@ When the website is hosted on a different platform than where the domain was reg
 ### Legacy vs. Modern Deployment
 
 **Before:** Manual process of updating website files in `public_html` (difficult and time-consuming)
+
 **Now:** CI/CD pipelines handle deployment. Simply use `git add`, `git commit`, and `git push` - GitHub automatically updates the files. This is the standard practice nowadays.
 
 ---

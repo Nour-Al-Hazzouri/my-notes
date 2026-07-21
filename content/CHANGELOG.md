@@ -119,4 +119,10 @@ Initial Release- Quartz V4 Setup
 	- [[How to Build a Powerful Network of Connections - With Samer Bechara]]: Fixed a formatting issue with $ - $ causing unintentional LaTeX formatting
 	- [[17- Recursion]]: Fixed an issue where the summarized PDF was for webpack instead of recursion
 	- Added PDF references for all CS50x notes, and removed external links and img references.
-	- Education/Courses/YouTube
+
+# 2.6- 21/7/2026
+
+1. Added:
+	- Education/Courses/PDFs/Programming/Git: Added a git crash course and a git workflow
+2. Modified:
+	- Extracted text from PDF to [[Dominate Software Engineering in 2026 by Sami Shamseddine]] and [[Talk Outline The Future of AI and the Age of Digital Abundance by Rudy]]

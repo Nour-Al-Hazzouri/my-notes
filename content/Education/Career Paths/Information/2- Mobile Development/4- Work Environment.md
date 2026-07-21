@@ -5,7 +5,7 @@
 ### Office-Based
 
 - Many mobile developers work in traditional office settings, especially within larger tech companies or development firms.
-- These environments often promote collaboration through team meetings and shared workspaces. ([Vault.com](https://vault.com/professions/mobile-software-developers))
+- These environments often promote collaboration through team meetings and shared workspaces.
 
 ### Remote Work
 
@@ -28,7 +28,7 @@
 
 ### Flexible Schedules
 
-- Many companies offer flexible working hours, allowing developers to adjust their work times to better fit personal commitments, enhancing work-life balance. ([Vault.com](https://vault.com/professions/mobile-software-developers))
+- Many companies offer flexible working hours, allowing developers to adjust their work times to better fit personal commitments, enhancing work-life balance.
 
 ---
 

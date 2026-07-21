@@ -35,3 +35,7 @@ Microsoft strongly recommends against direct manipulation of ACL contents. To en
 ACLs also provide the access control mechanism for Active Directory directory service objects. Active Directory Service Interfaces (ADSI) include specialized routines for creating and modifying ACLs on directory objects.
 
 For detailed implementation guidance, refer to Microsoft's documentation on creating DACLs, audit generation, and controlling access to Active Directory objects.
+
+---
+
+**Next:** [[Windows Software Packages]]

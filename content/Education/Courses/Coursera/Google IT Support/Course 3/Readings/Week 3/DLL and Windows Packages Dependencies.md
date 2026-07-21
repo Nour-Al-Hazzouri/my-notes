@@ -52,3 +52,5 @@ Modern Windows applications often use side-by-side assemblies, which:
 - Provide an alternative to registry-based configuration
 
 For IT Support professionals, understanding these concepts is essential when troubleshooting application issues, as configuration settings may reside in manifest files rather than the Windows registry.
+
+---
