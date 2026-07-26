@@ -1,5 +1,3 @@
-# Tech and Rec: What Recruiters Look For In Software Engineers
-
 ## 1. Speaker Background & Overview
 
 - **Speaker:** Ali — Tech Lead at Aspire and Founder of *Shoghol Jobs*.
