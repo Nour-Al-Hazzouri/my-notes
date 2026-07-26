@@ -107,7 +107,7 @@ Initial Release- Quartz V4 Setup
 1. Added:
 	- [[16- Mock Testing]]
 	- [[17- Recursion]] (Added a notes PDF)
-	- [[What's Next After Graduation? by Farah Kerbaj]] (New online workshop)
+	- [[What's Next After Graduation- by Farah Kerbaj]] (New online workshop)
 
 # V2.5- 20/7/2026
 
@@ -126,3 +126,13 @@ Initial Release- Quartz V4 Setup
 	- Education/Courses/PDFs/Programming/Git: Added a git crash course and a git workflow
 2. Modified:
 	- Extracted text from PDF to [[Dominate Software Engineering in 2026 by Sami Shamseddine]] and [[Talk Outline The Future of AI and the Age of Digital Abundance by Rudy]]
+
+# 2.7- 26/7/2026
+
+1. Added:
+	- [[18.1- Space Complexity]]
+	- [[19- Data Structures]]
+	- [[19.1- Binary Trees]]
+	- [[Tech and Rec- What Recruiters Look For In Software Engineers]]
+2. Modified:
+	- [[index]]: Added a small note to show how my preferences changed

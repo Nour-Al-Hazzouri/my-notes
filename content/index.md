@@ -8,7 +8,11 @@ This workspace is basically my digital home and you're the guest.
 
 You might know me personally and you might not. But let's just say I'm someone who loves learning what aligns with his interests.
 
-**The funny part?** Most of my interests are topics related to IT. For example, my favorite thing to do on planet Earth is being a PC repairman. But my career choice is Web Development (which I also love, but not as much as PC repairman, yet it's the better career choice for me).
+**The funny part?** Most of my interests are topics related to IT. For example, my favorite thing to do on planet Earth is being a PC repairman.
+
+But my career choice is Web Development (which I also love, but not as much as PC repairman, yet it's the better career choice for me).
+
+(26/7/2026 - Note: as of today, I officially prefer programming over being a PC repairman. After thorough practice, I fell in love with it even more XD)
 
 # What Are These Notes?
 
