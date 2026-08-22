@@ -104,3 +104,6 @@ The sources highlight two main ways to visit every node in a tree exactly once:
 - **Complexity:**
     - **Time:** Most tree traversals take **O(n)** time because you must touch every node once.
     - **Space:** Level Order (Breadth-First) uses extra memory proportional to the width of the tree (storing nodes in a queue), while Depth-First uses memory proportional to the height of the tree (storing calls on the stack).
+---
+
+**Previous:** [[18.1- Space Complexity]] | **Next:** [[19.1- Binary Trees]]

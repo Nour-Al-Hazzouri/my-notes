@@ -136,3 +136,12 @@ Initial Release- Quartz V4 Setup
 	- [[Tech and Rec- What Recruiters Look For In Software Engineers]]
 2. Modified:
 	- [[index]]: Added a small note to show how my preferences changed
+
+# 2.8- 22/8/2026
+
+1. Added:
+	- [[20- Hash Table]]
+	- [[21- Graphs]]
+2. Modified:
+	- [[18- Big O Notation]] - [[18.1- Space Complexity]] - [[19.1- Binary Trees]] - [[19.1- Binary Trees]]: Added navigation links between files
+	- [[Next.js Developer Roadmap - 2026]]: Updated roadmap entirely to be up-to-date
