@@ -20,7 +20,7 @@
 | **Phase 1: The Odin Project** | Full Stack JavaScript Core | HTML/CSS, modern JavaScript (ES6+), React, Node.js, Express, PostgreSQL |
 | **Phase 2: Software & Backend Engineering** | Systems, DBs & Architecture | TypeScript, SOLID, Design Patterns, Redis caching, job queues, advanced SQL/Postgres, System Design, OWASP Security, Testing |
 | **Phase 3: Next.js Specialization** | Production Meta-Framework | App Router, React Server Components (RSC), Server Actions, Auth.js, caching lifecycle, performance tuning |
-| **Phase 4: AI-Era Web & Polyglot Context** | Modern Engineering Horizons | Vercel AI SDK, streaming UI, structured outputs, pgvector (RAG), and backend stack trade-offs (Go, Python, .NET/Java) |
+| **Phase 4: AI-Era Web & Polyglot Context** | Modern Engineering Horizons | AI-Driven Development (spec-driven, agent harnesses, rules/skills), Vercel AI SDK, RAG (pgvector), and backend stack trade-offs (Go, Python, .NET/Java) |
 
 ### Estimated Timeline
 
@@ -165,17 +165,25 @@ Before diving into Next.js, review modern React mental models:
 
 **Duration:** 2–4 Weeks
 
-### Phase 4.1: Practical AI Web Integration
+### Phase 4.1: AI-Driven Development (AIDD) & Context Engineering (Building *With* AI)
+
+Modern software engineering leverages AI agents not as simple code autocomplete, but through structured, spec-driven development harnesses:
+
+*   **Spec-Driven Development:** Translating Product Requirement Documents (PRDs), Software Requirements Specifications (SRS), and Architecture Decision Records (ADRs) into machine-actionable technical specs, user stories, and acceptance criteria before prompting.
+*   **Context & Harness Engineering:** Configuring repository-level instructions (`AGENTS.md`, `.cursorrules`, `GEMINI.md`), project-specific skills, and Model Context Protocol (MCP) servers to give agents deterministic context.
+*   **Test-Harness-Driven Verification:** Pairing strict TypeScript/Zod schemas with automated unit/integration tests (Vitest, Playwright) as closed feedback loops to validate agent-generated implementations.
+*   **Human-in-the-Loop Governance:** Systematic diff inspection, architectural boundary enforcement, security audit of generated logic, and avoiding AI over-reliance.
+
+### Phase 4.2: Practical AI Web Application Engineering (Building AI *Into* Products)
 
 Modern full-stack applications frequently incorporate AI capabilities into traditional web flows:
 
-*   **LLM Orchestration:** [Vercel AI SDK](https://sdk.vercel.ai/docs) for streaming text and UI components (`ReadableStream`).
+*   **LLM Orchestration:** [Vercel AI SDK](https://sdk.vercel.ai/docs) for streaming text and UI components (`ReadableStream`, RSC streaming).
 *   **Structured Outputs:** Enforcing typed LLM schema outputs using Zod.
-*   **Tool Calling & Function Execution:** Connecting LLM reasoning to your application's database and APIs.
-*   **Vector Search & RAG:** Using PostgreSQL's `pgvector` extension for semantic search and Retrieval-Augmented Generation (RAG) alongside relational data.
-*   **AI-Assisted Workflow:** Utilizing AI agents and copilots for automated test generation, code reviews, and schema migrations with strict human verification.
+*   **Tool Calling & Function Execution:** Connecting LLM reasoning to your application's database, services, and external APIs.
+*   **Vector Search & RAG:** Using PostgreSQL's `pgvector` extension for semantic vector search and Retrieval-Augmented Generation (RAG) alongside relational data.
 
-### Phase 4.2: Job Market Landscape & Alternative Backend Stacks
+### Phase 4.3: Job Market Landscape & Alternative Backend Stacks
 
 Understanding where different backend ecosystems fit in the global industry ensures you make informed architectural decisions and broaden career options:
 
@@ -210,7 +218,7 @@ Understanding where different backend ecosystems fit in the global industry ensu
 *   **Databases & Caching:** [PostgreSQL Official Documentation](https://www.postgresql.org/docs/) | [Redis University](https://university.redis.com/) | [pgvector](https://github.com/pgvector/pgvector)
 *   **Security:** [PortSwigger Web Security Academy](https://portswigger.net/web-security) | [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 *   **Meta-Framework:** [Next.js Official Documentation & Learn](https://nextjs.org/docs) | [Auth.js](https://authjs.dev/) | [Drizzle ORM](https://orm.drizzle.team/)
-*   **AI Web Development:** [Vercel AI SDK Documentation](https://sdk.vercel.ai/docs)
+*   **AI Web Development:** [Vercel AI SDK Documentation](https://sdk.vercel.ai/docs) | [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 
 ### Additional Project-Based Practice Repositories (100% Free / FOSS)
 
