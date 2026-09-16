@@ -146,7 +146,7 @@ Initial Release- Quartz V4 Setup
 	- [[18- Big O Notation]] - [[18.1- Space Complexity]] - [[19.1- Binary Trees]] - [[19.1- Binary Trees]]: Added navigation links between files
 	- [[Next.js Developer Roadmap - 2026]]: Updated roadmap entirely to be up-to-date
 
-# V2.8- 16/9/2026
+# V2.9- 16/9/2026
 
 1. Added:
 	- [[22- A deeper look at git]]
