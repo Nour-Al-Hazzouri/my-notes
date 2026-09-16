@@ -120,14 +120,14 @@ Initial Release- Quartz V4 Setup
 	- [[17- Recursion]]: Fixed an issue where the summarized PDF was for webpack instead of recursion
 	- Added PDF references for all CS50x notes, and removed external links and img references.
 
-# 2.6- 21/7/2026
+# V2.6- 21/7/2026
 
 1. Added:
 	- Education/Courses/PDFs/Programming/Git: Added a git crash course and a git workflow
 2. Modified:
 	- Extracted text from PDF to [[Dominate Software Engineering in 2026 by Sami Shamseddine]] and [[Talk Outline The Future of AI and the Age of Digital Abundance by Rudy]]
 
-# 2.7- 26/7/2026
+# V2.7- 26/7/2026
 
 1. Added:
 	- [[18.1- Space Complexity]]
@@ -137,7 +137,7 @@ Initial Release- Quartz V4 Setup
 2. Modified:
 	- [[index]]: Added a small note to show how my preferences changed
 
-# 2.8- 22/8/2026
+# V2.8- 22/8/2026
 
 1. Added:
 	- [[20- Hash Table]]
@@ -145,3 +145,10 @@ Initial Release- Quartz V4 Setup
 2. Modified:
 	- [[18- Big O Notation]] - [[18.1- Space Complexity]] - [[19.1- Binary Trees]] - [[19.1- Binary Trees]]: Added navigation links between files
 	- [[Next.js Developer Roadmap - 2026]]: Updated roadmap entirely to be up-to-date
+
+# V2.8- 16/9/2026
+
+1. Added:
+	- [[22- A deeper look at git]]
+	- [[23- Working With Remotes]]
+	- [[Next.js Full-Stack Web Dev in 90 mins - Khaled Frayji]]
