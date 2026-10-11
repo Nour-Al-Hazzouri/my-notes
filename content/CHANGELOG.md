@@ -152,3 +152,9 @@ Initial Release- Quartz V4 Setup
 	- [[22- A deeper look at git]]
 	- [[23- Working With Remotes]]
 	- [[Next.js Full-Stack Web Dev in 90 mins - Khaled Frayji]]
+
+# V3.0- 11/10/2026
+
+1. Added:
+	- [[Stanford CS229 — Building Large Language Models (LLMs)]]
+	- [[Docker Masterclass by Rony Rizk]]
