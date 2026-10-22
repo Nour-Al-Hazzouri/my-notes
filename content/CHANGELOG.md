@@ -158,3 +158,8 @@ Initial Release- Quartz V4 Setup
 1. Added:
 	- [[Stanford CS229 — Building Large Language Models (LLMs)]]
 	- [[Docker Masterclass by Rony Rizk]]
+
+# V3.1- 22/10/2026
+
+1. Added:
+	- [[Git & Github by Rony Rizk]]
