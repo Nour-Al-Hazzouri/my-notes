@@ -1,4 +1,5 @@
 **Instructor:** Rony Rizk
+
 *Note: This session is preparation for an upcoming session on CI/CD with GitHub Actions.*
 
 ---
