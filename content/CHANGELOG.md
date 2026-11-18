@@ -169,3 +169,8 @@ Initial Release- Quartz V4 Setup
 
 1. Added:
    - [[CI-CD & GitHub Actions by Roni Rizk]]
+
+# V3.3- 18/11/2026
+
+1. Added:
+  - [[Market Yourself In a Demanding Job Market & AI-Assisted Development by Khaled Frayji & Hanan Aref]]
