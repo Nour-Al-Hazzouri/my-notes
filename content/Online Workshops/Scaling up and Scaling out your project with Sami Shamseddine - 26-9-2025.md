@@ -1,17 +1,38 @@
-a
+---
+title: "Scaling Up and Scaling Out Your Project"
+type: workshop
+instructor: "Sami Shamseddine"
+date: 2025-09-26
+tags:
+  - workshop
+  - software-architecture
+  - devops
+  - scalability
+  - microservices
+  - career
+source: ""
+status: complete
+---
 
-# Scaling and Software Architecture - Meeting Notes
+## Overview
 
-## 📋 Session Overview
+> [!info] Session Info
+> **Instructor:** Sami Shamseddine
+> **Prerequisite:** None (conceptual, no code)
+> **Recording / Slides:** `N/A`
 
-- **Duration:** 1 hour (explanation and Q&A)
-- **Topic:** Scale up and scale out project concepts
-- **Focus:** Working projects vs localhost projects - handling 100 to 10,000 requests
-- **Approach:** Conceptual only (no code)
+A 1-hour conceptual session on software scaling: vertical vs. horizontal scaling, monolithic vs. microservices architecture, and when to migrate from one to the other.
+
+## Table of Contents
+
+- [[#Introduction to Scaling]]
+- [[#Roles and Responsibilities]]
+- [[#Architecture Types]]
+- [[#Q&A]]
 
 ---
 
-## 🎯 Introduction to Scaling
+## Introduction to Scaling
 
 ### Definition
 
@@ -37,7 +58,7 @@ a
 
 ---
 
-## 👥 Roles and Responsibilities
+## Roles and Responsibilities
 
 ### Software Architecture Vs Development
 
@@ -51,46 +72,46 @@ a
 
 ---
 
-## 🏗️ Architecture Types
+## Architecture Types
 
-## Monolithic Architecture
+### Monolithic Architecture
 
 ![Monolothic Architecture](Monolothic_Architecture.png)
 
-### Description
+#### Description
 
 - Everything in one repository and on one server
 - Database is always separate (most important component)
 - Server downtime is tolerable, but data loss is not
 
-### Recommendation
+#### Recommendation
 
 **Start your project as monolithic architecture**
 
 - Microservices require a team and more work
 - This architecture is okay and not bad for projects scaling correctly
 
-### Advantages
+#### Advantages
 
 - **Simplicity:** Easier development and deployment
 - **Centralized Management:** Single codebase for development and deployment
 - **Tight Integration:** Easier communication between components
 
-### Disadvantages
+#### Disadvantages
 
 - **Scalability Limitations:** Easier to build but harder to scale (resource limits exist)
   - *Note: Reaching this limit means software is doing very well and worth using microservices*
 - **Technology Stack Dependency:** Replacing technology may require significant changes
 - **Deployment Complexity:** Entire application needs deployment at once
 
-### Why Start Monolithic?
+#### Why Start Monolithic?
 
 1. Experiment quickly
 2. Focus on business logic
 3. Prevent initial overdesign
 4. Manageable by a small team
 
-### When to Move Away from Monolithic
+#### When to Move Away from Monolithic
 
 1. More product requirements
 2. Onboarding new team members becomes difficult
@@ -99,13 +120,13 @@ a
 5. No independent scaling
 6. Messy to debug
 
-![Microservice Architecture](Microservice_Architecture.png)
-
 ---
 
-## Microservices Architecture
+### Microservices Architecture
 
-### Description
+![Microservice Architecture](Microservice_Architecture.png)
+
+#### Description
 
 - Each service has its own server and database
 - Services are independent from each other
@@ -113,7 +134,7 @@ a
 - For large SaaS with 100,000+ requests, each service has a dedicated team
 - Each new service requires a new server
 
-### Challenges of Microservices Architecture
+#### Challenges of Microservices Architecture
 
 - **Design Complexity:** Coordinating communication between microservices requires clear boundaries and careful planning
 - **Data Consistency:** Independent data management can lead to duplication and inconsistency across services
@@ -124,7 +145,7 @@ a
 
 ---
 
-## ❓ Q&A Session
+## Q&A
 
 ### Q: As a Fresh Grad SE, what Do I Need to Work in a Company?
 

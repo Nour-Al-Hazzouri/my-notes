@@ -1,4 +1,41 @@
-**Main Presentation: [[TechTalks WhatsNextAfterGraduation v2.pdf]]**
+---
+title: "What's Next After Graduation?"
+type: workshop
+instructor: "Farah Kerbaj"
+date: N/A
+tags:
+  - workshop
+  - career
+  - job-hunting
+  - cv
+  - linkedin
+  - portfolio
+  - soft-skills
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Farah Kerbaj
+> **Prerequisite:** None
+> **Recording / Slides:** [[TechTalks WhatsNextAfterGraduation v2.pdf]]
+
+A career guidance workshop answering the three questions every fresh graduate asks: how to get the first job, how to stand out, and what to focus on in tech. Covers CV writing, LinkedIn optimization, and the Forward Deployed Engineer (FDE) role.
+
+## Table of Contents
+
+- [[#Farah's Story]]
+- [[#The Reality of Post-Graduation]]
+- [[#How to Get Your First Job]]
+- [[#How to Stand Out]]
+- [[#What Should I Focus on in Tech?]]
+- [[#Crafting Your CV]]
+- [[#LinkedIn Optimization]]
+- [[#Q&A]]
+
+---
 
 ## Farah's Story
 
@@ -11,6 +48,8 @@
   - During her third year, she began looking for internship opportunities. It was harder at the time, so she did extensive research and found a volunteering opportunity.
   - Through this, she discovered more about herself and found she had a skill in building her presence on LinkedIn and other platforms.
   - She then secured her first job and began helping others build their LinkedIn profiles.
+
+---
 
 ## The Reality of Post-Graduation
 
@@ -25,6 +64,8 @@
 - **How do I stand out?** CV, LinkedIn, GitHub, projects, and personal brand.
 - **What should I focus on in tech?** Career lanes, market signals, AI, FDE, cybersecurity, and practical skills.
 
+---
+
 ## How to Get Your First Job
 
 - Getting a job isn't just about applying and getting an interview. It's about everything you do during your university years (especially the third year) and after graduation to prepare for it.
@@ -35,6 +76,8 @@
   - Focus on this path even if some opportunities are unpaid.
   - Utilize available tools—LinkedIn is a great resource. Optimize your profile, check for hackathons, events, and internships.
 
+---
+
 ## How to Stand Out
 
 - It's not just about having a CV, a LinkedIn profile, or a project. Everyone might be a Computer Science (CS) student, but each has a different skill set.
@@ -43,6 +86,8 @@
   - *Skills Inventory*
   - **[[Values and Interests Exercise.pdf]]**
   - [[Proud Moments Exercise.pdf]]
+
+---
 
 ## What Should I Focus on in Tech?
 
@@ -72,6 +117,8 @@
 - This role is perfect for people who don't want to be purely technical.
 - **Key Takeaway:** Have one specialization in mind and take it from there. You cannot make a single CV for everything.
 
+---
+
 ## Crafting Your CV
 
 - Many people struggle to create a CV, thinking it should be a heavily designed template (like those on Canva)—which should **never** be done, especially for tech applications.
@@ -90,6 +137,8 @@
   - **Writing Professional Experience:** Be specific, use ATS-friendly keywords, and highlight accomplishments. Verbs should be in the past tense. ATS systems now look closely at dates (day, month, year) and may filter out CVs lacking detail.
   - **Technical Toolkit:** List the specific languages you master more than others and what makes your skill set unique.
 For Full-Stack, check this [[Full-Stack CV Codebook.pdf]]
+
+---
 
 ## LinkedIn Optimization
 
@@ -111,20 +160,22 @@ For Full-Stack, check this [[Full-Stack CV Codebook.pdf]]
   - Always verify the person posting the job, as some can be fake or spam.
   - *Note:* LinkedIn records applications even if no CV is uploaded, so apply anyway.
 
-## Q&A Session
+---
+
+## Q&A
 
 **Q: Does the first year shape a student's work life?**
 
-- **A:** The first year does shape a student's work life, and they should know the major they are in. However, it's not wrong to change positions within the same major later on.
+**A:** The first year does shape a student's work life, and they should know the major they are in. However, it's not wrong to change positions within the same major later on.
 
 **Q: How do you tailor a CV based on each company?**
 
-- **A:** It involves research. Think like a recruiter and analyze the Job Description (JD) to understand exactly what they are focusing on.
+**A:** It involves research. Think like a recruiter and analyze the Job Description (JD) to understand exactly what they are focusing on.
 
 **Q: Does being an associate's degree student differ from a bachelor's student if ATS filters CVs based on small details?**
 
-- **A:** The degree itself doesn't matter as much. What matters are up-to-date certifications and mentioning which skills you acquired from where. Remove unrelated experience.
+**A:** The degree itself doesn't matter as much. What matters are up-to-date certifications and mentioning which skills you acquired from where. Remove unrelated experience.
 
 **Q: Are all remote job opportunities trusted?**
 
-- **A:** You need to be cautious. Sometimes company websites are hacked, and many people suffer from scams. Always verify.
+**A:** You need to be cautious. Sometimes company websites are hacked, and many people suffer from scams. Always verify.

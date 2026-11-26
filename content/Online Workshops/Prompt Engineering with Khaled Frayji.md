@@ -1,3 +1,35 @@
+---
+title: "Prompt Engineering"
+type: workshop
+instructor: "Khaled Frayji"
+date: N/A
+tags:
+  - workshop
+  - ai
+  - prompt-engineering
+  - product-development
+  - mvp
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Khaled Frayji
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+Covers product development workflows (MVP, POC, PRD, SRS) and how to use AI-assisted development with prompt engineering to rapidly prototype a Neo Bank application.
+
+## Table of Contents
+
+- [[#Product Development Workflow]]
+- [[#Documentation Requirements]]
+- [[#Practical Implementation — Neo Bank App]]
+
+---
+
 ## Product Development Workflow
 
 ### Initial Project Phase
@@ -44,7 +76,7 @@ This distinction makes the difference while inserting the layers.
 
 ---
 
-## Practical Implementation: Neo Bank App
+## Practical Implementation — Neo Bank App
 
 ### Rapid MVP Development (30-minute Approach)
 

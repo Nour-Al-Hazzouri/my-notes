@@ -1,3 +1,40 @@
+---
+title: "Tech and Rec: What Recruiters Look For In Software Engineers"
+type: workshop
+instructor: "Ali Khodor"
+date: N/A
+tags:
+  - workshop
+  - career
+  - job-search
+  - recruiting
+  - interviews
+  - soft-skills
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Ali Khodor (Tech Lead at Aspire, Founder of *Shoghol Jobs*)
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+Deep dive into each career stage, what recruiters expect, stories of what developers should possess, and how junior developers can navigate the job market.
+
+## Table of Contents
+
+- [[#1. Speaker Background & Overview]]
+- [[#2. Core Philosophy of Software Engineering]]
+- [[#3. Industry Evolution & The Impact of AI]]
+- [[#4. Junior Market & Job Hunting Strategy]]
+- [[#5. Interviews, Mindset & Soft Skills]]
+- [[#6. Defining Seniority & Career Growth]]
+- [[#7. Key Pitfalls & Mistakes to Avoid]]
+
+---
+
 ## 1. Speaker Background & Overview
 
 - **Speaker:** Ali — Tech Lead at Aspire and Founder of *Shoghol Jobs*.

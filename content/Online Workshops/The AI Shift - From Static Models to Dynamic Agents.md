@@ -1,7 +1,38 @@
-# Build Your Own AI Assistant
+---
+title: "The AI Shift — From Static Models to Dynamic Agents"
+type: workshop
+instructor: "Hanan Aref"
+date: N/A
+tags:
+  - workshop
+  - ai
+  - agentic-ai
+  - python
+  - machine-learning
+  - prompt-engineering
+source: ""
+status: complete
+---
 
-> **Workshop:** The AI Shift — From Static Models to Dynamic Agents
-> *Build Your First AI Agent in 30 Minutes*
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Hanan Aref
+> **Prerequisite:** Basic programming knowledge
+> **Recording / Slides:** [[Workshop_Guide_Build_Your_First_AI_Agent_in_30_Minutes.pdf]]
+
+Covers the evolution from static AI models to autonomous agents, the anatomy of an agentic system, and a live build of a Universal Task Automator using Gemini, Pydantic, and Streamlit.
+
+## Table of Contents
+
+- [[#1. The Evolution to Agentic AI]]
+- [[#2. Anatomy of Autonomy]]
+- [[#3. The Next Big Wave (2026+)]]
+- [[#4. Real-World Agent Examples]]
+- [[#5. Building Your Own Agent — Step by Step]]
+- [[#6. Workshop Demo — The Full Prompt]]
+- [[#7. Key Takeaways & Next Steps]]
+
 ---
 
 ## 1. The Evolution to Agentic AI
@@ -258,7 +289,6 @@ and `app.py`.
 **Important:** Ensure all necessary imports are present in each file. The `agent.py` should
 import `AgentOutput` from `schema.py`. The `app.py` should import `UniversalTaskAutomator`
 from `agent.py`.
-
 ```
 
 </details>

@@ -1,8 +1,35 @@
-# 12/9/2025 - TechTalks with Hasan Nahle, Founder of youbee.ai
+---
+title: "TechTalks — Startups on a Budget"
+type: workshop
+instructor: "Hasan Nahle"
+date: 2025-09-12
+tags:
+  - workshop
+  - startups
+  - entrepreneurship
+  - business
+  - career
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Hasan Nahle — Founder of youbee.ai
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+A session targeted at startups with small budgets (possibly $500 or even less). Covers bootstrapping, investor relationships, speed of execution, and sustainable growth.
+
+## Table of Contents
+
+- [[#Meeting Notes]]
+- [[#Q&A]]
+
+---
 
 ## Meeting Notes
-
-**The meeting is targeted at startups with small budgets (possibly $500 or even less)**
 
 - **At the beginning, there are two ways for the project to grow:**
     1. **Personal payment (you pay the budget from your personal account)**
@@ -32,16 +59,18 @@
 
 - **Social media, appearance, respect, and professional dealing are very important**
 
-### Q&A
+---
 
-#### Q: If You Have a Running Business and Global Changes and Trends like AI Are Happening, when Do You Know that You Need to Change the Company's System or Way of Working to Keep up with These Changes?
+## Q&A
 
-#### A: This Requires Monitoring. There Are Trends that Emerge and Create Hype but then Die Out. For Example, 2-3 Years ago the Metaverse Topic Emerged to the Point where Facebook Itself Changed Its Name to Meta, and Companies Emerged that Sell Metaverse Land and Such, but after a while the Trend Died. It Happened that AI is Currently Trending and Useful for Productivity. This Requires Monitoring and Studying over Time before Making Any Changes to the Company.
+**Q: If You Have a Running Business and Global Changes and Trends like AI Are Happening, when Do You Know that You Need to Change the Company's System or Way of Working to Keep up with These Changes?**
 
-#### Q: What's Your Estimate for the Initial Budget for Any Startup (Office, dEvices, eQuipment, eTc.)?
+**A:** This requires monitoring. There are trends that emerge and create hype but then die out. For example, 2-3 years ago the Metaverse topic emerged to the point where Facebook itself changed its name to Meta, and companies emerged that sell Metaverse land and such, but after a while the trend died. It happened that AI is currently trending and useful for productivity. This requires monitoring and studying over time before making any changes to the company.
 
-#### A: I Can't Give an Approximate Number, but what I Can Advise is Not to Spend beyond Your Needs. You Might Be Working with One Person and All Your Equipment Could Total $200, or You Could Be a Full Team and the Spending Could Be $2000.
+**Q: What's Your Estimate for the Initial Budget for Any Startup (Office, Devices, Equipment, etc.)?**
 
-#### Q: What's Your Opinion on LinkedIn?
+**A:** I can't give an approximate number, but what I can advise is not to spend beyond your needs. You might be working with one person and all your equipment could total $200, or you could be a full team and the spending could be $2000.
 
-#### A: I Don't like it in General and Don't Focus Much on it as a Company Posting Content. I Haven't Posted on it for a while and Stopped, but now I'm Starting to post on it Again. As Someone Looking for Employment, Posting Isn't Very Important and the Idea is just to Organize Your Profile for Companies to See what You Have. Posting Can Be Useful if You Want to Make Connections, but Not with the Same Repetitive Content that Most People post like Attending Events, Which Usually Doesn't Interest Company Owners.
+**Q: What's Your Opinion on LinkedIn?**
+
+**A:** I don't like it in general and don't focus much on it as a company posting content. I haven't posted on it for a while and stopped, but now I'm starting to post on it again. As someone looking for employment, posting isn't very important and the idea is just to organize your profile for companies to see what you have. Posting can be useful if you want to make connections, but not with the same repetitive content that most people post like attending events, which usually doesn't interest company owners.

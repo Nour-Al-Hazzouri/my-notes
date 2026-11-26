@@ -1,10 +1,46 @@
-# Part 1: Hanan Aref — Market Yourself in a Demanding Job Market
+---
+title: "Market Yourself in a Demanding Job Market & AI-Assisted Development"
+type: workshop
+instructor: "Khaled Frayji & Hanan Aref"
+date: N/A
+tags:
+  - workshop
+  - career
+  - job-market
+  - ai
+  - portfolio
+  - product-engineering
+  - javascript
+  - js
+  - nextjs
+  - react
+  - typescript
+source: ""
+status: complete
+---
 
-> How do you market yourself in this competitive market? How do you stand out? If you apply tomorrow, how do you know you are ready?
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Hanan Aref (Part 1) · Khaled Frayji (Part 2)
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+A two-part session. Part 1 (Hanan Aref) covers self-marketing, skill building, and job hunting strategy. Part 2 (Khaled Frayji) demonstrates AI-assisted product development using PRDs and rapid MVP prototyping.
+
+## Table of Contents
+
+- [[#Part 1 — Market Yourself in a Demanding Job Market]]
+- [[#Part 2 — AI-Assisted Development & Product Engineering]]
+- [[#Q&A]]
 
 ---
 
-## 1. Discovering Our Direction
+## Part 1 — Market Yourself in a Demanding Job Market
+
+> How do you market yourself in this competitive market? How do you stand out? If you apply tomorrow, how do you know you are ready?
+
+### 1. Discovering Our Direction
 
 The core question is about navigating tech in general, but finding your specific path is critical. Knowing what you want and where you excel is essential.
 
@@ -13,7 +49,7 @@ The core question is about navigating tech in general, but finding your specific
 
 ---
 
-## 2. Know Your Market
+### 2. Know Your Market
 
 Each role offers different opportunities depending on local and global market conditions.
 
@@ -28,7 +64,7 @@ Each role offers different opportunities depending on local and global market co
 
 ---
 
-## 3. Build Market-Ready Skills
+### 3. Build Market-Ready Skills
 
 How do you stand out in today's market? The current focus is entirely on **market-ready skills**.
 
@@ -38,7 +74,7 @@ How do you stand out in today's market? The current focus is entirely on **marke
 
 ---
 
-## 4. Prove What You Can Do
+### 4. Prove What You Can Do
 
 Build **3–5 real projects**. Focus strictly on **quality over quantity**:
 
@@ -48,7 +84,7 @@ Build **3–5 real projects**. Focus strictly on **quality over quantity**:
 
 Recruiters look for candidates who leverage AI effectively while maintaining the critical thinking needed to debate AI outputs and reason like true engineers.
 
-### Project Presentation Checklist
+#### Project Presentation Checklist
 
 - [ ] **Define the Problem:** Clearly outline the issue being addressed.
 - [ ] **Showcase the Solution:** Demonstrate your technical architecture and implementation.
@@ -59,7 +95,7 @@ Recruiters look for candidates who leverage AI effectively while maintaining the
 
 ---
 
-## 5. Get Into the Market
+### 5. Get Into the Market
 
 How do you build visibility so recruiters and HR professionals find you?
 
@@ -74,7 +110,7 @@ How do you build visibility so recruiters and HR professionals find you?
 
 ---
 
-## 6. Action Plan: Your First 30 Days
+### 6. Action Plan: Your First 30 Days
 
 1. **Target:** Choose one target tech role.
 2. **Research:** Analyze 3 active, live job descriptions.
@@ -87,13 +123,13 @@ How do you build visibility so recruiters and HR professionals find you?
 
 ---
 
-# Part 2: Khaled Frayji — AI-Assisted Development & Product Engineering
+## Part 2 — AI-Assisted Development & Product Engineering
 
-## 1. Real Portfolio vs. "Purple/Cyan Portfolio"
+### 1. Real Portfolio vs. "Purple/Cyan Portfolio"
 
 When an HR manager or engineering lead evaluates portfolios, they look for verifiable evidence over aesthetics:
 
-### Comparison Breakdown
+#### Comparison Breakdown
 
 | Feature | Portfolio A ("Purple/Cyan Portfolio") | Portfolio B ("Evidence-Based Portfolio") |
 | :--- | :--- | :--- |
@@ -106,7 +142,7 @@ Recruiters do not expect junior projects to be flawless enterprise systems; they
 
 ---
 
-## 2. The Evolution of Junior Roles & The Product Engineer
+### 2. The Evolution of Junior Roles & The Product Engineer
 
 - **The Past:** A junior developer was primarily expected to create a basic client app (e.g., in React), connect it to a backend API (e.g., Express), and handle basic data flow.
 - **The Present (Product Engineer):** Companies now look for engineers who approach software vertically:
@@ -115,7 +151,7 @@ Recruiters do not expect junior projects to be flawless enterprise systems; they
 
 ---
 
-## 3. Product Validation & AI-Assisted Prototyping
+### 3. Product Validation & AI-Assisted Prototyping
 
 This workflow bridges market needs with rapid AI execution:
 
@@ -132,7 +168,7 @@ This workflow bridges market needs with rapid AI execution:
    - Non-Functional Requirements
    - Use-Case Diagrams & System Workflows
 
-### Generating a PRD with AI
+#### Generating a PRD with AI
 
 AI models can draft comprehensive PRDs when supplied with focused context and prompt instructions:
 
@@ -156,7 +192,7 @@ build me the PRD in a markdown file
 
 ---
 
-# Part 3: Q & A Session
+## Q&A
 
 ### Q1: I Have an Electronics Background and Want to Transition to the Business Side. Any Advice?
 

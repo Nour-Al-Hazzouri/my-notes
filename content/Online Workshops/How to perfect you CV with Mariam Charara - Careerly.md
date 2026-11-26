@@ -1,4 +1,34 @@
-# ATS CV Writing & Personal Branding Guide
+---
+title: "How to Perfect Your CV"
+type: workshop
+instructor: "Mariam Charara"
+date: 2025-10-08
+tags:
+  - workshop
+  - career
+  - cv
+  - personal-branding
+  - linkedin
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Mariam Charara (Careerly)
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+A practical guide to writing ATS-friendly CVs and building a personal brand that gets noticed — covering keyword optimization, CV structure, and the XYZ achievement formula.
+
+## Table of Contents
+
+- [[#Winning Tips for Writing an ATS CV]]
+- [[#Personal Branding Through Your CV]]
+- [[#Q&A]]
+
+---
 
 ## Winning Tips for Writing an ATS CV
 
@@ -121,25 +151,25 @@ Have a clear, concise elevator pitch ready for networking opportunities and inte
 
 ---
 
-## Common Questions & Answers
+## Q&A
 
 **Q: Do these tips apply to all types of businesses, including high-tier companies and startups?**
 
-A: Professional corporations typically have more rigorous hiring processes, while startups often have easier entry points. In startups, you might have opportunities for faster promotion and growth beyond a single position.
+**A:** Professional corporations typically have more rigorous hiring processes, while startups often have easier entry points. In startups, you might have opportunities for faster promotion and growth beyond a single position.
 
 **Q: Is it okay to send an email to a company without receiving an invitation to request an internship?**
 
-A: Absolutely! You don't need an invitation to apply. Try various options and be proactive.
+**A:** Absolutely! You don't need an invitation to apply. Try various options and be proactive.
 
 - You can also approach companies in person, depending on the field and company culture.
 
 **Q: Should I include information irrelevant to the field I'm applying for?**
 
-A: Never. Irrelevant information will negatively affect your application.
+**A:** Never. Irrelevant information will negatively affect your application.
 
 **Q: What are the biggest mistakes people make in their CVs?**
 
-A: Common mistakes include:
+**A:** Common mistakes include:
 
 - CVs longer than 1-2 pages
 - Adding images in incorrect places
@@ -150,4 +180,4 @@ A: Common mistakes include:
 
 **Q: Do CV layout and design matter?**
 
-A: Not as much as you might think. Many people have been hired by major companies with very basic CV designs. Content matters more than aesthetics.
+**A:** Not as much as you might think. Many people have been hired by major companies with very basic CV designs. Content matters more than aesthetics.

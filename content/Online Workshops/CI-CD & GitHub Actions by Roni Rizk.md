@@ -1,4 +1,38 @@
-This workshop is a continuation of the previous session on Git and GitHub, which serves as the prerequisite: [[Git & Github by Rony Rizk]].
+---
+title: "CI/CD & GitHub Actions"
+type: workshop
+instructor: "Roni Rizk"
+date: N/A
+tags:
+  - workshop
+  - devops
+  - ci-cd
+  - github-actions
+  - git
+  - javascript
+  - js
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Roni Rizk
+> **Prerequisite:** [[Git & Github by Rony Rizk]]
+> **Recording / Slides:** `N/A`
+
+A continuation of the Git & GitHub session. Covers CI/CD concepts, automated testing with Node.js, and deploying with GitHub Actions and Render.
+
+## Table of Contents
+
+- [[#Introduction to CI/CD]]
+- [[#Practical Case]]
+- [[#Testing]]
+- [[#Automation with GitHub Actions]]
+- [[#Deployment & Pipeline Safety]]
+
+---
 
 ## Introduction to CI/CD
 

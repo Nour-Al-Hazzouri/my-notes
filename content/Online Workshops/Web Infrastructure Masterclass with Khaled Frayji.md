@@ -1,12 +1,42 @@
-# DNS & Web Hosting: Meeting Notes
+---
+title: "Web Infrastructure Masterclass"
+type: workshop
+instructor: "Khaled Frayji"
+date: N/A
+tags:
+  - workshop
+  - dns
+  - hosting
+  - web-infrastructure
+  - devops
+  - ssl
+  - nextjs
+  - javascript
+  - js
+source: ""
+status: complete
+---
 
 ## Overview
 
-**Topics Covered:**
+> [!info] Session Info
+> **Instructor:** Khaled Frayji
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
 
-- How DNS works and connects everything on the internet
-- How websites go live
-- Essential knowledge for freelancers working independently
+Covers the fundamentals of DNS, web hosting, domain registrars, DNS records, SSL/HTTPS, subdomains, and modern CI/CD-based deployment — essential knowledge for freelancers working independently.
+
+## Table of Contents
+
+- [[#Core Concepts]]
+- [[#Domain Registrars]]
+- [[#Do You Need Web Hosting?]]
+- [[#DNS Records Cheat Sheet]]
+- [[#Connecting a Domain to a Website]]
+- [[#SSL & HTTPS]]
+- [[#Subdomains]]
+- [[#Managing DNS Settings]]
+- [[#Important Warnings]]
 
 ---
 
@@ -178,6 +208,7 @@ When the website is hosted on a different platform than where the domain was reg
 
 ## Important Warnings
 
-⚠️ **DNS RECORDS ARE ADVANCED OPTIONS AND MUST NOT BE EDITED BY BEGINNERS.**
+> [!caution]
+> DNS RECORDS ARE ADVANCED OPTIONS AND MUST NOT BE EDITED BY BEGINNERS.
 
 For small projects, focus on A records and CNAME records only.

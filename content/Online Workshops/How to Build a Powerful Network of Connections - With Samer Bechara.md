@@ -1,10 +1,47 @@
-# Q&A Session
+---
+title: "How to Build a Powerful Network of Connections"
+type: workshop
+instructor: "Samer Bechara"
+date: N/A
+tags:
+  - workshop
+  - networking
+  - career
+  - soft-skills
+  - linkedin
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Samer Bechara
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+A Q&A-format session on building genuine professional connections, networking strategy, platform choice, and habits that separate successful developers from the rest.
+
+## Table of Contents
+
+- [[#Understanding the Value of Connections]]
+- [[#What Networking Really Means]]
+- [[#Communities and Contribution]]
+- [[#Platform Strategy]]
+- [[#Quality Over Quantity]]
+- [[#For Introverts and Beginners]]
+- [[#Networking Habits of Successful Developers]]
+- [[#The Bigger Picture]]
+- [[#Advice for Students]]
+- [[#LinkedIn Strategy]]
+
+---
 
 ## Understanding the Value of Connections
 
 **Q: When you started your journey in dev, did you know how powerful connections are?**
 
-**A:** No, I thought if I had powerful coding skills that would be enough. It started when clients debated me on `$400-500` per project, while others with basic skills charged `$5,000` for basic WordPress. It's all about marketing power.
+**A:** No, I thought if I had powerful coding skills that would be enough. It started when clients debated me on $400-500 per project, while others with basic skills charged $5,000 for basic WordPress. It's all about marketing power.
 
 ---
 

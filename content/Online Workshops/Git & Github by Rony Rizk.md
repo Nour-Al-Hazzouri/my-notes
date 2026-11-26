@@ -1,6 +1,39 @@
-**Instructor:** Rony Rizk
+---
+title: "Git & GitHub"
+type: workshop
+instructor: "Rony Rizk"
+date: N/A
+tags:
+  - workshop
+  - git
+  - github
+  - devops
+  - version-control
+source: ""
+status: complete
+---
 
-*Note: This session is preparation for an upcoming session on CI/CD with GitHub Actions.*
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Rony Rizk
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+> [!note]
+> This session is preparation for an upcoming session on CI/CD with GitHub Actions: [[CI-CD & GitHub Actions by Roni Rizk]].
+
+Covers approximately 90% of the daily use of Git in industry: fundamentals, branching, merging, undoing changes, and GitHub collaboration.
+
+## Table of Contents
+
+- [[#1. Introduction & The Problem]]
+- [[#2. Git Fundamentals]]
+- [[#3. Basic Workflow & Inspection]]
+- [[#4. Branching & Merging]]
+- [[#5. Undoing Changes]]
+- [[#6. GitHub & Remote Collaboration]]
+- [[#7. Q&A]]
 
 ---
 

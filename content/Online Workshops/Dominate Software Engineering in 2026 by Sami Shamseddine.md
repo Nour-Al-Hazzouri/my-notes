@@ -1,18 +1,38 @@
-Reference PDF:
+---
+title: "Dominate Software Engineering in 2026"
+type: workshop
+instructor: "Sami Shamseddine"
+date: N/A
+tags:
+  - workshop
+  - software-engineering
+  - career
+  - roadmap
+source: ""
+status: complete
+---
 
-[[Dominate Software Engineering in 2026 by Sami Shamseddine.pdf]]
+## Overview
 
-# Dominate Software Engineering in 2026
+> [!info] Session Info
+> **Instructor:** Sami Shamseddine
+> **Prerequisite:** None
+> **Recording / Slides:** [[Dominate Software Engineering in 2026 by Sami Shamseddine.pdf]]
 
-**A Clear Roadmap to Land a Job — No Confusion, No Excuses**
+A career roadmap workshop presenting the C.O.D.E framework and the SE² program for becoming a hire-ready software engineer in 2026.
 
-Do you have a degree, yet still get rejected by companies? Do you feel job-ready, or do you only know how to write code? Can you confidently design and build a real project from scratch?
+## Table of Contents
 
-This roadmap is built to answer those questions — and eliminate every excuse holding you back.
+- [[#Destroying the Common Excuses]]
+- [[#The C.O.D.E Framework]]
+- [[#The Software Engineering Roadmap (SE²)]]
+- [[#Q&A]]
+
+---
 
 ## Destroying the Common Excuses
 
-### 1. “AI Will Replace Software Engineers”
+### 1. "AI Will Replace Software Engineers"
 
 This belief usually comes from people who only copy AI-generated code.
 
@@ -25,7 +45,7 @@ Ironically, many AI founders exaggerate this narrative to sell products. The rea
 - AI makes good engineers faster, not irrelevant.
 - AI is now a mandatory skill, not a threat.
 
-### 2. “I Don’t Have Enough Time”
+### 2. "I Don't Have Enough Time"
 
 Time is not the problem — lack of structure is.
 
@@ -43,9 +63,9 @@ What you need is not more time — you need a clear roadmap:
 
 Time is never the excuse. Willpower and direction are.
 
-### 3. “What If I’m Not Good Enough?”
+### 3. "What If I'm Not Good Enough?"
 
-The real issue is not competition — it’s lack of standards.
+The real issue is not competition — it's lack of standards.
 
 Many graduates:
 
@@ -60,6 +80,8 @@ When you know:
 - The system behind software engineering
 
 Your confidence rises — and so does your value.
+
+---
 
 ## The C.O.D.E Framework
 
@@ -98,7 +120,7 @@ You must deeply understand:
 If you skip this:
 
 - You copy-paste
-- You can’t build without guidance
+- You can't build without guidance
 - Interviews expose you quickly
 
 **Full-stack advice:** TypeScript is currently one of the most in-demand technologies — and AI will help you stay updated.
@@ -117,8 +139,8 @@ You must understand:
 If you skip this:
 
 - Your projects look like tutorials
-- You don’t know where code should live
-- You can’t scale beyond toy apps
+- You don't know where code should live
+- You can't scale beyond toy apps
 
 **Software engineering is 30% coding, 70% design**
 
@@ -126,7 +148,7 @@ If you skip this:
 
 This is where engineers get hired.
 
-You’ll learn:
+You'll learn:
 
 - Git and collaboration
 - Clean, reusable code
@@ -136,9 +158,11 @@ You’ll learn:
 
 If you skip this:
 
-- Teams don’t trust your code
+- Teams don't trust your code
 - You stay stuck as a junior forever
-- You’re skilled — but not employable
+- You're skilled — but not employable
+
+---
 
 ## The Software Engineering Roadmap (SE²)
 
@@ -178,7 +202,9 @@ You get:
 
 *(Official certificate included)*
 
-## Common Questions (Straight Answers)
+---
+
+## Q&A
 
 **Should I learn Web, Mobile, and Data Science together?**
 
@@ -204,11 +230,11 @@ CV alone is never enough.
 
 **University curricula are outdated — is that bad?**
 
-Universities teach fundamentals, not industry tools. That’s okay. If your fundamentals are strong, you can learn any language or framework quickly.
+Universities teach fundamentals, not industry tools. That's okay. If your fundamentals are strong, you can learn any language or framework quickly.
 
 **What happens after SE²?**
 
-You’ll have:
+You'll have:
 
 - Full engineering exposure
 - Mentorship from senior developers
@@ -223,7 +249,7 @@ Yes. A scalable e-commerce system will be built in parallel with the recordings 
 
 ## Final Message
 
-SE² is not just a course. It’s a full A-to-Z engineering transformation.
+SE² is not just a course. It's a full A-to-Z engineering transformation.
 
 - No confusion.
 - No outdated theory.

@@ -1,6 +1,39 @@
-> [!tip] 📹 Source Recording
-> Full code walkthrough and detailed examples:
-> [Google Drive Recording](https://drive.google.com/file/d/1anjXKObZyh_745ZTFJVPzuVy7dNXeTyc/view)
+---
+title: "Next.js Full-Stack Web Dev in 90 Minutes"
+type: workshop
+instructor: "Khaled Frayji"
+date: N/A
+tags:
+  - workshop
+  - nextjs
+  - react
+  - javascript
+  - js
+  - typescript
+  - web-dev
+  - fullstack
+  - api
+source: "https://drive.google.com/file/d/1anjXKObZyh_745ZTFJVPzuVy7dNXeTyc/view"
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Khaled Frayji
+> **Prerequisite:** Basic React knowledge recommended
+> **Recording / Slides:** [Google Drive Recording](https://drive.google.com/file/d/1anjXKObZyh_745ZTFJVPzuVy7dNXeTyc/view)
+
+A fast-paced walkthrough of Next.js for full-stack development: server-side rendering, project structure, route handlers, and UI integration with Stitch + MCP.
+
+## Table of Contents
+
+- [[#1. Why Server-Side Rendering?]]
+- [[#2. Why Next.js?]]
+- [[#3. Core Next.js Capabilities]]
+- [[#4. Project Structure]]
+- [[#5. Route Handlers (API Endpoints)]]
+- [[#6. UI & Data Fetching]]
 
 ---
 

@@ -1,10 +1,35 @@
-This is a beginner-friendly session.
+---
+title: "Docker Masterclass"
+type: workshop
+instructor: "Rony Rizk"
+date: N/A
+tags:
+  - workshop
+  - devops
+  - docker
+  - containers
+source: ""
+status: complete
+---
 
-## Introduction
+## Overview
 
-- **Speaker:** Rony Rizk
-- **Experience:** Software engineer with 25 years of experience in software development. He works in web development, mobile development, databases, APIs, integrations, AI, and more. He has spent 16 years providing full-stack training.
-- **Session Topic:** What is Docker? Why is it needed in a practical way? (This session is hands-on and not theoretical).
+> [!info] Session Info
+> **Instructor:** Rony Rizk — Software engineer with 25 years of experience in web development, mobile development, databases, APIs, integrations, AI, and more. 16 years of full-stack training.
+> **Prerequisite:** None (beginner-friendly)
+> **Recording / Slides:** `N/A`
+
+A hands-on (not theoretical) introduction to Docker: what problem it solves, how images and containers work, and how to build and push your own images.
+
+## Table of Contents
+
+- [[#Why Docker?]]
+- [[#The Docker Solution]]
+- [[#Practical Usage]]
+- [[#Orchestration and Alternatives]]
+- [[#Q&A]]
+
+---
 
 ## Why Docker?
 
@@ -46,6 +71,8 @@ Virtual machines were and are still used by many companies in the market. They a
 - **What it solves:** The ability to have different OSes and setups inside virtual machines.
 - **Drawbacks:** Huge storage requirements (many GBs), takes a long time to set up, and eats up a lot of memory.
 
+---
+
 ## The Docker Solution
 
 Docker provides the ability to run software virtually on your machine without the huge resource consumption drawbacks of VMs.
@@ -54,6 +81,8 @@ Docker provides the ability to run software virtually on your machine without th
 - Starting with Windows 10 and some Windows Server versions, it became available on Windows due to WSL (Windows Subsystem for Linux).
 - Docker gives you the ability to use many software applications without installing them directly on your machine.
 - It comes as an executable with a user interface and can also be manipulated through the Command Prompt (CMD).
+
+---
 
 ## Practical Usage
 
@@ -88,10 +117,10 @@ To try something more ambitious, you can run an Ubuntu container with:
  $ docker run -it ubuntu bash
 
 Share images, automate workflows, and more with a free Docker ID:
- https://hub.docker.com/
+  https://hub.docker.com/
 
 For more examples and ideas, visit:
- https://docs.docker.com/get-started/
+  https://docs.docker.com/get-started/
 ```
 
 Notice how the image isn't available locally, so it's pulled from the remote server. When the command is run again, it will execute without having to pull the image again.
@@ -181,7 +210,7 @@ To create your own image:
 2. Create a `Dockerfile` file.
 3. Example code:
 
-```bash
+```dockerfile
 # 1. Start FROM an official Node image. "alpine" = tiny Linux base.
 FROM node:22-alpine
 
@@ -226,6 +255,8 @@ To push the image, you need to have a Docker account and use a valid tag name fo
 docker push shipbox-api
 ```
 
+---
+
 ## Orchestration and Alternatives
 
 There are many capabilities like running containers in order, stopping them in order, or making them communicate. All of this is achievable through **Docker Compose**.
@@ -233,6 +264,8 @@ There are many capabilities like running containers in order, stopping them in o
 Online, there is something called **Kubernetes** (aka K8s), which is a controller for containers.
 
 **Podman** is an alternative to Docker, but the images are universal and usable across any containerization service. The difference lies in ease of use or usability; Podman makes it easier to control multiple containers as Docker handles it more poorly.
+
+---
 
 ## Q&A
 

@@ -4,7 +4,7 @@
 
 ## What Exactly Did I Do?
 
-I just thought by taking a course for each technology needed, I could become a web developer. Hence the notes for HTML, CSS, etc.
+I just thought by taking a course for each technology needed, I could become a web developer. Hence, the notes for HTML, CSS, etc.
 
 Note: I had Codecademy notes too for HTML, CSS, and JS but deleted them since they were literally copy-paste from the website itself (Yes, unfortunately I thought this was called 'note-taking').
 
@@ -49,7 +49,7 @@ This made me understand that becoming a developer means understanding the concep
 
 I made a project-based learning roadmap with AI.
 
-[[Next.js Developer Roadmap - 2025]]
+[[Next.js Developer Roadmap - 2026]]
 
 After completing CS50x, I started with TOP (The Odin Project), and now I'm in the Full-Stack JavaScript Path, course 2 (3/2026).
 

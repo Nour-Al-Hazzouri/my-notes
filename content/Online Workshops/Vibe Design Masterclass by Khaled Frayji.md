@@ -1,4 +1,39 @@
-# The Key to Better Prompts and Better Designs
+---
+title: "Vibe Design Masterclass"
+type: workshop
+instructor: "Khaled Frayji"
+date: N/A
+tags:
+  - workshop
+  - design
+  - ai
+  - vibe-design
+  - figma
+  - mcp
+  - ui-ux
+source: ""
+status: complete
+---
+
+## Overview
+
+> [!info] Session Info
+> **Instructor:** Khaled Frayji
+> **Prerequisite:** None
+> **Recording / Slides:** `N/A`
+
+A hands-on session on Vibe Design using Stitch by Google: how to generate UI from prompts, iterate effectively, choose the right AI mode (Thinking/Redesign/2.5 Pro/Fast), and connect Stitch to VS Code via MCP.
+
+## Table of Contents
+
+- [[#The Key to Better Prompts and Better Designs]]
+- [[#Make One Major Change at a Time]]
+- [[#AI Design Modes]]
+- [[#Setup and Usage]]
+
+---
+
+## The Key to Better Prompts and Better Designs
 
 - Ideate: The hardest part is getting past the blank page. The best way to create better designs is through iteration, not perfect initial prompts. Let's follow a simple formula.
 - **Starting prompt examples:** A good recipe for an initial prompt follows this formula:
@@ -17,7 +52,9 @@
 - Each page is a screen
 - Choose a screen type, can be changed later too
 
-# Make One Major Change at a Time
+---
+
+## Make One Major Change at a Time
 
 - Pick one thing you want to change, just one. Select the Screen you want to change, click Edit, Add to Chat, and write a prompt. Be specific about what to change and how to change it.
 - For example, if the pricing table needs to emphasize the best value tier:
@@ -26,13 +63,17 @@
 - Select the design mode that most suits you
 - The difference lies on use case
 
-## Thinking with 3 Pro
+---
+
+## AI Design Modes
+
+### Thinking with 3 Pro
 
 - **Best for:** Complex logic, deep reasoning, and your "Production" candidate.
 - This is the heavy lifter. Powered by Gemini 3 Pro, this mode prioritizes reasoning over speed. It takes a little longer to generate because it is "thinking" through the implications of your prompt—how the navigation should flow, what the hierarchy implies, and how the colors interact.
 - If you are building a complex dashboard or a nuance-heavy landing page, this is where you should be. The wait is worth the pixel-perfect logic it returns.
 
-## Redesign (Nano Banana Pro)
+### Redesign (Nano Banana Pro)
 
 - **Best for:** Modernizing old apps, stylistic experiments, and "vibes" based workflows.
 - The Redesign agent is your best friend when it comes to Vibe Design. It is incredible for taking a dated interface and applying a specific design aesthetic.
@@ -41,17 +82,19 @@
   - **STYLE:** Use a modern Bento Grid layout.
   - **DETAILS:** Dark mode background. Use the Inter font for the headers.
 
-## 2.5 Pro
+### 2.5 Pro
 
 - **Best for:** High-fidelity HTML and A/B comparisons.
 - Gemini 2.5 Pro produces exceptionally high-quality code and design fidelity. It is often useful to generate a prompt in Thinking with 3 Pro and then run the exact same prompt in 2.5 Pro to see two different high-level interpretations of your idea.
 
-## Fast
+### Fast
 
 - **Best for:** Rapid wireframing and Figma exports.
 - The Rapid mode is optimized for compatibility if your primary goal is to export your initial sketches directly to Figma for manual refinement.
 
-# Setup and Usage
+---
+
+## Setup and Usage
 
 - MCP can be linked through mcp.json from Stitch's docs for auth, then should be added in the IDE through adding an mcp server
 - Github Copilot extension is needed to use Stitch through MCP
