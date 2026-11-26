@@ -1,6 +1,6 @@
 # My Workspace
 
-My digital garden / personal notes website — built with [Quartz v4](https://quartz.jzhao.xyz/).
+My digital garden / personal notes website — built with [Quartz v5](https://quartz.jzhao.xyz/).
 
 ## What Is This?
 
@@ -17,7 +17,7 @@ If you're a beginner in web development or IT, or you just have the memory of a 
 
 ## Tech Stack
 
-- **[Quartz v4](https://quartz.jzhao.xyz/)** — static site generator for Obsidian notes
+- **[Quartz v5](https://quartz.jzhao.xyz/)** — static site generator for Obsidian notes
 - **[Obsidian](https://obsidian.md/)** — where the actual notes live
 - Custom SCSS for RTL (Arabic) language support
 
