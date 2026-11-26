@@ -16,11 +16,4 @@ tags:
 
 # Programming, Git, JS & DSA Notes
 
-- [[Education/Courses/PDFs/Programming/75 DSA Questions LeetCode|75 DSA Questions LeetCode]]
-- [[Education/Courses/PDFs/Programming/JS Notes|JS Notes]]
-- [[Education/Courses/PDFs/Programming/LeetCode Questions with Solutions|LeetCode Questions with Solutions]]
-
-## Git
-
-- [[Education/Courses/PDFs/Programming/Git/Git Crash Course|Git Crash Course]]
-- [[Education/Courses/PDFs/Programming/Git/Git Workflow|Git Workflow]]
+Notes from PDF resources covering Git, JavaScript, DSA, and LeetCode problem sets.

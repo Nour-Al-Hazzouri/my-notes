@@ -32,3 +32,36 @@
 - `quartz.config.yaml` — Set `baseUrl: Nour-Al-Hazzouri.github.io/my-notes` and `@quartz-community/cname` `enabled: false`. Why: site is hosted at `https://nour-al-hazzouri.github.io/my-notes/` without a custom domain, so `basePath`, canonical URLs, and 404 asset paths require `/my-notes`, and no `CNAME` file should be emitted.
 
 **Plain English:** Fixed the site configuration so all deployed links, canonical URLs, and 404 paths include `/my-notes` for GitHub Pages and stopped generating an unnecessary `CNAME` file.
+
+## Request #4 — 2026-11-26
+
+**Technical summary:** Removed the Tags column from all tables in `Online Workshops/index.md` and stripped manual wikilink navigation from all 15 non-root `index.md` files under `content/`, leaving only YAML frontmatter and a one-line description.
+
+**Modified files**
+- `content/Online Workshops/index.md` — Removed `Tags` column from all 5 section tables. Why: inline backtick tags in table cells rendered visually on the right side of each link, defeating the purpose; tags already exist in YAML frontmatter for Quartz search/filtering.
+- `content/Education/index.md` — Removed wikilink navigation list. Why: Quartz folder-page plugin already provides built-in subfolder navigation; the manual list was redundant.
+- `content/Education/Career Paths/Information/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Career Paths/Web Development/index.md` — Removed wikilink navigation list and ToC. Why: same as above.
+- `content/Education/Courses/Coursera/Google IT Support/Course 1/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/Coursera/Google IT Support/Course 2/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/Coursera/Google IT Support/Course 3/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/Coursera/Introduction to Artificial Intelligence (AI) IBM/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/Coursera/Microsoft 365/Work Smarter With Microsoft Word/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/YouTube/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/PDFs/Database/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/PDFs/Deitle- CS Programming/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/PDFs/Google Project Management/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Courses/PDFs/Programming/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/My Wonders/index.md` — Removed wikilink navigation list. Why: same as above.
+- `content/Education/Math/Arithmetic/index.md` — Removed wikilink navigation list. Why: same as above.
+
+**Plain English:** Cleaned up two related issues. First, the Online Workshops index had a "Tags" column in its tables that showed tag labels floating to the right of each workshop link — these were removed since the tags are already tracked in the page's frontmatter for search. Second, all the index files inside subfolders were filled with manual lists of links to their child pages, which Quartz already displays automatically via its built-in folder navigation. Those redundant lists were removed, leaving each index with just its title, frontmatter tags (for search), and a one-line description.
+
+## Request #5 — 2026-11-26
+
+**Technical summary:** Added `.section > .tags { display: none; }` to `quartz/styles/custom.scss` to hide the tags column injected by `@quartz-community/folder-page`'s `PageList` component in every folder listing row.
+
+**Modified files**
+- `quartz/styles/custom.scss` — Added `.section > .tags { display: none; }` with explanatory comment. Why: `@quartz-community/folder-page` v1.1.0 unconditionally renders every note's YAML frontmatter tags as a `<ul class="tags">` in the 3rd CSS grid column of each folder listing row; no `showTags` config option exists to disable it. The CSS `unicode-bidi: plaintext` already applied to `li` elements (for Arabic RTL support) caused wrapped tag labels to appear RTL-aligned, making the display look broken. The CSS rule hides the column entirely while leaving tags intact in frontmatter for Quartz search/filtering.
+
+**Plain English:** The folder listing pages (like `/online-workshops/`) were showing all of each note's tags floating to the right of its title, in an ugly and sometimes RTL-looking column. This is baked into the Quartz folder-page plugin with no on/off switch, so the fix was to add one CSS line that hides that column site-wide. Tags still work normally for search and filtering — they just no longer appear visually in the folder list.

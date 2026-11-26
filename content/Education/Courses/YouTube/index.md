@@ -16,6 +16,4 @@ tags:
 
 # YouTube Courses (Design & AI)
 
-- [[Education/Courses/YouTube/Adobe Illustrator Course- GDS|Adobe Illustrator Course- GDS]]
-- [[Education/Courses/YouTube/Adobe Photoshop Course- PHLearn|Adobe Photoshop Course- PHLearn]]
-- [[Education/Courses/YouTube/Stanford CS229 — Building Large Language Models (LLMs)|Stanford CS229 — Building Large Language Models (LLMs)]]
+Notes from YouTube courses covering Adobe Illustrator, Photoshop, and Stanford CS229 LLMs.

@@ -23,3 +23,11 @@ article {
     unicode-bidi: plaintext;
   }
 }
+
+// Hide the tags column rendered by @quartz-community/folder-page (PageList component).
+// The plugin unconditionally injects a <ul class="tags"> as the 3rd grid column of
+// every folder listing row — there is no showTags option to disable it.
+// Tags remain in each note's YAML frontmatter and are still indexed for search/filter.
+.section > .tags {
+  display: none;
+}

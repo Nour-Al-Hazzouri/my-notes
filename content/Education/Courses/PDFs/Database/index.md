@@ -6,7 +6,6 @@ tags:
   - course
   - pdf-notes
   - database
-  - db
   - sql
   - mongodb
   - nosql
@@ -14,5 +13,4 @@ tags:
 
 # Database Notes (SQL & MongoDB)
 
-- [[Education/Courses/PDFs/Database/MongoDB Notes|MongoDB Notes]]
-- [[Education/Courses/PDFs/Database/SQL Notes|SQL Notes]]
+Notes from PDF resources covering SQL and MongoDB database fundamentals.
