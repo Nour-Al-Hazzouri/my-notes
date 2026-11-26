@@ -23,3 +23,12 @@
 - `.github/workflows/deploy.yml` — Bump `pnpm/action-setup` to `v4` with pnpm `10`. Why: `upstream/v5` added `pnpm-workspace.yaml` without a `packages` field (pnpm v10 syntax), which causes pnpm v9 to fail with `ERROR packages field missing or empty`.
 
 **Plain English:** Upgraded the pnpm version in the GitHub Actions deployment workflow from v9 to v10 so it can read the new Quartz v5 `pnpm-workspace.yaml` file without failing.
+
+## Request #3 — 2026-11-26
+
+**Technical summary:** Updated `baseUrl` in `quartz.config.yaml` to include the `/my-notes` GitHub Pages subpath and disabled `@quartz-community/cname`.
+
+**Modified files**
+- `quartz.config.yaml` — Set `baseUrl: Nour-Al-Hazzouri.github.io/my-notes` and `@quartz-community/cname` `enabled: false`. Why: site is hosted at `https://nour-al-hazzouri.github.io/my-notes/` without a custom domain, so `basePath`, canonical URLs, and 404 asset paths require `/my-notes`, and no `CNAME` file should be emitted.
+
+**Plain English:** Fixed the site configuration so all deployed links, canonical URLs, and 404 paths include `/my-notes` for GitHub Pages and stopped generating an unnecessary `CNAME` file.
