@@ -14,3 +14,12 @@
 - `.github/workflows/deploy.yml` — Added `pnpm run install-plugins` before `pnpm quartz build`. Why: Quartz v5 requires installing external Git plugins into `.quartz/` prior to building.
 
 **Plain English:** Updated the site's Quartz engine to the latest upstream v5.2.2 release, resolved all merge conflicts, migrated the site configuration to the new v5 YAML format with your title, URL, fonts, and ignored folders intact, and updated the GitHub Actions deployment workflow so plugins install before building.
+
+## Request #2 — 2026-11-26
+
+**Technical summary:** Updated `.github/workflows/deploy.yml` from `pnpm/action-setup@v3` (`version: 9`) to `pnpm/action-setup@v4` (`version: 10`).
+
+**Modified files**
+- `.github/workflows/deploy.yml` — Bump `pnpm/action-setup` to `v4` with pnpm `10`. Why: `upstream/v5` added `pnpm-workspace.yaml` without a `packages` field (pnpm v10 syntax), which causes pnpm v9 to fail with `ERROR packages field missing or empty`.
+
+**Plain English:** Upgraded the pnpm version in the GitHub Actions deployment workflow from v9 to v10 so it can read the new Quartz v5 `pnpm-workspace.yaml` file without failing.
