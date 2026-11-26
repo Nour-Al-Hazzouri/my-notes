@@ -2,7 +2,6 @@ import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
-import { GlobalConfiguration } from "../cfg"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -41,7 +40,7 @@ function compareByName(a: string, b: string): number {
   return a.toLowerCase().localeCompare(b.toLowerCase())
 }
 
-export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
+export function byDateAndAlphabetical(): SortFn {
   return (f1, f2) => {
     const t1 = f1.frontmatter?.title ?? ""
     const t2 = f2.frontmatter?.title ?? ""
@@ -49,7 +48,7 @@ export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
   }
 }
 
-export function byDateAndAlphabeticalFolderFirst(cfg: GlobalConfiguration): SortFn {
+export function byDateAndAlphabeticalFolderFirst(): SortFn {
   return (f1, f2) => {
     const f1IsFolder = isFolderPath(f1.slug ?? "")
     const f2IsFolder = isFolderPath(f2.slug ?? "")
@@ -68,7 +67,7 @@ type Props = {
 } & QuartzComponentProps
 
 export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort }: Props) => {
-  const sorter = sort ?? byDateAndAlphabeticalFolderFirst(cfg)
+  const sorter = sort ?? byDateAndAlphabeticalFolderFirst()
   let list = allFiles.sort(sorter)
   if (limit) {
     list = list.slice(0, limit)
@@ -83,15 +82,16 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
         return (
           <li class="section-li">
             <div class="section">
-              <p class="meta">
-                {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
-              </p>
+              <p class="meta">{page.dates && <Date date={getDate(page)!} locale={cfg.locale} />}</p>
               <div class="desc">
-                <h3>
-                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
+                <h2>
+                  <a
+                    href={resolveRelative(fileData.slug!, page.slug!)}
+                    class="internal internal-link"
+                  >
                     {title}
                   </a>
-                </h3>
+                </h2>
               </div>
               <ul class="tags">
                 {tags.map((tag) => (
@@ -114,8 +114,10 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 }
 
 PageList.css = `
-.section h3 {
+/* An h2 under the page's h1 (it was an h3, which skipped a level), at the h3's size. */
+.section h2 {
   margin: 0;
+  font-size: 1.12rem;
 }
 
 .section > .tags {

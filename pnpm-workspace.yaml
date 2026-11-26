@@ -1,0 +1,16 @@
+allowBuilds:
+  '@parcel/watcher': set this to true or false
+  esbuild: set this to true or false
+minimumReleaseAgeExclude:
+  - '@quartz-community/canvas-page@1.0.4'
+  - '@quartz-community/explorer@1.1.2'
+  - '@quartz-community/graph@1.0.5'
+  - '@quartz-community/latex@1.1.0'
+  - '@quartz-community/note-properties@1.2.0'
+  - '@quartz-community/obsidian-flavored-markdown@2.4.0'
+  - '@quartz-community/og-image@1.1.2'
+  - '@quartz-community/rehype-obsidian@1.5.0'
+  - '@quartz-community/search@1.1.0'
+  - '@quartz-community/syntax-highlighting@1.0.4'
+  - '@quartz-community/table-of-contents@1.0.4'
+  - '@quartz-themes/core@3.2.0'

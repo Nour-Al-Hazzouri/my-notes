@@ -12,3 +12,6 @@ replit.nix
 Personal
 .trash
 دين
+.quartz/
+quartz/cli/tui/dist/
+.turbo/
